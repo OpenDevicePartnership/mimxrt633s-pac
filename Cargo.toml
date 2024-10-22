@@ -1,0 +1,25 @@
+[package]
+name = "mimxrt633s-pac"
+version = "0.1.0"
+authors = [ "Felipe Balbi <febalbi@microsoft.com>" ]
+edition = "2021"
+license = "MIT"
+description = "Peripheral Access Crate for MIMXRT632s devices"
+repository = "https://github.com/pop-project/mimxrt632s-pac"
+readme = "README.md"
+keywords = [ "rt6", "mimxrt", "mimxrt6", "no_std", "embedded" ]
+categories = [ "embedded", "no-std" ]
+rust-version = "1.71"
+exclude = [ "svd/*", ]
+
+[dependencies]
+cortex-m = "0.7.7"
+cortex-m-rt = { version = "0.7.3", optional = true }
+critical-section = { version = "1.1.2", optional = true }
+defmt = { version = "0.3.8", optional = true }
+vcell = "0.1.3"
+
+[features]
+rt = ["cortex-m-rt/device"]
+defmt = ["dep:defmt"]
+debug = []
