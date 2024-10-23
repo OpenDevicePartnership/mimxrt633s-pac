@@ -11,7 +11,7 @@ On a unix-style OS, all you need are these commands:
 ```console
 $ svd2rust -i svd/MIMXRT633S.xml --reexport-interrupt \
 	--reexport-core-peripherals --impl-defmt defmt  \
-	--impl-debug --impl-debug-feature debug
+	--impl-debug --impl-debug-feature debug  --ignore-groups
 $ rm -r src/*
 $ form -i lib.rs -o src
 $ rm lib.rs
@@ -25,7 +25,7 @@ On windows you need to replace the `/` with `\` and additionally run
 ```console
 $ svd2rust -i svd/MIMXRT633S.xml --reexport-interrupt \
 	--reexport-core-peripherals --impl-defmt defmt  \
-	--impl-debug --impl-debug-feature debug
+	--impl-debug --impl-debug-feature debug --ignore-groups
 $ rm -r src\*
 $ form -i lib.rs -o src
 $ rm lib.rs
