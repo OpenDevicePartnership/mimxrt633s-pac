@@ -94,7 +94,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - I3C0 Clock Source Selection. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn sel(&mut self) -> SelW<I3c0fclkstcselSpec> {
         SelW::new(self, 0)
     }

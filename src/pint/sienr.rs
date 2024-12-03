@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<SienrSpec> {
 impl W {
     #[doc = "Bits 0:7 - Ones written to this address set bits in the IENR, thus enabling interrupts. Bit n sets bit n in the IENR register. 0 = No operation. 1 = Enable rising edge or level interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn setenrl(&mut self) -> SetenrlW<SienrSpec> {
         SetenrlW::new(self, 0)
     }

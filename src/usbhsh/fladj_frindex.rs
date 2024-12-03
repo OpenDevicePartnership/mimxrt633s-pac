@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:5 - Frame Length Timing Value."]
     #[inline(always)]
-    #[must_use]
     pub fn fladj(&mut self) -> FladjW<FladjFrindexSpec> {
         FladjW::new(self, 0)
     }
     #[doc = "Bits 16:29 - Frame Index: Bits 29 to16 in this register are used for the frame number field in the SOF packet."]
     #[inline(always)]
-    #[must_use]
     pub fn frindex(&mut self) -> FrindexW<FladjFrindexSpec> {
         FrindexW::new(self, 16)
     }

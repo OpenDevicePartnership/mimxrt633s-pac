@@ -86,49 +86,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 2:3 - Index 1"]
     #[inline(always)]
-    #[must_use]
     pub fn idx1(&mut self) -> Idx1W<IdxblkLSpec> {
         Idx1W::new(self, 2)
     }
     #[doc = "Bits 4:5 - Index 2"]
     #[inline(always)]
-    #[must_use]
     pub fn idx2(&mut self) -> Idx2W<IdxblkLSpec> {
         Idx2W::new(self, 4)
     }
     #[doc = "Bits 6:7 - Index 3"]
     #[inline(always)]
-    #[must_use]
     pub fn idx3(&mut self) -> Idx3W<IdxblkLSpec> {
         Idx3W::new(self, 6)
     }
     #[doc = "Bits 8:9 - Index 4"]
     #[inline(always)]
-    #[must_use]
     pub fn idx4(&mut self) -> Idx4W<IdxblkLSpec> {
         Idx4W::new(self, 8)
     }
     #[doc = "Bits 10:11 - Index 5"]
     #[inline(always)]
-    #[must_use]
     pub fn idx5(&mut self) -> Idx5W<IdxblkLSpec> {
         Idx5W::new(self, 10)
     }
     #[doc = "Bits 12:13 - Index 6"]
     #[inline(always)]
-    #[must_use]
     pub fn idx6(&mut self) -> Idx6W<IdxblkLSpec> {
         Idx6W::new(self, 12)
     }
     #[doc = "Bits 14:15 - Index 7"]
     #[inline(always)]
-    #[must_use]
     pub fn idx7(&mut self) -> Idx7W<IdxblkLSpec> {
         Idx7W::new(self, 14)
     }
     #[doc = "Bits 30:31 - Lock Index"]
     #[inline(always)]
-    #[must_use]
     pub fn lock_idx(&mut self) -> LockIdxW<IdxblkLSpec> {
         LockIdxW::new(self, 30)
     }

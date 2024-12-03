@@ -134,13 +134,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Enable signal for low power mode. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn lp_enable(&mut self) -> LpEnableW<Sysoscctl0Spec> {
         LpEnableW::new(self, 0)
     }
     #[doc = "Bit 1 - Enable signal for external bypass clock. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn bypass_enable(&mut self) -> BypassEnableW<Sysoscctl0Spec> {
         BypassEnableW::new(self, 1)
     }

@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - If hardware has reached this PTD and the J bit is not set, it will go to PTD0 as the next PTD to be processed."]
     #[inline(always)]
-    #[must_use]
     pub fn atl_last(&mut self) -> AtlLastW<LastptdSpec> {
         AtlLastW::new(self, 0)
     }
     #[doc = "Bits 8:12 - This indicates the last PTD in the ISO list."]
     #[inline(always)]
-    #[must_use]
     pub fn iso_last(&mut self) -> IsoLastW<LastptdSpec> {
         IsoLastW::new(self, 8)
     }
     #[doc = "Bits 16:20 - This indicates the last PTD in the INT list."]
     #[inline(always)]
-    #[must_use]
     pub fn int_last(&mut self) -> IntLastW<LastptdSpec> {
         IntLastW::new(self, 16)
     }

@@ -94,49 +94,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Enable channel 0. When 1, PDM channel 0 is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn en_ch0(&mut self) -> EnCh0W<ChanenSpec> {
         EnCh0W::new(self, 0)
     }
     #[doc = "Bit 1 - Enable channel 1. When 1, PDM channel 1 is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn en_ch1(&mut self) -> EnCh1W<ChanenSpec> {
         EnCh1W::new(self, 1)
     }
     #[doc = "Bit 2 - Enable channel 2. When 1, PDM channel 2 is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn en_ch2(&mut self) -> EnCh2W<ChanenSpec> {
         EnCh2W::new(self, 2)
     }
     #[doc = "Bit 3 - Enable channel 3. When 1, PDM channel 3 is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn en_ch3(&mut self) -> EnCh3W<ChanenSpec> {
         EnCh3W::new(self, 3)
     }
     #[doc = "Bit 4 - Enable channel 4. When 1, PDM channel 4 is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn en_ch4(&mut self) -> EnCh4W<ChanenSpec> {
         EnCh4W::new(self, 4)
     }
     #[doc = "Bit 5 - Enable channel 5. When 1, PDM channel 5 is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn en_ch5(&mut self) -> EnCh5W<ChanenSpec> {
         EnCh5W::new(self, 5)
     }
     #[doc = "Bit 6 - Enable channel 6. When 1, PDM channel 6 is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn en_ch6(&mut self) -> EnCh6W<ChanenSpec> {
         EnCh6W::new(self, 6)
     }
     #[doc = "Bit 7 - Enable channel 7. When 1, PDM channel 7 is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn en_ch7(&mut self) -> EnCh7W<ChanenSpec> {
         EnCh7W::new(self, 7)
     }

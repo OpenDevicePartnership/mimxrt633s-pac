@@ -54,25 +54,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Read Watermark Level"]
     #[inline(always)]
-    #[must_use]
     pub fn rd_wml(&mut self) -> RdWmlW<WtmkLvlSpec> {
         RdWmlW::new(self, 0)
     }
     #[doc = "Bits 8:12 - Read Burst Length Due to system restriction, the actual burst length may not exceed 16."]
     #[inline(always)]
-    #[must_use]
     pub fn rd_brst_len(&mut self) -> RdBrstLenW<WtmkLvlSpec> {
         RdBrstLenW::new(self, 8)
     }
     #[doc = "Bits 16:23 - Write Watermark Level"]
     #[inline(always)]
-    #[must_use]
     pub fn wr_wml(&mut self) -> WrWmlW<WtmkLvlSpec> {
         WrWmlW::new(self, 16)
     }
     #[doc = "Bits 24:28 - Write Burst Length Due to system restriction, the actual burst length may not exceed 16."]
     #[inline(always)]
-    #[must_use]
     pub fn wr_brst_len(&mut self) -> WrBrstLenW<WtmkLvlSpec> {
         WrBrstLenW::new(self, 24)
     }

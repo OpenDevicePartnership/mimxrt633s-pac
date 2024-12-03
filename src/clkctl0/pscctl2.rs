@@ -134,13 +134,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - utick clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn utick0_clk(&mut self) -> Utick0ClkW<Pscctl2Spec> {
         Utick0ClkW::new(self, 0)
     }
     #[doc = "Bit 1 - wdt clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn wwdt0_clk(&mut self) -> Wwdt0ClkW<Pscctl2Spec> {
         Wwdt0ClkW::new(self, 1)
     }

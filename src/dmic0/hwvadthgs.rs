@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Signal Gain factor - use a postive number to make current signal stand out more over longer term average"]
     #[inline(always)]
-    #[must_use]
     pub fn thgs(&mut self) -> ThgsW<HwvadthgsSpec> {
         ThgsW::new(self, 0)
     }

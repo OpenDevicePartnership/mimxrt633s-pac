@@ -150,6 +150,8 @@ impl RegisterBlock {
         &self.flshb2cr0
     }
     #[doc = "0x70..0x80 - Flash Control Register 1"]
+    #[doc = ""]
+    #[doc = "<div class=\"warning\">`n` is the index of register in the array. `n == 0` corresponds to `FLSHCR1A1` register.</div>"]
     #[inline(always)]
     pub const fn flshcr1(&self, n: usize) -> &Flshcr1 {
         &self.flshcr1[n]
@@ -181,6 +183,8 @@ impl RegisterBlock {
         self.flshcr1(3)
     }
     #[doc = "0x80..0x90 - Flash Control Register 2"]
+    #[doc = ""]
+    #[doc = "<div class=\"warning\">`n` is the index of register in the array. `n == 0` corresponds to `FLSHCR2A1` register.</div>"]
     #[inline(always)]
     pub const fn flshcr2(&self, n: usize) -> &Flshcr2 {
         &self.flshcr2[n]
@@ -247,6 +251,8 @@ impl RegisterBlock {
         &self.iptxfcr
     }
     #[doc = "0xc0..0xc8 - DLL Control Register 0"]
+    #[doc = ""]
+    #[doc = "<div class=\"warning\">`n` is the index of register in the array. `n == 0` corresponds to `DLLCRA` register.</div>"]
     #[inline(always)]
     pub const fn dllcr(&self, n: usize) -> &Dllcr {
         &self.dllcr[n]

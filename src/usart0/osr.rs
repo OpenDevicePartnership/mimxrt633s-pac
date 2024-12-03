@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Oversample Selection Value. 0 to 3 = not supported 0x4 = 5 function clocks are used to transmit and receive each data bit. 0x5 = 6 function clocks are used to transmit and receive each data bit. 0xF= 16 function clocks are used to transmit and receive each data bit."]
     #[inline(always)]
-    #[must_use]
     pub fn osrval(&mut self) -> OsrvalW<OsrSpec> {
         OsrvalW::new(self, 0)
     }

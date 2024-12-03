@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Selects the oversample rate for the related input channel."]
     #[inline(always)]
-    #[must_use]
     pub fn osr(&mut self) -> OsrW<OsrSpec> {
         OsrW::new(self, 0)
     }

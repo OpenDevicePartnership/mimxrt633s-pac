@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Timer counter match value."]
     #[inline(always)]
-    #[must_use]
     pub fn match_(&mut self) -> MatchW<MrSpec> {
         MatchW::new(self, 0)
     }

@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:9 - TVDMSRC_ON"]
     #[inline(always)]
-    #[must_use]
     pub fn tvdmsrc_on(&mut self) -> TvdmsrcOnW<Timer2Bc12Spec> {
         TvdmsrcOnW::new(self, 0)
     }
     #[doc = "Bits 16:25 - TWAIT_AFTER_PRD"]
     #[inline(always)]
-    #[must_use]
     pub fn twait_after_prd(&mut self) -> TwaitAfterPrdW<Timer2Bc12Spec> {
         TwaitAfterPrdW::new(self, 16)
     }

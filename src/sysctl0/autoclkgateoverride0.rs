@@ -374,37 +374,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ahb2apb0(&mut self) -> Ahb2apb0W<Autoclkgateoverride0Spec> {
         Ahb2apb0W::new(self, 0)
     }
     #[doc = "Bit 1 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ahb2apb1(&mut self) -> Ahb2apb1W<Autoclkgateoverride0Spec> {
         Ahb2apb1W::new(self, 1)
     }
     #[doc = "Bit 2 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_engine(&mut self) -> CrcEngineW<Autoclkgateoverride0Spec> {
         CrcEngineW::new(self, 2)
     }
     #[doc = "Bit 3 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn casper(&mut self) -> CasperW<Autoclkgateoverride0Spec> {
         CasperW::new(self, 3)
     }
     #[doc = "Bit 4 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0(&mut self) -> Dmac0W<Autoclkgateoverride0Spec> {
         Dmac0W::new(self, 4)
     }
     #[doc = "Bit 5 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1(&mut self) -> Dmac1W<Autoclkgateoverride0Spec> {
         Dmac1W::new(self, 5)
     }

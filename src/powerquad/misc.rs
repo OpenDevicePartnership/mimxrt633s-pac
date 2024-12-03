@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Misc register. For Matrix : Used for scale factor"]
     #[inline(always)]
-    #[must_use]
     pub fn inst_misc(&mut self) -> InstMiscW<MiscSpec> {
         InstMiscW::new(self, 0)
     }

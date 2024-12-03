@@ -32,7 +32,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 8:19 - Programmable portion of the USB EP Command/Status List address."]
     #[inline(always)]
-    #[must_use]
     pub fn ep_list_prg(&mut self) -> EpListPrgW<EpliststartSpec> {
         EpListPrgW::new(self, 8)
     }

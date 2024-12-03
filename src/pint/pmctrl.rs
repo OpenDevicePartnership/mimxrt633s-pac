@@ -144,19 +144,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Specifies whether the 8 pin interrupts are controlled by the pin interrupt function or by the pattern match function."]
     #[inline(always)]
-    #[must_use]
     pub fn sel_pmatch(&mut self) -> SelPmatchW<PmctrlSpec> {
         SelPmatchW::new(self, 0)
     }
     #[doc = "Bit 1 - Enables the RXEV output to the CPU and/or to a GPIO output when the specified boolean expression evaluates to true."]
     #[inline(always)]
-    #[must_use]
     pub fn ena_rxev(&mut self) -> EnaRxevW<PmctrlSpec> {
         EnaRxevW::new(self, 1)
     }
     #[doc = "Bits 24:31 - This field displays the current state of pattern matches. A 1 in any bit of this field indicates that the corresponding product term is matched by the current state of the appropriate inputs."]
     #[inline(always)]
-    #[must_use]
     pub fn pmat(&mut self) -> PmatW<PmctrlSpec> {
         PmatW::new(self, 24)
     }

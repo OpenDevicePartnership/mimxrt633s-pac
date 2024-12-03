@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - 0x4003 0000--0x4003 0FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn rtc_rule(&mut self) -> RtcRuleW<ApbGrp1MemRule2Spec> {
         RtcRuleW::new(self, 0)
     }
     #[doc = "Bits 24:25 - 0x4003 6000--0x4003 6FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn i3c0_rule(&mut self) -> I3c0RuleW<ApbGrp1MemRule2Spec> {
         I3c0RuleW::new(self, 24)
     }

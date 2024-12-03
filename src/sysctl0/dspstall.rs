@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Run / Stall Register. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn dspstall(&mut self) -> DspstallW<DspstallSpec> {
         DspstallW::new(self, 0)
     }

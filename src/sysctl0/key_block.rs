@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - key block register"]
     #[inline(always)]
-    #[must_use]
     pub fn key_block(&mut self) -> KeyBlockW<KeyBlockSpec> {
         KeyBlockW::new(self, 0)
     }

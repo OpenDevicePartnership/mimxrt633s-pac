@@ -81,7 +81,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - WDT0 Functional Clock Source Selection. ."]
     #[inline(always)]
-    #[must_use]
     pub fn sel(&mut self) -> SelW<Wdt0fclkselSpec> {
         SelW::new(self, 0)
     }

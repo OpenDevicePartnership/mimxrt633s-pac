@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - Sample Size"]
     #[inline(always)]
-    #[must_use]
     pub fn samp_size(&mut self) -> SampSizeW<SdctlSpec> {
         SampSizeW::new(self, 0)
     }
     #[doc = "Bits 16:31 - Entropy Delay"]
     #[inline(always)]
-    #[must_use]
     pub fn ent_dly(&mut self) -> EntDlyW<SdctlSpec> {
         EntDlyW::new(self, 16)
     }

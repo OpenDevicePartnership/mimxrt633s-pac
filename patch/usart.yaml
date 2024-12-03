@@ -1,0 +1,21 @@
+USART*:
+  STAT:
+    _modify:
+      DELTARXBRK:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      START:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      FRAMERRINT:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      PARITYERRINT:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      RXNOISEINT:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      ABERR:
+        access: read-write
+        modifiedWriteValues: oneToClear

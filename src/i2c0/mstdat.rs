@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Master function data register. Read: read the most recently received data for the Master function. Write: transmit data using the Master function."]
     #[inline(always)]
-    #[must_use]
     pub fn data(&mut self) -> DataW<MstdatSpec> {
         DataW::new(self, 0)
     }

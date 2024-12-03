@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Setting this bit will trigger an IP Command."]
     #[inline(always)]
-    #[must_use]
     pub fn trg(&mut self) -> TrgW<IpcmdSpec> {
         TrgW::new(self, 0)
     }

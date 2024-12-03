@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - General purpose register bank"]
     #[inline(always)]
-    #[must_use]
     pub fn gpreg(&mut self) -> GpregW<GpregSpec> {
         GpregW::new(self, 0)
     }

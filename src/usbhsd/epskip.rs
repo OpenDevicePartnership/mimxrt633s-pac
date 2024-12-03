@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:11 - Endpoint skip: Writing 1 to one of these bits, will indicate to HW that it must deactivate the buffer assigned to this endpoint and return control back to software."]
     #[inline(always)]
-    #[must_use]
     pub fn skip(&mut self) -> SkipW<EpskipSpec> {
         SkipW::new(self, 0)
     }

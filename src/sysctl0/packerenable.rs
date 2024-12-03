@@ -134,13 +134,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Write Packer Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn wrpenable(&mut self) -> WrpenableW<PackerenableSpec> {
         WrpenableW::new(self, 0)
     }
     #[doc = "Bit 1 - Read Packer Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn rdpenable(&mut self) -> RdpenableW<PackerenableSpec> {
         RdpenableW::new(self, 1)
     }

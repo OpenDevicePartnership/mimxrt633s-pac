@@ -160,322 +160,322 @@ impl RegisterBlock {
     #[doc = "0x100 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match0(&self) -> &Match0 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(256).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(256).cast() }
     }
     #[doc = "0x100 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap0(&self) -> &Cap0 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(256).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(256).cast() }
     }
     #[doc = "0x104 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match1(&self) -> &Match1 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(260).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(260).cast() }
     }
     #[doc = "0x104 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap1(&self) -> &Cap1 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(260).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(260).cast() }
     }
     #[doc = "0x108 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match2(&self) -> &Match2 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(264).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(264).cast() }
     }
     #[doc = "0x108 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap2(&self) -> &Cap2 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(264).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(264).cast() }
     }
     #[doc = "0x10c - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match3(&self) -> &Match3 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(268).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(268).cast() }
     }
     #[doc = "0x10c - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap3(&self) -> &Cap3 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(268).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(268).cast() }
     }
     #[doc = "0x110 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match4(&self) -> &Match4 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(272).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(272).cast() }
     }
     #[doc = "0x110 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap4(&self) -> &Cap4 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(272).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(272).cast() }
     }
     #[doc = "0x114 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match5(&self) -> &Match5 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(276).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(276).cast() }
     }
     #[doc = "0x114 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap5(&self) -> &Cap5 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(276).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(276).cast() }
     }
     #[doc = "0x118 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match6(&self) -> &Match6 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(280).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(280).cast() }
     }
     #[doc = "0x118 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap6(&self) -> &Cap6 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(280).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(280).cast() }
     }
     #[doc = "0x11c - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match7(&self) -> &Match7 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(284).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(284).cast() }
     }
     #[doc = "0x11c - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap7(&self) -> &Cap7 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(284).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(284).cast() }
     }
     #[doc = "0x120 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match8(&self) -> &Match8 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(288).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(288).cast() }
     }
     #[doc = "0x120 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap8(&self) -> &Cap8 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(288).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(288).cast() }
     }
     #[doc = "0x124 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match9(&self) -> &Match9 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(292).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(292).cast() }
     }
     #[doc = "0x124 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap9(&self) -> &Cap9 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(292).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(292).cast() }
     }
     #[doc = "0x128 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match10(&self) -> &Match10 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(296).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(296).cast() }
     }
     #[doc = "0x128 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap10(&self) -> &Cap10 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(296).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(296).cast() }
     }
     #[doc = "0x12c - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match11(&self) -> &Match11 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(300).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(300).cast() }
     }
     #[doc = "0x12c - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap11(&self) -> &Cap11 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(300).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(300).cast() }
     }
     #[doc = "0x130 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match12(&self) -> &Match12 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(304).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(304).cast() }
     }
     #[doc = "0x130 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap12(&self) -> &Cap12 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(304).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(304).cast() }
     }
     #[doc = "0x134 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match13(&self) -> &Match13 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(308).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(308).cast() }
     }
     #[doc = "0x134 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap13(&self) -> &Cap13 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(308).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(308).cast() }
     }
     #[doc = "0x138 - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match14(&self) -> &Match14 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(312).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(312).cast() }
     }
     #[doc = "0x138 - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap14(&self) -> &Cap14 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(312).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(312).cast() }
     }
     #[doc = "0x13c - SCT match value register of match channels"]
     #[inline(always)]
     pub const fn match15(&self) -> &Match15 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(316).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(316).cast() }
     }
     #[doc = "0x13c - SCT capture register of capture channel"]
     #[inline(always)]
     pub const fn cap15(&self) -> &Cap15 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(316).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(316).cast() }
     }
     #[doc = "0x200 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel0(&self) -> &Matchrel0 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(512).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(512).cast() }
     }
     #[doc = "0x200 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl0(&self) -> &Capctrl0 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(512).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(512).cast() }
     }
     #[doc = "0x204 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel1(&self) -> &Matchrel1 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(516).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(516).cast() }
     }
     #[doc = "0x204 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl1(&self) -> &Capctrl1 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(516).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(516).cast() }
     }
     #[doc = "0x208 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel2(&self) -> &Matchrel2 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(520).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(520).cast() }
     }
     #[doc = "0x208 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl2(&self) -> &Capctrl2 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(520).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(520).cast() }
     }
     #[doc = "0x20c - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel3(&self) -> &Matchrel3 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(524).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(524).cast() }
     }
     #[doc = "0x20c - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl3(&self) -> &Capctrl3 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(524).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(524).cast() }
     }
     #[doc = "0x210 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel4(&self) -> &Matchrel4 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(528).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(528).cast() }
     }
     #[doc = "0x210 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl4(&self) -> &Capctrl4 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(528).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(528).cast() }
     }
     #[doc = "0x214 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel5(&self) -> &Matchrel5 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(532).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(532).cast() }
     }
     #[doc = "0x214 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl5(&self) -> &Capctrl5 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(532).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(532).cast() }
     }
     #[doc = "0x218 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel6(&self) -> &Matchrel6 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(536).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(536).cast() }
     }
     #[doc = "0x218 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl6(&self) -> &Capctrl6 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(536).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(536).cast() }
     }
     #[doc = "0x21c - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel7(&self) -> &Matchrel7 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(540).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(540).cast() }
     }
     #[doc = "0x21c - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl7(&self) -> &Capctrl7 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(540).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(540).cast() }
     }
     #[doc = "0x220 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel8(&self) -> &Matchrel8 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(544).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(544).cast() }
     }
     #[doc = "0x220 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl8(&self) -> &Capctrl8 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(544).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(544).cast() }
     }
     #[doc = "0x224 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel9(&self) -> &Matchrel9 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(548).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(548).cast() }
     }
     #[doc = "0x224 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl9(&self) -> &Capctrl9 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(548).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(548).cast() }
     }
     #[doc = "0x228 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel10(&self) -> &Matchrel10 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(552).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(552).cast() }
     }
     #[doc = "0x228 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl10(&self) -> &Capctrl10 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(552).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(552).cast() }
     }
     #[doc = "0x22c - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel11(&self) -> &Matchrel11 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(556).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(556).cast() }
     }
     #[doc = "0x22c - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl11(&self) -> &Capctrl11 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(556).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(556).cast() }
     }
     #[doc = "0x230 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel12(&self) -> &Matchrel12 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(560).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(560).cast() }
     }
     #[doc = "0x230 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl12(&self) -> &Capctrl12 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(560).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(560).cast() }
     }
     #[doc = "0x234 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel13(&self) -> &Matchrel13 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(564).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(564).cast() }
     }
     #[doc = "0x234 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl13(&self) -> &Capctrl13 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(564).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(564).cast() }
     }
     #[doc = "0x238 - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel14(&self) -> &Matchrel14 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(568).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(568).cast() }
     }
     #[doc = "0x238 - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl14(&self) -> &Capctrl14 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(568).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(568).cast() }
     }
     #[doc = "0x23c - SCT match reload value register"]
     #[inline(always)]
     pub const fn matchrel15(&self) -> &Matchrel15 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(572).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(572).cast() }
     }
     #[doc = "0x23c - SCT capture control register"]
     #[inline(always)]
     pub const fn capctrl15(&self) -> &Capctrl15 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(572).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(572).cast() }
     }
     #[doc = "0x300..0x380 - Array of registers: EV_STATE, EV_CTRL"]
     #[inline(always)]

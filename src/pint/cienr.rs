@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<CienrSpec> {
 impl W {
     #[doc = "Bits 0:7 - Ones written to this address clear bits in the IENR, thus disabling the interrupts. Bit n clears bit n in the IENR register. 0 = No operation. 1 = Disable rising edge or level interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn cenrl(&mut self) -> CenrlW<CienrSpec> {
         CenrlW::new(self, 0)
     }

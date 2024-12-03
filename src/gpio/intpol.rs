@@ -81,7 +81,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - polarity control for each pin(bit 0 for pion_0, bit 1 for pion_1, etc.)"]
     #[inline(always)]
-    #[must_use]
     pub fn pol_ctl(&mut self) -> PolCtlW<IntpolSpec> {
         PolCtlW::new(self, 0)
     }

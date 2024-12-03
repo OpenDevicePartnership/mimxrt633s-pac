@@ -226,25 +226,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Master Continue. This bit is write-only."]
     #[inline(always)]
-    #[must_use]
     pub fn mstcontinue(&mut self) -> MstcontinueW<MstctlSpec> {
         MstcontinueW::new(self, 0)
     }
     #[doc = "Bit 1 - Master Start control. This bit is write-only."]
     #[inline(always)]
-    #[must_use]
     pub fn mststart(&mut self) -> MststartW<MstctlSpec> {
         MststartW::new(self, 1)
     }
     #[doc = "Bit 2 - Master Stop control. This bit is write-only."]
     #[inline(always)]
-    #[must_use]
     pub fn mststop(&mut self) -> MststopW<MstctlSpec> {
         MststopW::new(self, 2)
     }
     #[doc = "Bit 3 - Master DMA enable. Data operations of the I2C can be performed with DMA. Protocol type operations such as Start, address, Stop, and address match must always be done with software, typically via an interrupt. Address acknowledgement must also be done by software except when the I2C is configured to be HSCAPABLE (and address acknowledgement is handled entirely by hardware) or when Automatic Operation is enabled. When a DMA data transfer is complete, MSTDMA must be cleared prior to beginning the next operation, typically a Start or Stop.This bit is read/write."]
     #[inline(always)]
-    #[must_use]
     pub fn mstdma(&mut self) -> MstdmaW<MstctlSpec> {
         MstdmaW::new(self, 3)
     }

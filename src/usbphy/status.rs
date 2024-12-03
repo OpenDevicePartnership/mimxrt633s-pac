@@ -144,19 +144,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 3 - Indicates at the local host (downstream) port that the remote device has disconnected while in High-Speed mode"]
     #[inline(always)]
-    #[must_use]
     pub fn hostdiscondetect_status(&mut self) -> HostdiscondetectStatusW<StatusSpec> {
         HostdiscondetectStatusW::new(self, 3)
     }
     #[doc = "Bit 6 - Status indicator for non-standard resistive plugged-in detection Indicates that the device has been connected on the USB_DP and USB_DM lines using the nonstandard resistive plugged-in detection method controlled by CTRL\\[4\\]"]
     #[inline(always)]
-    #[must_use]
     pub fn devplugin_status(&mut self) -> DevpluginStatusW<StatusSpec> {
         DevpluginStatusW::new(self, 6)
     }
     #[doc = "Bit 10 - Indicates that the host is sending a wake-up after Suspend and has triggered an interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn resume_status(&mut self) -> ResumeStatusW<StatusSpec> {
         ResumeStatusW::new(self, 10)
     }

@@ -54,25 +54,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:8 - AHB RX Buffer Size in 64 bits."]
     #[inline(always)]
-    #[must_use]
     pub fn bufsz(&mut self) -> BufszW<Ahbrxbuf0cr0Spec> {
         BufszW::new(self, 0)
     }
     #[doc = "Bits 16:19 - This AHB RX Buffer is assigned according to AHB Master with ID (MSTR_ID)."]
     #[inline(always)]
-    #[must_use]
     pub fn mstrid(&mut self) -> MstridW<Ahbrxbuf0cr0Spec> {
         MstridW::new(self, 16)
     }
     #[doc = "Bits 24:26 - This priority for AHB Master Read which this AHB RX Buffer is assigned. 7 is the highest priority, 0 the lowest."]
     #[inline(always)]
-    #[must_use]
     pub fn priority(&mut self) -> PriorityW<Ahbrxbuf0cr0Spec> {
         PriorityW::new(self, 24)
     }
     #[doc = "Bit 31 - AHB Read Prefetch Enable for current AHB RX Buffer corresponding Master."]
     #[inline(always)]
-    #[must_use]
     pub fn prefetchen(&mut self) -> PrefetchenW<Ahbrxbuf0cr0Spec> {
         PrefetchenW::new(self, 31)
     }

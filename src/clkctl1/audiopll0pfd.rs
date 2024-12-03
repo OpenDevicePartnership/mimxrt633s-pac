@@ -334,73 +334,61 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:5 - PLL Fractional Divider 0: Controls the fractional divider value. Valid PFD values are decimal 12-35."]
     #[inline(always)]
-    #[must_use]
     pub fn pfd0(&mut self) -> Pfd0W<Audiopll0pfdSpec> {
         Pfd0W::new(self, 0)
     }
     #[doc = "Bit 6 - PFD0 Clock Ready Status Flag: Read as 1 clock ready. Cleared by writing a 1."]
     #[inline(always)]
-    #[must_use]
     pub fn pfd0_clkrdy(&mut self) -> Pfd0ClkrdyW<Audiopll0pfdSpec> {
         Pfd0ClkrdyW::new(self, 6)
     }
     #[doc = "Bit 7 - PFD0 Clock Gate: 0: PFD0 clock is not gated. 1: PFD0 clock is gated"]
     #[inline(always)]
-    #[must_use]
     pub fn pfd0_clkgate(&mut self) -> Pfd0ClkgateW<Audiopll0pfdSpec> {
         Pfd0ClkgateW::new(self, 7)
     }
     #[doc = "Bits 8:13 - PLL Fractional Divider 1: Controls the fractional divider value. Valid PFD values are decimal 12-35."]
     #[inline(always)]
-    #[must_use]
     pub fn pfd1(&mut self) -> Pfd1W<Audiopll0pfdSpec> {
         Pfd1W::new(self, 8)
     }
     #[doc = "Bit 14 - PFD1 Clock Ready Status Flag: Read as 1 clock ready. Cleared by writing a 1."]
     #[inline(always)]
-    #[must_use]
     pub fn pfd1_clkrdy(&mut self) -> Pfd1ClkrdyW<Audiopll0pfdSpec> {
         Pfd1ClkrdyW::new(self, 14)
     }
     #[doc = "Bit 15 - PFD1 Clock Gate: 0: PFD1 clock is not gated. 1: PFD1 clock is gated."]
     #[inline(always)]
-    #[must_use]
     pub fn pfd1_clkgate(&mut self) -> Pfd1ClkgateW<Audiopll0pfdSpec> {
         Pfd1ClkgateW::new(self, 15)
     }
     #[doc = "Bits 16:21 - PLL Fractional Divider 2: Controls the fractional divider value. Valid PFD values are decimal 12-35."]
     #[inline(always)]
-    #[must_use]
     pub fn pfd2(&mut self) -> Pfd2W<Audiopll0pfdSpec> {
         Pfd2W::new(self, 16)
     }
     #[doc = "Bit 22 - PFD2 Clock Ready Status Flag: Read as 1 clock ready. Cleared by writing a 1."]
     #[inline(always)]
-    #[must_use]
     pub fn pfd2_clkrdy(&mut self) -> Pfd2ClkrdyW<Audiopll0pfdSpec> {
         Pfd2ClkrdyW::new(self, 22)
     }
     #[doc = "Bit 23 - PFD2 Clock Gate: 0: PFD2 clock is not gated. 1: PFD2 clock is gated."]
     #[inline(always)]
-    #[must_use]
     pub fn pfd2_clkgate(&mut self) -> Pfd2ClkgateW<Audiopll0pfdSpec> {
         Pfd2ClkgateW::new(self, 23)
     }
     #[doc = "Bits 24:29 - PLL Fractional Divider 3: Controls the fractional divider value. Valid PFD values are decimal 12-35."]
     #[inline(always)]
-    #[must_use]
     pub fn pfd3(&mut self) -> Pfd3W<Audiopll0pfdSpec> {
         Pfd3W::new(self, 24)
     }
     #[doc = "Bit 30 - PFD3 Clock Ready Status Flag: Read as 1 clock ready. Cleared by writing a 1."]
     #[inline(always)]
-    #[must_use]
     pub fn pfd3_clkrdy(&mut self) -> Pfd3ClkrdyW<Audiopll0pfdSpec> {
         Pfd3ClkrdyW::new(self, 30)
     }
     #[doc = "Bit 31 - PFD3 Clock Gate: 0: PFD3 clock is not gated. 1: PFD3 clock is gated."]
     #[inline(always)]
-    #[must_use]
     pub fn pfd3_clkgate(&mut self) -> Pfd3ClkgateW<Audiopll0pfdSpec> {
         Pfd3ClkgateW::new(self, 31)
     }

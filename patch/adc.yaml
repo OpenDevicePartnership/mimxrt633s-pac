@@ -1,0 +1,14 @@
+ADC*:
+  CMDH[5-9],CMDH1[0-5]:
+    _add:
+      CMPEN:
+        description: Compare Function Enable
+        bitOffset: 0
+        bitWidth: 2
+        access: read-write
+        CMPEN_0: [0, Compare disabled]
+        CMPEN_2: [2, Compare enabled. Store on true]
+        CMPEN_3: [3, Compare enabled. Repeat channel acquisition (sample/convert/compare) until true]
+  _array:
+    CMDL*: {}
+    CMDH*: {}

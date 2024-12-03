@@ -81,7 +81,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sel(&mut self) -> SelW<EspiclkselSpec> {
         SelW::new(self, 0)
     }

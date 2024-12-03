@@ -329,61 +329,51 @@ impl core::fmt::Debug for crate::generic::Reg<Prstctl2SetSpec> {
 impl W {
     #[doc = "Bit 0 - CT32BIT0 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit0_rst_set(&mut self) -> Ct32bit0RstSetW<Prstctl2SetSpec> {
         Ct32bit0RstSetW::new(self, 0)
     }
     #[doc = "Bit 1 - CT32BIT1 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit1_rst_set(&mut self) -> Ct32bit1RstSetW<Prstctl2SetSpec> {
         Ct32bit1RstSetW::new(self, 1)
     }
     #[doc = "Bit 2 - CT32BIT2 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit2_rst_set(&mut self) -> Ct32bit2RstSetW<Prstctl2SetSpec> {
         Ct32bit2RstSetW::new(self, 2)
     }
     #[doc = "Bit 3 - CT32BIT3 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit3_rst_set(&mut self) -> Ct32bit3RstSetW<Prstctl2SetSpec> {
         Ct32bit3RstSetW::new(self, 3)
     }
     #[doc = "Bit 4 - CT32BIT4 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit4_rst_set(&mut self) -> Ct32bit4RstSetW<Prstctl2SetSpec> {
         Ct32bit4RstSetW::new(self, 4)
     }
     #[doc = "Bit 8 - MRT0 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn mrt0_rst_set(&mut self) -> Mrt0RstSetW<Prstctl2SetSpec> {
         Mrt0RstSetW::new(self, 8)
     }
     #[doc = "Bit 10 - WWDT1 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn wwdt1_rst_set(&mut self) -> Wwdt1RstSetW<Prstctl2SetSpec> {
         Wwdt1RstSetW::new(self, 10)
     }
     #[doc = "Bit 16 - I3C0 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn i3c0_rst_set(&mut self) -> I3c0RstSetW<Prstctl2SetSpec> {
         I3c0RstSetW::new(self, 16)
     }
     #[doc = "Bit 30 - GPIOINTCTL reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn gpiointctl_rst_set(&mut self) -> GpiointctlRstSetW<Prstctl2SetSpec> {
         GpiointctlRstSetW::new(self, 30)
     }
     #[doc = "Bit 31 - PMC reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn pimctl_rst_set(&mut self) -> PimctlRstSetW<Prstctl2SetSpec> {
         PimctlRstSetW::new(self, 31)
     }

@@ -434,43 +434,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 10 - Note that this bit will be auto cleared if there is USB wakeup event while ENAUTOCLR_PHY_PWD bit of CTRL is enabled"]
     #[inline(always)]
-    #[must_use]
     pub fn txpwdfs(&mut self) -> TxpwdfsW<PwdSetSpec> {
         TxpwdfsW::new(self, 10)
     }
     #[doc = "Bit 11 - Note that this bit will be auto cleared if there is USB wakeup event while ENAUTOCLR_PHY_PWD bit of CTRL is enabled"]
     #[inline(always)]
-    #[must_use]
     pub fn txpwdibias(&mut self) -> TxpwdibiasW<PwdSetSpec> {
         TxpwdibiasW::new(self, 11)
     }
     #[doc = "Bit 12 - Note that this bit will be auto cleared if there is USB wakeup event while ENAUTOCLR_PHY_PWD bit of CTRL is enabled"]
     #[inline(always)]
-    #[must_use]
     pub fn txpwdv2i(&mut self) -> Txpwdv2iW<PwdSetSpec> {
         Txpwdv2iW::new(self, 12)
     }
     #[doc = "Bit 17 - Note that this bit will be auto cleared if there is USB wakeup event while ENAUTOCLR_PHY_PWD bit of CTRL is enabled"]
     #[inline(always)]
-    #[must_use]
     pub fn rxpwdenv(&mut self) -> RxpwdenvW<PwdSetSpec> {
         RxpwdenvW::new(self, 17)
     }
     #[doc = "Bit 18 - Note that this bit will be auto cleared if there is USB wakeup event while ENAUTOCLR_PHY_PWD bit of CTRL is enabled"]
     #[inline(always)]
-    #[must_use]
     pub fn rxpwd1pt1(&mut self) -> Rxpwd1pt1W<PwdSetSpec> {
         Rxpwd1pt1W::new(self, 18)
     }
     #[doc = "Bit 19 - Note that this bit will be auto cleared if there is USB wakeup event while ENAUTOCLR_PHY_PWD bit of CTRL is enabled"]
     #[inline(always)]
-    #[must_use]
     pub fn rxpwddiff(&mut self) -> RxpwddiffW<PwdSetSpec> {
         RxpwddiffW::new(self, 19)
     }
     #[doc = "Bit 20 - This bit will be auto cleared if there is USB wakeup event while ENAUTOCLR_PHY_PWD bit of CTRL is enabled"]
     #[inline(always)]
-    #[must_use]
     pub fn rxpwdrx(&mut self) -> RxpwdrxW<PwdSetSpec> {
         RxpwdrxW::new(self, 20)
     }

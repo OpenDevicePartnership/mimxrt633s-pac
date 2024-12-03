@@ -94,49 +94,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Run/Stop: 1b = Run."]
     #[inline(always)]
-    #[must_use]
     pub fn rs(&mut self) -> RsW<UsbcmdSpec> {
         RsW::new(self, 0)
     }
     #[doc = "Bit 1 - Host Controller Reset: This control bit is used by the software to reset the host controller."]
     #[inline(always)]
-    #[must_use]
     pub fn hcreset(&mut self) -> HcresetW<UsbcmdSpec> {
         HcresetW::new(self, 1)
     }
     #[doc = "Bits 2:3 - Frame List Size: This field specifies the size of the frame list."]
     #[inline(always)]
-    #[must_use]
     pub fn fls(&mut self) -> FlsW<UsbcmdSpec> {
         FlsW::new(self, 2)
     }
     #[doc = "Bit 7 - Light Host Controller Reset: This bit allows the driver software to reset the host controller without affecting the state of the ports."]
     #[inline(always)]
-    #[must_use]
     pub fn lhcr(&mut self) -> LhcrW<UsbcmdSpec> {
         LhcrW::new(self, 7)
     }
     #[doc = "Bit 8 - ATL List enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn atl_en(&mut self) -> AtlEnW<UsbcmdSpec> {
         AtlEnW::new(self, 8)
     }
     #[doc = "Bit 9 - ISO List enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn iso_en(&mut self) -> IsoEnW<UsbcmdSpec> {
         IsoEnW::new(self, 9)
     }
     #[doc = "Bit 10 - INT List enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn int_en(&mut self) -> IntEnW<UsbcmdSpec> {
         IntEnW::new(self, 10)
     }
     #[doc = "Bits 24:27 - Host-Initiated Resume Duration."]
     #[inline(always)]
-    #[must_use]
     pub fn hird(&mut self) -> HirdW<UsbcmdSpec> {
         HirdW::new(self, 24)
     }

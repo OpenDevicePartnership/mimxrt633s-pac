@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Command Argument"]
     #[inline(always)]
-    #[must_use]
     pub fn cmdarg(&mut self) -> CmdargW<CmdArgSpec> {
         CmdargW::new(self, 0)
     }

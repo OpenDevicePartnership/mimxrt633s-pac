@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 2:11 - Buffer in use: This register has one bit per physical endpoint."]
     #[inline(always)]
-    #[must_use]
     pub fn buf(&mut self) -> BufW<EpinuseSpec> {
         BufW::new(self, 2)
     }

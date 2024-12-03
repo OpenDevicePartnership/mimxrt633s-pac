@@ -239,7 +239,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 1 - Result FIFO Overflow Flag"]
     #[inline(always)]
-    #[must_use]
     pub fn fof(&mut self) -> FofW<StatSpec> {
         FofW::new(self, 1)
     }

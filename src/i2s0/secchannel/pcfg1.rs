@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Enable for this channel pair.."]
     #[inline(always)]
-    #[must_use]
     pub fn pairenable(&mut self) -> PairenableW<Pcfg1Spec> {
         PairenableW::new(self, 0)
     }
     #[doc = "Bit 10 - Single channel mode."]
     #[inline(always)]
-    #[must_use]
     pub fn onechannel(&mut self) -> OnechannelW<Pcfg1Spec> {
         OnechannelW::new(self, 10)
     }

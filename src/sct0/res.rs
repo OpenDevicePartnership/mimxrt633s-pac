@@ -1502,97 +1502,81 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Effect of simultaneous set and clear on output 0."]
     #[inline(always)]
-    #[must_use]
     pub fn o0res(&mut self) -> O0resW<ResSpec> {
         O0resW::new(self, 0)
     }
     #[doc = "Bits 2:3 - Effect of simultaneous set and clear on output 1."]
     #[inline(always)]
-    #[must_use]
     pub fn o1res(&mut self) -> O1resW<ResSpec> {
         O1resW::new(self, 2)
     }
     #[doc = "Bits 4:5 - Effect of simultaneous set and clear on output 2."]
     #[inline(always)]
-    #[must_use]
     pub fn o2res(&mut self) -> O2resW<ResSpec> {
         O2resW::new(self, 4)
     }
     #[doc = "Bits 6:7 - Effect of simultaneous set and clear on output 3."]
     #[inline(always)]
-    #[must_use]
     pub fn o3res(&mut self) -> O3resW<ResSpec> {
         O3resW::new(self, 6)
     }
     #[doc = "Bits 8:9 - Effect of simultaneous set and clear on output 4."]
     #[inline(always)]
-    #[must_use]
     pub fn o4res(&mut self) -> O4resW<ResSpec> {
         O4resW::new(self, 8)
     }
     #[doc = "Bits 10:11 - Effect of simultaneous set and clear on output 5."]
     #[inline(always)]
-    #[must_use]
     pub fn o5res(&mut self) -> O5resW<ResSpec> {
         O5resW::new(self, 10)
     }
     #[doc = "Bits 12:13 - Effect of simultaneous set and clear on output 6."]
     #[inline(always)]
-    #[must_use]
     pub fn o6res(&mut self) -> O6resW<ResSpec> {
         O6resW::new(self, 12)
     }
     #[doc = "Bits 14:15 - Effect of simultaneous set and clear on output 7."]
     #[inline(always)]
-    #[must_use]
     pub fn o7res(&mut self) -> O7resW<ResSpec> {
         O7resW::new(self, 14)
     }
     #[doc = "Bits 16:17 - Effect of simultaneous set and clear on output 8."]
     #[inline(always)]
-    #[must_use]
     pub fn o8res(&mut self) -> O8resW<ResSpec> {
         O8resW::new(self, 16)
     }
     #[doc = "Bits 18:19 - Effect of simultaneous set and clear on output 9."]
     #[inline(always)]
-    #[must_use]
     pub fn o9res(&mut self) -> O9resW<ResSpec> {
         O9resW::new(self, 18)
     }
     #[doc = "Bits 20:21 - Effect of simultaneous set and clear on output 10."]
     #[inline(always)]
-    #[must_use]
     pub fn o10res(&mut self) -> O10resW<ResSpec> {
         O10resW::new(self, 20)
     }
     #[doc = "Bits 22:23 - Effect of simultaneous set and clear on output 11."]
     #[inline(always)]
-    #[must_use]
     pub fn o11res(&mut self) -> O11resW<ResSpec> {
         O11resW::new(self, 22)
     }
     #[doc = "Bits 24:25 - Effect of simultaneous set and clear on output 12."]
     #[inline(always)]
-    #[must_use]
     pub fn o12res(&mut self) -> O12resW<ResSpec> {
         O12resW::new(self, 24)
     }
     #[doc = "Bits 26:27 - Effect of simultaneous set and clear on output 13."]
     #[inline(always)]
-    #[must_use]
     pub fn o13res(&mut self) -> O13resW<ResSpec> {
         O13resW::new(self, 26)
     }
     #[doc = "Bits 28:29 - Effect of simultaneous set and clear on output 14."]
     #[inline(always)]
-    #[must_use]
     pub fn o14res(&mut self) -> O14resW<ResSpec> {
         O14resW::new(self, 28)
     }
     #[doc = "Bits 30:31 - Effect of simultaneous set and clear on output 15."]
     #[inline(always)]
-    #[must_use]
     pub fn o15res(&mut self) -> O15resW<ResSpec> {
         O15resW::new(self, 30)
     }

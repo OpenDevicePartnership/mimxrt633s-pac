@@ -91,13 +91,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Write 1 to secure-lock this block (if running in a security state). Write 0 to unlock. If locked already, may only write if at same or higher security level as lock. Reads as: 0 if unlocked, else 1, 2, 3 to indicate security level it is locked at. NOTE: this and ID are the only readable registers if locked and current state is lower than lock level."]
     #[inline(always)]
-    #[must_use]
     pub fn seclock(&mut self) -> SeclockW<LockSpec> {
         SeclockW::new(self, 0)
     }
     #[doc = "Bits 4:15 - Must write 0xA75 to change lock state. A75:Pattern needed to change bits 1:0"]
     #[inline(always)]
-    #[must_use]
     pub fn pattern(&mut self) -> PatternW<LockSpec> {
         PatternW::new(self, 4)
     }

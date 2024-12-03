@@ -84,13 +84,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:8 - Pause Delay"]
     #[inline(always)]
-    #[must_use]
     pub fn pausedly(&mut self) -> PausedlyW<PauseSpec> {
         PausedlyW::new(self, 0)
     }
     #[doc = "Bit 31 - PAUSE Option Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn pauseen(&mut self) -> PauseenW<PauseSpec> {
         PauseenW::new(self, 31)
     }

@@ -74,37 +74,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 2 - Port Change Detect Interrupt Enable: 1: enable 0: disable."]
     #[inline(always)]
-    #[must_use]
     pub fn pcde(&mut self) -> PcdeW<UsbintrSpec> {
         PcdeW::new(self, 2)
     }
     #[doc = "Bit 3 - Frame List Rollover Interrupt Enable: 1: enable 0: disable."]
     #[inline(always)]
-    #[must_use]
     pub fn flre(&mut self) -> FlreW<UsbintrSpec> {
         FlreW::new(self, 3)
     }
     #[doc = "Bit 16 - ATL IRQ Enable bit: 1: enable 0: disable."]
     #[inline(always)]
-    #[must_use]
     pub fn atl_irq_e(&mut self) -> AtlIrqEW<UsbintrSpec> {
         AtlIrqEW::new(self, 16)
     }
     #[doc = "Bit 17 - ISO IRQ Enable bit: 1: enable 0: disable."]
     #[inline(always)]
-    #[must_use]
     pub fn iso_irq_e(&mut self) -> IsoIrqEW<UsbintrSpec> {
         IsoIrqEW::new(self, 17)
     }
     #[doc = "Bit 18 - INT IRQ Enable bit: 1: enable 0: disable."]
     #[inline(always)]
-    #[must_use]
     pub fn int_irq_e(&mut self) -> IntIrqEW<UsbintrSpec> {
         IntIrqEW::new(self, 18)
     }
     #[doc = "Bit 19 - SOF Interrupt Enable bit: 1: enable 0: disable."]
     #[inline(always)]
-    #[must_use]
     pub fn sof_e(&mut self) -> SofEW<UsbintrSpec> {
         SofEW::new(self, 19)
     }

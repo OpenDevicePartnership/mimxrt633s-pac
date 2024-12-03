@@ -293,19 +293,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn vddio_0range(&mut self) -> Vddio0rangeW<PadvrangeSpec> {
         Vddio0rangeW::new(self, 0)
     }
     #[doc = "Bits 2:3 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn vddio_1range(&mut self) -> Vddio1rangeW<PadvrangeSpec> {
         Vddio1rangeW::new(self, 2)
     }
     #[doc = "Bits 4:5 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn vddio_2range(&mut self) -> Vddio2rangeW<PadvrangeSpec> {
         Vddio2rangeW::new(self, 4)
     }

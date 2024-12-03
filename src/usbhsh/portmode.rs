@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 16 - If this bit is set to one, the port will behave as a USB device. If this bit is set to zero, the port will be controlled by the USB host block."]
     #[inline(always)]
-    #[must_use]
     pub fn dev_enable(&mut self) -> DevEnableW<PortmodeSpec> {
         DevEnableW::new(self, 16)
     }

@@ -84,13 +84,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:23 - Time interval load value. This value is loaded into the TIMERn register and the MRT channel n starts counting down from IVALUE -1. If the timer is idle, writing a non-zero value to this bit field starts the timer immediately. If the timer is running, writing a zero to this bit field does the following: If LOAD = 1, the timer stops immediately. If LOAD = 0, the timer stops at the end of the time interval."]
     #[inline(always)]
-    #[must_use]
     pub fn ivalue(&mut self) -> IvalueW<IntvalSpec> {
         IvalueW::new(self, 0)
     }
     #[doc = "Bit 31 - Determines how the timer interval value IVALUE -1 is loaded into the TIMERn register. This bit is write-only. Reading this bit always returns 0."]
     #[inline(always)]
-    #[must_use]
     pub fn load(&mut self) -> LoadW<IntvalSpec> {
         LoadW::new(self, 31)
     }

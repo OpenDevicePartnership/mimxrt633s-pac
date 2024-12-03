@@ -98,37 +98,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Drive FLEXSPI pad compensation circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn rasrcn(&mut self) -> RasrcnW<FlexspipadctrlSpec> {
         RasrcnW::new(self, 0)
     }
     #[doc = "Bits 4:7 - Drive FLEXSPI pad compensation circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn rasrcp(&mut self) -> RasrcpW<FlexspipadctrlSpec> {
         RasrcpW::new(self, 4)
     }
     #[doc = "Bit 8 - Drive FLEXSPI pad compensation circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn fastfrz(&mut self) -> FastfrzW<FlexspipadctrlSpec> {
         FastfrzW::new(self, 8)
     }
     #[doc = "Bit 9 - Drive FLEXSPI pad compensation circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn freeze(&mut self) -> FreezeW<FlexspipadctrlSpec> {
         FreezeW::new(self, 9)
     }
     #[doc = "Bit 10 - Drive FLEXSPI pad compensation circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn comptq(&mut self) -> ComptqW<FlexspipadctrlSpec> {
         ComptqW::new(self, 10)
     }
     #[doc = "Bit 11 - Drive FLEXSPI pad compensation circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn compen(&mut self) -> CompenW<FlexspipadctrlSpec> {
         CompenW::new(self, 11)
     }

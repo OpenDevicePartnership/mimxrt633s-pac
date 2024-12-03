@@ -114,61 +114,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 1 - Use holding registers to assist in timing for external UTMI interface."]
     #[inline(always)]
-    #[must_use]
     pub fn debug_interface_hold(&mut self) -> DebugInterfaceHoldW<Debug0TogSpec> {
         DebugInterfaceHoldW::new(self, 1)
     }
     #[doc = "Bits 2:3 - This bit field selects whether to connect pulldown resistors on the USB_DP/USB_DM pins if the corresponding pulldown overdrive mode is enabled through DEBUG\\[5:4} Set bit 3 to value 1'b1 to connect the 15ohm pulldown on USB_DP line"]
     #[inline(always)]
-    #[must_use]
     pub fn hstpulldown(&mut self) -> HstpulldownW<Debug0TogSpec> {
         HstpulldownW::new(self, 2)
     }
     #[doc = "Bits 4:5 - This bit field selects host pulldown overdrive mode"]
     #[inline(always)]
-    #[must_use]
     pub fn enhstpulldown(&mut self) -> EnhstpulldownW<Debug0TogSpec> {
         EnhstpulldownW::new(self, 4)
     }
     #[doc = "Bits 8:11 - Delay in between the end of transmit to the beginning of receive"]
     #[inline(always)]
-    #[must_use]
     pub fn tx2rxcount(&mut self) -> Tx2rxcountW<Debug0TogSpec> {
         Tx2rxcountW::new(self, 8)
     }
     #[doc = "Bit 12 - Set this bit to allow a countdown to transition in between TX and RX."]
     #[inline(always)]
-    #[must_use]
     pub fn entx2rxcount(&mut self) -> Entx2rxcountW<Debug0TogSpec> {
         Entx2rxcountW::new(self, 12)
     }
     #[doc = "Bits 16:20 - Delay in between the detection of squelch to the reset of high-speed RX."]
     #[inline(always)]
-    #[must_use]
     pub fn squelchresetcount(&mut self) -> SquelchresetcountW<Debug0TogSpec> {
         SquelchresetcountW::new(self, 16)
     }
     #[doc = "Bit 24 - Set bit to allow squelch to reset high-speed receive."]
     #[inline(always)]
-    #[must_use]
     pub fn ensquelchreset(&mut self) -> EnsquelchresetW<Debug0TogSpec> {
         EnsquelchresetW::new(self, 24)
     }
     #[doc = "Bits 25:28 - Duration of RESET in terms of the number of 480-MHz cycles."]
     #[inline(always)]
-    #[must_use]
     pub fn squelchresetlength(&mut self) -> SquelchresetlengthW<Debug0TogSpec> {
         SquelchresetlengthW::new(self, 25)
     }
     #[doc = "Bit 29 - Choose to trigger the host resume SE0 with HOST_FORCE_LS_SE0 = 0 or UTMI_SUSPEND = 1."]
     #[inline(always)]
-    #[must_use]
     pub fn host_resume_debug(&mut self) -> HostResumeDebugW<Debug0TogSpec> {
         HostResumeDebugW::new(self, 29)
     }
     #[doc = "Bit 30 - Gate Test Clocks"]
     #[inline(always)]
-    #[must_use]
     pub fn clkgate(&mut self) -> ClkgateW<Debug0TogSpec> {
         ClkgateW::new(self, 30)
     }

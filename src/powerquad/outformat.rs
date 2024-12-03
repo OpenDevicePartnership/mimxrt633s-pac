@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Output Internal format (00: q15; 01:q31; 10:float)"]
     #[inline(always)]
-    #[must_use]
     pub fn out_formatint(&mut self) -> OutFormatintW<OutformatSpec> {
         OutFormatintW::new(self, 0)
     }
     #[doc = "Bits 4:5 - Output External format (00: q15; 01:q31; 10:float)"]
     #[inline(always)]
-    #[must_use]
     pub fn out_formatext(&mut self) -> OutFormatextW<OutformatSpec> {
         OutFormatextW::new(self, 4)
     }
     #[doc = "Bits 8:15 - Output Scaler value (for scaled 'q31' formats)"]
     #[inline(always)]
-    #[must_use]
     pub fn out_scaler(&mut self) -> OutScalerW<OutformatSpec> {
         OutScalerW::new(self, 8)
     }

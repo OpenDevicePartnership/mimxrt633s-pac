@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<SwdatabeSpec> {
 impl W {
     #[doc = "Bits 0:7 - The data byte to send to the master"]
     #[inline(always)]
-    #[must_use]
     pub fn data(&mut self) -> DataW<SwdatabeSpec> {
         DataW::new(self, 0)
     }

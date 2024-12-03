@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - SAU regions. The number of implemented SAU regions."]
     #[inline(always)]
-    #[must_use]
     pub fn sregion(&mut self) -> SregionW<TypeSpec> {
         SregionW::new(self, 0)
     }

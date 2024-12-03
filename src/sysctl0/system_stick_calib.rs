@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:25 - Selects the system secure tick calibration value of the M33."]
     #[inline(always)]
-    #[must_use]
     pub fn system_stick_calib(&mut self) -> SystemStickCalibW<SystemStickCalibSpec> {
         SystemStickCalibW::new(self, 0)
     }

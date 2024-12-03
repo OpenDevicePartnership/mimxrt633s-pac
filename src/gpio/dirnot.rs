@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<DirnotSpec> {
 impl W {
     #[doc = "Bits 0:31 - Toggle direction bits (bit 0 = PIOn_0, bit 1 = PIOn_1, etc.). Supported pins depends on the specific device and package. 0 = no operation. 1 = Toggle direction bit."]
     #[inline(always)]
-    #[must_use]
     pub fn dirnotp(&mut self) -> DirnotpW<DirnotSpec> {
         DirnotpW::new(self, 0)
     }

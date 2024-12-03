@@ -62,7 +62,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Temperature Sensor Source. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn tssrc(&mut self) -> TssrcW<TempsensorctlSpec> {
         TssrcW::new(self, 0)
     }

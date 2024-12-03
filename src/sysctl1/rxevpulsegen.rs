@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - RX Event Pulse Generator. Writing a '1' to this register will create a one PSCLK pulse width of logic '1'. It is automatically cleared."]
     #[inline(always)]
-    #[must_use]
     pub fn rxevpulsegen(&mut self) -> RxevpulsegenW<RxevpulsegenSpec> {
         RxevpulsegenW::new(self, 0)
     }

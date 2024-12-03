@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:9 - Time Period Comparator Enabled"]
     #[inline(always)]
-    #[must_use]
     pub fn tvdpsrc_on(&mut self) -> TvdpsrcOnW<Timer1Spec> {
         TvdpsrcOnW::new(self, 0)
     }
     #[doc = "Bits 16:25 - Time Period to Debounce D+ Signal"]
     #[inline(always)]
-    #[must_use]
     pub fn tdcd_dbnc(&mut self) -> TdcdDbncW<Timer1Spec> {
         TdcdDbncW::new(self, 16)
     }

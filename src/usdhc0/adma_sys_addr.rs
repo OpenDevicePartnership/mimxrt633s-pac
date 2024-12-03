@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 2:31 - ADMA System Address"]
     #[inline(always)]
-    #[must_use]
     pub fn ads_addr(&mut self) -> AdsAddrW<AdmaSysAddrSpec> {
         AdsAddrW::new(self, 2)
     }

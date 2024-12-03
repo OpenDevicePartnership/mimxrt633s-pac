@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - If bit m is one, event m causes the CAPn_L (UNIFY = 0) or the CAPn (UNIFY = 1) register to be loaded (event 0 = bit 0, event 1 = bit 1, etc.). The number of bits = number of match/captures in this SCT."]
     #[inline(always)]
-    #[must_use]
     pub fn capconn_l(&mut self) -> CapconnLW<Capctrl3Spec> {
         CapconnLW::new(self, 0)
     }
     #[doc = "Bits 16:31 - If bit m is one, event m causes the CAPn_H (UNIFY = 0) register to be loaded (event 0 = bit 16, event 1 = bit 17, etc.). The number of bits = number of match/captures in this SCT."]
     #[inline(always)]
-    #[must_use]
     pub fn capconn_h(&mut self) -> CapconnHW<Capctrl3Spec> {
         CapconnHW::new(self, 16)
     }

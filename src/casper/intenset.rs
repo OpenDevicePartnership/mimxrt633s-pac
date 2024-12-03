@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Set if the accelerator should interrupt when done."]
     #[inline(always)]
-    #[must_use]
     pub fn done(&mut self) -> DoneW<IntensetSpec> {
         DoneW::new(self, 0)
     }

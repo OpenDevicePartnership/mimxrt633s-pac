@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - interrupt enable control for each pin(bit 0 for pion_0, bin 1 for pion_1, etc)"]
     #[inline(always)]
-    #[must_use]
     pub fn int_en(&mut self) -> IntEnW<IntenbSpec> {
         IntEnW::new(self, 0)
     }

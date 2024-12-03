@@ -94,49 +94,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - If set to 1, clears corresponding port interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn port_int(&mut self) -> PortIntW<IntenclrSpec> {
         PortIntW::new(self, 0)
     }
     #[doc = "Bit 8 - If set to 1, clears Port80 interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn p80int(&mut self) -> P80intW<IntenclrSpec> {
         P80intW::new(self, 8)
     }
     #[doc = "Bit 9 - If set to 1, clears Reset change interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn bus_rst(&mut self) -> BusRstW<IntenclrSpec> {
         BusRstW::new(self, 9)
     }
     #[doc = "Bit 10 - If set to 1, clears IRQ completion interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn irq_upd(&mut self) -> IrqUpdW<IntenclrSpec> {
         IrqUpdW::new(self, 10)
     }
     #[doc = "Bit 11 - If set to 1, clears Wire Change interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn wire_chg(&mut self) -> WireChgW<IntenclrSpec> {
         WireChgW::new(self, 11)
     }
     #[doc = "Bit 12 - If set to 1, clears HStall interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn hstall(&mut self) -> HstallW<IntenclrSpec> {
         HstallW::new(self, 12)
     }
     #[doc = "Bit 13 - If set to 1, clears CRCERR interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn crcerr(&mut self) -> CrcerrW<IntenclrSpec> {
         CrcerrW::new(self, 13)
     }
     #[doc = "Bit 14 - If set to 1, clears GPIO interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn gpio(&mut self) -> GpioW<IntenclrSpec> {
         GpioW::new(self, 14)
     }

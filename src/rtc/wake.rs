@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - A read reflects the current value of the high-resolution/wake-up timer. A write pre-loads a start count value into the wake-up timer and initializes a count-down sequence. Do not write to this register while counting is in progress."]
     #[inline(always)]
-    #[must_use]
     pub fn val(&mut self) -> ValW<WakeSpec> {
         ValW::new(self, 0)
     }

@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:27 - This field establishes the repetitive count rate for the timer. Each time the timer counts down to zero it is reloaded with this value. The rr_trig signal will be generated at a rate of (rr_timer_reload + 1) times the rr_clock period (typically 30.6 uS)"]
     #[inline(always)]
-    #[must_use]
     pub fn rr_timer_reload(&mut self) -> RrTimerReloadW<RrTimerCrSpec> {
         RrTimerReloadW::new(self, 0)
     }
     #[doc = "Bit 31 - RR_TIMER enable. When low, rr_timer count will be held at zero. When set, timer will commence continuous, repetitive counting beginning with the 1st or 2nd rising edge of the 32 KHz rr_clock.1"]
     #[inline(always)]
-    #[must_use]
     pub fn rr_timer_ena(&mut self) -> RrTimerEnaW<RrTimerCrSpec> {
         RrTimerEnaW::new(self, 31)
     }

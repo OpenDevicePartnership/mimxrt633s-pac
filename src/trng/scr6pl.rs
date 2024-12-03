@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:10 - Run Length 6+ Maximum Limit"]
     #[inline(always)]
-    #[must_use]
     pub fn run6p_max(&mut self) -> Run6pMaxW<Scr6plSpec> {
         Run6pMaxW::new(self, 0)
     }
     #[doc = "Bits 16:26 - Run Length 6+ Range"]
     #[inline(always)]
-    #[must_use]
     pub fn run6p_rng(&mut self) -> Run6pRngW<Scr6plSpec> {
         Run6pRngW::new(self, 16)
     }

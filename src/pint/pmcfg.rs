@@ -1594,91 +1594,76 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Determines whether slice 0 is an endpoint."]
     #[inline(always)]
-    #[must_use]
     pub fn prod_endpts0(&mut self) -> ProdEndpts0W<PmcfgSpec> {
         ProdEndpts0W::new(self, 0)
     }
     #[doc = "Bit 1 - Determines whether slice 1 is an endpoint."]
     #[inline(always)]
-    #[must_use]
     pub fn prod_endpts1(&mut self) -> ProdEndpts1W<PmcfgSpec> {
         ProdEndpts1W::new(self, 1)
     }
     #[doc = "Bit 2 - Determines whether slice 2 is an endpoint."]
     #[inline(always)]
-    #[must_use]
     pub fn prod_endpts2(&mut self) -> ProdEndpts2W<PmcfgSpec> {
         ProdEndpts2W::new(self, 2)
     }
     #[doc = "Bit 3 - Determines whether slice 3 is an endpoint."]
     #[inline(always)]
-    #[must_use]
     pub fn prod_endpts3(&mut self) -> ProdEndpts3W<PmcfgSpec> {
         ProdEndpts3W::new(self, 3)
     }
     #[doc = "Bit 4 - Determines whether slice 4 is an endpoint."]
     #[inline(always)]
-    #[must_use]
     pub fn prod_endpts4(&mut self) -> ProdEndpts4W<PmcfgSpec> {
         ProdEndpts4W::new(self, 4)
     }
     #[doc = "Bit 5 - Determines whether slice 5 is an endpoint."]
     #[inline(always)]
-    #[must_use]
     pub fn prod_endpts5(&mut self) -> ProdEndpts5W<PmcfgSpec> {
         ProdEndpts5W::new(self, 5)
     }
     #[doc = "Bit 6 - Determines whether slice 6 is an endpoint."]
     #[inline(always)]
-    #[must_use]
     pub fn prod_endpts6(&mut self) -> ProdEndpts6W<PmcfgSpec> {
         ProdEndpts6W::new(self, 6)
     }
     #[doc = "Bits 8:10 - Specifies the match contribution condition for bit slice 0."]
     #[inline(always)]
-    #[must_use]
     pub fn cfg0(&mut self) -> Cfg0W<PmcfgSpec> {
         Cfg0W::new(self, 8)
     }
     #[doc = "Bits 11:13 - Specifies the match contribution condition for bit slice 1."]
     #[inline(always)]
-    #[must_use]
     pub fn cfg1(&mut self) -> Cfg1W<PmcfgSpec> {
         Cfg1W::new(self, 11)
     }
     #[doc = "Bits 14:16 - Specifies the match contribution condition for bit slice 2."]
     #[inline(always)]
-    #[must_use]
     pub fn cfg2(&mut self) -> Cfg2W<PmcfgSpec> {
         Cfg2W::new(self, 14)
     }
     #[doc = "Bits 17:19 - Specifies the match contribution condition for bit slice 3."]
     #[inline(always)]
-    #[must_use]
     pub fn cfg3(&mut self) -> Cfg3W<PmcfgSpec> {
         Cfg3W::new(self, 17)
     }
     #[doc = "Bits 20:22 - Specifies the match contribution condition for bit slice 4."]
     #[inline(always)]
-    #[must_use]
     pub fn cfg4(&mut self) -> Cfg4W<PmcfgSpec> {
         Cfg4W::new(self, 20)
     }
     #[doc = "Bits 23:25 - Specifies the match contribution condition for bit slice 5."]
     #[inline(always)]
-    #[must_use]
     pub fn cfg5(&mut self) -> Cfg5W<PmcfgSpec> {
         Cfg5W::new(self, 23)
     }
     #[doc = "Bits 26:28 - Specifies the match contribution condition for bit slice 6."]
     #[inline(always)]
-    #[must_use]
     pub fn cfg6(&mut self) -> Cfg6W<PmcfgSpec> {
         Cfg6W::new(self, 26)
     }
     #[doc = "Bits 29:31 - Specifies the match contribution condition for bit slice 7."]
     #[inline(always)]
-    #[must_use]
     pub fn cfg7(&mut self) -> Cfg7W<PmcfgSpec> {
         Cfg7W::new(self, 29)
     }

@@ -104,55 +104,46 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Slave enable"]
     #[inline(always)]
-    #[must_use]
     pub fn slvena(&mut self) -> SlvenaW<SconfigSpec> {
         SlvenaW::new(self, 0)
     }
     #[doc = "Bit 1 - Not acknowledge"]
     #[inline(always)]
-    #[must_use]
     pub fn nack(&mut self) -> NackW<SconfigSpec> {
         NackW::new(self, 1)
     }
     #[doc = "Bit 2 - Match START or STOP"]
     #[inline(always)]
-    #[must_use]
     pub fn matchss(&mut self) -> MatchssW<SconfigSpec> {
         MatchssW::new(self, 2)
     }
     #[doc = "Bit 3 - S0/S1 errors ignore"]
     #[inline(always)]
-    #[must_use]
     pub fn s0ignore(&mut self) -> S0ignoreW<SconfigSpec> {
         S0ignoreW::new(self, 3)
     }
     #[doc = "Bit 4 - Double Data Rate OK"]
     #[inline(always)]
-    #[must_use]
     pub fn ddrok(&mut self) -> DdrokW<SconfigSpec> {
         DdrokW::new(self, 4)
     }
     #[doc = "Bit 8 - ID random"]
     #[inline(always)]
-    #[must_use]
     pub fn idrand(&mut self) -> IdrandW<SconfigSpec> {
         IdrandW::new(self, 8)
     }
     #[doc = "Bit 9 - Offline"]
     #[inline(always)]
-    #[must_use]
     pub fn offline(&mut self) -> OfflineW<SconfigSpec> {
         OfflineW::new(self, 9)
     }
     #[doc = "Bits 16:23 - Bus available match"]
     #[inline(always)]
-    #[must_use]
     pub fn bamatch(&mut self) -> BamatchW<SconfigSpec> {
         BamatchW::new(self, 16)
     }
     #[doc = "Bits 25:31 - Static address"]
     #[inline(always)]
-    #[must_use]
     pub fn saddr(&mut self) -> SaddrW<SconfigSpec> {
         SaddrW::new(self, 25)
     }

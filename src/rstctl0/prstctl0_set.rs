@@ -393,73 +393,61 @@ impl core::fmt::Debug for crate::generic::Reg<Prstctl0SetSpec> {
 impl W {
     #[doc = "Bit 1 - HIFI DSP reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn hifi_dsp(&mut self) -> HifiDspW<Prstctl0SetSpec> {
         HifiDspW::new(self, 1)
     }
     #[doc = "Bit 8 - powerquad reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn powerquad(&mut self) -> PowerquadW<Prstctl0SetSpec> {
         PowerquadW::new(self, 8)
     }
     #[doc = "Bit 9 - CAPSER reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn casper(&mut self) -> CasperW<Prstctl0SetSpec> {
         CasperW::new(self, 9)
     }
     #[doc = "Bit 10 - HASHCRYPT reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn hashcrypt(&mut self) -> HashcryptW<Prstctl0SetSpec> {
         HashcryptW::new(self, 10)
     }
     #[doc = "Bit 11 - PUF reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn puf(&mut self) -> PufW<Prstctl0SetSpec> {
         PufW::new(self, 11)
     }
     #[doc = "Bit 12 - RNG reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn rng(&mut self) -> RngW<Prstctl0SetSpec> {
         RngW::new(self, 12)
     }
     #[doc = "Bit 16 - FLEXSPI reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexspi_otfad(&mut self) -> FlexspiOtfadW<Prstctl0SetSpec> {
         FlexspiOtfadW::new(self, 16)
     }
     #[doc = "Bit 20 - USB PHY reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn usbhs_phy(&mut self) -> UsbhsPhyW<Prstctl0SetSpec> {
         UsbhsPhyW::new(self, 20)
     }
     #[doc = "Bit 21 - USB DEVICE reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn usbhs_device(&mut self) -> UsbhsDeviceW<Prstctl0SetSpec> {
         UsbhsDeviceW::new(self, 21)
     }
     #[doc = "Bit 22 - USB HOST reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn usbhs_host(&mut self) -> UsbhsHostW<Prstctl0SetSpec> {
         UsbhsHostW::new(self, 22)
     }
     #[doc = "Bit 23 - USBHS RAM reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn usbhs_sram(&mut self) -> UsbhsSramW<Prstctl0SetSpec> {
         UsbhsSramW::new(self, 23)
     }
     #[doc = "Bit 24 - SCT reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn sct(&mut self) -> SctW<Prstctl0SetSpec> {
         SctW::new(self, 24)
     }

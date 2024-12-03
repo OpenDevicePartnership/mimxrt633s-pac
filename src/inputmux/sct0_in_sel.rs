@@ -367,7 +367,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - SCT0 Input(n) Selection. 24:1 Selection for each. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn sct_in_sel(&mut self) -> SctInSelW<Sct0InSelSpec> {
         SctInSelW::new(self, 0)
     }

@@ -78,25 +78,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 8 - Interrupt was caused by error"]
     #[inline(always)]
-    #[must_use]
     pub fn interr(&mut self) -> InterrW<P0statSpec> {
         InterrW::new(self, 8)
     }
     #[doc = "Bit 9 - Interrupt was caused by Read or 1st Read or Bus master Started."]
     #[inline(always)]
-    #[must_use]
     pub fn intrd(&mut self) -> IntrdW<P0statSpec> {
         IntrdW::new(self, 9)
     }
     #[doc = "Bit 10 - Interrupt was caused by Write or 1st Write or Bus master Started."]
     #[inline(always)]
-    #[must_use]
     pub fn intwr(&mut self) -> IntwrW<P0statSpec> {
         IntwrW::new(self, 10)
     }
     #[doc = "Bits 11:14 - Interrupt was caused by: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
     #[inline(always)]
-    #[must_use]
     pub fn intspc(&mut self) -> IntspcW<P0statSpec> {
         IntspcW::new(self, 11)
     }

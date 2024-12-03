@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - State variable."]
     #[inline(always)]
-    #[must_use]
     pub fn state_l(&mut self) -> StateLW<StateSpec> {
         StateLW::new(self, 0)
     }
     #[doc = "Bits 16:20 - State variable."]
     #[inline(always)]
-    #[must_use]
     pub fn state_h(&mut self) -> StateHW<StateSpec> {
         StateHW::new(self, 16)
     }

@@ -361,67 +361,56 @@ impl core::fmt::Debug for crate::generic::Reg<Pscctl2ClrSpec> {
 impl W {
     #[doc = "Bit 0 - ct32bit timer 0 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit0_clk_clr(&mut self) -> Ct32bit0ClkClrW<Pscctl2ClrSpec> {
         Ct32bit0ClkClrW::new(self, 0)
     }
     #[doc = "Bit 1 - ct32bit timer 1 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit1_clk_clr(&mut self) -> Ct32bit1ClkClrW<Pscctl2ClrSpec> {
         Ct32bit1ClkClrW::new(self, 1)
     }
     #[doc = "Bit 2 - ct32bit timer 2 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit2_clk_clr(&mut self) -> Ct32bit2ClkClrW<Pscctl2ClrSpec> {
         Ct32bit2ClkClrW::new(self, 2)
     }
     #[doc = "Bit 3 - ct32bit timer 3 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit3_clk_clr(&mut self) -> Ct32bit3ClkClrW<Pscctl2ClrSpec> {
         Ct32bit3ClkClrW::new(self, 3)
     }
     #[doc = "Bit 4 - ct32bit timer 4 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit4_clk_clr(&mut self) -> Ct32bit4ClkClrW<Pscctl2ClrSpec> {
         Ct32bit4ClkClrW::new(self, 4)
     }
     #[doc = "Bit 7 - rtc lite clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn rtc_lite_clk_clr(&mut self) -> RtcLiteClkClrW<Pscctl2ClrSpec> {
         RtcLiteClkClrW::new(self, 7)
     }
     #[doc = "Bit 8 - mrt0 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn mrt0_clk_clr(&mut self) -> Mrt0ClkClrW<Pscctl2ClrSpec> {
         Mrt0ClkClrW::new(self, 8)
     }
     #[doc = "Bit 10 - wdt1 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn wwdt1_clk_clr(&mut self) -> Wwdt1ClkClrW<Pscctl2ClrSpec> {
         Wwdt1ClkClrW::new(self, 10)
     }
     #[doc = "Bit 16 - i3c0 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn i3c0_clk_clr(&mut self) -> I3c0ClkClrW<Pscctl2ClrSpec> {
         I3c0ClkClrW::new(self, 16)
     }
     #[doc = "Bit 30 - GPIOINTCTL clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn gpiointctl_clk_clr(&mut self) -> GpiointctlClkClrW<Pscctl2ClrSpec> {
         GpiointctlClkClrW::new(self, 30)
     }
     #[doc = "Bit 31 - PIMCTL clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn pimctl_clk_clr(&mut self) -> PimctlClkClrW<Pscctl2ClrSpec> {
         PimctlClkClrW::new(self, 31)
     }

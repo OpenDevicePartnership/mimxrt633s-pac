@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Error"]
     #[inline(always)]
-    #[must_use]
     pub fn error(&mut self) -> ErrorW<IfstatSpec> {
         ErrorW::new(self, 0)
     }

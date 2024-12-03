@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:14 - Vendor ID"]
     #[inline(always)]
-    #[must_use]
     pub fn vid(&mut self) -> VidW<SvendoridSpec> {
         VidW::new(self, 0)
     }

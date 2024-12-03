@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:5 - Key Size for Set Key operations"]
     #[inline(always)]
-    #[must_use]
     pub fn keysize(&mut self) -> KeysizeW<KeysizeSpec> {
         KeysizeW::new(self, 0)
     }

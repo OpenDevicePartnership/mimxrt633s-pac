@@ -219,43 +219,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - Sequence Index for AHB Read triggered Command in LUT."]
     #[inline(always)]
-    #[must_use]
     pub fn ardseqid(&mut self) -> ArdseqidW<Flshcr2Spec> {
         ArdseqidW::new(self, 0)
     }
     #[doc = "Bits 5:7 - Sequence Number for AHB Read triggered Command in LUT."]
     #[inline(always)]
-    #[must_use]
     pub fn ardseqnum(&mut self) -> ArdseqnumW<Flshcr2Spec> {
         ArdseqnumW::new(self, 5)
     }
     #[doc = "Bits 8:12 - Sequence Index for AHB Write triggered Command."]
     #[inline(always)]
-    #[must_use]
     pub fn awrseqid(&mut self) -> AwrseqidW<Flshcr2Spec> {
         AwrseqidW::new(self, 8)
     }
     #[doc = "Bits 13:15 - Sequence Number for AHB Write triggered Command."]
     #[inline(always)]
-    #[must_use]
     pub fn awrseqnum(&mut self) -> AwrseqnumW<Flshcr2Spec> {
         AwrseqnumW::new(self, 13)
     }
     #[doc = "Bits 16:27 - For certain devices (such as FPGA), it need some time to write data into internal memory after the command sequences finished on FlexSPI interface"]
     #[inline(always)]
-    #[must_use]
     pub fn awrwait(&mut self) -> AwrwaitW<Flshcr2Spec> {
         AwrwaitW::new(self, 16)
     }
     #[doc = "Bits 28:30 - AWRWAIT unit"]
     #[inline(always)]
-    #[must_use]
     pub fn awrwaitunit(&mut self) -> AwrwaitunitW<Flshcr2Spec> {
         AwrwaitunitW::new(self, 28)
     }
     #[doc = "Bit 31 - Clear the instruction pointer which is internally saved pointer by JMP_ON_CS. Refer Programmable Sequence Engine for details."]
     #[inline(always)]
-    #[must_use]
     pub fn clrinstrptr(&mut self) -> ClrinstrptrW<Flshcr2Spec> {
         ClrinstrptrW::new(self, 31)
     }

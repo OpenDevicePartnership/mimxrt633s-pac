@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Divide by factor to create PDM Clock (enumerated type)"]
     #[inline(always)]
-    #[must_use]
     pub fn pdmdiv(&mut self) -> PdmdivW<DivhfclkSpec> {
         PdmdivW::new(self, 0)
     }

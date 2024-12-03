@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - AES Key Source Select:"]
     #[inline(always)]
-    #[must_use]
     pub fn aeskey_srcsel(&mut self) -> AeskeySrcselW<AeskeySrcselSpec> {
         AeskeySrcselW::new(self, 0)
     }

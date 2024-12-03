@@ -854,85 +854,71 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - HSGPIO0 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio0_rst(&mut self) -> Hsgpio0RstW<Prstctl1Spec> {
         Hsgpio0RstW::new(self, 0)
     }
     #[doc = "Bit 1 - HSGPIO1 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio1_rst(&mut self) -> Hsgpio1RstW<Prstctl1Spec> {
         Hsgpio1RstW::new(self, 1)
     }
     #[doc = "Bit 2 - HSGPIO2 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio2_rst(&mut self) -> Hsgpio2RstW<Prstctl1Spec> {
         Hsgpio2RstW::new(self, 2)
     }
     #[doc = "Bit 3 - HSGPIO3 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio3_rst(&mut self) -> Hsgpio3RstW<Prstctl1Spec> {
         Hsgpio3RstW::new(self, 3)
     }
     #[doc = "Bit 4 - HSGPIO4 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio4_rst(&mut self) -> Hsgpio4RstW<Prstctl1Spec> {
         Hsgpio4RstW::new(self, 4)
     }
     #[doc = "Bit 5 - HSGPIO5 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio5_rst(&mut self) -> Hsgpio5RstW<Prstctl1Spec> {
         Hsgpio5RstW::new(self, 5)
     }
     #[doc = "Bit 6 - HSGPIO6 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio6_rst(&mut self) -> Hsgpio6RstW<Prstctl1Spec> {
         Hsgpio6RstW::new(self, 6)
     }
     #[doc = "Bit 7 - HSGPIO7 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio7_rst(&mut self) -> Hsgpio7RstW<Prstctl1Spec> {
         Hsgpio7RstW::new(self, 7)
     }
     #[doc = "Bit 16 - CRC reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_rst(&mut self) -> CrcRstW<Prstctl1Spec> {
         CrcRstW::new(self, 16)
     }
     #[doc = "Bit 23 - DMAC0 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_rst(&mut self) -> Dmac0RstW<Prstctl1Spec> {
         Dmac0RstW::new(self, 23)
     }
     #[doc = "Bit 24 - DMAC1 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_rst(&mut self) -> Dmac1RstW<Prstctl1Spec> {
         Dmac1RstW::new(self, 24)
     }
     #[doc = "Bit 28 - MU reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn mu_rst(&mut self) -> MuRstW<Prstctl1Spec> {
         MuRstW::new(self, 28)
     }
     #[doc = "Bit 29 - SEMA reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn sema_rst(&mut self) -> SemaRstW<Prstctl1Spec> {
         SemaRstW::new(self, 29)
     }
     #[doc = "Bit 31 - FREQME reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn freqme_rst(&mut self) -> FreqmeRstW<Prstctl1Spec> {
         FreqmeRstW::new(self, 31)
     }

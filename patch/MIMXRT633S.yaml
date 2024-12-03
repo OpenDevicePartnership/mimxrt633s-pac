@@ -1,0 +1,14 @@
+# Path to the SVD file we're targeting. Relative to this file.
+# This must be included only in the device YAML file.
+_svd: "../svd/MIMXRT633S.svd"
+
+_include:
+  - "adc.yaml"
+  - "crc.yaml"
+  - "dma.yaml"
+  - "espi.yaml"
+  - "i2s.yaml"
+  - "inputmux.yaml"
+  - "usart.yaml"
+
+

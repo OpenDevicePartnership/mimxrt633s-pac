@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 1 - If set, the TRNG registers cannot be programmed"]
     #[inline(always)]
-    #[must_use]
     pub fn no_prgm(&mut self) -> NoPrgmW<SecCfgSpec> {
         NoPrgmW::new(self, 1)
     }

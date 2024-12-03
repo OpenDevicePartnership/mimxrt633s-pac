@@ -126,49 +126,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 9 - OTP Single Error Corrected status of ECC during read operation. Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn sec(&mut self) -> SecW<OtpStatusSpec> {
         SecW::new(self, 9)
     }
     #[doc = "Bit 10 - OTP Double Error Detection status of ECC during read operation. Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn ded(&mut self) -> DedW<OtpStatusSpec> {
         DedW::new(self, 10)
     }
     #[doc = "Bit 11 - OTP LOCKED status during read/write operation. Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn locked(&mut self) -> LockedW<OtpStatusSpec> {
         LockedW::new(self, 11)
     }
     #[doc = "Bit 12 - OTP PROGFAIL status. Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn progfail(&mut self) -> ProgfailW<OtpStatusSpec> {
         ProgfailW::new(self, 12)
     }
     #[doc = "Bit 20 - OTP Single Error Corrected status of ECC during reload process. Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn sec_reload(&mut self) -> SecReloadW<OtpStatusSpec> {
         SecReloadW::new(self, 20)
     }
     #[doc = "Bit 21 - OTP Double Error Detect status of ECC during reload process. Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn ded_reload(&mut self) -> DedReloadW<OtpStatusSpec> {
         DedReloadW::new(self, 21)
     }
     #[doc = "Bit 23 - Set by the controller when a read/write access to a locked region (OTP or shadow register) is requested. Writing 1 to clear it before any further access can be performed. This bit can only be set by the controller."]
     #[inline(always)]
-    #[must_use]
     pub fn error(&mut self) -> ErrorW<OtpStatusSpec> {
         ErrorW::new(self, 23)
     }
     #[doc = "Bit 24 - CRC failed when set by hardware for CRC operation. Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn crc_fail(&mut self) -> CrcFailW<OtpStatusSpec> {
         CrcFailW::new(self, 24)
     }

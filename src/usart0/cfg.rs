@@ -1074,103 +1074,86 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - USART Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> EnableW<CfgSpec> {
         EnableW::new(self, 0)
     }
     #[doc = "Bits 2:3 - Selects the data size for the USART."]
     #[inline(always)]
-    #[must_use]
     pub fn datalen(&mut self) -> DatalenW<CfgSpec> {
         DatalenW::new(self, 2)
     }
     #[doc = "Bits 4:5 - Selects what type of parity is used by the USART."]
     #[inline(always)]
-    #[must_use]
     pub fn paritysel(&mut self) -> ParityselW<CfgSpec> {
         ParityselW::new(self, 4)
     }
     #[doc = "Bit 6 - Number of stop bits appended to transmitted data. Only a single stop bit is required for received data."]
     #[inline(always)]
-    #[must_use]
     pub fn stoplen(&mut self) -> StoplenW<CfgSpec> {
         StoplenW::new(self, 6)
     }
     #[doc = "Bit 7 - Selects standard or 32 kHz clocking mode."]
     #[inline(always)]
-    #[must_use]
     pub fn mode32k(&mut self) -> Mode32kW<CfgSpec> {
         Mode32kW::new(self, 7)
     }
     #[doc = "Bit 8 - LIN break mode enable."]
     #[inline(always)]
-    #[must_use]
     pub fn linmode(&mut self) -> LinmodeW<CfgSpec> {
         LinmodeW::new(self, 8)
     }
     #[doc = "Bit 9 - CTS Enable. Determines whether CTS is used for flow control. CTS can be from the input pin, or from the USART's own RTS if loopback mode is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn ctsen(&mut self) -> CtsenW<CfgSpec> {
         CtsenW::new(self, 9)
     }
     #[doc = "Bit 11 - Selects synchronous or asynchronous operation."]
     #[inline(always)]
-    #[must_use]
     pub fn syncen(&mut self) -> SyncenW<CfgSpec> {
         SyncenW::new(self, 11)
     }
     #[doc = "Bit 12 - Selects the clock polarity and sampling edge of received data in synchronous mode."]
     #[inline(always)]
-    #[must_use]
     pub fn clkpol(&mut self) -> ClkpolW<CfgSpec> {
         ClkpolW::new(self, 12)
     }
     #[doc = "Bit 14 - Synchronous mode Master select."]
     #[inline(always)]
-    #[must_use]
     pub fn syncmst(&mut self) -> SyncmstW<CfgSpec> {
         SyncmstW::new(self, 14)
     }
     #[doc = "Bit 15 - Selects data loopback mode."]
     #[inline(always)]
-    #[must_use]
     pub fn loop_(&mut self) -> LoopW<CfgSpec> {
         LoopW::new(self, 15)
     }
     #[doc = "Bit 18 - Output Enable Turnaround time enable for RS-485 operation."]
     #[inline(always)]
-    #[must_use]
     pub fn oeta(&mut self) -> OetaW<CfgSpec> {
         OetaW::new(self, 18)
     }
     #[doc = "Bit 19 - Automatic Address matching enable."]
     #[inline(always)]
-    #[must_use]
     pub fn autoaddr(&mut self) -> AutoaddrW<CfgSpec> {
         AutoaddrW::new(self, 19)
     }
     #[doc = "Bit 20 - Output Enable Select."]
     #[inline(always)]
-    #[must_use]
     pub fn oesel(&mut self) -> OeselW<CfgSpec> {
         OeselW::new(self, 20)
     }
     #[doc = "Bit 21 - Output Enable Polarity."]
     #[inline(always)]
-    #[must_use]
     pub fn oepol(&mut self) -> OepolW<CfgSpec> {
         OepolW::new(self, 21)
     }
     #[doc = "Bit 22 - Receive data polarity."]
     #[inline(always)]
-    #[must_use]
     pub fn rxpol(&mut self) -> RxpolW<CfgSpec> {
         RxpolW::new(self, 22)
     }
     #[doc = "Bit 23 - Transmit data polarity."]
     #[inline(always)]
-    #[must_use]
     pub fn txpol(&mut self) -> TxpolW<CfgSpec> {
         TxpolW::new(self, 23)
     }

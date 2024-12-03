@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:13 - Run Length 2 Maximum Limit"]
     #[inline(always)]
-    #[must_use]
     pub fn run2_max(&mut self) -> Run2MaxW<Scr2lSpec> {
         Run2MaxW::new(self, 0)
     }
     #[doc = "Bits 16:29 - Run Length 2 Range"]
     #[inline(always)]
-    #[must_use]
     pub fn run2_rng(&mut self) -> Run2RngW<Scr2lSpec> {
         Run2RngW::new(self, 16)
     }

@@ -244,49 +244,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 3 - Card Interrupt Detection Test"]
     #[inline(always)]
-    #[must_use]
     pub fn card_int_d3_test(&mut self) -> CardIntD3TestW<VendSpec2Spec> {
         CardIntD3TestW::new(self, 3)
     }
     #[doc = "Bit 4 - TUNING_8bit_EN"]
     #[inline(always)]
-    #[must_use]
     pub fn tuning_8bit_en(&mut self) -> Tuning8bitEnW<VendSpec2Spec> {
         Tuning8bitEnW::new(self, 4)
     }
     #[doc = "Bit 5 - TUNING_1bit_EN"]
     #[inline(always)]
-    #[must_use]
     pub fn tuning_1bit_en(&mut self) -> Tuning1bitEnW<VendSpec2Spec> {
         Tuning1bitEnW::new(self, 5)
     }
     #[doc = "Bit 6 - TUNING_CMD_EN"]
     #[inline(always)]
-    #[must_use]
     pub fn tuning_cmd_en(&mut self) -> TuningCmdEnW<VendSpec2Spec> {
         TuningCmdEnW::new(self, 6)
     }
     #[doc = "Bit 10 - HS400 Write Clock Stop Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn hs400_wr_clk_stop_en(&mut self) -> Hs400WrClkStopEnW<VendSpec2Spec> {
         Hs400WrClkStopEnW::new(self, 10)
     }
     #[doc = "Bit 11 - HS400 Read Clock Stop Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn hs400_rd_clk_stop_en(&mut self) -> Hs400RdClkStopEnW<VendSpec2Spec> {
         Hs400RdClkStopEnW::new(self, 11)
     }
     #[doc = "Bit 12 - Argument2 register enable for ACMD23"]
     #[inline(always)]
-    #[must_use]
     pub fn acmd23_argu2_en(&mut self) -> Acmd23Argu2EnW<VendSpec2Spec> {
         Acmd23Argu2EnW::new(self, 12)
     }
     #[doc = "Bit 14 - AHB BUS reset"]
     #[inline(always)]
-    #[must_use]
     pub fn ahb_rst(&mut self) -> AhbRstW<VendSpec2Spec> {
         AhbRstW::new(self, 14)
     }

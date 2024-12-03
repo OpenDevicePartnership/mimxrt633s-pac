@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - 32KHz Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn ena32khz(&mut self) -> Ena32khzW<Osc32khzctl0Spec> {
         Ena32khzW::new(self, 0)
     }

@@ -84,13 +84,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 2 - This bit is used to pull up DP, for digital charge detect."]
     #[inline(always)]
-    #[must_use]
     pub fn pullup_dp(&mut self) -> PullupDpW<Usb1ChrgDetectSetSpec> {
         PullupDpW::new(self, 2)
     }
     #[doc = "Bit 23 - USB charge detector bias current reference This bit determines the reference for the bias current of the USB charge detector"]
     #[inline(always)]
-    #[must_use]
     pub fn bgr_ibias(&mut self) -> BgrIbiasW<Usb1ChrgDetectSetSpec> {
         BgrIbiasW::new(self, 23)
     }

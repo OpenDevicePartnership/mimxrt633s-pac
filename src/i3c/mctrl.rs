@@ -412,37 +412,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - Request"]
     #[inline(always)]
-    #[must_use]
     pub fn request(&mut self) -> RequestW<MctrlSpec> {
         RequestW::new(self, 0)
     }
     #[doc = "Bits 4:5 - Bus type with START"]
     #[inline(always)]
-    #[must_use]
     pub fn type_(&mut self) -> TypeW<MctrlSpec> {
         TypeW::new(self, 4)
     }
     #[doc = "Bits 6:7 - In-Band Interrupt (IBI) response"]
     #[inline(always)]
-    #[must_use]
     pub fn ibiresp(&mut self) -> IbirespW<MctrlSpec> {
         IbirespW::new(self, 6)
     }
     #[doc = "Bit 8 - DIR"]
     #[inline(always)]
-    #[must_use]
     pub fn dir(&mut self) -> DirW<MctrlSpec> {
         DirW::new(self, 8)
     }
     #[doc = "Bits 9:15 - ADDR"]
     #[inline(always)]
-    #[must_use]
     pub fn addr(&mut self) -> AddrW<MctrlSpec> {
         AddrW::new(self, 9)
     }
     #[doc = "Bits 16:23 - Read terminate"]
     #[inline(always)]
-    #[must_use]
     pub fn rdterm(&mut self) -> RdtermW<MctrlSpec> {
         RdtermW::new(self, 16)
     }

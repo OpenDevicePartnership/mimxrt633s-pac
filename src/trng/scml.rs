@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - Monobit Maximum Limit"]
     #[inline(always)]
-    #[must_use]
     pub fn mono_max(&mut self) -> MonoMaxW<ScmlSpec> {
         MonoMaxW::new(self, 0)
     }
     #[doc = "Bits 16:31 - Monobit Range"]
     #[inline(always)]
-    #[must_use]
     pub fn mono_rng(&mut self) -> MonoRngW<ScmlSpec> {
         MonoRngW::new(self, 16)
     }

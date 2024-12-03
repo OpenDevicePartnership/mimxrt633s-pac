@@ -197,19 +197,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 3 - Force Logically Disabled Mode"]
     #[inline(always)]
-    #[must_use]
     pub fn fldm(&mut self) -> FldmW<CrSpec> {
         FldmW::new(self, 3)
     }
     #[doc = "Bit 7 - Restricted Register Access Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn rrae(&mut self) -> RraeW<CrSpec> {
         RraeW::new(self, 7)
     }
     #[doc = "Bit 31 - Global OTFAD Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ge(&mut self) -> GeW<CrSpec> {
         GeW::new(self, 31)
     }

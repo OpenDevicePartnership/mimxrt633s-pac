@@ -15,19 +15,16 @@ impl core::fmt::Debug for crate::generic::Reg<SwdatahSpec> {
 impl W {
     #[doc = "Bits 0:7 - The 1st byte to send to the master"]
     #[inline(always)]
-    #[must_use]
     pub fn data0(&mut self) -> Data0W<SwdatahSpec> {
         Data0W::new(self, 0)
     }
     #[doc = "Bits 8:15 - The 2nd byte to send to the master"]
     #[inline(always)]
-    #[must_use]
     pub fn data1(&mut self) -> Data1W<SwdatahSpec> {
         Data1W::new(self, 8)
     }
     #[doc = "Bit 16 - End of message"]
     #[inline(always)]
-    #[must_use]
     pub fn end(&mut self) -> EndW<SwdatahSpec> {
         EndW::new(self, 16)
     }

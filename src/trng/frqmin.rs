@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:21 - Frequency Count Minimum Limit"]
     #[inline(always)]
-    #[must_use]
     pub fn frq_min(&mut self) -> FrqMinW<FrqminSpec> {
         FrqMinW::new(self, 0)
     }

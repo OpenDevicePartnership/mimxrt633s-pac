@@ -84,43 +84,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:5 - ADDR0"]
     #[inline(always)]
-    #[must_use]
     pub fn addr0(&mut self) -> Addr0W<MibirulesSpec> {
         Addr0W::new(self, 0)
     }
     #[doc = "Bits 6:11 - ADDR1"]
     #[inline(always)]
-    #[must_use]
     pub fn addr1(&mut self) -> Addr1W<MibirulesSpec> {
         Addr1W::new(self, 6)
     }
     #[doc = "Bits 12:17 - ADDR2"]
     #[inline(always)]
-    #[must_use]
     pub fn addr2(&mut self) -> Addr2W<MibirulesSpec> {
         Addr2W::new(self, 12)
     }
     #[doc = "Bits 18:23 - ADDR3"]
     #[inline(always)]
-    #[must_use]
     pub fn addr3(&mut self) -> Addr3W<MibirulesSpec> {
         Addr3W::new(self, 18)
     }
     #[doc = "Bits 24:29 - ADDR4"]
     #[inline(always)]
-    #[must_use]
     pub fn addr4(&mut self) -> Addr4W<MibirulesSpec> {
         Addr4W::new(self, 24)
     }
     #[doc = "Bit 30 - Set Most Significant address Bit to 0"]
     #[inline(always)]
-    #[must_use]
     pub fn msb0(&mut self) -> Msb0W<MibirulesSpec> {
         Msb0W::new(self, 30)
     }
     #[doc = "Bit 31 - No IBI byte"]
     #[inline(always)]
-    #[must_use]
     pub fn nobyte(&mut self) -> NobyteW<MibirulesSpec> {
         NobyteW::new(self, 31)
     }

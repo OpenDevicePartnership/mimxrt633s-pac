@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<MwdatabeSpec> {
 impl W {
     #[doc = "Bits 0:7 - Data"]
     #[inline(always)]
-    #[must_use]
     pub fn data(&mut self) -> DataW<MwdatabeSpec> {
         DataW::new(self, 0)
     }

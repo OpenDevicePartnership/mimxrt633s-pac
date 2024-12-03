@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Cordic input y"]
     #[inline(always)]
-    #[must_use]
     pub fn cordic_y(&mut self) -> CordicYW<CordicYSpec> {
         CordicYW::new(self, 0)
     }

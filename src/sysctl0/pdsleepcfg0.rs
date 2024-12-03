@@ -1694,169 +1694,141 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - main clock shut off"]
     #[inline(always)]
-    #[must_use]
     pub fn mainclk_shutoff(&mut self) -> MainclkShutoffW<Pdsleepcfg0Spec> {
         MainclkShutoffW::new(self, 0)
     }
     #[doc = "Bit 1 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn pmic_mode0(&mut self) -> PmicMode0W<Pdsleepcfg0Spec> {
         PmicMode0W::new(self, 1)
     }
     #[doc = "Bit 2 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn pmic_mode1(&mut self) -> PmicMode1W<Pdsleepcfg0Spec> {
         PmicMode1W::new(self, 2)
     }
     #[doc = "Bit 3 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn deep_pd(&mut self) -> DeepPdW<Pdsleepcfg0Spec> {
         DeepPdW::new(self, 3)
     }
     #[doc = "Bit 4 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn vddcorereg_lp(&mut self) -> VddcoreregLpW<Pdsleepcfg0Spec> {
         VddcoreregLpW::new(self, 4)
     }
     #[doc = "Bit 6 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn pmcref_lp(&mut self) -> PmcrefLpW<Pdsleepcfg0Spec> {
         PmcrefLpW::new(self, 6)
     }
     #[doc = "Bit 7 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn hvd1v8_pd(&mut self) -> Hvd1v8PdW<Pdsleepcfg0Spec> {
         Hvd1v8PdW::new(self, 7)
     }
     #[doc = "Bit 8 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn porcore_lp(&mut self) -> PorcoreLpW<Pdsleepcfg0Spec> {
         PorcoreLpW::new(self, 8)
     }
     #[doc = "Bit 9 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn lvdcore_lp(&mut self) -> LvdcoreLpW<Pdsleepcfg0Spec> {
         LvdcoreLpW::new(self, 9)
     }
     #[doc = "Bit 10 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn hvdcore_pd(&mut self) -> HvdcorePdW<Pdsleepcfg0Spec> {
         HvdcorePdW::new(self, 10)
     }
     #[doc = "Bit 11 - Writes to this bit in PDRUNCFG, but not PDSLEEPCFG, can be disabled by an OTP bit."]
     #[inline(always)]
-    #[must_use]
     pub fn rbb_pd(&mut self) -> RbbPdW<Pdsleepcfg0Spec> {
         RbbPdW::new(self, 11)
     }
     #[doc = "Bit 12 - Writes to this bit in PDRUNCFG, but not PDSLEEPCFG, can be disabled by an OTP bit."]
     #[inline(always)]
-    #[must_use]
     pub fn fbb_pd(&mut self) -> FbbPdW<Pdsleepcfg0Spec> {
         FbbPdW::new(self, 12)
     }
     #[doc = "Bit 13 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sysxtal_pd(&mut self) -> SysxtalPdW<Pdsleepcfg0Spec> {
         SysxtalPdW::new(self, 13)
     }
     #[doc = "Bit 14 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn lposc_pd(&mut self) -> LposcPdW<Pdsleepcfg0Spec> {
         LposcPdW::new(self, 14)
     }
     #[doc = "Bit 15 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sfro_pd(&mut self) -> SfroPdW<Pdsleepcfg0Spec> {
         SfroPdW::new(self, 15)
     }
     #[doc = "Bit 16 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn ffro_pd(&mut self) -> FfroPdW<Pdsleepcfg0Spec> {
         FfroPdW::new(self, 16)
     }
     #[doc = "Bit 17 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn syspllldo_pd(&mut self) -> SyspllldoPdW<Pdsleepcfg0Spec> {
         SyspllldoPdW::new(self, 17)
     }
     #[doc = "Bit 18 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn syspllana_pd(&mut self) -> SyspllanaPdW<Pdsleepcfg0Spec> {
         SyspllanaPdW::new(self, 18)
     }
     #[doc = "Bit 19 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn audpllldo_pd(&mut self) -> AudpllldoPdW<Pdsleepcfg0Spec> {
         AudpllldoPdW::new(self, 19)
     }
     #[doc = "Bit 20 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn audpllana_pd(&mut self) -> AudpllanaPdW<Pdsleepcfg0Spec> {
         AudpllanaPdW::new(self, 20)
     }
     #[doc = "Bit 21 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn adc_pd(&mut self) -> AdcPdW<Pdsleepcfg0Spec> {
         AdcPdW::new(self, 21)
     }
     #[doc = "Bit 22 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn adc_lp(&mut self) -> AdcLpW<Pdsleepcfg0Spec> {
         AdcLpW::new(self, 22)
     }
     #[doc = "Bit 23 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn adctempsns_pd(&mut self) -> AdctempsnsPdW<Pdsleepcfg0Spec> {
         AdctempsnsPdW::new(self, 23)
     }
     #[doc = "Bit 25 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn acmp_pd(&mut self) -> AcmpPdW<Pdsleepcfg0Spec> {
         AcmpPdW::new(self, 25)
     }
     #[doc = "Bit 26 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn hspad0_vdet_lp(&mut self) -> Hspad0VdetLpW<Pdsleepcfg0Spec> {
         Hspad0VdetLpW::new(self, 26)
     }
     #[doc = "Bit 27 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn hspad0_ref_pd(&mut self) -> Hspad0RefPdW<Pdsleepcfg0Spec> {
         Hspad0RefPdW::new(self, 27)
     }
     #[doc = "Bit 28 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn hspad2_vdet_lp(&mut self) -> Hspad2VdetLpW<Pdsleepcfg0Spec> {
         Hspad2VdetLpW::new(self, 28)
     }
     #[doc = "Bit 29 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn hspad2_ref_pd(&mut self) -> Hspad2RefPdW<Pdsleepcfg0Spec> {
         Hspad2RefPdW::new(self, 29)
     }

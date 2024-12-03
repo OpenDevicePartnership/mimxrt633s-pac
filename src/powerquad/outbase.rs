@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Base address register for the output region"]
     #[inline(always)]
-    #[must_use]
     pub fn outbase(&mut self) -> OutbaseW<OutbaseSpec> {
         OutbaseW::new(self, 0)
     }

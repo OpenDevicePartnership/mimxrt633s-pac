@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<PrngSeedSpec> {
 impl W {
     #[doc = "Bits 0:31 - Random input value used as an entropy source"]
     #[inline(always)]
-    #[must_use]
     pub fn prng_seed(&mut self) -> PrngSeedW<PrngSeedSpec> {
         PrngSeedW::new(self, 0)
     }

@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<AliasSpec> {
 impl W {
     #[doc = "Bits 0:31 - Write next word in little-endian form. The hash requires big endian word data, but this block swaps the bytes automatically. That is, SHA assumes the data coming in is treated as bytes (e.g. \"abcd\") and since the ARM core will treat \"abcd\" as a word as 0x64636261, the block will swap the word to restore into big endian."]
     #[inline(always)]
-    #[must_use]
     pub fn data(&mut self) -> DataW<AliasSpec> {
         DataW::new(self, 0)
     }

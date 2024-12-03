@@ -783,73 +783,61 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Main enable for I 2S function in this Flexcomm"]
     #[inline(always)]
-    #[must_use]
     pub fn mainenable(&mut self) -> MainenableW<Cfg1Spec> {
         MainenableW::new(self, 0)
     }
     #[doc = "Bit 1 - Data flow Pause. Allows pausing data flow between the I2S serializer/deserializer and the FIFO. This could be done in order to change streams, or while restarting after a data underflow or overflow. When paused, FIFO operations can be done without corrupting data that is in the process of being sent or received. Once a data pause has been requested, the interface may need to complete sending data that was in progress before interrupting the flow of data. Software must check that the pause is actually in effect before taking action. This is done by monitoring the DATAPAUSED flag in the STAT register. When DATAPAUSE is cleared, data transfer will resume at the beginning of the next frame."]
     #[inline(always)]
-    #[must_use]
     pub fn datapause(&mut self) -> DatapauseW<Cfg1Spec> {
         DatapauseW::new(self, 1)
     }
     #[doc = "Bits 2:3 - Provides the number of I2S channel pairs in this Flexcomm This is a read-only field whose value may be different in other Flexcomms. 00 = there is 1 I2S channel pair in this Flexcomm. 01 = there are 2 I2S channel pairs in this Flexcomm. 10 = there are 3 I2S channel pairs in this Flexcomm. 11 = there are 4 I2S channel pairs in this Flexcomm."]
     #[inline(always)]
-    #[must_use]
     pub fn paircount(&mut self) -> PaircountW<Cfg1Spec> {
         PaircountW::new(self, 2)
     }
     #[doc = "Bits 4:5 - Master / slave configuration selection, determining how SCK and WS are used by all channel pairs in this Flexcomm."]
     #[inline(always)]
-    #[must_use]
     pub fn mstslvcfg(&mut self) -> MstslvcfgW<Cfg1Spec> {
         MstslvcfgW::new(self, 4)
     }
     #[doc = "Bits 6:7 - Selects the basic I2S operating mode. Other configurations modify this to obtain all supported cases. See Formats and modes for examples."]
     #[inline(always)]
-    #[must_use]
     pub fn mode(&mut self) -> ModeW<Cfg1Spec> {
         ModeW::new(self, 6)
     }
     #[doc = "Bit 8 - Right channel data is in the Low portion of FIFO data. Essentially, this swaps left and right channel data as it is transferred to or from the FIFO. This bit is not used if the data width is greater than 24 bits or if PDMDATA = 1. Note that if the ONECHANNEL field (bit 10 of this register) = 1, the one channel to be used is the nominally the left channel. POSITION can still place that data in the frame where right channel data is normally located. if all enabled channel pairs have ONECHANNEL = 1, then RIGHTLOW = 1 is not allowed."]
     #[inline(always)]
-    #[must_use]
     pub fn rightlow(&mut self) -> RightlowW<Cfg1Spec> {
         RightlowW::new(self, 8)
     }
     #[doc = "Bit 9 - Left Justify data."]
     #[inline(always)]
-    #[must_use]
     pub fn leftjust(&mut self) -> LeftjustW<Cfg1Spec> {
         LeftjustW::new(self, 9)
     }
     #[doc = "Bit 10 - Single channel mode. Applies to both transmit and receive. This configuration bit applies only to the first I2S channel pair. Other channel pairs may select this mode independently in their separate CFG1 registers."]
     #[inline(always)]
-    #[must_use]
     pub fn onechannel(&mut self) -> OnechannelW<Cfg1Spec> {
         OnechannelW::new(self, 10)
     }
     #[doc = "Bit 11 - PDM Data selection. This bit controls the data source for I2S transmit, and cannot be set in Rx mode. This bit only has an effect if the device the Flexcomm resides in includes a D-Mic subsystem. For the LPC5411x, this bit applies only to Flexcomm 7."]
     #[inline(always)]
-    #[must_use]
     pub fn pdmdata(&mut self) -> PdmdataW<Cfg1Spec> {
         PdmdataW::new(self, 11)
     }
     #[doc = "Bit 12 - SCK polarity."]
     #[inline(always)]
-    #[must_use]
     pub fn sck_pol(&mut self) -> SckPolW<Cfg1Spec> {
         SckPolW::new(self, 12)
     }
     #[doc = "Bit 13 - WS polarity."]
     #[inline(always)]
-    #[must_use]
     pub fn ws_pol(&mut self) -> WsPolW<Cfg1Spec> {
         WsPolW::new(self, 13)
     }
     #[doc = "Bits 16:20 - Data Length, minus 1 encoded, defines the number of data bits to be transmitted or received for all I2S channel pairs in this Flexcomm. Note that data is only driven to or received from SDA for the number of bits defined by DATALEN. DATALEN is also used in these ways by the I2S: Determines the size of data transfers between the FIFO and the I2S serializer/deserializer. See FIFO buffer configurations and usage In mode 1, 2, and 3, determines the location of right data following left data in the frame. In mode 3 (where WS has a one data slot long pulse at the beginning of each data frame) determines the duration of the WS pulse. Values: 0x00 to 0x02 = not supported 0x03 = data is 4 bits in length 0x04 = data is 5 bits in length 0x1F = data is 32 bits in length"]
     #[inline(always)]
-    #[must_use]
     pub fn datalen(&mut self) -> DatalenW<Cfg1Spec> {
         DatalenW::new(self, 16)
     }

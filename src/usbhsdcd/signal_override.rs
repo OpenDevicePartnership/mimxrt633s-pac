@@ -81,7 +81,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Phase Selection"]
     #[inline(always)]
-    #[must_use]
     pub fn ps(&mut self) -> PsW<SignalOverrideSpec> {
         PsW::new(self, 0)
     }

@@ -526,19 +526,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 9 - BRDIP"]
     #[inline(always)]
-    #[must_use]
     pub fn rdip(&mut self) -> RdipW<SrSpec> {
         RdipW::new(self, 9)
     }
     #[doc = "Bit 10 - RAIP"]
     #[inline(always)]
-    #[must_use]
     pub fn raip(&mut self) -> RaipW<SrSpec> {
         RaipW::new(self, 10)
     }
     #[doc = "Bits 28:31 - GIPn"]
     #[inline(always)]
-    #[must_use]
     pub fn gipn(&mut self) -> GipnW<SrSpec> {
         GipnW::new(self, 28)
     }

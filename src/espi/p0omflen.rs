@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:6 - Length in bytes, 0 relative, to Send for OOB, Send or Retrieve for Mastering, Read or Write for Flash, Erase (in blocks) for Flash, or read data for SAF read"]
     #[inline(always)]
-    #[must_use]
     pub fn len(&mut self) -> LenW<P0omflenSpec> {
         LenW::new(self, 0)
     }
     #[doc = "Bits 12:13 - Transfer request as: Type Value Meaning OOB 0 To Host OOB 1, 2, 3 Not used Master 0 To Host 32 (Host reads w/32-bit address) Master 1 To Host 64 (Host reads w/64-bit address) Master 2 From Host 32 (Host writes w/32-bit address) Master 3 From Host 64 (Host writes w/64-bit address) MAF Flash 1 Read Flash (location in RAM) MAF Flash 2 Write Flash (location in RAM) MAF Flash 3 Erase Flash (sector in RAM) SAF 0 Completion fail SAF 1 Completion with data SAF 2 Completion with no data"]
     #[inline(always)]
-    #[must_use]
     pub fn trans(&mut self) -> TransW<P0omflenSpec> {
         TransW::new(self, 12)
     }

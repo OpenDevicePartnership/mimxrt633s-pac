@@ -154,85 +154,71 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Interrupt status register bit for the Control EP0 OUT direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep0out(&mut self) -> Ep0outW<IntstatSpec> {
         Ep0outW::new(self, 0)
     }
     #[doc = "Bit 1 - Interrupt status register bit for the Control EP0 IN direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep0in(&mut self) -> Ep0inW<IntstatSpec> {
         Ep0inW::new(self, 1)
     }
     #[doc = "Bit 2 - Interrupt status register bit for the EP1 OUT direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep1out(&mut self) -> Ep1outW<IntstatSpec> {
         Ep1outW::new(self, 2)
     }
     #[doc = "Bit 3 - Interrupt status register bit for the EP1 IN direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep1in(&mut self) -> Ep1inW<IntstatSpec> {
         Ep1inW::new(self, 3)
     }
     #[doc = "Bit 4 - Interrupt status register bit for the EP2 OUT direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep2out(&mut self) -> Ep2outW<IntstatSpec> {
         Ep2outW::new(self, 4)
     }
     #[doc = "Bit 5 - Interrupt status register bit for the EP2 IN direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep2in(&mut self) -> Ep2inW<IntstatSpec> {
         Ep2inW::new(self, 5)
     }
     #[doc = "Bit 6 - Interrupt status register bit for the EP3 OUT direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep3out(&mut self) -> Ep3outW<IntstatSpec> {
         Ep3outW::new(self, 6)
     }
     #[doc = "Bit 7 - Interrupt status register bit for the EP3 IN direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep3in(&mut self) -> Ep3inW<IntstatSpec> {
         Ep3inW::new(self, 7)
     }
     #[doc = "Bit 8 - Interrupt status register bit for the EP4 OUT direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep4out(&mut self) -> Ep4outW<IntstatSpec> {
         Ep4outW::new(self, 8)
     }
     #[doc = "Bit 9 - Interrupt status register bit for the EP4 IN direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep4in(&mut self) -> Ep4inW<IntstatSpec> {
         Ep4inW::new(self, 9)
     }
     #[doc = "Bit 10 - Interrupt status register bit for the EP5 OUT direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep5out(&mut self) -> Ep5outW<IntstatSpec> {
         Ep5outW::new(self, 10)
     }
     #[doc = "Bit 11 - Interrupt status register bit for the EP5 IN direction."]
     #[inline(always)]
-    #[must_use]
     pub fn ep5in(&mut self) -> Ep5inW<IntstatSpec> {
         Ep5inW::new(self, 11)
     }
     #[doc = "Bit 30 - Frame interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn frame_int(&mut self) -> FrameIntW<IntstatSpec> {
         FrameIntW::new(self, 30)
     }
     #[doc = "Bit 31 - Device status interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn dev_int(&mut self) -> DevIntW<IntstatSpec> {
         DevIntW::new(self, 31)
     }

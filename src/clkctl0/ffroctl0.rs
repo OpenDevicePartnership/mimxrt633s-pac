@@ -111,25 +111,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - Trims temperature compensation of FFRO."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_tempco(&mut self) -> TrimTempcoW<Ffroctl0Spec> {
         TrimTempcoW::new(self, 0)
     }
     #[doc = "Bits 5:10 - Trims coarse frequency of FFRO."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_coarse(&mut self) -> TrimCoarseW<Ffroctl0Spec> {
         TrimCoarseW::new(self, 5)
     }
     #[doc = "Bits 11:17 - Trims fine frequency of FFRO."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_fine(&mut self) -> TrimFineW<Ffroctl0Spec> {
         TrimFineW::new(self, 11)
     }
     #[doc = "Bits 18:19 - Trims frequency range of FFRO."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_range(&mut self) -> TrimRangeW<Ffroctl0Spec> {
         TrimRangeW::new(self, 18)
     }

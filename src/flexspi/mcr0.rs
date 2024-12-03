@@ -519,61 +519,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Software Reset"]
     #[inline(always)]
-    #[must_use]
     pub fn swreset(&mut self) -> SwresetW<Mcr0Spec> {
         SwresetW::new(self, 0)
     }
     #[doc = "Bit 1 - Module Disable"]
     #[inline(always)]
-    #[must_use]
     pub fn mdis(&mut self) -> MdisW<Mcr0Spec> {
         MdisW::new(self, 1)
     }
     #[doc = "Bits 4:5 - Sample Clock source selection for Flash Reading"]
     #[inline(always)]
-    #[must_use]
     pub fn rxclksrc(&mut self) -> RxclksrcW<Mcr0Spec> {
         RxclksrcW::new(self, 4)
     }
     #[doc = "Bits 8:10 - The serial root clock could be divided inside FlexSPI wrapper. Refer Clocks chapter for more details on clocking."]
     #[inline(always)]
-    #[must_use]
     pub fn serclkdiv(&mut self) -> SerclkdivW<Mcr0Spec> {
         SerclkdivW::new(self, 8)
     }
     #[doc = "Bit 11 - Half Speed Serial Flash access Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn hsen(&mut self) -> HsenW<Mcr0Spec> {
         HsenW::new(self, 11)
     }
     #[doc = "Bit 12 - Doze mode enable bit"]
     #[inline(always)]
-    #[must_use]
     pub fn dozeen(&mut self) -> DozeenW<Mcr0Spec> {
         DozeenW::new(self, 12)
     }
     #[doc = "Bit 14 - This bit is used to force SCLK output free-running. For FPGA applications, external device may use SCLK as reference clock to its internal PLL. If SCLK free-running is enabled, data sampling with loopback clock from SCLK pad is not supported (MCR0\\[RXCLKSRC\\]=2)."]
     #[inline(always)]
-    #[must_use]
     pub fn sckfreerunen(&mut self) -> SckfreerunenW<Mcr0Spec> {
         SckfreerunenW::new(self, 14)
     }
     #[doc = "Bit 15 - This bit is used to enable/disable data learning feature. When data learning is disabled, the sampling clock phase 0 is always used for RX data sampling even if LEARN instruction is correctly executed."]
     #[inline(always)]
-    #[must_use]
     pub fn learnen(&mut self) -> LearnenW<Mcr0Spec> {
         LearnenW::new(self, 15)
     }
     #[doc = "Bits 16:23 - Time out wait cycle for IP command grant."]
     #[inline(always)]
-    #[must_use]
     pub fn ipgrantwait(&mut self) -> IpgrantwaitW<Mcr0Spec> {
         IpgrantwaitW::new(self, 16)
     }
     #[doc = "Bits 24:31 - Timeout wait cycle for AHB command grant."]
     #[inline(always)]
-    #[must_use]
     pub fn ahbgrantwait(&mut self) -> AhbgrantwaitW<Mcr0Spec> {
         AhbgrantwaitW::new(self, 24)
     }

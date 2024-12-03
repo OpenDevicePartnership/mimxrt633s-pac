@@ -1,0 +1,44 @@
+ESPI:
+  # Rename OFFSET variant to avoid name collision
+  STATADDR:
+    BASE:
+      _replace_enum:
+        OFFSET_FROM_0: [0, Is offset from 0 in host memory or I/O space]
+        BASE1: [1, Uses BASE1 offset in host memory (see MAPBASE reg)]
+        BASE2: [2, Uses BASE2 offset in host memory (see MAPBASE reg)]
+
+  # Create Port Clusters
+  _cluster:
+    PORT%s:
+      description: "Port 0-4"
+      P[01234]CFG:
+        description: Port Configuration and Control
+        name: CFG
+
+      P[01234]STAT:
+        description: Port Status
+        name: STAT
+      
+      P[01234]IRuleStat:
+        description: Port set interrupt rules and user status
+        name: IRULESTAT
+
+      P[01234]ADDR:
+        description: Port Address offset to host
+        name: ADDR
+
+      P[01234]OMFLEN:
+        description: Port OOB, Mastering and Flash Length (for OOB, Bus Mastering, and Flash)
+        name: OMFLEN
+
+      P[01234]DataIn:
+        description: Port Data from Host
+        name: DATAIN
+
+      P[01243]DataOut:
+        description: Port Data to Host (for Endpoint and Index/Data)
+        name: DATAOUT
+
+      P[01234]RAMUse:
+        description: Port RAM base and size (for Mailbox and Bus Master)
+        name: RAMUSE

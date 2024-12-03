@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:23 - Poker Maximum Limit."]
     #[inline(always)]
-    #[must_use]
     pub fn pkr_max(&mut self) -> PkrMaxW<PkrmaxSpec> {
         PkrMaxW::new(self, 0)
     }

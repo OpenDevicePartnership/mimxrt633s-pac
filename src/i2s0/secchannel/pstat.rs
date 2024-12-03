@@ -52,19 +52,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Busy status for this channel pair."]
     #[inline(always)]
-    #[must_use]
     pub fn busy(&mut self) -> BusyW<PstatSpec> {
         BusyW::new(self, 0)
     }
     #[doc = "Bit 1 - Save Frame Error flag."]
     #[inline(always)]
-    #[must_use]
     pub fn slvfrmerr(&mut self) -> SlvfrmerrW<PstatSpec> {
         SlvfrmerrW::new(self, 1)
     }
     #[doc = "Bit 2 - Left/Right indication."]
     #[inline(always)]
-    #[must_use]
     pub fn lr(&mut self) -> LrW<PstatSpec> {
         LrW::new(self, 2)
     }

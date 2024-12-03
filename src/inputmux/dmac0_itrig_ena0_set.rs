@@ -1003,193 +1003,161 @@ impl core::fmt::Debug for crate::generic::Reg<Dmac0ItrigEna0SetSpec> {
 impl W {
     #[doc = "Bit 0 - DMAC0 input trigger inmux 0 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux0(&mut self) -> Dmac0ItrigInmux0W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux0W::new(self, 0)
     }
     #[doc = "Bit 1 - DMAC0 input trigger inmux 1 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux1(&mut self) -> Dmac0ItrigInmux1W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux1W::new(self, 1)
     }
     #[doc = "Bit 2 - DMAC0 input trigger inmux 2 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux2(&mut self) -> Dmac0ItrigInmux2W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux2W::new(self, 2)
     }
     #[doc = "Bit 3 - DMAC0 input trigger inmux 3 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux3(&mut self) -> Dmac0ItrigInmux3W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux3W::new(self, 3)
     }
     #[doc = "Bit 4 - DMAC0 input trigger inmux 4 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux4(&mut self) -> Dmac0ItrigInmux4W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux4W::new(self, 4)
     }
     #[doc = "Bit 5 - DMAC0 input trigger inmux 5 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux5(&mut self) -> Dmac0ItrigInmux5W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux5W::new(self, 5)
     }
     #[doc = "Bit 6 - DMAC0 input trigger inmux 6 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux6(&mut self) -> Dmac0ItrigInmux6W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux6W::new(self, 6)
     }
     #[doc = "Bit 7 - DMAC0 input trigger inmux 7 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux7(&mut self) -> Dmac0ItrigInmux7W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux7W::new(self, 7)
     }
     #[doc = "Bit 8 - DMAC0 input trigger inmux 8 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux8(&mut self) -> Dmac0ItrigInmux8W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux8W::new(self, 8)
     }
     #[doc = "Bit 9 - DMAC0 input trigger inmux 9 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux9(&mut self) -> Dmac0ItrigInmux9W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux9W::new(self, 9)
     }
     #[doc = "Bit 10 - DMAC0 input trigger inmux 10 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux10(&mut self) -> Dmac0ItrigInmux10W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux10W::new(self, 10)
     }
     #[doc = "Bit 11 - DMAC0 input trigger inmux 11 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux11(&mut self) -> Dmac0ItrigInmux11W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux11W::new(self, 11)
     }
     #[doc = "Bit 12 - DMAC0 input trigger inmux 12 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux12(&mut self) -> Dmac0ItrigInmux12W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux12W::new(self, 12)
     }
     #[doc = "Bit 13 - DMAC0 input trigger inmux 13 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux13(&mut self) -> Dmac0ItrigInmux13W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux13W::new(self, 13)
     }
     #[doc = "Bit 14 - DMAC0 input trigger inmux 14 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux14(&mut self) -> Dmac0ItrigInmux14W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux14W::new(self, 14)
     }
     #[doc = "Bit 15 - DMAC0 input trigger inmux 15 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux15(&mut self) -> Dmac0ItrigInmux15W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux15W::new(self, 15)
     }
     #[doc = "Bit 16 - DMAC0 input trigger inmux 16 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux16(&mut self) -> Dmac0ItrigInmux16W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux16W::new(self, 16)
     }
     #[doc = "Bit 17 - DMAC0 input trigger inmux 17 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux17(&mut self) -> Dmac0ItrigInmux17W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux17W::new(self, 17)
     }
     #[doc = "Bit 18 - DMAC0 input trigger inmux 18 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux18(&mut self) -> Dmac0ItrigInmux18W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux18W::new(self, 18)
     }
     #[doc = "Bit 19 - DMAC0 input trigger inmux 19 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux19(&mut self) -> Dmac0ItrigInmux19W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux19W::new(self, 19)
     }
     #[doc = "Bit 20 - DMAC0 input trigger inmux 20 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux20(&mut self) -> Dmac0ItrigInmux20W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux20W::new(self, 20)
     }
     #[doc = "Bit 21 - DMAC0 input trigger inmux 21 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux21(&mut self) -> Dmac0ItrigInmux21W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux21W::new(self, 21)
     }
     #[doc = "Bit 22 - DMAC0 input trigger inmux 22 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux22(&mut self) -> Dmac0ItrigInmux22W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux22W::new(self, 22)
     }
     #[doc = "Bit 23 - DMAC0 input trigger inmux 23 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux23(&mut self) -> Dmac0ItrigInmux23W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux23W::new(self, 23)
     }
     #[doc = "Bit 24 - DMAC0 input trigger inmux 24 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux24(&mut self) -> Dmac0ItrigInmux24W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux24W::new(self, 24)
     }
     #[doc = "Bit 25 - DMAC0 input trigger inmux 25 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux25(&mut self) -> Dmac0ItrigInmux25W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux25W::new(self, 25)
     }
     #[doc = "Bit 26 - DMAC0 input trigger inmux 26 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux26(&mut self) -> Dmac0ItrigInmux26W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux26W::new(self, 26)
     }
     #[doc = "Bit 27 - DMAC0 input trigger inmux 27 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux27(&mut self) -> Dmac0ItrigInmux27W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux27W::new(self, 27)
     }
     #[doc = "Bit 28 - DMAC0 input trigger inmux 28 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux28(&mut self) -> Dmac0ItrigInmux28W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux28W::new(self, 28)
     }
     #[doc = "Bit 29 - DMAC0 input trigger inmux 29 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux29(&mut self) -> Dmac0ItrigInmux29W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux29W::new(self, 29)
     }
     #[doc = "Bit 30 - DMAC0 input trigger inmux 30 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux30(&mut self) -> Dmac0ItrigInmux30W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux30W::new(self, 30)
     }
     #[doc = "Bit 31 - DMAC0 input trigger inmux 31 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_itrig_inmux31(&mut self) -> Dmac0ItrigInmux31W<Dmac0ItrigEna0SetSpec> {
         Dmac0ItrigInmux31W::new(self, 31)
     }

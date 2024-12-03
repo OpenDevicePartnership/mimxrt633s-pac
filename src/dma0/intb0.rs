@@ -79,7 +79,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Interrupt B status for DMA channel 0."]
     #[inline(always)]
-    #[must_use]
     pub fn ib(&mut self) -> IbW<Intb0Spec> {
         IbW::new(self, 0)
     }

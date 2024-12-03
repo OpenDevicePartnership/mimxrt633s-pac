@@ -558,37 +558,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Write lock."]
     #[inline(always)]
-    #[must_use]
     pub fn write_lock(&mut self) -> WriteLockW<MiscCtrlRegSpec> {
         WriteLockW::new(self, 0)
     }
     #[doc = "Bits 2:3 - AHB bus matrix enable secure checking."]
     #[inline(always)]
-    #[must_use]
     pub fn enable_secure_checking(&mut self) -> EnableSecureCheckingW<MiscCtrlRegSpec> {
         EnableSecureCheckingW::new(self, 2)
     }
     #[doc = "Bits 4:5 - AHB bus matrix enable secure privilege check."]
     #[inline(always)]
-    #[must_use]
     pub fn enable_s_priv_check(&mut self) -> EnableSPrivCheckW<MiscCtrlRegSpec> {
         EnableSPrivCheckW::new(self, 4)
     }
     #[doc = "Bits 6:7 - AHB bus matrix enable non-secure privilege check."]
     #[inline(always)]
-    #[must_use]
     pub fn enable_ns_priv_check(&mut self) -> EnableNsPrivCheckW<MiscCtrlRegSpec> {
         EnableNsPrivCheckW::new(self, 6)
     }
     #[doc = "Bits 8:9 - Disable secure violation abort."]
     #[inline(always)]
-    #[must_use]
     pub fn disable_violation_abort(&mut self) -> DisableViolationAbortW<MiscCtrlRegSpec> {
         DisableViolationAbortW::new(self, 8)
     }
     #[doc = "Bits 10:11 - Disable simple master strict mode."]
     #[inline(always)]
-    #[must_use]
     pub fn disable_simple_master_strict_mode(
         &mut self,
     ) -> DisableSimpleMasterStrictModeW<MiscCtrlRegSpec> {
@@ -596,7 +590,6 @@ impl W {
     }
     #[doc = "Bits 12:13 - Disable smart master strict mode."]
     #[inline(always)]
-    #[must_use]
     pub fn disable_smart_master_strict_mode(
         &mut self,
     ) -> DisableSmartMasterStrictModeW<MiscCtrlRegSpec> {
@@ -604,7 +597,6 @@ impl W {
     }
     #[doc = "Bits 14:15 - Disable IDAU."]
     #[inline(always)]
-    #[must_use]
     pub fn idau_all_ns(&mut self) -> IdauAllNsW<MiscCtrlRegSpec> {
         IdauAllNsW::new(self, 14)
     }

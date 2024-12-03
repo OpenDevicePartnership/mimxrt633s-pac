@@ -361,67 +361,56 @@ impl core::fmt::Debug for crate::generic::Reg<Pscctl2SetSpec> {
 impl W {
     #[doc = "Bit 0 - ct32bit timer 0 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit0_clk_set(&mut self) -> Ct32bit0ClkSetW<Pscctl2SetSpec> {
         Ct32bit0ClkSetW::new(self, 0)
     }
     #[doc = "Bit 1 - ct32bit timer 1 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit1_clk_set(&mut self) -> Ct32bit1ClkSetW<Pscctl2SetSpec> {
         Ct32bit1ClkSetW::new(self, 1)
     }
     #[doc = "Bit 2 - ct32bit timer 2 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit2_clk_set(&mut self) -> Ct32bit2ClkSetW<Pscctl2SetSpec> {
         Ct32bit2ClkSetW::new(self, 2)
     }
     #[doc = "Bit 3 - ct32bit timer 3 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit3_clk_set(&mut self) -> Ct32bit3ClkSetW<Pscctl2SetSpec> {
         Ct32bit3ClkSetW::new(self, 3)
     }
     #[doc = "Bit 4 - ct32bit timer 4 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit4_clk_set(&mut self) -> Ct32bit4ClkSetW<Pscctl2SetSpec> {
         Ct32bit4ClkSetW::new(self, 4)
     }
     #[doc = "Bit 7 - rtc lite clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn rtc_lite_clk_set(&mut self) -> RtcLiteClkSetW<Pscctl2SetSpec> {
         RtcLiteClkSetW::new(self, 7)
     }
     #[doc = "Bit 8 - mrt0 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn mrt0_clk_set(&mut self) -> Mrt0ClkSetW<Pscctl2SetSpec> {
         Mrt0ClkSetW::new(self, 8)
     }
     #[doc = "Bit 10 - wdt1 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn wwdt1_clk_set(&mut self) -> Wwdt1ClkSetW<Pscctl2SetSpec> {
         Wwdt1ClkSetW::new(self, 10)
     }
     #[doc = "Bit 16 - i3c0 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn i3c0_clk_set(&mut self) -> I3c0ClkSetW<Pscctl2SetSpec> {
         I3c0ClkSetW::new(self, 16)
     }
     #[doc = "Bit 30 - GPIOINTCTL clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn gpiointctl_clk_set(&mut self) -> GpiointctlClkSetW<Pscctl2SetSpec> {
         GpiointctlClkSetW::new(self, 30)
     }
     #[doc = "Bit 31 - PIMCTL clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn pimctl_clk_set(&mut self) -> PimctlClkSetW<Pscctl2SetSpec> {
         PimctlClkSetW::new(self, 31)
     }

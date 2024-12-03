@@ -150,13 +150,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Enable. SAU region enable."]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> EnableW<RlarSpec> {
         EnableW::new(self, 0)
     }
     #[doc = "Bit 1 - Non-secure callable. Controls whether Non-secure state is permitted to execute an SG instruction from this region."]
     #[inline(always)]
-    #[must_use]
     pub fn nsc(&mut self) -> NscW<RlarSpec> {
         NscW::new(self, 1)
     }
@@ -164,7 +162,6 @@ impl W {
 of the limit address for the selected SAU region. Bits\\[4:0\\]
 of the limit address are defined as 0x1F."]
     #[inline(always)]
-    #[must_use]
     pub fn laddr(&mut self) -> LaddrW<RlarSpec> {
         LaddrW::new(self, 5)
     }

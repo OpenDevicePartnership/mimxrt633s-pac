@@ -94,49 +94,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 8 - Slave start interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn slvstart(&mut self) -> SlvstartW<MintsetSpec> {
         SlvstartW::new(self, 8)
     }
     #[doc = "Bit 9 - Master control done interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn mctrldone(&mut self) -> MctrldoneW<MintsetSpec> {
         MctrldoneW::new(self, 9)
     }
     #[doc = "Bit 10 - Completed message interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn complete(&mut self) -> CompleteW<MintsetSpec> {
         CompleteW::new(self, 10)
     }
     #[doc = "Bit 11 - RX pending interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn rxpend(&mut self) -> RxpendW<MintsetSpec> {
         RxpendW::new(self, 11)
     }
     #[doc = "Bit 12 - TX buffer/FIFO is not full interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn txnotfull(&mut self) -> TxnotfullW<MintsetSpec> {
         TxnotfullW::new(self, 12)
     }
     #[doc = "Bit 13 - In-Band Interrupt (IBI) won interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ibiwon(&mut self) -> IbiwonW<MintsetSpec> {
         IbiwonW::new(self, 13)
     }
     #[doc = "Bit 15 - Error or warning (ERRWARN) interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn errwarn(&mut self) -> ErrwarnW<MintsetSpec> {
         ErrwarnW::new(self, 15)
     }
     #[doc = "Bit 19 - Now master (now this I3C module is a master) interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn nowmaster(&mut self) -> NowmasterW<MintsetSpec> {
         NowmasterW::new(self, 19)
     }

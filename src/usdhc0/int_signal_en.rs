@@ -1274,127 +1274,106 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Command Complete Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ccien(&mut self) -> CcienW<IntSignalEnSpec> {
         CcienW::new(self, 0)
     }
     #[doc = "Bit 1 - Transfer Complete Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn tcien(&mut self) -> TcienW<IntSignalEnSpec> {
         TcienW::new(self, 1)
     }
     #[doc = "Bit 2 - Block Gap Event Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn bgeien(&mut self) -> BgeienW<IntSignalEnSpec> {
         BgeienW::new(self, 2)
     }
     #[doc = "Bit 3 - DMA Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dintien(&mut self) -> DintienW<IntSignalEnSpec> {
         DintienW::new(self, 3)
     }
     #[doc = "Bit 4 - Buffer Write Ready Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn bwrien(&mut self) -> BwrienW<IntSignalEnSpec> {
         BwrienW::new(self, 4)
     }
     #[doc = "Bit 5 - Buffer Read Ready Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn brrien(&mut self) -> BrrienW<IntSignalEnSpec> {
         BrrienW::new(self, 5)
     }
     #[doc = "Bit 6 - Card Insertion Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn cinsien(&mut self) -> CinsienW<IntSignalEnSpec> {
         CinsienW::new(self, 6)
     }
     #[doc = "Bit 7 - Card Removal Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn crmien(&mut self) -> CrmienW<IntSignalEnSpec> {
         CrmienW::new(self, 7)
     }
     #[doc = "Bit 8 - Card Interrupt Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn cintien(&mut self) -> CintienW<IntSignalEnSpec> {
         CintienW::new(self, 8)
     }
     #[doc = "Bit 12 - Re-Tuning Event Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn rteien(&mut self) -> RteienW<IntSignalEnSpec> {
         RteienW::new(self, 12)
     }
     #[doc = "Bit 14 - Tuning Pass Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn tpien(&mut self) -> TpienW<IntSignalEnSpec> {
         TpienW::new(self, 14)
     }
     #[doc = "Bit 16 - Command Timeout Error Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ctoeien(&mut self) -> CtoeienW<IntSignalEnSpec> {
         CtoeienW::new(self, 16)
     }
     #[doc = "Bit 17 - Command CRC Error Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn cceien(&mut self) -> CceienW<IntSignalEnSpec> {
         CceienW::new(self, 17)
     }
     #[doc = "Bit 18 - Command End Bit Error Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn cebeien(&mut self) -> CebeienW<IntSignalEnSpec> {
         CebeienW::new(self, 18)
     }
     #[doc = "Bit 19 - Command Index Error Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn cieien(&mut self) -> CieienW<IntSignalEnSpec> {
         CieienW::new(self, 19)
     }
     #[doc = "Bit 20 - Data Timeout Error Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dtoeien(&mut self) -> DtoeienW<IntSignalEnSpec> {
         DtoeienW::new(self, 20)
     }
     #[doc = "Bit 21 - Data CRC Error Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dceien(&mut self) -> DceienW<IntSignalEnSpec> {
         DceienW::new(self, 21)
     }
     #[doc = "Bit 22 - Data End Bit Error Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn debeien(&mut self) -> DebeienW<IntSignalEnSpec> {
         DebeienW::new(self, 22)
     }
     #[doc = "Bit 24 - Auto CMD12 Error Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ac12eien(&mut self) -> Ac12eienW<IntSignalEnSpec> {
         Ac12eienW::new(self, 24)
     }
     #[doc = "Bit 26 - Tuning Error Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn tneien(&mut self) -> TneienW<IntSignalEnSpec> {
         TneienW::new(self, 26)
     }
     #[doc = "Bit 28 - DMA Error Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dmaeien(&mut self) -> DmaeienW<IntSignalEnSpec> {
         DmaeienW::new(self, 28)
     }

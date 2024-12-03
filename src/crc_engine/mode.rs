@@ -2,10 +2,80 @@
 pub type R = crate::R<ModeSpec>;
 #[doc = "Register `MODE` writer"]
 pub type W = crate::W<ModeSpec>;
+#[doc = "CRC polynomial: 1X = CRC-32 polynomial 01 = CRC-16 polynomial 00 = CRC-CCITT polynomial\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+#[repr(u8)]
+pub enum CrcPolynomial {
+    #[doc = "0: CRC-CCITT polynomial"]
+    CrcCcitt = 0,
+    #[doc = "1: CRC16 polynomial"]
+    Crc16 = 1,
+    #[doc = "2: CRC32 polynomial"]
+    Crc32 = 2,
+}
+impl From<CrcPolynomial> for u8 {
+    #[inline(always)]
+    fn from(variant: CrcPolynomial) -> Self {
+        variant as _
+    }
+}
+impl crate::FieldSpec for CrcPolynomial {
+    type Ux = u8;
+}
+impl crate::IsEnum for CrcPolynomial {}
 #[doc = "Field `CRC_POLY` reader - CRC polynomial: 1X = CRC-32 polynomial 01 = CRC-16 polynomial 00 = CRC-CCITT polynomial"]
-pub type CrcPolyR = crate::FieldReader;
+pub type CrcPolyR = crate::FieldReader<CrcPolynomial>;
+impl CrcPolyR {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Option<CrcPolynomial> {
+        match self.bits {
+            0 => Some(CrcPolynomial::CrcCcitt),
+            1 => Some(CrcPolynomial::Crc16),
+            2 => Some(CrcPolynomial::Crc32),
+            _ => None,
+        }
+    }
+    #[doc = "CRC-CCITT polynomial"]
+    #[inline(always)]
+    pub fn is_crc_ccitt(&self) -> bool {
+        *self == CrcPolynomial::CrcCcitt
+    }
+    #[doc = "CRC16 polynomial"]
+    #[inline(always)]
+    pub fn is_crc16(&self) -> bool {
+        *self == CrcPolynomial::Crc16
+    }
+    #[doc = "CRC32 polynomial"]
+    #[inline(always)]
+    pub fn is_crc32(&self) -> bool {
+        *self == CrcPolynomial::Crc32
+    }
+}
 #[doc = "Field `CRC_POLY` writer - CRC polynomial: 1X = CRC-32 polynomial 01 = CRC-16 polynomial 00 = CRC-CCITT polynomial"]
-pub type CrcPolyW<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CrcPolyW<'a, REG> = crate::FieldWriter<'a, REG, 2, CrcPolynomial>;
+impl<'a, REG> CrcPolyW<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+    REG::Ux: From<u8>,
+{
+    #[doc = "CRC-CCITT polynomial"]
+    #[inline(always)]
+    pub fn crc_ccitt(self) -> &'a mut crate::W<REG> {
+        self.variant(CrcPolynomial::CrcCcitt)
+    }
+    #[doc = "CRC16 polynomial"]
+    #[inline(always)]
+    pub fn crc16(self) -> &'a mut crate::W<REG> {
+        self.variant(CrcPolynomial::Crc16)
+    }
+    #[doc = "CRC32 polynomial"]
+    #[inline(always)]
+    pub fn crc32(self) -> &'a mut crate::W<REG> {
+        self.variant(CrcPolynomial::Crc32)
+    }
+}
 #[doc = "Field `BIT_RVS_WR` reader - Data bit order: 1 = Bit order reverse for CRC_WR_DATA (per byte) 0 = No bit order reverse for CRC_WR_DATA (per byte)"]
 pub type BitRvsWrR = crate::BitReader;
 #[doc = "Field `BIT_RVS_WR` writer - Data bit order: 1 = Bit order reverse for CRC_WR_DATA (per byte) 0 = No bit order reverse for CRC_WR_DATA (per byte)"]
@@ -64,31 +134,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - CRC polynomial: 1X = CRC-32 polynomial 01 = CRC-16 polynomial 00 = CRC-CCITT polynomial"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_poly(&mut self) -> CrcPolyW<ModeSpec> {
         CrcPolyW::new(self, 0)
     }
     #[doc = "Bit 2 - Data bit order: 1 = Bit order reverse for CRC_WR_DATA (per byte) 0 = No bit order reverse for CRC_WR_DATA (per byte)"]
     #[inline(always)]
-    #[must_use]
     pub fn bit_rvs_wr(&mut self) -> BitRvsWrW<ModeSpec> {
         BitRvsWrW::new(self, 2)
     }
     #[doc = "Bit 3 - Data complement: 1 = 1's complement for CRC_WR_DATA 0 = No 1's complement for CRC_WR_DATA"]
     #[inline(always)]
-    #[must_use]
     pub fn cmpl_wr(&mut self) -> CmplWrW<ModeSpec> {
         CmplWrW::new(self, 3)
     }
     #[doc = "Bit 4 - CRC sum bit order: 1 = Bit order reverse for CRC_SUM 0 = No bit order reverse for CRC_SUM"]
     #[inline(always)]
-    #[must_use]
     pub fn bit_rvs_sum(&mut self) -> BitRvsSumW<ModeSpec> {
         BitRvsSumW::new(self, 4)
     }
     #[doc = "Bit 5 - CRC sum complement: 1 = 1's complement for CRC_SUM 0 = No 1's complement for CRC_SUM"]
     #[inline(always)]
-    #[must_use]
     pub fn cmpl_sum(&mut self) -> CmplSumW<ModeSpec> {
         CmplSumW::new(self, 5)
     }

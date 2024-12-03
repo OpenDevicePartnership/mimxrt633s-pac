@@ -339,55 +339,46 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 6 - Enables the USB clock from PLL to USB PHY"]
     #[inline(always)]
-    #[must_use]
     pub fn pll_en_usb_clks(&mut self) -> PllEnUsbClksW<PllSicClrSpec> {
         PllEnUsbClksW::new(self, 6)
     }
     #[doc = "Bit 12 - Power up the USB PLL"]
     #[inline(always)]
-    #[must_use]
     pub fn pll_power(&mut self) -> PllPowerW<PllSicClrSpec> {
         PllPowerW::new(self, 12)
     }
     #[doc = "Bit 13 - Enables the clock output from the USB PLL"]
     #[inline(always)]
-    #[must_use]
     pub fn pll_enable(&mut self) -> PllEnableW<PllSicClrSpec> {
         PllEnableW::new(self, 13)
     }
     #[doc = "Bit 16 - Bypass the USB PLL."]
     #[inline(always)]
-    #[must_use]
     pub fn pll_bypass(&mut self) -> PllBypassW<PllSicClrSpec> {
         PllBypassW::new(self, 16)
     }
     #[doc = "Bit 19 - Reference bias power down select."]
     #[inline(always)]
-    #[must_use]
     pub fn refbias_pwd_sel(&mut self) -> RefbiasPwdSelW<PllSicClrSpec> {
         RefbiasPwdSelW::new(self, 19)
     }
     #[doc = "Bit 20 - Power down the reference bias This bit is only used when REFBIAS_PWD_SEL is set to 1."]
     #[inline(always)]
-    #[must_use]
     pub fn refbias_pwd(&mut self) -> RefbiasPwdW<PllSicClrSpec> {
         RefbiasPwdW::new(self, 20)
     }
     #[doc = "Bit 21 - This field controls the USB PLL regulator, set to enable the regulator"]
     #[inline(always)]
-    #[must_use]
     pub fn pll_reg_enable(&mut self) -> PllRegEnableW<PllSicClrSpec> {
         PllRegEnableW::new(self, 21)
     }
     #[doc = "Bits 22:24 - This field controls the USB PLL feedback loop divider"]
     #[inline(always)]
-    #[must_use]
     pub fn pll_div_sel(&mut self) -> PllDivSelW<PllSicClrSpec> {
         PllDivSelW::new(self, 22)
     }
     #[doc = "Bit 31 - USB PLL lock status indicator"]
     #[inline(always)]
-    #[must_use]
     pub fn pll_lock(&mut self) -> PllLockW<PllSicClrSpec> {
         PllLockW::new(self, 31)
     }

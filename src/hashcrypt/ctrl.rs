@@ -311,37 +311,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - The operational mode to use, or 0 if none. Note that the CONFIG register will indicate if specific modes beyond SHA1 and SHA2-256 are available."]
     #[inline(always)]
-    #[must_use]
     pub fn mode(&mut self) -> ModeW<CtrlSpec> {
         ModeW::new(self, 0)
     }
     #[doc = "Bit 4 - Written with 1 when starting a new Hash/Crypto. It self clears. Note that the WAITING Status bit will clear for a cycle during the initialization from New=1."]
     #[inline(always)]
-    #[must_use]
     pub fn new_hash(&mut self) -> NewHashW<CtrlSpec> {
         NewHashW::new(self, 4)
     }
     #[doc = "Bit 5 - If 1, allows the SHA RELOAD registers to be used. This is used to save a partial Hash Digest (e.g. when need to run AES) and then reload it later for continuation."]
     #[inline(always)]
-    #[must_use]
     pub fn reload(&mut self) -> ReloadW<CtrlSpec> {
         ReloadW::new(self, 5)
     }
     #[doc = "Bit 8 - Written with 1 to use DMA to fill INDATA. If Hash, will request from DMA for 16 words and then will process the Hash. If Cryptographic, it will load as many words as needed, including key if not already loaded. It will then request again. Normal model is that the DMA interrupts the processor when its length expires. Note that if the processor will write the key and optionally IV, it should not enable this until it has done so. Otherwise, the DMA will be expected to load those for the 1st block (when needed)."]
     #[inline(always)]
-    #[must_use]
     pub fn dma_i(&mut self) -> DmaIW<CtrlSpec> {
         DmaIW::new(self, 8)
     }
     #[doc = "Bit 9 - Written to 1 to use DMA to drain the digest/output. If both DMA_I and DMA_O are set, the DMA has to know to switch direction and the locations. This can be used for crypto uses."]
     #[inline(always)]
-    #[must_use]
     pub fn dma_o(&mut self) -> DmaOW<CtrlSpec> {
         DmaOW::new(self, 9)
     }
     #[doc = "Bit 12 - If 1, will swap bytes in the word for SHA hashing. The default is byte order (so LSB is 1st byte) but this allows swapping to MSB is 1st such as is shown in SHS spec. For cryptographic swapping, see the CRYPTCFG register."]
     #[inline(always)]
-    #[must_use]
     pub fn hashswpb(&mut self) -> HashswpbW<CtrlSpec> {
         HashswpbW::new(self, 12)
     }

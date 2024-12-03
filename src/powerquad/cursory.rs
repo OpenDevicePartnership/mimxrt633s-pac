@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - 1 : Enable cursory mode"]
     #[inline(always)]
-    #[must_use]
     pub fn cursory(&mut self) -> CursoryW<CursorySpec> {
         CursoryW::new(self, 0)
     }

@@ -194,109 +194,91 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - violation information valid flag for AHB layer 0. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid0(&mut self) -> VioInfoValid0W<SecVioInfoValidSpec> {
         VioInfoValid0W::new(self, 0)
     }
     #[doc = "Bit 1 - violation information valid flag for AHB layer 1. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid1(&mut self) -> VioInfoValid1W<SecVioInfoValidSpec> {
         VioInfoValid1W::new(self, 1)
     }
     #[doc = "Bit 2 - violation information valid flag for AHB layer 2. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid2(&mut self) -> VioInfoValid2W<SecVioInfoValidSpec> {
         VioInfoValid2W::new(self, 2)
     }
     #[doc = "Bit 3 - violation information valid flag for AHB layer 3. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid3(&mut self) -> VioInfoValid3W<SecVioInfoValidSpec> {
         VioInfoValid3W::new(self, 3)
     }
     #[doc = "Bit 4 - violation information valid flag for AHB layer 4. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid4(&mut self) -> VioInfoValid4W<SecVioInfoValidSpec> {
         VioInfoValid4W::new(self, 4)
     }
     #[doc = "Bit 5 - violation information valid flag for AHB layer 5. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid5(&mut self) -> VioInfoValid5W<SecVioInfoValidSpec> {
         VioInfoValid5W::new(self, 5)
     }
     #[doc = "Bit 6 - violation information valid flag for AHB layer 6. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid6(&mut self) -> VioInfoValid6W<SecVioInfoValidSpec> {
         VioInfoValid6W::new(self, 6)
     }
     #[doc = "Bit 7 - violation information valid flag for AHB layer 7. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid7(&mut self) -> VioInfoValid7W<SecVioInfoValidSpec> {
         VioInfoValid7W::new(self, 7)
     }
     #[doc = "Bit 8 - violation information valid flag for AHB layer 8. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid8(&mut self) -> VioInfoValid8W<SecVioInfoValidSpec> {
         VioInfoValid8W::new(self, 8)
     }
     #[doc = "Bit 9 - violation information valid flag for AHB layer 9. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid9(&mut self) -> VioInfoValid9W<SecVioInfoValidSpec> {
         VioInfoValid9W::new(self, 9)
     }
     #[doc = "Bit 10 - violation information valid flag for AHB layer 10. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid10(&mut self) -> VioInfoValid10W<SecVioInfoValidSpec> {
         VioInfoValid10W::new(self, 10)
     }
     #[doc = "Bit 11 - violation information valid flag for AHB layer 11. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid11(&mut self) -> VioInfoValid11W<SecVioInfoValidSpec> {
         VioInfoValid11W::new(self, 11)
     }
     #[doc = "Bit 12 - violation information valid flag for AHB layer 12. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid12(&mut self) -> VioInfoValid12W<SecVioInfoValidSpec> {
         VioInfoValid12W::new(self, 12)
     }
     #[doc = "Bit 13 - violation information valid flag for AHB layer 13. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid13(&mut self) -> VioInfoValid13W<SecVioInfoValidSpec> {
         VioInfoValid13W::new(self, 13)
     }
     #[doc = "Bit 14 - violation information valid flag for AHB layer 14. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid14(&mut self) -> VioInfoValid14W<SecVioInfoValidSpec> {
         VioInfoValid14W::new(self, 14)
     }
     #[doc = "Bit 15 - violation information valid flag for AHB layer 15. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid15(&mut self) -> VioInfoValid15W<SecVioInfoValidSpec> {
         VioInfoValid15W::new(self, 15)
     }
     #[doc = "Bit 16 - violation information valid flag for AHB layer 16. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid16(&mut self) -> VioInfoValid16W<SecVioInfoValidSpec> {
         VioInfoValid16W::new(self, 16)
     }
     #[doc = "Bit 17 - violation information valid flag for AHB layer 17. 0: not valid. 1: valid (violation occurred). Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn vio_info_valid17(&mut self) -> VioInfoValid17W<SecVioInfoValidSpec> {
         VioInfoValid17W::new(self, 17)
     }

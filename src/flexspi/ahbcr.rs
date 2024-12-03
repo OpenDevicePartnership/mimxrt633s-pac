@@ -264,31 +264,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Parallel mode enabled for AHB triggered Command (both read and write) ."]
     #[inline(always)]
-    #[must_use]
     pub fn aparen(&mut self) -> AparenW<AhbcrSpec> {
         AparenW::new(self, 0)
     }
     #[doc = "Bit 3 - Enable AHB bus cachable read access support."]
     #[inline(always)]
-    #[must_use]
     pub fn cachableen(&mut self) -> CachableenW<AhbcrSpec> {
         CachableenW::new(self, 3)
     }
     #[doc = "Bit 4 - Enable AHB bus bufferable write access support. This field affects the last beat of AHB write access, refer for more details about AHB bufferable write."]
     #[inline(always)]
-    #[must_use]
     pub fn bufferableen(&mut self) -> BufferableenW<AhbcrSpec> {
         BufferableenW::new(self, 4)
     }
     #[doc = "Bit 5 - AHB Read Prefetch Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn prefetchen(&mut self) -> PrefetchenW<AhbcrSpec> {
         PrefetchenW::new(self, 5)
     }
     #[doc = "Bit 6 - AHB Read Address option bit. This option bit is intend to remove AHB burst start address alignment limitation."]
     #[inline(always)]
-    #[must_use]
     pub fn readaddropt(&mut self) -> ReadaddroptW<AhbcrSpec> {
         ReadaddroptW::new(self, 6)
     }

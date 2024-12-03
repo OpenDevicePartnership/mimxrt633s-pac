@@ -54,25 +54,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Controls the amount of time between SSEL assertion and the beginning of a data transfer. There is always one SPI clock time between SSEL assertion and the first clock edge. This is not considered part of the pre-delay. 0x0 = No additional time is inserted. 0x1 = 1 SPI clock time is inserted. 0x2 = 2 SPI clock times are inserted. 0xF = 15 SPI clock times are inserted."]
     #[inline(always)]
-    #[must_use]
     pub fn pre_delay(&mut self) -> PreDelayW<DlySpec> {
         PreDelayW::new(self, 0)
     }
     #[doc = "Bits 4:7 - Controls the amount of time between the end of a data transfer and SSEL deassertion. 0x0 = No additional time is inserted. 0x1 = 1 SPI clock time is inserted. 0x2 = 2 SPI clock times are inserted. 0xF = 15 SPI clock times are inserted."]
     #[inline(always)]
-    #[must_use]
     pub fn post_delay(&mut self) -> PostDelayW<DlySpec> {
         PostDelayW::new(self, 4)
     }
     #[doc = "Bits 8:11 - If the EOF flag is set, controls the minimum amount of time between the current frame and the next frame (or SSEL deassertion if EOT). 0x0 = No additional time is inserted. 0x1 = 1 SPI clock time is inserted. 0x2 = 2 SPI clock times are inserted. 0xF = 15 SPI clock times are inserted."]
     #[inline(always)]
-    #[must_use]
     pub fn frame_delay(&mut self) -> FrameDelayW<DlySpec> {
         FrameDelayW::new(self, 8)
     }
     #[doc = "Bits 12:15 - Controls the minimum amount of time that the SSEL is deasserted between transfers. 0x0 = The minimum time that SSEL is deasserted is 1 SPI clock time. (Zero added time.) 0x1 = The minimum time that SSEL is deasserted is 2 SPI clock times. 0x2 = The minimum time that SSEL is deasserted is 3 SPI clock times. 0xF = The minimum time that SSEL is deasserted is 16 SPI clock times."]
     #[inline(always)]
-    #[must_use]
     pub fn transfer_delay(&mut self) -> TransferDelayW<DlySpec> {
         TransferDelayW::new(self, 12)
     }

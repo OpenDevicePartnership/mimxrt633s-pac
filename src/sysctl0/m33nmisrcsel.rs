@@ -84,13 +84,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:6 - Selects one of the M33 interrupt sources as the NMI source. See M33 Interrupt Slot Table for Interrupt Slot Numers."]
     #[inline(always)]
-    #[must_use]
     pub fn nmisrcsel(&mut self) -> NmisrcselW<M33nmisrcselSpec> {
         NmisrcselW::new(self, 0)
     }
     #[doc = "Bit 31 - NMI interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn nmien(&mut self) -> NmienW<M33nmisrcselSpec> {
         NmienW::new(self, 31)
     }

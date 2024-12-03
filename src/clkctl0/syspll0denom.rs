@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:29 - This field contains the denominator of the SYSPLL0 fractional loop divider."]
     #[inline(always)]
-    #[must_use]
     pub fn denom(&mut self) -> DenomW<Syspll0denomSpec> {
         DenomW::new(self, 0)
     }

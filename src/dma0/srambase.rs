@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 9:31 - Address bits 31:9 of the beginning of the DMA descriptor table. For 18 channels, the table must begin on a 512 byte boundary."]
     #[inline(always)]
-    #[must_use]
     pub fn offset(&mut self) -> OffsetW<SrambaseSpec> {
         OffsetW::new(self, 9)
     }

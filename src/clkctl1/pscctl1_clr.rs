@@ -457,85 +457,71 @@ impl core::fmt::Debug for crate::generic::Reg<Pscctl1ClrSpec> {
 impl W {
     #[doc = "Bit 0 - HSGPIO0 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio0_clk_clr(&mut self) -> Hsgpio0ClkClrW<Pscctl1ClrSpec> {
         Hsgpio0ClkClrW::new(self, 0)
     }
     #[doc = "Bit 1 - HSGPIO1 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio1_clk_clr(&mut self) -> Hsgpio1ClkClrW<Pscctl1ClrSpec> {
         Hsgpio1ClkClrW::new(self, 1)
     }
     #[doc = "Bit 2 - HSGPIO2 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio2_clk_clr(&mut self) -> Hsgpio2ClkClrW<Pscctl1ClrSpec> {
         Hsgpio2ClkClrW::new(self, 2)
     }
     #[doc = "Bit 3 - HSGPIO3 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio3_clk_clr(&mut self) -> Hsgpio3ClkClrW<Pscctl1ClrSpec> {
         Hsgpio3ClkClrW::new(self, 3)
     }
     #[doc = "Bit 4 - HSGPIO4 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio4_clk_clr(&mut self) -> Hsgpio4ClkClrW<Pscctl1ClrSpec> {
         Hsgpio4ClkClrW::new(self, 4)
     }
     #[doc = "Bit 5 - HSGPIO5 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio5_clk_clr(&mut self) -> Hsgpio5ClkClrW<Pscctl1ClrSpec> {
         Hsgpio5ClkClrW::new(self, 5)
     }
     #[doc = "Bit 6 - HSGPIO6 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio6_clk_clr(&mut self) -> Hsgpio6ClkClrW<Pscctl1ClrSpec> {
         Hsgpio6ClkClrW::new(self, 6)
     }
     #[doc = "Bit 7 - HSGPIO7 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio7_clk_clr(&mut self) -> Hsgpio7ClkClrW<Pscctl1ClrSpec> {
         Hsgpio7ClkClrW::new(self, 7)
     }
     #[doc = "Bit 16 - CRC clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_clk_clr(&mut self) -> CrcClkClrW<Pscctl1ClrSpec> {
         CrcClkClrW::new(self, 16)
     }
     #[doc = "Bit 23 - DMAC0 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_clk_clr(&mut self) -> Dmac0ClkClrW<Pscctl1ClrSpec> {
         Dmac0ClkClrW::new(self, 23)
     }
     #[doc = "Bit 24 - DMAC1 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_clk_clr(&mut self) -> Dmac1ClkClrW<Pscctl1ClrSpec> {
         Dmac1ClkClrW::new(self, 24)
     }
     #[doc = "Bit 28 - MU clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn mu_clk_clr(&mut self) -> MuClkClrW<Pscctl1ClrSpec> {
         MuClkClrW::new(self, 28)
     }
     #[doc = "Bit 29 - SEMA clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn sema_clk_clr(&mut self) -> SemaClkClrW<Pscctl1ClrSpec> {
         SemaClkClrW::new(self, 29)
     }
     #[doc = "Bit 31 - FREQME clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn freqme_clk_clr(&mut self) -> FreqmeClkClrW<Pscctl1ClrSpec> {
         FreqmeClkClrW::new(self, 31)
     }

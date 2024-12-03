@@ -84,19 +84,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - DLY_CELL_SET_POST"]
     #[inline(always)]
-    #[must_use]
     pub fn dly_cell_set_post(&mut self) -> DlyCellSetPostW<ClkTuneCtrlStatusSpec> {
         DlyCellSetPostW::new(self, 0)
     }
     #[doc = "Bits 4:7 - DLY_CELL_SET_OUT"]
     #[inline(always)]
-    #[must_use]
     pub fn dly_cell_set_out(&mut self) -> DlyCellSetOutW<ClkTuneCtrlStatusSpec> {
         DlyCellSetOutW::new(self, 4)
     }
     #[doc = "Bits 8:14 - DLY_CELL_SET_PRE"]
     #[inline(always)]
-    #[must_use]
     pub fn dly_cell_set_pre(&mut self) -> DlyCellSetPreW<ClkTuneCtrlStatusSpec> {
         DlyCellSetPreW::new(self, 8)
     }

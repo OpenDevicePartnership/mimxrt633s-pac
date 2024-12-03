@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:22 - Flash Size in KByte."]
     #[inline(always)]
-    #[must_use]
     pub fn flshsz(&mut self) -> FlshszW<Flshb2cr0Spec> {
         FlshszW::new(self, 0)
     }

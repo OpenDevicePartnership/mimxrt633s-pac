@@ -94,49 +94,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Interrupt flag for match channel 0."]
     #[inline(always)]
-    #[must_use]
     pub fn mr0int(&mut self) -> Mr0intW<IrSpec> {
         Mr0intW::new(self, 0)
     }
     #[doc = "Bit 1 - Interrupt flag for match channel 1."]
     #[inline(always)]
-    #[must_use]
     pub fn mr1int(&mut self) -> Mr1intW<IrSpec> {
         Mr1intW::new(self, 1)
     }
     #[doc = "Bit 2 - Interrupt flag for match channel 2."]
     #[inline(always)]
-    #[must_use]
     pub fn mr2int(&mut self) -> Mr2intW<IrSpec> {
         Mr2intW::new(self, 2)
     }
     #[doc = "Bit 3 - Interrupt flag for match channel 3."]
     #[inline(always)]
-    #[must_use]
     pub fn mr3int(&mut self) -> Mr3intW<IrSpec> {
         Mr3intW::new(self, 3)
     }
     #[doc = "Bit 4 - Interrupt flag for capture channel 0 event."]
     #[inline(always)]
-    #[must_use]
     pub fn cr0int(&mut self) -> Cr0intW<IrSpec> {
         Cr0intW::new(self, 4)
     }
     #[doc = "Bit 5 - Interrupt flag for capture channel 1 event."]
     #[inline(always)]
-    #[must_use]
     pub fn cr1int(&mut self) -> Cr1intW<IrSpec> {
         Cr1intW::new(self, 5)
     }
     #[doc = "Bit 6 - Interrupt flag for capture channel 2 event."]
     #[inline(always)]
-    #[must_use]
     pub fn cr2int(&mut self) -> Cr2intW<IrSpec> {
         Cr2intW::new(self, 6)
     }
     #[doc = "Bit 7 - Interrupt flag for capture channel 3 event."]
     #[inline(always)]
-    #[must_use]
     pub fn cr3int(&mut self) -> Cr3intW<IrSpec> {
         Cr3intW::new(self, 7)
     }

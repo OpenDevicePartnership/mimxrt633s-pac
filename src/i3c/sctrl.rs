@@ -147,31 +147,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - EVENT"]
     #[inline(always)]
-    #[must_use]
     pub fn event(&mut self) -> EventW<SctrlSpec> {
         EventW::new(self, 0)
     }
     #[doc = "Bits 8:15 - In-Band Interrupt data"]
     #[inline(always)]
-    #[must_use]
     pub fn ibidata(&mut self) -> IbidataW<SctrlSpec> {
         IbidataW::new(self, 8)
     }
     #[doc = "Bits 16:19 - Pending interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn pendint(&mut self) -> PendintW<SctrlSpec> {
         PendintW::new(self, 16)
     }
     #[doc = "Bits 20:21 - Activity state (of slave)"]
     #[inline(always)]
-    #[must_use]
     pub fn actstate(&mut self) -> ActstateW<SctrlSpec> {
         ActstateW::new(self, 20)
     }
     #[doc = "Bits 24:31 - Vendor information"]
     #[inline(always)]
-    #[must_use]
     pub fn vendinfo(&mut self) -> VendinfoW<SctrlSpec> {
         VendinfoW::new(self, 24)
     }

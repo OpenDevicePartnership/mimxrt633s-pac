@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Base address register for the input B region"]
     #[inline(always)]
-    #[must_use]
     pub fn inbbase(&mut self) -> InbbaseW<InbbaseSpec> {
         InbbaseW::new(self, 0)
     }

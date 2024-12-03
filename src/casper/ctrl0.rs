@@ -154,25 +154,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Which bank-pair the offset ABOFF is within. This must be 0 if only 2-up"]
     #[inline(always)]
-    #[must_use]
     pub fn abbpair(&mut self) -> AbbpairW<Ctrl0Spec> {
         AbbpairW::new(self, 0)
     }
     #[doc = "Bit 2 - Word or DWord Offset of AB values, with B at \\[2\\]=0 and A at \\[2\\]=1 as far as the code sees (normally will be an interleaved bank so only sequential to AHB). Word offset only allowed if 32 bit operation. Ideally not in the same RAM as the CD values if 4-up"]
     #[inline(always)]
-    #[must_use]
     pub fn aboff(&mut self) -> AboffW<Ctrl0Spec> {
         AboffW::new(self, 2)
     }
     #[doc = "Bit 16 - Which bank-pair the offset CDOFF is within. This must be 0 if only 2-up"]
     #[inline(always)]
-    #[must_use]
     pub fn cdbpair(&mut self) -> CdbpairW<Ctrl0Spec> {
         CdbpairW::new(self, 16)
     }
     #[doc = "Bits 18:28 - Word or DWord Offset of CD, with D at \\[2\\]=0 and C at \\[2\\]=1 as far as the code sees (normally will be an interleaved bank so only sequential to AHB). Word offset only allowed if 32 bit operation. Ideally not in the same RAM as the AB values"]
     #[inline(always)]
-    #[must_use]
     pub fn cdoff(&mut self) -> CdoffW<Ctrl0Spec> {
         CdoffW::new(self, 18)
     }

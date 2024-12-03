@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - Each bit controls one match/capture register (register 0 = bit 0, register 1 = bit 1, etc.). The number of bits = number of match/captures in this SCT. 0 = register operates as match register. 1 = register operates as capture register."]
     #[inline(always)]
-    #[must_use]
     pub fn regmod_l(&mut self) -> RegmodLW<RegmodeSpec> {
         RegmodLW::new(self, 0)
     }
     #[doc = "Bits 16:31 - Each bit controls one match/capture register (register 0 = bit 16, register 1 = bit 17, etc.). The number of bits = number of match/captures in this SCT. 0 = register operates as match registers. 1 = register operates as capture registers."]
     #[inline(always)]
-    #[must_use]
     pub fn regmod_h(&mut self) -> RegmodHW<RegmodeSpec> {
         RegmodHW::new(self, 16)
     }

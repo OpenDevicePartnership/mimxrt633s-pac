@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:5 - Vddcore voltage value when SYSCTL is in run mode"]
     #[inline(always)]
-    #[must_use]
     pub fn corelvl(&mut self) -> CorelvlW<RunctrlSpec> {
         CorelvlW::new(self, 0)
     }

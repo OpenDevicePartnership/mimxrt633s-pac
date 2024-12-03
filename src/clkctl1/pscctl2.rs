@@ -674,67 +674,56 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - ct32bit timer 0 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit0_clk(&mut self) -> Ct32bit0ClkW<Pscctl2Spec> {
         Ct32bit0ClkW::new(self, 0)
     }
     #[doc = "Bit 1 - ct32bit timer 1 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit1_clk(&mut self) -> Ct32bit1ClkW<Pscctl2Spec> {
         Ct32bit1ClkW::new(self, 1)
     }
     #[doc = "Bit 2 - ct32bit timer 2 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit2_clk(&mut self) -> Ct32bit2ClkW<Pscctl2Spec> {
         Ct32bit2ClkW::new(self, 2)
     }
     #[doc = "Bit 3 - ct32bit timer 3 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit3_clk(&mut self) -> Ct32bit3ClkW<Pscctl2Spec> {
         Ct32bit3ClkW::new(self, 3)
     }
     #[doc = "Bit 4 - ct32bit timer 4 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit4_clk(&mut self) -> Ct32bit4ClkW<Pscctl2Spec> {
         Ct32bit4ClkW::new(self, 4)
     }
     #[doc = "Bit 7 - rtc lite clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn rtc_lite_clk(&mut self) -> RtcLiteClkW<Pscctl2Spec> {
         RtcLiteClkW::new(self, 7)
     }
     #[doc = "Bit 8 - mrt0 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn mrt0_clk(&mut self) -> Mrt0ClkW<Pscctl2Spec> {
         Mrt0ClkW::new(self, 8)
     }
     #[doc = "Bit 10 - wdt1 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn wwdt1_clk(&mut self) -> Wwdt1ClkW<Pscctl2Spec> {
         Wwdt1ClkW::new(self, 10)
     }
     #[doc = "Bit 16 - i3c0 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn i3c0_clk(&mut self) -> I3c0ClkW<Pscctl2Spec> {
         I3c0ClkW::new(self, 16)
     }
     #[doc = "Bit 30 - GPIOINTCTL clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn gpiointctl_clk(&mut self) -> GpiointctlClkW<Pscctl2Spec> {
         GpiointctlClkW::new(self, 30)
     }
     #[doc = "Bit 31 - PIMCTL clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn pimctl_clk(&mut self) -> PimctlClkW<Pscctl2Spec> {
         PimctlClkW::new(self, 31)
     }

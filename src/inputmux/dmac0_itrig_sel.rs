@@ -380,7 +380,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - DMA Input Triggers(n) Selection. 22:1 Selection for each. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn dma0_itrig_sel(&mut self) -> Dma0ItrigSelW<Dmac0ItrigSelSpec> {
         Dma0ItrigSelW::new(self, 0)
     }

@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Clock accuracy"]
     #[inline(always)]
-    #[must_use]
     pub fn accuracy(&mut self) -> AccuracyW<StcclockSpec> {
         AccuracyW::new(self, 0)
     }
     #[doc = "Bits 8:15 - Clock frequency"]
     #[inline(always)]
-    #[must_use]
     pub fn freq(&mut self) -> FreqW<StcclockSpec> {
         FreqW::new(self, 8)
     }

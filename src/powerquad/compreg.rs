@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Compute register bank"]
     #[inline(always)]
-    #[must_use]
     pub fn compreg(&mut self) -> CompregW<CompregSpec> {
         CompregW::new(self, 0)
     }

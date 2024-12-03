@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Contains the match value against which the 1 Hz RTC timer will be compared to set the alarm flag RTC_ALARM and generate an alarm interrupt/wake-up if enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn matval(&mut self) -> MatvalW<MatchSpec> {
         MatvalW::new(self, 0)
     }

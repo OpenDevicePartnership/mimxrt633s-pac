@@ -426,49 +426,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - External Match 0. This bit reflects the state of output MAT0, whether or not this output is connected to a pin. When a match occurs between the TC and MR0, this bit can either toggle, go LOW, go HIGH, or do nothing, as selected by EMR\\[5:4\\]. This bit is driven to the MAT pins if the match function is selected via IOCON. 0 = LOW. 1 = HIGH."]
     #[inline(always)]
-    #[must_use]
     pub fn em0(&mut self) -> Em0W<EmrSpec> {
         Em0W::new(self, 0)
     }
     #[doc = "Bit 1 - External Match 1. This bit reflects the state of output MAT1, whether or not this output is connected to a pin. When a match occurs between the TC and MR1, this bit can either toggle, go LOW, go HIGH, or do nothing, as selected by EMR\\[7:6\\]. This bit is driven to the MAT pins if the match function is selected via IOCON. 0 = LOW. 1 = HIGH."]
     #[inline(always)]
-    #[must_use]
     pub fn em1(&mut self) -> Em1W<EmrSpec> {
         Em1W::new(self, 1)
     }
     #[doc = "Bit 2 - External Match 2. This bit reflects the state of output MAT2, whether or not this output is connected to a pin. When a match occurs between the TC and MR2, this bit can either toggle, go LOW, go HIGH, or do nothing, as selected by EMR\\[9:8\\]. This bit is driven to the MAT pins if the match function is selected via IOCON. 0 = LOW. 1 = HIGH."]
     #[inline(always)]
-    #[must_use]
     pub fn em2(&mut self) -> Em2W<EmrSpec> {
         Em2W::new(self, 2)
     }
     #[doc = "Bit 3 - External Match 3. This bit reflects the state of output MAT3, whether or not this output is connected to a pin. When a match occurs between the TC and MR3, this bit can either toggle, go LOW, go HIGH, or do nothing, as selected by MR\\[11:10\\]. This bit is driven to the MAT pins if the match function is selected via IOCON. 0 = LOW. 1 = HIGH."]
     #[inline(always)]
-    #[must_use]
     pub fn em3(&mut self) -> Em3W<EmrSpec> {
         Em3W::new(self, 3)
     }
     #[doc = "Bits 4:5 - External Match Control 0. Determines the functionality of External Match 0."]
     #[inline(always)]
-    #[must_use]
     pub fn emc0(&mut self) -> Emc0W<EmrSpec> {
         Emc0W::new(self, 4)
     }
     #[doc = "Bits 6:7 - External Match Control 1. Determines the functionality of External Match 1."]
     #[inline(always)]
-    #[must_use]
     pub fn emc1(&mut self) -> Emc1W<EmrSpec> {
         Emc1W::new(self, 6)
     }
     #[doc = "Bits 8:9 - External Match Control 2. Determines the functionality of External Match 2."]
     #[inline(always)]
-    #[must_use]
     pub fn emc2(&mut self) -> Emc2W<EmrSpec> {
         Emc2W::new(self, 8)
     }
     #[doc = "Bits 10:11 - External Match Control 3. Determines the functionality of External Match 3."]
     #[inline(always)]
-    #[must_use]
     pub fn emc3(&mut self) -> Emc3W<EmrSpec> {
         Emc3W::new(self, 10)
     }

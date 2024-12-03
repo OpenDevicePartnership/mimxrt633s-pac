@@ -360,7 +360,7 @@ between the VBUS_VALID comparator and the Session Valid comparator\n\nValue on r
 pub enum VbusvalidToSessvalid {
     #[doc = "0: Use the VBUS_VALID comparator for VBUS_VALID results"]
     VbusvalidToSessvalid0 = 0,
-    #[doc = "1: Use the Session End comparator for VBUS_VALID results. The Session End threshold is >0.8V and &lt;4.0V."]
+    #[doc = "1: Use the Session End comparator for VBUS_VALID results. The Session End threshold is >0.8V and <4.0V."]
     VbusvalidToSessvalid1 = 1,
 }
 impl From<VbusvalidToSessvalid> for bool {
@@ -386,7 +386,7 @@ impl VbusvalidToSessvalidR {
     pub fn is_vbusvalid_to_sessvalid_0(&self) -> bool {
         *self == VbusvalidToSessvalid::VbusvalidToSessvalid0
     }
-    #[doc = "Use the Session End comparator for VBUS_VALID results. The Session End threshold is >0.8V and &lt;4.0V."]
+    #[doc = "Use the Session End comparator for VBUS_VALID results. The Session End threshold is >0.8V and <4.0V."]
     #[inline(always)]
     pub fn is_vbusvalid_to_sessvalid_1(&self) -> bool {
         *self == VbusvalidToSessvalid::VbusvalidToSessvalid1
@@ -404,7 +404,7 @@ where
     pub fn vbusvalid_to_sessvalid_0(self) -> &'a mut crate::W<REG> {
         self.variant(VbusvalidToSessvalid::VbusvalidToSessvalid0)
     }
-    #[doc = "Use the Session End comparator for VBUS_VALID results. The Session End threshold is >0.8V and &lt;4.0V."]
+    #[doc = "Use the Session End comparator for VBUS_VALID results. The Session End threshold is >0.8V and <4.0V."]
     #[inline(always)]
     pub fn vbusvalid_to_sessvalid_1(self) -> &'a mut crate::W<REG> {
         self.variant(VbusvalidToSessvalid::VbusvalidToSessvalid1)
@@ -664,13 +664,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - Sets the threshold for the VBUSVALID comparator"]
     #[inline(always)]
-    #[must_use]
     pub fn vbusvalid_thresh(&mut self) -> VbusvalidThreshW<Usb1VbusDetectSetSpec> {
         VbusvalidThreshW::new(self, 0)
     }
     #[doc = "Bit 3 - VBUS detect signal override enable"]
     #[inline(always)]
-    #[must_use]
     pub fn vbus_override_en(&mut self) -> VbusOverrideEnW<Usb1VbusDetectSetSpec> {
         VbusOverrideEnW::new(self, 3)
     }
@@ -678,7 +676,6 @@ impl W {
 if USB_VBUS_DETECT\\[3\\]
 is set to value 1'b1"]
     #[inline(always)]
-    #[must_use]
     pub fn sessend_override(&mut self) -> SessendOverrideW<Usb1VbusDetectSetSpec> {
         SessendOverrideW::new(self, 4)
     }
@@ -686,7 +683,6 @@ is set to value 1'b1"]
 if USB_VBUS_DETECT\\[3\\]
 is set to value 1'b1"]
     #[inline(always)]
-    #[must_use]
     pub fn bvalid_override(&mut self) -> BvalidOverrideW<Usb1VbusDetectSetSpec> {
         BvalidOverrideW::new(self, 5)
     }
@@ -694,51 +690,43 @@ is set to value 1'b1"]
 if USB_VBUS_DETECT\\[3\\]
 is set to value 1'b1"]
     #[inline(always)]
-    #[must_use]
     pub fn avalid_override(&mut self) -> AvalidOverrideW<Usb1VbusDetectSetSpec> {
         AvalidOverrideW::new(self, 6)
     }
     #[doc = "Bit 7 - Override value for VBUS_VALID signal sent to USB controller The bit field provides the value for VBUS_VALID reported to the USB controller if the value of USB1_VBUS_DETECT\\[3\\]
 is set to 1'b1"]
     #[inline(always)]
-    #[must_use]
     pub fn vbusvalid_override(&mut self) -> VbusvalidOverrideW<Usb1VbusDetectSetSpec> {
         VbusvalidOverrideW::new(self, 7)
     }
     #[doc = "Bit 8 - Selects the source of the VBUS_VALID signal reported to the USB controller This is one of the bit fields that selects the source of the VBUS_VALID signal reported to the USB controller"]
     #[inline(always)]
-    #[must_use]
     pub fn vbusvalid_sel(&mut self) -> VbusvalidSelW<Usb1VbusDetectSetSpec> {
         VbusvalidSelW::new(self, 8)
     }
     #[doc = "Bits 9:10 - Selects the source of the VBUS_VALID signal reported to the USB controller This is one of the bit fields that selects the source of the VBUS_VALID signal reported to the USB controller"]
     #[inline(always)]
-    #[must_use]
     pub fn vbus_source_sel(&mut self) -> VbusSourceSelW<Usb1VbusDetectSetSpec> {
         VbusSourceSelW::new(self, 9)
     }
     #[doc = "Bit 18 - Selects the comparator used for VBUS_VALID This bit field controls the comparator used to report the VBUS_VALID results in USB1_VBUS_DETECT\\[3\\]
 between the VBUS_VALID comparator and the Session Valid comparator"]
     #[inline(always)]
-    #[must_use]
     pub fn vbusvalid_to_sessvalid(&mut self) -> VbusvalidToSessvalidW<Usb1VbusDetectSetSpec> {
         VbusvalidToSessvalidW::new(self, 18)
     }
     #[doc = "Bit 20 - Enables the VBUS_VALID comparator Powers up the comparator used for the VBUS_VALID detector"]
     #[inline(always)]
-    #[must_use]
     pub fn pwrup_cmps(&mut self) -> PwrupCmpsW<Usb1VbusDetectSetSpec> {
         PwrupCmpsW::new(self, 20)
     }
     #[doc = "Bit 26 - Controls VBUS discharge resistor This bit field controls a nominal 22kohm resistor between the USB1_VBUS pin and ground"]
     #[inline(always)]
-    #[must_use]
     pub fn discharge_vbus(&mut self) -> DischargeVbusW<Usb1VbusDetectSetSpec> {
         DischargeVbusW::new(self, 26)
     }
     #[doc = "Bit 31 - Enables resistors used for an older method of resistive battery charger detection"]
     #[inline(always)]
-    #[must_use]
     pub fn en_charger_resistor(&mut self) -> EnChargerResistorW<Usb1VbusDetectSetSpec> {
         EnChargerResistorW::new(self, 31)
     }

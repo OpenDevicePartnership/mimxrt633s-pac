@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - HW Unlock / Disable: Disable the OTP unlock for test, Teal and DSP debug Write any value to disable the allow testmode signal/allow CPU0 debug signal/allow CPU1 debug signal"]
     #[inline(always)]
-    #[must_use]
     pub fn hwunlock_disable(&mut self) -> HwunlockDisableW<HwunlockDisableSpec> {
         HwunlockDisableW::new(self, 0)
     }

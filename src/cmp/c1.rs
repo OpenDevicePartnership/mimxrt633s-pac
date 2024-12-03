@@ -554,73 +554,61 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - DAC Output Voltage Select"]
     #[inline(always)]
-    #[must_use]
     pub fn vosel(&mut self) -> VoselW<C1Spec> {
         VoselW::new(self, 0)
     }
     #[doc = "Bit 8 - DAC Mode Selection"]
     #[inline(always)]
-    #[must_use]
     pub fn dmode(&mut self) -> DmodeW<C1Spec> {
         DmodeW::new(self, 8)
     }
     #[doc = "Bit 9 - Supply Voltage Reference Source Select"]
     #[inline(always)]
-    #[must_use]
     pub fn vrsel(&mut self) -> VrselW<C1Spec> {
         VrselW::new(self, 9)
     }
     #[doc = "Bit 10 - DAC Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dacen(&mut self) -> DacenW<C1Spec> {
         DacenW::new(self, 10)
     }
     #[doc = "Bit 16 - Channel 0 input enable"]
     #[inline(always)]
-    #[must_use]
     pub fn chn0(&mut self) -> Chn0W<C1Spec> {
         Chn0W::new(self, 16)
     }
     #[doc = "Bit 17 - Channel 1 input enable"]
     #[inline(always)]
-    #[must_use]
     pub fn chn1(&mut self) -> Chn1W<C1Spec> {
         Chn1W::new(self, 17)
     }
     #[doc = "Bit 18 - Channel 2 input enable"]
     #[inline(always)]
-    #[must_use]
     pub fn chn2(&mut self) -> Chn2W<C1Spec> {
         Chn2W::new(self, 18)
     }
     #[doc = "Bit 19 - Channel 3 input enable"]
     #[inline(always)]
-    #[must_use]
     pub fn chn3(&mut self) -> Chn3W<C1Spec> {
         Chn3W::new(self, 19)
     }
     #[doc = "Bit 20 - Channel 4 input enable"]
     #[inline(always)]
-    #[must_use]
     pub fn chn4(&mut self) -> Chn4W<C1Spec> {
         Chn4W::new(self, 20)
     }
     #[doc = "Bit 21 - Channel 5 input enable"]
     #[inline(always)]
-    #[must_use]
     pub fn chn5(&mut self) -> Chn5W<C1Spec> {
         Chn5W::new(self, 21)
     }
     #[doc = "Bits 24:26 - Minus Input MUX Control"]
     #[inline(always)]
-    #[must_use]
     pub fn msel(&mut self) -> MselW<C1Spec> {
         MselW::new(self, 24)
     }
     #[doc = "Bits 28:30 - Plus Input MUX Control"]
     #[inline(always)]
-    #[must_use]
     pub fn psel(&mut self) -> PselW<C1Spec> {
         PselW::new(self, 28)
     }

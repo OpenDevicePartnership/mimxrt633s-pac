@@ -64,31 +64,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - TUNING_START_TAP"]
     #[inline(always)]
-    #[must_use]
     pub fn tuning_start_tap(&mut self) -> TuningStartTapW<TuningCtrlSpec> {
         TuningStartTapW::new(self, 0)
     }
     #[doc = "Bits 8:15 - TUNING_COUNTER"]
     #[inline(always)]
-    #[must_use]
     pub fn tuning_counter(&mut self) -> TuningCounterW<TuningCtrlSpec> {
         TuningCounterW::new(self, 8)
     }
     #[doc = "Bits 16:18 - TUNING_STEP"]
     #[inline(always)]
-    #[must_use]
     pub fn tuning_step(&mut self) -> TuningStepW<TuningCtrlSpec> {
         TuningStepW::new(self, 16)
     }
     #[doc = "Bits 20:22 - TUNING_WINDOW"]
     #[inline(always)]
-    #[must_use]
     pub fn tuning_window(&mut self) -> TuningWindowW<TuningCtrlSpec> {
         TuningWindowW::new(self, 20)
     }
     #[doc = "Bit 24 - STD_TUNING_EN"]
     #[inline(always)]
-    #[must_use]
     pub fn std_tuning_en(&mut self) -> StdTuningEnW<TuningCtrlSpec> {
         StdTuningEnW::new(self, 24)
     }

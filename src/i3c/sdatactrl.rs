@@ -308,31 +308,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Flush the to-bus buffer/FIFO"]
     #[inline(always)]
-    #[must_use]
     pub fn flushtb(&mut self) -> FlushtbW<SdatactrlSpec> {
         FlushtbW::new(self, 0)
     }
     #[doc = "Bit 1 - Flushes the from-bus buffer/FIFO"]
     #[inline(always)]
-    #[must_use]
     pub fn flushfb(&mut self) -> FlushfbW<SdatactrlSpec> {
         FlushfbW::new(self, 1)
     }
     #[doc = "Bit 3 - Unlock"]
     #[inline(always)]
-    #[must_use]
     pub fn unlock(&mut self) -> UnlockW<SdatactrlSpec> {
         UnlockW::new(self, 3)
     }
     #[doc = "Bits 4:5 - Trigger level for TX FIFO emptiness"]
     #[inline(always)]
-    #[must_use]
     pub fn txtrig(&mut self) -> TxtrigW<SdatactrlSpec> {
         TxtrigW::new(self, 4)
     }
     #[doc = "Bits 6:7 - Trigger level for RX FIFO fullness"]
     #[inline(always)]
-    #[must_use]
     pub fn rxtrig(&mut self) -> RxtrigW<SdatactrlSpec> {
         RxtrigW::new(self, 6)
     }

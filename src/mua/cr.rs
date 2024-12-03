@@ -529,49 +529,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - Fn"]
     #[inline(always)]
-    #[must_use]
     pub fn fn_(&mut self) -> FnW<CrSpec> {
         FnW::new(self, 0)
     }
     #[doc = "Bit 5 - MUR"]
     #[inline(always)]
-    #[must_use]
     pub fn mur(&mut self) -> MurW<CrSpec> {
         MurW::new(self, 5)
     }
     #[doc = "Bit 6 - BRDIE"]
     #[inline(always)]
-    #[must_use]
     pub fn rdie(&mut self) -> RdieW<CrSpec> {
         RdieW::new(self, 6)
     }
     #[doc = "Bit 12 - RAIE"]
     #[inline(always)]
-    #[must_use]
     pub fn raie(&mut self) -> RaieW<CrSpec> {
         RaieW::new(self, 12)
     }
     #[doc = "Bits 16:19 - GIRn"]
     #[inline(always)]
-    #[must_use]
     pub fn girn(&mut self) -> GirnW<CrSpec> {
         GirnW::new(self, 16)
     }
     #[doc = "Bits 20:23 - TIEn"]
     #[inline(always)]
-    #[must_use]
     pub fn tien(&mut self) -> TienW<CrSpec> {
         TienW::new(self, 20)
     }
     #[doc = "Bits 24:27 - RIEn"]
     #[inline(always)]
-    #[must_use]
     pub fn rien(&mut self) -> RienW<CrSpec> {
         RienW::new(self, 24)
     }
     #[doc = "Bits 28:31 - GIEn"]
     #[inline(always)]
-    #[must_use]
     pub fn gien(&mut self) -> GienW<CrSpec> {
         GienW::new(self, 28)
     }

@@ -42,13 +42,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 4:7 - Host Initiated Resume Duration - SW."]
     #[inline(always)]
-    #[must_use]
     pub fn hird_sw(&mut self) -> HirdSwW<LpmSpec> {
         HirdSwW::new(self, 4)
     }
     #[doc = "Bit 8 - As long as this bit is set to one and LPM supported bit is set to one, HW will return a NYET handshake on every LPM token it receives."]
     #[inline(always)]
-    #[must_use]
     pub fn data_pending(&mut self) -> DataPendingW<LpmSpec> {
         DataPendingW::new(self, 8)
     }

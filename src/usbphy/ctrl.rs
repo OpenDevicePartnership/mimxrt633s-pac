@@ -204,85 +204,71 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 1 - For host mode, enables high-speed disconnect detector"]
     #[inline(always)]
-    #[must_use]
     pub fn enhostdiscondetect(&mut self) -> EnhostdiscondetectW<CtrlSpec> {
         EnhostdiscondetectW::new(self, 1)
     }
     #[doc = "Bit 3 - Indicates that the device has disconnected in High-Speed mode"]
     #[inline(always)]
-    #[must_use]
     pub fn hostdiscondetect_irq(&mut self) -> HostdiscondetectIrqW<CtrlSpec> {
         HostdiscondetectIrqW::new(self, 3)
     }
     #[doc = "Bit 4 - Enables non-standard resistive plugged-in detection This bit field controls connection of nominal 200kohm resistors to both the USB_DP and USB_DM pins as one method of detecting when a USB cable is attached in device mode"]
     #[inline(always)]
-    #[must_use]
     pub fn endevplugindet(&mut self) -> EndevplugindetW<CtrlSpec> {
         EndevplugindetW::new(self, 4)
     }
     #[doc = "Bit 12 - Indicates that the device is connected"]
     #[inline(always)]
-    #[must_use]
     pub fn devplugin_irq(&mut self) -> DevpluginIrqW<CtrlSpec> {
         DevpluginIrqW::new(self, 12)
     }
     #[doc = "Bit 14 - Enables UTMI+ Level 2 operation for the USB HS PHY"]
     #[inline(always)]
-    #[must_use]
     pub fn enutmilevel2(&mut self) -> Enutmilevel2W<CtrlSpec> {
         Enutmilevel2W::new(self, 14)
     }
     #[doc = "Bit 15 - Enables UTMI+ Level 3 operation for the USB HS PHY"]
     #[inline(always)]
-    #[must_use]
     pub fn enutmilevel3(&mut self) -> Enutmilevel3W<CtrlSpec> {
         Enutmilevel3W::new(self, 15)
     }
     #[doc = "Bit 18 - Enable the auto resume feature, when set, HW will use 32KHz clock to send Resume to respond to the device remote wakeup(for host mode only)"]
     #[inline(always)]
-    #[must_use]
     pub fn autoresume_en(&mut self) -> AutoresumeEnW<CtrlSpec> {
         AutoresumeEnW::new(self, 18)
     }
     #[doc = "Bit 19 - Enables the feature to auto-clear the CLKGATE bit if there is wakeup event while USB is suspended"]
     #[inline(always)]
-    #[must_use]
     pub fn enautoclr_clkgate(&mut self) -> EnautoclrClkgateW<CtrlSpec> {
         EnautoclrClkgateW::new(self, 19)
     }
     #[doc = "Bit 20 - Enables the feature to auto-clear the PWD register bits in PWD if there is wakeup event while USB is suspended"]
     #[inline(always)]
-    #[must_use]
     pub fn enautoclr_phy_pwd(&mut self) -> EnautoclrPhyPwdW<CtrlSpec> {
         EnautoclrPhyPwdW::new(self, 20)
     }
     #[doc = "Bit 24 - Enables the feature to reset the FSDLL lock detection logic at the end of each TX packet."]
     #[inline(always)]
-    #[must_use]
     pub fn fsdll_rst_en(&mut self) -> FsdllRstEnW<CtrlSpec> {
         FsdllRstEnW::new(self, 24)
     }
     #[doc = "Bit 28 - Forces the next FS packet that is transmitted to have a EOP with low-speed timing"]
     #[inline(always)]
-    #[must_use]
     pub fn host_force_ls_se0(&mut self) -> HostForceLsSe0W<CtrlSpec> {
         HostForceLsSe0W::new(self, 28)
     }
     #[doc = "Bit 29 - Used by the PHY to indicate a powered-down state"]
     #[inline(always)]
-    #[must_use]
     pub fn utmi_suspendm(&mut self) -> UtmiSuspendmW<CtrlSpec> {
         UtmiSuspendmW::new(self, 29)
     }
     #[doc = "Bit 30 - Gate UTMI Clocks"]
     #[inline(always)]
-    #[must_use]
     pub fn clkgate(&mut self) -> ClkgateW<CtrlSpec> {
         ClkgateW::new(self, 30)
     }
     #[doc = "Bit 31 - Writing a 1 to this bit will soft-reset the PWD, TX, RX, and CTRL registers"]
     #[inline(always)]
-    #[must_use]
     pub fn sftrst(&mut self) -> SftrstW<CtrlSpec> {
         SftrstW::new(self, 31)
     }

@@ -98,37 +98,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Drives SDIO Pad Compensation Circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn rasrcn(&mut self) -> RasrcnW<SdiopadctlSpec> {
         RasrcnW::new(self, 0)
     }
     #[doc = "Bits 4:7 - Drives SDIO Pad Compensation Circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn rasrcp(&mut self) -> RasrcpW<SdiopadctlSpec> {
         RasrcpW::new(self, 4)
     }
     #[doc = "Bit 8 - Drives SDIO Pad Compensation Circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn fastfrz(&mut self) -> FastfrzW<SdiopadctlSpec> {
         FastfrzW::new(self, 8)
     }
     #[doc = "Bit 9 - Drives SDIO Pad Compensation Circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn freeze(&mut self) -> FreezeW<SdiopadctlSpec> {
         FreezeW::new(self, 9)
     }
     #[doc = "Bit 10 - Drives SDIO Pad Compensation Circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn comptq(&mut self) -> ComptqW<SdiopadctlSpec> {
         ComptqW::new(self, 10)
     }
     #[doc = "Bit 11 - Drives SDIO Pad Compensation Circuit"]
     #[inline(always)]
-    #[must_use]
     pub fn compen(&mut self) -> CompenW<SdiopadctlSpec> {
         CompenW::new(self, 11)
     }

@@ -974,97 +974,81 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Software trigger 0 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt0(&mut self) -> Swt0W<SwtrigSpec> {
         Swt0W::new(self, 0)
     }
     #[doc = "Bit 1 - Software trigger 1 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt1(&mut self) -> Swt1W<SwtrigSpec> {
         Swt1W::new(self, 1)
     }
     #[doc = "Bit 2 - Software trigger 2 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt2(&mut self) -> Swt2W<SwtrigSpec> {
         Swt2W::new(self, 2)
     }
     #[doc = "Bit 3 - Software trigger 3 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt3(&mut self) -> Swt3W<SwtrigSpec> {
         Swt3W::new(self, 3)
     }
     #[doc = "Bit 4 - Software trigger 4 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt4(&mut self) -> Swt4W<SwtrigSpec> {
         Swt4W::new(self, 4)
     }
     #[doc = "Bit 5 - Software trigger 5 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt5(&mut self) -> Swt5W<SwtrigSpec> {
         Swt5W::new(self, 5)
     }
     #[doc = "Bit 6 - Software trigger 6 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt6(&mut self) -> Swt6W<SwtrigSpec> {
         Swt6W::new(self, 6)
     }
     #[doc = "Bit 7 - Software trigger 7 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt7(&mut self) -> Swt7W<SwtrigSpec> {
         Swt7W::new(self, 7)
     }
     #[doc = "Bit 8 - Software trigger 8 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt8(&mut self) -> Swt8W<SwtrigSpec> {
         Swt8W::new(self, 8)
     }
     #[doc = "Bit 9 - Software trigger 9 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt9(&mut self) -> Swt9W<SwtrigSpec> {
         Swt9W::new(self, 9)
     }
     #[doc = "Bit 10 - Software trigger 10 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt10(&mut self) -> Swt10W<SwtrigSpec> {
         Swt10W::new(self, 10)
     }
     #[doc = "Bit 11 - Software trigger 11 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt11(&mut self) -> Swt11W<SwtrigSpec> {
         Swt11W::new(self, 11)
     }
     #[doc = "Bit 12 - Software trigger 12 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt12(&mut self) -> Swt12W<SwtrigSpec> {
         Swt12W::new(self, 12)
     }
     #[doc = "Bit 13 - Software trigger 13 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt13(&mut self) -> Swt13W<SwtrigSpec> {
         Swt13W::new(self, 13)
     }
     #[doc = "Bit 14 - Software trigger 14 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt14(&mut self) -> Swt14W<SwtrigSpec> {
         Swt14W::new(self, 14)
     }
     #[doc = "Bit 15 - Software trigger 15 event"]
     #[inline(always)]
-    #[must_use]
     pub fn swt15(&mut self) -> Swt15W<SwtrigSpec> {
         Swt15W::new(self, 15)
     }

@@ -44,12 +44,12 @@ impl RegisterBlock {
     #[doc = "0x18 - TIMER2_BC12 register"]
     #[inline(always)]
     pub const fn timer2_bc12(&self) -> &Timer2Bc12 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(24).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(24).cast() }
     }
     #[doc = "0x18 - TIMER2_BC11 register"]
     #[inline(always)]
     pub const fn timer2_bc11(&self) -> &Timer2Bc11 {
-        unsafe { &*(self as *const Self).cast::<u8>().add(24).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(24).cast() }
     }
 }
 #[doc = "CONTROL (rw) register accessor: Control register\n\nYou can [`read`](crate::Reg::read) this register and get [`control::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`control::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@control`]

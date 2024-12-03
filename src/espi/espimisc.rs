@@ -72,31 +72,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Set to 1 to make the Alert/Reset pin an output GPIO, else is input (High-Z)"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_oe(&mut self) -> GpioOeW<EspimiscSpec> {
         GpioOeW::new(self, 0)
     }
     #[doc = "Bit 1 - Set to 1 to make the Alert/Reset pin act open-drain when GPIO_OE=1"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_od(&mut self) -> GpioOdW<EspimiscSpec> {
         GpioOdW::new(self, 1)
     }
     #[doc = "Bit 2 - Used when GPIO_OE=1"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_out(&mut self) -> GpioOutW<EspimiscSpec> {
         GpioOutW::new(self, 2)
     }
     #[doc = "Bit 4 - Reset# is a GPIO"]
     #[inline(always)]
-    #[must_use]
     pub fn risgp(&mut self) -> RisgpW<EspimiscSpec> {
         RisgpW::new(self, 4)
     }
     #[doc = "Bit 31 - This bit, when set, will employ clock gating for the eSPI side"]
     #[inline(always)]
-    #[must_use]
     pub fn pwrsav(&mut self) -> PwrsavW<EspimiscSpec> {
         PwrsavW::new(self, 31)
     }

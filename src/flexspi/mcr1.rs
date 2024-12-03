@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - AHB Read/Write access to Serial Flash Memory space will timeout if not data received from Flash or data not transmitted after AHBBUSWAIT * 1024 ahb clock cycles, AHB Bus will get an error response"]
     #[inline(always)]
-    #[must_use]
     pub fn ahbbuswait(&mut self) -> AhbbuswaitW<Mcr1Spec> {
         AhbbuswaitW::new(self, 0)
     }
     #[doc = "Bits 16:31 - Command Sequence Execution will timeout and abort after SEQWAIT * 1024 Serial Root Clock cycles"]
     #[inline(always)]
-    #[must_use]
     pub fn seqwait(&mut self) -> SeqwaitW<Mcr1Spec> {
         SeqwaitW::new(self, 16)
     }

@@ -466,49 +466,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - SCT operation"]
     #[inline(always)]
-    #[must_use]
     pub fn unify(&mut self) -> UnifyW<ConfigSpec> {
         UnifyW::new(self, 0)
     }
     #[doc = "Bits 1:2 - SCT clock mode"]
     #[inline(always)]
-    #[must_use]
     pub fn clkmode(&mut self) -> ClkmodeW<ConfigSpec> {
         ClkmodeW::new(self, 1)
     }
     #[doc = "Bits 3:6 - SCT clock select. The specific functionality of the designated input/edge is dependent on the CLKMODE bit selection in this register."]
     #[inline(always)]
-    #[must_use]
     pub fn cksel(&mut self) -> CkselW<ConfigSpec> {
         CkselW::new(self, 3)
     }
     #[doc = "Bit 7 - A 1 in this bit prevents the lower match registers from being reloaded from their respective reload registers. Setting this bit eliminates the need to write to the reload registers MATCHREL if the match values are fixed. Software can write to set or clear this bit at any time. This bit applies to both the higher and lower registers when the UNIFY bit is set."]
     #[inline(always)]
-    #[must_use]
     pub fn noreload_l(&mut self) -> NoreloadLW<ConfigSpec> {
         NoreloadLW::new(self, 7)
     }
     #[doc = "Bit 8 - A 1 in this bit prevents the higher match registers from being reloaded from their respective reload registers. Setting this bit eliminates the need to write to the reload registers MATCHREL if the match values are fixed. Software can write to set or clear this bit at any time. This bit is not used when the UNIFY bit is set."]
     #[inline(always)]
-    #[must_use]
     pub fn noreload_h(&mut self) -> NoreloadHW<ConfigSpec> {
         NoreloadHW::new(self, 8)
     }
     #[doc = "Bits 9:12 - Synchronization for input N (bit 9 = input 0, bit 10 = input 1,, bit 12 = input 3); all other bits are reserved. A 1 in one of these bits subjects the corresponding input to synchronization to the SCT clock, before it is used to create an event. If an input is known to already be synchronous to the SCT clock, this bit may be set to 0 for faster input response. (Note: The SCT clock is the system clock for CKMODEs 0-2. It is the selected, asynchronous SCT input clock for CKMODE3). Note that the INSYNC field only affects inputs used for event generation. It does not apply to the clock input specified in the CKSEL field."]
     #[inline(always)]
-    #[must_use]
     pub fn insync(&mut self) -> InsyncW<ConfigSpec> {
         InsyncW::new(self, 9)
     }
     #[doc = "Bit 17 - A one in this bit causes a match on match register 0 to be treated as a de-facto LIMIT condition without the need to define an associated event. As with any LIMIT event, this automatic limit causes the counter to be cleared to zero in unidirectional mode or to change the direction of count in bi-directional mode. Software can write to set or clear this bit at any time. This bit applies to both the higher and lower registers when the UNIFY bit is set."]
     #[inline(always)]
-    #[must_use]
     pub fn autolimit_l(&mut self) -> AutolimitLW<ConfigSpec> {
         AutolimitLW::new(self, 17)
     }
     #[doc = "Bit 18 - A one in this bit will cause a match on match register 0 to be treated as a de-facto LIMIT condition without the need to define an associated event. As with any LIMIT event, this automatic limit causes the counter to be cleared to zero in unidirectional mode or to change the direction of count in bi-directional mode. Software can write to set or clear this bit at any time. This bit is not used when the UNIFY bit is set."]
     #[inline(always)]
-    #[must_use]
     pub fn autolimit_h(&mut self) -> AutolimitHW<ConfigSpec> {
         AutolimitHW::new(self, 18)
     }

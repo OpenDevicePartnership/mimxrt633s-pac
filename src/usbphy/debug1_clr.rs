@@ -127,19 +127,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 13:14 - Delay increment of the rise of squelch:"]
     #[inline(always)]
-    #[must_use]
     pub fn entailadjvd(&mut self) -> EntailadjvdW<Debug1ClrSpec> {
         EntailadjvdW::new(self, 13)
     }
     #[doc = "Bits 18:20 - Adjustment bits on bandgap"]
     #[inline(always)]
-    #[must_use]
     pub fn usb2_refbias_vbgadj(&mut self) -> Usb2RefbiasVbgadjW<Debug1ClrSpec> {
         Usb2RefbiasVbgadjW::new(self, 18)
     }
     #[doc = "Bits 21:22 - Bias current control for usb2_phy"]
     #[inline(always)]
-    #[must_use]
     pub fn usb2_refbias_tst(&mut self) -> Usb2RefbiasTstW<Debug1ClrSpec> {
         Usb2RefbiasTstW::new(self, 21)
     }

@@ -445,43 +445,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - DTOCV_ACK"]
     #[inline(always)]
-    #[must_use]
     pub fn dtocv_ack(&mut self) -> DtocvAckW<MmcBootSpec> {
         DtocvAckW::new(self, 0)
     }
     #[doc = "Bit 4 - BOOT_ACK"]
     #[inline(always)]
-    #[must_use]
     pub fn boot_ack(&mut self) -> BootAckW<MmcBootSpec> {
         BootAckW::new(self, 4)
     }
     #[doc = "Bit 5 - BOOT_MODE"]
     #[inline(always)]
-    #[must_use]
     pub fn boot_mode(&mut self) -> BootModeW<MmcBootSpec> {
         BootModeW::new(self, 5)
     }
     #[doc = "Bit 6 - BOOT_EN"]
     #[inline(always)]
-    #[must_use]
     pub fn boot_en(&mut self) -> BootEnW<MmcBootSpec> {
         BootEnW::new(self, 6)
     }
     #[doc = "Bit 7 - AUTO_SABG_EN"]
     #[inline(always)]
-    #[must_use]
     pub fn auto_sabg_en(&mut self) -> AutoSabgEnW<MmcBootSpec> {
         AutoSabgEnW::new(self, 7)
     }
     #[doc = "Bit 8 - Disable Time Out"]
     #[inline(always)]
-    #[must_use]
     pub fn disable_time_out(&mut self) -> DisableTimeOutW<MmcBootSpec> {
         DisableTimeOutW::new(self, 8)
     }
     #[doc = "Bits 16:31 - BOOT_BLK_CNT"]
     #[inline(always)]
-    #[must_use]
     pub fn boot_blk_cnt(&mut self) -> BootBlkCntW<MmcBootSpec> {
         BootBlkCntW::new(self, 16)
     }

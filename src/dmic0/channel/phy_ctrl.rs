@@ -134,13 +134,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Capture DMIC on Falling edge (0 means on rising)"]
     #[inline(always)]
-    #[must_use]
     pub fn phy_fall(&mut self) -> PhyFallW<PhyCtrlSpec> {
         PhyFallW::new(self, 0)
     }
     #[doc = "Bit 1 - Use Half rate sampling (ie Clock to dmic is sent at half the speed than the decimator is providing)"]
     #[inline(always)]
-    #[must_use]
     pub fn phy_half(&mut self) -> PhyHalfW<PhyCtrlSpec> {
         PhyHalfW::new(self, 1)
     }

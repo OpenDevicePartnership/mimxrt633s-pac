@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Denominator of the fractional divider. DIV is equal to the programmed value +1. Always set to 0xFF to use with the fractional baud rate generator."]
     #[inline(always)]
-    #[must_use]
     pub fn div(&mut self) -> DivW<FrgctlSpec> {
         DivW::new(self, 0)
     }
     #[doc = "Bits 8:15 - Numerator of the fractional divider. MULT is equal to the programmed value."]
     #[inline(always)]
-    #[must_use]
     pub fn mult(&mut self) -> MultW<FrgctlSpec> {
         MultW::new(self, 8)
     }

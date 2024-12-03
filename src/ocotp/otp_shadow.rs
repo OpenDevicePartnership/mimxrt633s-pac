@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - OTP shadow register"]
     #[inline(always)]
-    #[must_use]
     pub fn shadow(&mut self) -> ShadowW<OtpShadowSpec> {
         ShadowW::new(self, 0)
     }

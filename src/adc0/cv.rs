@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - Compare Value Low."]
     #[inline(always)]
-    #[must_use]
     pub fn cvl(&mut self) -> CvlW<CvSpec> {
         CvlW::new(self, 0)
     }
     #[doc = "Bits 16:31 - Compare Value High."]
     #[inline(always)]
-    #[must_use]
     pub fn cvh(&mut self) -> CvhW<CvSpec> {
         CvhW::new(self, 16)
     }

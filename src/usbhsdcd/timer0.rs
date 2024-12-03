@@ -32,7 +32,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 16:25 - Sequence Initiation Time"]
     #[inline(always)]
-    #[must_use]
     pub fn tseq_init(&mut self) -> TseqInitW<Timer0Spec> {
         TseqInitW::new(self, 16)
     }

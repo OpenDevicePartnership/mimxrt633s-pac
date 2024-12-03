@@ -234,73 +234,61 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - This bit is 1 when the L or unified counter is counting down. Hardware sets this bit when the counter is counting up, counter limit occurs, and BIDIR = 1.Hardware clears this bit when the counter is counting down and a limit condition occurs or when the counter reaches 0."]
     #[inline(always)]
-    #[must_use]
     pub fn down_l(&mut self) -> DownLW<CtrlSpec> {
         DownLW::new(self, 0)
     }
     #[doc = "Bit 1 - When this bit is 1 and HALT is 0, the L or unified counter does not run, but I/O events related to the counter can occur. If a designated start event occurs, this bit is cleared and counting resumes."]
     #[inline(always)]
-    #[must_use]
     pub fn stop_l(&mut self) -> StopLW<CtrlSpec> {
         StopLW::new(self, 1)
     }
     #[doc = "Bit 2 - When this bit is 1, the L or unified counter does not run and no events can occur. A reset sets this bit. When the HALT_L bit is one, the STOP_L bit is cleared. It is possible to remove the halt condition while keeping the SCT in the stop condition (not running) with a single write to this register to simultaneously clear the HALT bit and set the STOP bit. Once set, only software can clear this bit to restore counter operation. This bit is set on reset."]
     #[inline(always)]
-    #[must_use]
     pub fn halt_l(&mut self) -> HaltLW<CtrlSpec> {
         HaltLW::new(self, 2)
     }
     #[doc = "Bit 3 - Writing a 1 to this bit clears the L or unified counter. This bit always reads as 0."]
     #[inline(always)]
-    #[must_use]
     pub fn clrctr_l(&mut self) -> ClrctrLW<CtrlSpec> {
         ClrctrLW::new(self, 3)
     }
     #[doc = "Bit 4 - L or unified counter direction select"]
     #[inline(always)]
-    #[must_use]
     pub fn bidir_l(&mut self) -> BidirLW<CtrlSpec> {
         BidirLW::new(self, 4)
     }
     #[doc = "Bits 5:12 - Specifies the factor by which the SCT clock is prescaled to produce the L or unified counter clock. The counter clock is clocked at the rate of the SCT clock divided by PRE_L+1. Clear the counter (by writing a 1 to the CLRCTR bit) whenever changing the PRE value."]
     #[inline(always)]
-    #[must_use]
     pub fn pre_l(&mut self) -> PreLW<CtrlSpec> {
         PreLW::new(self, 5)
     }
     #[doc = "Bit 16 - This bit is 1 when the H counter is counting down. Hardware sets this bit when the counter is counting, a counter limit condition occurs, and BIDIR is 1. Hardware clears this bit when the counter is counting down and a limit condition occurs or when the counter reaches 0."]
     #[inline(always)]
-    #[must_use]
     pub fn down_h(&mut self) -> DownHW<CtrlSpec> {
         DownHW::new(self, 16)
     }
     #[doc = "Bit 17 - When this bit is 1 and HALT is 0, the H counter does not, run but I/O events related to the counter can occur. If such an event matches the mask in the Start register, this bit is cleared and counting resumes."]
     #[inline(always)]
-    #[must_use]
     pub fn stop_h(&mut self) -> StopHW<CtrlSpec> {
         StopHW::new(self, 17)
     }
     #[doc = "Bit 18 - When this bit is 1, the H counter does not run and no events can occur. A reset sets this bit. When the HALT_H bit is one, the STOP_H bit is cleared. It is possible to remove the halt condition while keeping the SCT in the stop condition (not running) with a single write to this register to simultaneously clear the HALT bit and set the STOP bit. Once set, this bit can only be cleared by software to restore counter operation. This bit is set on reset."]
     #[inline(always)]
-    #[must_use]
     pub fn halt_h(&mut self) -> HaltHW<CtrlSpec> {
         HaltHW::new(self, 18)
     }
     #[doc = "Bit 19 - Writing a 1 to this bit clears the H counter. This bit always reads as 0."]
     #[inline(always)]
-    #[must_use]
     pub fn clrctr_h(&mut self) -> ClrctrHW<CtrlSpec> {
         ClrctrHW::new(self, 19)
     }
     #[doc = "Bit 20 - Direction select"]
     #[inline(always)]
-    #[must_use]
     pub fn bidir_h(&mut self) -> BidirHW<CtrlSpec> {
         BidirHW::new(self, 20)
     }
     #[doc = "Bits 21:28 - Specifies the factor by which the SCT clock is prescaled to produce the H counter clock. The counter clock is clocked at the rate of the SCT clock divided by PRELH+1. Clear the counter (by writing a 1 to the CLRCTR bit) whenever changing the PRE value."]
     #[inline(always)]
-    #[must_use]
     pub fn pre_h(&mut self) -> PreHW<CtrlSpec> {
         PreHW::new(self, 21)
     }

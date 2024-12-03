@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Register to hold working result (from multiplier, adder/xor, etc). Is not normally written or read by application, but is available when accelerator not busy."]
     #[inline(always)]
-    #[must_use]
     pub fn reg_value(&mut self) -> RegValueW<Res3Spec> {
         RegValueW::new(self, 0)
     }

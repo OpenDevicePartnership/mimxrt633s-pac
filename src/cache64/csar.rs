@@ -94,19 +94,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Initiate Cache Line Command"]
     #[inline(always)]
-    #[must_use]
     pub fn lgo(&mut self) -> LgoW<CsarSpec> {
         LgoW::new(self, 0)
     }
     #[doc = "Bits 1:27 - Physical Address"]
     #[inline(always)]
-    #[must_use]
     pub fn phyaddr27_1(&mut self) -> Phyaddr27_1W<CsarSpec> {
         Phyaddr27_1W::new(self, 1)
     }
     #[doc = "Bits 29:31 - Physical Address"]
     #[inline(always)]
-    #[must_use]
     pub fn phyaddr31_29(&mut self) -> Phyaddr31_29W<CsarSpec> {
         Phyaddr31_29W::new(self, 29)
     }

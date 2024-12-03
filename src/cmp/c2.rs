@@ -439,73 +439,61 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:5 - ACOn"]
     #[inline(always)]
-    #[must_use]
     pub fn acon(&mut self) -> AconW<C2Spec> {
         AconW::new(self, 0)
     }
     #[doc = "Bits 8:13 - Comparator and DAC initialization delay modulus."]
     #[inline(always)]
-    #[must_use]
     pub fn initmod(&mut self) -> InitmodW<C2Spec> {
         InitmodW::new(self, 8)
     }
     #[doc = "Bits 14:15 - Number of sample clocks"]
     #[inline(always)]
-    #[must_use]
     pub fn nsam(&mut self) -> NsamW<C2Spec> {
         NsamW::new(self, 14)
     }
     #[doc = "Bit 16 - CH0F"]
     #[inline(always)]
-    #[must_use]
     pub fn ch0f(&mut self) -> Ch0fW<C2Spec> {
         Ch0fW::new(self, 16)
     }
     #[doc = "Bit 17 - CH1F"]
     #[inline(always)]
-    #[must_use]
     pub fn ch1f(&mut self) -> Ch1fW<C2Spec> {
         Ch1fW::new(self, 17)
     }
     #[doc = "Bit 18 - CH2F"]
     #[inline(always)]
-    #[must_use]
     pub fn ch2f(&mut self) -> Ch2fW<C2Spec> {
         Ch2fW::new(self, 18)
     }
     #[doc = "Bit 19 - CH3F"]
     #[inline(always)]
-    #[must_use]
     pub fn ch3f(&mut self) -> Ch3fW<C2Spec> {
         Ch3fW::new(self, 19)
     }
     #[doc = "Bit 20 - CH4F"]
     #[inline(always)]
-    #[must_use]
     pub fn ch4f(&mut self) -> Ch4fW<C2Spec> {
         Ch4fW::new(self, 20)
     }
     #[doc = "Bit 21 - CH5F"]
     #[inline(always)]
-    #[must_use]
     pub fn ch5f(&mut self) -> Ch5fW<C2Spec> {
         Ch5fW::new(self, 21)
     }
     #[doc = "Bits 25:27 - Fixed channel selection"]
     #[inline(always)]
-    #[must_use]
     pub fn fxmxch(&mut self) -> FxmxchW<C2Spec> {
         FxmxchW::new(self, 25)
     }
     #[doc = "Bit 29 - Fixed MUX Port"]
     #[inline(always)]
-    #[must_use]
     pub fn fxmp(&mut self) -> FxmpW<C2Spec> {
         FxmpW::new(self, 29)
     }
     #[doc = "Bit 30 - Round-Robin interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn rrie(&mut self) -> RrieW<C2Spec> {
         RrieW::new(self, 30)
     }

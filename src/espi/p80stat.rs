@@ -48,7 +48,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 20 - Resets counter, CNT, back to 0."]
     #[inline(always)]
-    #[must_use]
     pub fn rst(&mut self) -> RstW<P80statSpec> {
         RstW::new(self, 20)
     }

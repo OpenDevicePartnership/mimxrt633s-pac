@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 4 - Slave Select Assert. This flag is set whenever any slave select transitions from deasserted to asserted, in both master and slave modes. This allows determining when the SPI transmit/receive functions become busy, and allows waking up the device from reduced power modes when a slave mode access begins. This flag is cleared by software."]
     #[inline(always)]
-    #[must_use]
     pub fn ssa(&mut self) -> SsaW<StatSpec> {
         SsaW::new(self, 4)
     }
     #[doc = "Bit 5 - Slave Select Deassert. This flag is set whenever any asserted slave selects transition to deasserted, in both master and slave modes. This allows determining when the SPI transmit/receive functions become idle. This flag is cleared by software."]
     #[inline(always)]
-    #[must_use]
     pub fn ssd(&mut self) -> SsdW<StatSpec> {
         SsdW::new(self, 5)
     }
     #[doc = "Bit 7 - End Transfer control bit. Software can set this bit to force an end to the current transfer when the transmitter finishes any activity already in progress, as if the EOT flag had been set prior to the last transmission. This capability is included to support cases where it is not known when transmit data is written that it will be the end of a transfer. The bit is cleared when the transmitter becomes idle as the transfer comes to an end. Forcing an end of transfer in this manner causes any specified FRAME_DELAY and TRANSFER_DELAY to be inserted."]
     #[inline(always)]
-    #[must_use]
     pub fn endtransfer(&mut self) -> EndtransferW<StatSpec> {
         EndtransferW::new(self, 7)
     }

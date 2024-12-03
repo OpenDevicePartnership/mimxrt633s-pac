@@ -31,67 +31,56 @@ impl core::fmt::Debug for crate::generic::Reg<IntenclrSpec> {
 impl W {
     #[doc = "Bit 0 - Master Pending interrupt clear. Writing 1 to this bit clears the corresponding bit in the INTENSET register if implemented."]
     #[inline(always)]
-    #[must_use]
     pub fn mstpendingclr(&mut self) -> MstpendingclrW<IntenclrSpec> {
         MstpendingclrW::new(self, 0)
     }
     #[doc = "Bit 4 - Master Arbitration Loss interrupt clear."]
     #[inline(always)]
-    #[must_use]
     pub fn mstarblossclr(&mut self) -> MstarblossclrW<IntenclrSpec> {
         MstarblossclrW::new(self, 4)
     }
     #[doc = "Bit 6 - Master Start/Stop Error interrupt clear."]
     #[inline(always)]
-    #[must_use]
     pub fn mstststperrclr(&mut self) -> MstststperrclrW<IntenclrSpec> {
         MstststperrclrW::new(self, 6)
     }
     #[doc = "Bit 8 - Slave Pending interrupt clear."]
     #[inline(always)]
-    #[must_use]
     pub fn slvpendingclr(&mut self) -> SlvpendingclrW<IntenclrSpec> {
         SlvpendingclrW::new(self, 8)
     }
     #[doc = "Bit 11 - Slave Not Stretching interrupt clear."]
     #[inline(always)]
-    #[must_use]
     pub fn slvnotstrclr(&mut self) -> SlvnotstrclrW<IntenclrSpec> {
         SlvnotstrclrW::new(self, 11)
     }
     #[doc = "Bit 15 - Slave Deselect interrupt clear."]
     #[inline(always)]
-    #[must_use]
     pub fn slvdeselclr(&mut self) -> SlvdeselclrW<IntenclrSpec> {
         SlvdeselclrW::new(self, 15)
     }
     #[doc = "Bit 16 - Monitor data Ready interrupt clear."]
     #[inline(always)]
-    #[must_use]
     pub fn monrdyclr(&mut self) -> MonrdyclrW<IntenclrSpec> {
         MonrdyclrW::new(self, 16)
     }
     #[doc = "Bit 17 - Monitor Overrun interrupt clear."]
     #[inline(always)]
-    #[must_use]
     pub fn monovclr(&mut self) -> MonovclrW<IntenclrSpec> {
         MonovclrW::new(self, 17)
     }
     #[doc = "Bit 19 - Monitor Idle interrupt clear."]
     #[inline(always)]
-    #[must_use]
     pub fn monidleclr(&mut self) -> MonidleclrW<IntenclrSpec> {
         MonidleclrW::new(self, 19)
     }
     #[doc = "Bit 24 - Event time-out interrupt clear."]
     #[inline(always)]
-    #[must_use]
     pub fn eventtimeoutclr(&mut self) -> EventtimeoutclrW<IntenclrSpec> {
         EventtimeoutclrW::new(self, 24)
     }
     #[doc = "Bit 25 - SCL time-out interrupt clear."]
     #[inline(always)]
-    #[must_use]
     pub fn scltimeoutclr(&mut self) -> ScltimeoutclrW<IntenclrSpec> {
         ScltimeoutclrW::new(self, 25)
     }

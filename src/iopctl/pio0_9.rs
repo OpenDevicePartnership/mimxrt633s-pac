@@ -743,55 +743,46 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Function Selector. . .(FSELs Sources can be found in the next several pages.)"]
     #[inline(always)]
-    #[must_use]
     pub fn fsel(&mut self) -> FselW<Pio0_9Spec> {
         FselW::new(self, 0)
     }
     #[doc = "Bit 4 - Pullup / Pulldown Enable. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn pupdena(&mut self) -> PupdenaW<Pio0_9Spec> {
         PupdenaW::new(self, 4)
     }
     #[doc = "Bit 5 - Pullup or Pulldown Selector. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn pupdsel(&mut self) -> PupdselW<Pio0_9Spec> {
         PupdselW::new(self, 5)
     }
     #[doc = "Bit 6 - Input Buffer Enable. ."]
     #[inline(always)]
-    #[must_use]
     pub fn ibena(&mut self) -> IbenaW<Pio0_9Spec> {
         IbenaW::new(self, 6)
     }
     #[doc = "Bit 7 - Slew Rate Control. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn slewrate(&mut self) -> SlewrateW<Pio0_9Spec> {
         SlewrateW::new(self, 7)
     }
     #[doc = "Bit 8 - Drive Selector. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn fulldrive(&mut self) -> FulldriveW<Pio0_9Spec> {
         FulldriveW::new(self, 8)
     }
     #[doc = "Bit 9 - Analog Mux Enable. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn amena(&mut self) -> AmenaW<Pio0_9Spec> {
         AmenaW::new(self, 9)
     }
     #[doc = "Bit 10 - Pseudo Output Drain Enable. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn odena(&mut self) -> OdenaW<Pio0_9Spec> {
         OdenaW::new(self, 10)
     }
     #[doc = "Bit 11 - Input Invert Enable. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn iiena(&mut self) -> IienaW<Pio0_9Spec> {
         IienaW::new(self, 11)
     }

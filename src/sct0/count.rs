@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - When UNIFY = 0, read or write the 16-bit L counter value. When UNIFY = 1, read or write the lower 16 bits of the 32-bit unified counter."]
     #[inline(always)]
-    #[must_use]
     pub fn ctr_l(&mut self) -> CtrLW<CountSpec> {
         CtrLW::new(self, 0)
     }
     #[doc = "Bits 16:31 - When UNIFY = 0, read or write the 16-bit H counter value. When UNIFY = 1, read or write the upper 16 bits of the 32-bit unified counter."]
     #[inline(always)]
-    #[must_use]
     pub fn ctr_h(&mut self) -> CtrHW<CountSpec> {
         CtrHW::new(self, 16)
     }

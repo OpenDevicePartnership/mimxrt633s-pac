@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - 1' means enter stage 1 of VAD, ie a sound change has been detected and the HWVAD is being allowed to settle. Use 0 when changing back to detection mode. Allow several milliseconds in stage 1 for settling."]
     #[inline(always)]
-    #[must_use]
     pub fn st10(&mut self) -> St10W<Hwvadst10Spec> {
         St10W::new(self, 0)
     }

@@ -1454,145 +1454,121 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 1 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn pmic_mode0(&mut self) -> PmicMode0W<Pdruncfg0Spec> {
         PmicMode0W::new(self, 1)
     }
     #[doc = "Bit 2 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn pmic_mode1(&mut self) -> PmicMode1W<Pdruncfg0Spec> {
         PmicMode1W::new(self, 2)
     }
     #[doc = "Bit 4 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn vddcorereg_lp(&mut self) -> VddcoreregLpW<Pdruncfg0Spec> {
         VddcoreregLpW::new(self, 4)
     }
     #[doc = "Bit 6 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn pmcref_lp(&mut self) -> PmcrefLpW<Pdruncfg0Spec> {
         PmcrefLpW::new(self, 6)
     }
     #[doc = "Bit 7 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn hvd1v8_pd(&mut self) -> Hvd1v8PdW<Pdruncfg0Spec> {
         Hvd1v8PdW::new(self, 7)
     }
     #[doc = "Bit 8 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn porcore_lp(&mut self) -> PorcoreLpW<Pdruncfg0Spec> {
         PorcoreLpW::new(self, 8)
     }
     #[doc = "Bit 9 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn lvdcore_lp(&mut self) -> LvdcoreLpW<Pdruncfg0Spec> {
         LvdcoreLpW::new(self, 9)
     }
     #[doc = "Bit 10 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn hvdcore_pd(&mut self) -> HvdcorePdW<Pdruncfg0Spec> {
         HvdcorePdW::new(self, 10)
     }
     #[doc = "Bit 13 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sysxtal_pd(&mut self) -> SysxtalPdW<Pdruncfg0Spec> {
         SysxtalPdW::new(self, 13)
     }
     #[doc = "Bit 14 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn lposc_pd(&mut self) -> LposcPdW<Pdruncfg0Spec> {
         LposcPdW::new(self, 14)
     }
     #[doc = "Bit 15 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sfro_pd(&mut self) -> SfroPdW<Pdruncfg0Spec> {
         SfroPdW::new(self, 15)
     }
     #[doc = "Bit 16 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn ffro_pd(&mut self) -> FfroPdW<Pdruncfg0Spec> {
         FfroPdW::new(self, 16)
     }
     #[doc = "Bit 17 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn syspllldo_pd(&mut self) -> SyspllldoPdW<Pdruncfg0Spec> {
         SyspllldoPdW::new(self, 17)
     }
     #[doc = "Bit 18 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn syspllana_pd(&mut self) -> SyspllanaPdW<Pdruncfg0Spec> {
         SyspllanaPdW::new(self, 18)
     }
     #[doc = "Bit 19 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn audpllldo_pd(&mut self) -> AudpllldoPdW<Pdruncfg0Spec> {
         AudpllldoPdW::new(self, 19)
     }
     #[doc = "Bit 20 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn audpllana_pd(&mut self) -> AudpllanaPdW<Pdruncfg0Spec> {
         AudpllanaPdW::new(self, 20)
     }
     #[doc = "Bit 21 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn adc_pd(&mut self) -> AdcPdW<Pdruncfg0Spec> {
         AdcPdW::new(self, 21)
     }
     #[doc = "Bit 22 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn adc_lp(&mut self) -> AdcLpW<Pdruncfg0Spec> {
         AdcLpW::new(self, 22)
     }
     #[doc = "Bit 23 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn adctempsns_pd(&mut self) -> AdctempsnsPdW<Pdruncfg0Spec> {
         AdctempsnsPdW::new(self, 23)
     }
     #[doc = "Bit 25 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn acmp_pd(&mut self) -> AcmpPdW<Pdruncfg0Spec> {
         AcmpPdW::new(self, 25)
     }
     #[doc = "Bit 26 - High Speed Pad vdde0 voltage detect block"]
     #[inline(always)]
-    #[must_use]
     pub fn hspad0_vdet_lp(&mut self) -> Hspad0VdetLpW<Pdruncfg0Spec> {
         Hspad0VdetLpW::new(self, 26)
     }
     #[doc = "Bit 27 - High speed Pad vdde0 reference blocks"]
     #[inline(always)]
-    #[must_use]
     pub fn hspad0_ref_pd(&mut self) -> Hspad0RefPdW<Pdruncfg0Spec> {
         Hspad0RefPdW::new(self, 27)
     }
     #[doc = "Bit 28 - High Speed Pad vdde2 voltage detect block"]
     #[inline(always)]
-    #[must_use]
     pub fn hspad2_vdet_lp(&mut self) -> Hspad2VdetLpW<Pdruncfg0Spec> {
         Hspad2VdetLpW::new(self, 28)
     }
     #[doc = "Bit 29 - High speed Pad vdde2 reference blocks"]
     #[inline(always)]
-    #[must_use]
     pub fn hspad2_ref_pd(&mut self) -> Hspad2RefPdW<Pdruncfg0Spec> {
         Hspad2RefPdW::new(self, 29)
     }

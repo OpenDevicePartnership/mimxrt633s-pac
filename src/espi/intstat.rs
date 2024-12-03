@@ -94,49 +94,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - If set to 1, corresponding port will interrupt main processor if matches IRule"]
     #[inline(always)]
-    #[must_use]
     pub fn port_int(&mut self) -> PortIntW<IntstatSpec> {
         PortIntW::new(self, 0)
     }
     #[doc = "Bit 8 - If set to 1, Port80 will interrupt main processor on update from Host."]
     #[inline(always)]
-    #[must_use]
     pub fn p80int(&mut self) -> P80intW<IntstatSpec> {
         P80intW::new(self, 8)
     }
     #[doc = "Bit 9 - If 1, a change in Bus Reset status will interrupt main processor."]
     #[inline(always)]
-    #[must_use]
     pub fn bus_rst(&mut self) -> BusRstW<IntstatSpec> {
         BusRstW::new(self, 9)
     }
     #[doc = "Bit 10 - If 1, completion of an IRQ update will interrupt main processor."]
     #[inline(always)]
-    #[must_use]
     pub fn irq_upd(&mut self) -> IrqUpdW<IntstatSpec> {
         IrqUpdW::new(self, 10)
     }
     #[doc = "Bit 11 - If 1, when one or more VWire input has changed, will interrupt main processor."]
     #[inline(always)]
-    #[must_use]
     pub fn wire_chg(&mut self) -> WireChgW<IntstatSpec> {
         WireChgW::new(self, 11)
     }
     #[doc = "Bit 12 - If 1, when the HStall bit is set in the MSTAT register, will interrupt the main processor."]
     #[inline(always)]
-    #[must_use]
     pub fn hstall(&mut self) -> HstallW<IntstatSpec> {
         HstallW::new(self, 12)
     }
     #[doc = "Bit 13 - If 1, when a CRC error detected, will interrupt main processor."]
     #[inline(always)]
-    #[must_use]
     pub fn crcerr(&mut self) -> CrcerrW<IntstatSpec> {
         CrcerrW::new(self, 13)
     }
     #[doc = "Bit 14 - If 1, when ESPICFG GPIO changes input value, will interrupt main processor."]
     #[inline(always)]
-    #[must_use]
     pub fn gpio(&mut self) -> GpioW<IntstatSpec> {
         GpioW::new(self, 14)
     }

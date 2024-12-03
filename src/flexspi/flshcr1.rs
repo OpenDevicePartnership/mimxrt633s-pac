@@ -124,37 +124,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - Serial Flash CS setup time."]
     #[inline(always)]
-    #[must_use]
     pub fn tcss(&mut self) -> TcssW<Flshcr1Spec> {
         TcssW::new(self, 0)
     }
     #[doc = "Bits 5:9 - Serial Flash CS Hold time."]
     #[inline(always)]
-    #[must_use]
     pub fn tcsh(&mut self) -> TcshW<Flshcr1Spec> {
         TcshW::new(self, 5)
     }
     #[doc = "Bit 10 - Word Addressable."]
     #[inline(always)]
-    #[must_use]
     pub fn wa(&mut self) -> WaW<Flshcr1Spec> {
         WaW::new(self, 10)
     }
     #[doc = "Bits 11:14 - Column Address Size."]
     #[inline(always)]
-    #[must_use]
     pub fn cas(&mut self) -> CasW<Flshcr1Spec> {
         CasW::new(self, 11)
     }
     #[doc = "Bit 15 - CS interval unit"]
     #[inline(always)]
-    #[must_use]
     pub fn csintervalunit(&mut self) -> CsintervalunitW<Flshcr1Spec> {
         CsintervalunitW::new(self, 15)
     }
     #[doc = "Bits 16:31 - This field is used to set the minimum interval between flash device Chip selection deassertion and flash device Chip selection assertion. If external flash has a limitation on the interval between command sequences, this field should be set accordingly. If there is no limitation, set this field with value 0x0."]
     #[inline(always)]
-    #[must_use]
     pub fn csinterval(&mut self) -> CsintervalW<Flshcr1Spec> {
         CsintervalW::new(self, 16)
     }

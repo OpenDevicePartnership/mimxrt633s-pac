@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Gain factor for input signal into HWVAD"]
     #[inline(always)]
-    #[must_use]
     pub fn inputgain(&mut self) -> InputgainW<HwvadgainSpec> {
         InputgainW::new(self, 0)
     }

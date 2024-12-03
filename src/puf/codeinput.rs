@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<CodeinputSpec> {
 impl W {
     #[doc = "Bits 0:31 - AC/KC Input Data"]
     #[inline(always)]
-    #[must_use]
     pub fn codein(&mut self) -> CodeinW<CodeinputSpec> {
         CodeinW::new(self, 0)
     }

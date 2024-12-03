@@ -15,19 +15,16 @@ impl core::fmt::Debug for crate::generic::Reg<MwdatahSpec> {
 impl W {
     #[doc = "Bits 0:7 - Data byte 0"]
     #[inline(always)]
-    #[must_use]
     pub fn data0(&mut self) -> Data0W<MwdatahSpec> {
         Data0W::new(self, 0)
     }
     #[doc = "Bits 8:15 - Data byte 1"]
     #[inline(always)]
-    #[must_use]
     pub fn data1(&mut self) -> Data1W<MwdatahSpec> {
         Data1W::new(self, 8)
     }
     #[doc = "Bit 16 - End of message"]
     #[inline(always)]
-    #[must_use]
     pub fn end(&mut self) -> EndW<MwdatahSpec> {
         EndW::new(self, 16)
     }

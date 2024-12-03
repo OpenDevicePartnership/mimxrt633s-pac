@@ -32,7 +32,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 16:19 - Watermark level selection"]
     #[inline(always)]
-    #[must_use]
     pub fn fwmark(&mut self) -> FwmarkW<FctrlSpec> {
         FwmarkW::new(self, 16)
     }

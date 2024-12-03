@@ -94,19 +94,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Identifies the number of channels in this MRT.(4 channels on this device.)"]
     #[inline(always)]
-    #[must_use]
     pub fn noc(&mut self) -> NocW<ModcfgSpec> {
         NocW::new(self, 0)
     }
     #[doc = "Bits 4:8 - Identifies the number of timer bits in this MRT. (24 bits wide on this device.)"]
     #[inline(always)]
-    #[must_use]
     pub fn nob(&mut self) -> NobW<ModcfgSpec> {
         NobW::new(self, 4)
     }
     #[doc = "Bit 31 - Selects the operating mode for the INUSE flags and the IDLE_CH register."]
     #[inline(always)]
-    #[must_use]
     pub fn multitask(&mut self) -> MultitaskW<ModcfgSpec> {
         MultitaskW::new(self, 31)
     }

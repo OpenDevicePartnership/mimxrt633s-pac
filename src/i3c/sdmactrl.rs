@@ -254,19 +254,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - DMA Read (From-bus) trigger"]
     #[inline(always)]
-    #[must_use]
     pub fn dmafb(&mut self) -> DmafbW<SdmactrlSpec> {
         DmafbW::new(self, 0)
     }
     #[doc = "Bits 2:3 - DMA Write (To-bus) trigger"]
     #[inline(always)]
-    #[must_use]
     pub fn dmatb(&mut self) -> DmatbW<SdmactrlSpec> {
         DmatbW::new(self, 2)
     }
     #[doc = "Bits 4:5 - Width of DMA operations"]
     #[inline(always)]
-    #[must_use]
     pub fn dmawidth(&mut self) -> DmawidthW<SdmactrlSpec> {
         DmawidthW::new(self, 4)
     }

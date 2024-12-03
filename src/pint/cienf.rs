@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<CienfSpec> {
 impl W {
     #[doc = "Bits 0:7 - Ones written to this address clears bits in the IENF, thus disabling interrupts. Bit n clears bit n in the IENF register. 0 = No operation. 1 = LOW-active interrupt selected or falling edge interrupt disabled."]
     #[inline(always)]
-    #[must_use]
     pub fn cenaf(&mut self) -> CenafW<CienfSpec> {
         CenafW::new(self, 0)
     }

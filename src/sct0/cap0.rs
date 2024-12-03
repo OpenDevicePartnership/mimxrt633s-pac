@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - When UNIFY = 0, read the 16-bit counter value at which this register was last captured. When UNIFY = 1, read the lower 16 bits of the 32-bit value at which this register was last captured."]
     #[inline(always)]
-    #[must_use]
     pub fn capn_l(&mut self) -> CapnLW<Cap0Spec> {
         CapnLW::new(self, 0)
     }
     #[doc = "Bits 16:31 - When UNIFY = 0, read the 16-bit counter value at which this register was last captured. When UNIFY = 1, read the upper 16 bits of the 32-bit value at which this register was last captured."]
     #[inline(always)]
-    #[must_use]
     pub fn capn_h(&mut self) -> CapnHW<Cap0Spec> {
         CapnHW::new(self, 16)
     }

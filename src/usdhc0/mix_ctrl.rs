@@ -594,79 +594,66 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - DMA Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dmaen(&mut self) -> DmaenW<MixCtrlSpec> {
         DmaenW::new(self, 0)
     }
     #[doc = "Bit 1 - Block Count Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn bcen(&mut self) -> BcenW<MixCtrlSpec> {
         BcenW::new(self, 1)
     }
     #[doc = "Bit 2 - Auto CMD12 Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ac12en(&mut self) -> Ac12enW<MixCtrlSpec> {
         Ac12enW::new(self, 2)
     }
     #[doc = "Bit 3 - Dual Data Rate mode selection"]
     #[inline(always)]
-    #[must_use]
     pub fn ddr_en(&mut self) -> DdrEnW<MixCtrlSpec> {
         DdrEnW::new(self, 3)
     }
     #[doc = "Bit 4 - Data Transfer Direction Select"]
     #[inline(always)]
-    #[must_use]
     pub fn dtdsel(&mut self) -> DtdselW<MixCtrlSpec> {
         DtdselW::new(self, 4)
     }
     #[doc = "Bit 5 - Multi / Single Block Select"]
     #[inline(always)]
-    #[must_use]
     pub fn msbsel(&mut self) -> MsbselW<MixCtrlSpec> {
         MsbselW::new(self, 5)
     }
     #[doc = "Bit 6 - NIBBLE_POS"]
     #[inline(always)]
-    #[must_use]
     pub fn nibble_pos(&mut self) -> NibblePosW<MixCtrlSpec> {
         NibblePosW::new(self, 6)
     }
     #[doc = "Bit 7 - Auto CMD23 Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ac23en(&mut self) -> Ac23enW<MixCtrlSpec> {
         Ac23enW::new(self, 7)
     }
     #[doc = "Bit 22 - Execute Tuning: (Only used for SD3.0, SDR104 mode and EMMC HS200 mode)"]
     #[inline(always)]
-    #[must_use]
     pub fn exe_tune(&mut self) -> ExeTuneW<MixCtrlSpec> {
         ExeTuneW::new(self, 22)
     }
     #[doc = "Bit 23 - SMP_CLK_SEL"]
     #[inline(always)]
-    #[must_use]
     pub fn smp_clk_sel(&mut self) -> SmpClkSelW<MixCtrlSpec> {
         SmpClkSelW::new(self, 23)
     }
     #[doc = "Bit 24 - Auto Tuning Enable (Only used for SD3.0, SDR104 mode and and EMMC HS200 mode)"]
     #[inline(always)]
-    #[must_use]
     pub fn auto_tune_en(&mut self) -> AutoTuneEnW<MixCtrlSpec> {
         AutoTuneEnW::new(self, 24)
     }
     #[doc = "Bit 25 - Feedback Clock Source Selection (Only used for SD3.0, SDR104 mode and EMMC HS200 mode)"]
     #[inline(always)]
-    #[must_use]
     pub fn fbclk_sel(&mut self) -> FbclkSelW<MixCtrlSpec> {
         FbclkSelW::new(self, 25)
     }
     #[doc = "Bit 26 - Enable HS400 Mode"]
     #[inline(always)]
-    #[must_use]
     pub fn hs400_mode(&mut self) -> Hs400ModeW<MixCtrlSpec> {
         Hs400ModeW::new(self, 26)
     }

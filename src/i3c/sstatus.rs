@@ -377,49 +377,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 8 - Start"]
     #[inline(always)]
-    #[must_use]
     pub fn start(&mut self) -> StartW<SstatusSpec> {
         StartW::new(self, 8)
     }
     #[doc = "Bit 9 - Matched"]
     #[inline(always)]
-    #[must_use]
     pub fn matched(&mut self) -> MatchedW<SstatusSpec> {
         MatchedW::new(self, 9)
     }
     #[doc = "Bit 10 - Stop"]
     #[inline(always)]
-    #[must_use]
     pub fn stop(&mut self) -> StopW<SstatusSpec> {
         StopW::new(self, 10)
     }
     #[doc = "Bit 13 - DACHG"]
     #[inline(always)]
-    #[must_use]
     pub fn dachg(&mut self) -> DachgW<SstatusSpec> {
         DachgW::new(self, 13)
     }
     #[doc = "Bit 14 - Common Command Code"]
     #[inline(always)]
-    #[must_use]
     pub fn ccc(&mut self) -> CccW<SstatusSpec> {
         CccW::new(self, 14)
     }
     #[doc = "Bit 16 - High Data Rate command match"]
     #[inline(always)]
-    #[must_use]
     pub fn hdrmatch(&mut self) -> HdrmatchW<SstatusSpec> {
         HdrmatchW::new(self, 16)
     }
     #[doc = "Bit 17 - Common-Command-Code handled"]
     #[inline(always)]
-    #[must_use]
     pub fn chandled(&mut self) -> ChandledW<SstatusSpec> {
         ChandledW::new(self, 17)
     }
     #[doc = "Bit 18 - Event"]
     #[inline(always)]
-    #[must_use]
     pub fn event(&mut self) -> EventW<SstatusSpec> {
         EventW::new(self, 18)
     }

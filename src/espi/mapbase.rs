@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn base0(&mut self) -> Base0W<MapbaseSpec> {
         Base0W::new(self, 0)
     }
     #[doc = "Bits 16:31 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn base1(&mut self) -> Base1W<MapbaseSpec> {
         Base1W::new(self, 16)
     }

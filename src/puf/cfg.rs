@@ -134,13 +134,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Block Enroll and Set Key Operation"]
     #[inline(always)]
-    #[must_use]
     pub fn blockenroll_setkey(&mut self) -> BlockenrollSetkeyW<CfgSpec> {
         BlockenrollSetkeyW::new(self, 0)
     }
     #[doc = "Bit 1 - Block Key Output Data"]
     #[inline(always)]
-    #[must_use]
     pub fn blockkeyoutput(&mut self) -> BlockkeyoutputW<CfgSpec> {
         BlockkeyoutputW::new(self, 1)
     }

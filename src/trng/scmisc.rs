@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - LONG RUN MAX LIMIT"]
     #[inline(always)]
-    #[must_use]
     pub fn lrun_max(&mut self) -> LrunMaxW<ScmiscSpec> {
         LrunMaxW::new(self, 0)
     }
     #[doc = "Bits 16:19 - RETRY COUNT"]
     #[inline(always)]
-    #[must_use]
     pub fn rty_ct(&mut self) -> RtyCtW<ScmiscSpec> {
         RtyCtW::new(self, 16)
     }

@@ -185,14 +185,12 @@ impl W {
     #[doc = "Bit 0 - Override enable for PLL_DIV_SEL, when set, the register value in PLL_SIC\\[1:0\\]
 will be used."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_div_sel_override(&mut self) -> TrimDivSelOverrideW<TrimOverrideEnClrSpec> {
         TrimDivSelOverrideW::new(self, 0)
     }
     #[doc = "Bit 1 - Override enable for ENV_TAIL_ADJ, when set, the register value in DEBUG1\\[14:13\\]
 will be used."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_env_tail_adj_vd_override(
         &mut self,
     ) -> TrimEnvTailAdjVdOverrideW<TrimOverrideEnClrSpec> {
@@ -201,27 +199,23 @@ will be used."]
     #[doc = "Bit 2 - Override enable for TX_D_CAL, when set, the register value in TX\\[3:0\\]
 will be used."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_tx_d_cal_override(&mut self) -> TrimTxDCalOverrideW<TrimOverrideEnClrSpec> {
         TrimTxDCalOverrideW::new(self, 2)
     }
     #[doc = "Bit 3 - Override enable for TX_CAL45DP, when set, the register value in TX\\[19:16\\]
 will be used."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_tx_cal45dp_override(&mut self) -> TrimTxCal45dpOverrideW<TrimOverrideEnClrSpec> {
         TrimTxCal45dpOverrideW::new(self, 3)
     }
     #[doc = "Bit 4 - Override enable for TX_CAL45DM, when set, the register value in TX\\[11:8\\]
 will be used."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_tx_cal45dm_override(&mut self) -> TrimTxCal45dmOverrideW<TrimOverrideEnClrSpec> {
         TrimTxCal45dmOverrideW::new(self, 4)
     }
     #[doc = "Bit 5 - Override enable for bandgap adjustment"]
     #[inline(always)]
-    #[must_use]
     pub fn trim_refbias_vbgadj_override(
         &mut self,
     ) -> TrimRefbiasVbgadjOverrideW<TrimOverrideEnClrSpec> {
@@ -230,31 +224,26 @@ will be used."]
     #[doc = "Bit 6 - Override enable for bias current control When this field is set, the register value in DEBUG1\\[22:21\\]
 will be used"]
     #[inline(always)]
-    #[must_use]
     pub fn trim_refbias_tst_override(&mut self) -> TrimRefbiasTstOverrideW<TrimOverrideEnClrSpec> {
         TrimRefbiasTstOverrideW::new(self, 6)
     }
     #[doc = "Bits 10:12 - Adjustment bits for bandgap"]
     #[inline(always)]
-    #[must_use]
     pub fn trim_usb2_refbias_vbgadj(&mut self) -> TrimUsb2RefbiasVbgadjW<TrimOverrideEnClrSpec> {
         TrimUsb2RefbiasVbgadjW::new(self, 10)
     }
     #[doc = "Bits 13:14 - Bias current control for usb2_phy"]
     #[inline(always)]
-    #[must_use]
     pub fn trim_usb2_refbias_tst(&mut self) -> TrimUsb2RefbiasTstW<TrimOverrideEnClrSpec> {
         TrimUsb2RefbiasTstW::new(self, 13)
     }
     #[doc = "Bits 15:17 - IFR value of PLL_DIV_SEL."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_pll_ctrl0_div_sel(&mut self) -> TrimPllCtrl0DivSelW<TrimOverrideEnClrSpec> {
         TrimPllCtrl0DivSelW::new(self, 15)
     }
     #[doc = "Bits 18:19 - IFR value of ENV_TAIL_ADJ."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_usb_reg_env_tail_adj_vd(
         &mut self,
     ) -> TrimUsbRegEnvTailAdjVdW<TrimOverrideEnClrSpec> {
@@ -262,19 +251,16 @@ will be used"]
     }
     #[doc = "Bits 20:23 - IFR value of TX_D_CAL."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_usbphy_tx_d_cal(&mut self) -> TrimUsbphyTxDCalW<TrimOverrideEnClrSpec> {
         TrimUsbphyTxDCalW::new(self, 20)
     }
     #[doc = "Bits 24:27 - IFR value of TX_CAL45DP."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_usbphy_tx_cal45dp(&mut self) -> TrimUsbphyTxCal45dpW<TrimOverrideEnClrSpec> {
         TrimUsbphyTxCal45dpW::new(self, 24)
     }
     #[doc = "Bits 28:31 - IFR value of TX_CAL45DM."]
     #[inline(always)]
-    #[must_use]
     pub fn trim_usbphy_tx_cal45dm(&mut self) -> TrimUsbphyTxCal45dmW<TrimOverrideEnClrSpec> {
         TrimUsbphyTxCal45dmW::new(self, 28)
     }

@@ -47,7 +47,6 @@ impl core::fmt::Debug for crate::generic::Reg<Setvalid0Spec> {
 impl W {
     #[doc = "Bits 0:31 - SetValid control for DMA channel 0."]
     #[inline(always)]
-    #[must_use]
     pub fn sv(&mut self) -> SvW<Setvalid0Spec> {
         SvW::new(self, 0)
     }

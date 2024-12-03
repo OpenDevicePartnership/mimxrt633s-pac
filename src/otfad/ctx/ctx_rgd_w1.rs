@@ -204,25 +204,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Valid"]
     #[inline(always)]
-    #[must_use]
     pub fn vld(&mut self) -> VldW<CtxRgdW1Spec> {
         VldW::new(self, 0)
     }
     #[doc = "Bit 1 - AES Decryption Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn ade(&mut self) -> AdeW<CtxRgdW1Spec> {
         AdeW::new(self, 1)
     }
     #[doc = "Bit 2 - Read-Only"]
     #[inline(always)]
-    #[must_use]
     pub fn ro(&mut self) -> RoW<CtxRgdW1Spec> {
         RoW::new(self, 2)
     }
     #[doc = "Bits 10:31 - End Address"]
     #[inline(always)]
-    #[must_use]
     pub fn endaddr(&mut self) -> EndaddrW<CtxRgdW1Spec> {
         EndaddrW::new(self, 10)
     }

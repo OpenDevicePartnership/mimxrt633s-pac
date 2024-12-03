@@ -179,7 +179,7 @@ impl RegisterBlock {
         #[allow(clippy::no_effect)]
         [(); 8][n];
         unsafe {
-            &*(self as *const Self)
+            &*core::ptr::from_ref(self)
                 .cast::<u8>()
                 .add(1280)
                 .add(32 * n)
@@ -191,7 +191,7 @@ impl RegisterBlock {
     #[inline(always)]
     pub fn flexcomm_iter(&self) -> impl Iterator<Item = &Flexcomm> {
         (0..8).map(move |n| unsafe {
-            &*(self as *const Self)
+            &*core::ptr::from_ref(self)
                 .cast::<u8>()
                 .add(1280)
                 .add(32 * n)

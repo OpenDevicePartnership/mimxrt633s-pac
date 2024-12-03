@@ -169,31 +169,26 @@ impl core::fmt::Debug for crate::generic::Reg<Prstctl1SetSpec> {
 impl W {
     #[doc = "Bit 2 - SDIO0 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio0(&mut self) -> Sdio0W<Prstctl1SetSpec> {
         Sdio0W::new(self, 2)
     }
     #[doc = "Bit 3 - SDIO1 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio1(&mut self) -> Sdio1W<Prstctl1SetSpec> {
         Sdio1W::new(self, 3)
     }
     #[doc = "Bit 15 - Analog comparator reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn acmp0(&mut self) -> Acmp0W<Prstctl1SetSpec> {
         Acmp0W::new(self, 15)
     }
     #[doc = "Bit 16 - ADC reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn adc0(&mut self) -> Adc0W<Prstctl1SetSpec> {
         Adc0W::new(self, 16)
     }
     #[doc = "Bit 24 - SHSGPIO0 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn shsgpio0(&mut self) -> Shsgpio0W<Prstctl1SetSpec> {
         Shsgpio0W::new(self, 24)
     }

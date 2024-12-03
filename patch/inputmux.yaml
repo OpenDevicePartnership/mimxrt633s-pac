@@ -1,0 +1,4 @@
+INPUTMUX:
+  _modify:
+    CT32BIT_CAP_SEL*:
+      name: CT32BIT_CAP[%s]

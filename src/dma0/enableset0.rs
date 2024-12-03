@@ -81,7 +81,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Enable for DMA channel 0"]
     #[inline(always)]
-    #[must_use]
     pub fn ena(&mut self) -> EnaW<Enableset0Spec> {
         EnaW::new(self, 0)
     }

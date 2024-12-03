@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Data to send to Host. Application can tell when taken via the PnStatus register."]
     #[inline(always)]
-    #[must_use]
     pub fn data(&mut self) -> DataW<P0dataOutSpec> {
         DataW::new(self, 0)
     }

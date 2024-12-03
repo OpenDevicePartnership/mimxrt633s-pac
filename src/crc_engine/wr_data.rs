@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<WrDataSpec> {
 impl W {
     #[doc = "Bits 0:31 - Data written to this register will be taken to perform CRC calculation with selected bit order and 1's complement pre-process. Any write size 8, 16 or 32-bit are allowed and accept back-to-back transactions."]
     #[inline(always)]
-    #[must_use]
     pub fn crc_wr_data(&mut self) -> CrcWrDataW<WrDataSpec> {
         CrcWrDataW::new(self, 0)
     }

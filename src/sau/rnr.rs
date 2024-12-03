@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Region number."]
     #[inline(always)]
-    #[must_use]
     pub fn region(&mut self) -> RegionW<RnrSpec> {
         RegionW::new(self, 0)
     }

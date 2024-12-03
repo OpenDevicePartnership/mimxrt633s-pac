@@ -132,43 +132,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 8 - Port80 has had a request and is pending service."]
     #[inline(always)]
-    #[must_use]
     pub fn p80int(&mut self) -> P80intW<MstatSpec> {
         P80intW::new(self, 8)
     }
     #[doc = "Bit 9 - If 1, the entered or left reset. Sticky - must clear."]
     #[inline(always)]
-    #[must_use]
     pub fn bus_rst(&mut self) -> BusRstW<MstatSpec> {
         BusRstW::new(self, 9)
     }
     #[doc = "Bit 10 - If 1, the bus had an IRQ update completion (for eSPI, IRQPush done; for LPC, SERIRQ done)"]
     #[inline(always)]
-    #[must_use]
     pub fn irq_upd(&mut self) -> IrqUpdW<MstatSpec> {
         IrqUpdW::new(self, 10)
     }
     #[doc = "Bit 11 - If 1, one or more input VWire has changed since last cleared for eSPI; for LPC, SERIRQ started"]
     #[inline(always)]
-    #[must_use]
     pub fn wire_chg(&mut self) -> WireChgW<MstatSpec> {
         WireChgW::new(self, 11)
     }
     #[doc = "Bit 12 - If 1, the Host is stalled on a read from or write to a port that has the StallRd or StallWr bit set in the PnCFG register"]
     #[inline(always)]
-    #[must_use]
     pub fn hstall(&mut self) -> HstallW<MstatSpec> {
         HstallW::new(self, 12)
     }
     #[doc = "Bit 13 - If 1, the CRC from the Master did not match the computed CRC"]
     #[inline(always)]
-    #[must_use]
     pub fn crcerr(&mut self) -> CrcerrW<MstatSpec> {
         CrcerrW::new(self, 13)
     }
     #[doc = "Bit 14 - If 1, the GPIO in ESPIMISC has had an input change"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio(&mut self) -> GpioW<MstatSpec> {
         GpioW::new(self, 14)
     }

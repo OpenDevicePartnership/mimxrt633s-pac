@@ -214,37 +214,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Enables the DMA use on the 1st channel for eSPI and selects what triggers it"]
     #[inline(always)]
-    #[must_use]
     pub fn dma0en(&mut self) -> Dma0enW<DmactrlSpec> {
         Dma0enW::new(self, 0)
     }
     #[doc = "Bits 2:3 - Enables the DMA use on the 1st channel for eSPI and selects what triggers it"]
     #[inline(always)]
-    #[must_use]
     pub fn dma1en(&mut self) -> Dma1enW<DmactrlSpec> {
         Dma1enW::new(self, 2)
     }
     #[doc = "Bits 8:11 - Selects which port is operating the DMA: Value Meaning 0 to 7 Is normal port number up to max ports (e"]
     #[inline(always)]
-    #[must_use]
     pub fn dma0port(&mut self) -> Dma0portW<DmactrlSpec> {
         Dma0portW::new(self, 8)
     }
     #[doc = "Bits 12:15 - Selects which port is operating the DMA: Value Meaning 0 to 7 Is normal port number up to max ports (e"]
     #[inline(always)]
-    #[must_use]
     pub fn dma1port(&mut self) -> Dma1portW<DmactrlSpec> {
         Dma1portW::new(self, 12)
     }
     #[doc = "Bits 16:22 - Used with Mailbox and Bus master to allow RAM contents to be copied"]
     #[inline(always)]
-    #[must_use]
     pub fn cnt0(&mut self) -> Cnt0W<DmactrlSpec> {
         Cnt0W::new(self, 16)
     }
     #[doc = "Bits 24:30 - Used with Mailbox and Bus master to allow RAM contents to be copied"]
     #[inline(always)]
-    #[must_use]
     pub fn cnt1(&mut self) -> Cnt1W<DmactrlSpec> {
         Cnt1W::new(self, 24)
     }

@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 30 - Halts the divider counter. The intent is to allow the divider's clock source to be changed without the risk of a glitch at the output."]
     #[inline(always)]
-    #[must_use]
     pub fn halt(&mut self) -> HaltW<Wakeclk32khzdivSpec> {
         HaltW::new(self, 30)
     }

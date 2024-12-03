@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 5:9 - This indicates the first PTD that is used by the hardware when it is processing the ISO list."]
     #[inline(always)]
-    #[must_use]
     pub fn iso_first(&mut self) -> IsoFirstW<IsoptdSpec> {
         IsoFirstW::new(self, 5)
     }
     #[doc = "Bits 10:31 - Base address to be used by the hardware to find the start of the ISO list."]
     #[inline(always)]
-    #[must_use]
     pub fn iso_base(&mut self) -> IsoBaseW<IsoptdSpec> {
         IsoBaseW::new(self, 10)
     }

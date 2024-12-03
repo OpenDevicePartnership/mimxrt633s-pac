@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - Main Clock turn on delay for Deep Sleep wake up"]
     #[inline(always)]
-    #[must_use]
     pub fn delay(&mut self) -> DelayW<MainclksafetySpec> {
         DelayW::new(self, 0)
     }

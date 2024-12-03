@@ -154,13 +154,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Enable the TIMERn interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn inten(&mut self) -> IntenW<CtrlSpec> {
         IntenW::new(self, 0)
     }
     #[doc = "Bits 1:2 - Selects timer mode."]
     #[inline(always)]
-    #[must_use]
     pub fn mode(&mut self) -> ModeW<CtrlSpec> {
         ModeW::new(self, 1)
     }

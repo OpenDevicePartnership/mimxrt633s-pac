@@ -1,75 +1,7 @@
 #[doc = "Register `ABORT1` writer"]
 pub type W = crate::W<Abort1Spec>;
-#[doc = "Abort control for DMA channel 32.\n\nValue on reset: 0"]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-#[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Abort32 {
-    #[doc = "0: No effect."]
-    NoEffect = 0,
-    #[doc = "1: Aborts DMA operations on channel 32."]
-    Effect = 1,
-}
-impl From<Abort32> for bool {
-    #[inline(always)]
-    fn from(variant: Abort32) -> Self {
-        variant as u8 != 0
-    }
-}
-#[doc = "Field `ABORT32` writer - Abort control for DMA channel 32."]
-pub type Abort32W<'a, REG> = crate::BitWriter<'a, REG, Abort32>;
-impl<'a, REG> Abort32W<'a, REG>
-where
-    REG: crate::Writable + crate::RegisterSpec,
-{
-    #[doc = "No effect."]
-    #[inline(always)]
-    pub fn no_effect(self) -> &'a mut crate::W<REG> {
-        self.variant(Abort32::NoEffect)
-    }
-    #[doc = "Aborts DMA operations on channel 32."]
-    #[inline(always)]
-    pub fn effect(self) -> &'a mut crate::W<REG> {
-        self.variant(Abort32::Effect)
-    }
-}
-#[doc = "Additional Abort controls for remaining DMA channels in the range 63 to 33. Any bits above the actually implemented channels are reserved.\n\nValue on reset: 0"]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-#[derive(Clone, Copy, Debug, PartialEq, Eq)]
-#[repr(u32)]
-pub enum Abort63_33 {
-    #[doc = "0: No effect."]
-    NoEffect = 0,
-    #[doc = "1: Aborts DMA operations on the relevant channel."]
-    Effect = 1,
-}
-impl From<Abort63_33> for u32 {
-    #[inline(always)]
-    fn from(variant: Abort63_33) -> Self {
-        variant as _
-    }
-}
-impl crate::FieldSpec for Abort63_33 {
-    type Ux = u32;
-}
-impl crate::IsEnum for Abort63_33 {}
-#[doc = "Field `ABORT63_33` writer - Additional Abort controls for remaining DMA channels in the range 63 to 33. Any bits above the actually implemented channels are reserved."]
-pub type Abort63_33W<'a, REG> = crate::FieldWriter<'a, REG, 31, Abort63_33>;
-impl<'a, REG> Abort63_33W<'a, REG>
-where
-    REG: crate::Writable + crate::RegisterSpec,
-    REG::Ux: From<u32>,
-{
-    #[doc = "No effect."]
-    #[inline(always)]
-    pub fn no_effect(self) -> &'a mut crate::W<REG> {
-        self.variant(Abort63_33::NoEffect)
-    }
-    #[doc = "Aborts DMA operations on the relevant channel."]
-    #[inline(always)]
-    pub fn effect(self) -> &'a mut crate::W<REG> {
-        self.variant(Abort63_33::Effect)
-    }
-}
+#[doc = "Field `CHANNEL(32-63)` writer - "]
+pub type ChannelW<'a, REG> = crate::BitWriter<'a, REG>;
 #[cfg(feature = "debug")]
 impl core::fmt::Debug for crate::generic::Reg<Abort1Spec> {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
@@ -77,17 +9,174 @@ impl core::fmt::Debug for crate::generic::Reg<Abort1Spec> {
     }
 }
 impl W {
-    #[doc = "Bit 0 - Abort control for DMA channel 32."]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "<div class=\"warning\">`n` is number of field in register. `n == 0` corresponds to `CHANNEL32` field.</div>"]
     #[inline(always)]
-    #[must_use]
-    pub fn abort32(&mut self) -> Abort32W<Abort1Spec> {
-        Abort32W::new(self, 0)
+    pub fn channel(&mut self, n: u8) -> ChannelW<Abort1Spec> {
+        #[allow(clippy::no_effect)]
+        [(); 32][n as usize];
+        ChannelW::new(self, n)
     }
-    #[doc = "Bits 1:31 - Additional Abort controls for remaining DMA channels in the range 63 to 33. Any bits above the actually implemented channels are reserved."]
+    #[doc = "Bit 0 - CHANNEL32"]
     #[inline(always)]
-    #[must_use]
-    pub fn abort63_33(&mut self) -> Abort63_33W<Abort1Spec> {
-        Abort63_33W::new(self, 1)
+    pub fn channel32(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 0)
+    }
+    #[doc = "Bit 1 - CHANNEL33"]
+    #[inline(always)]
+    pub fn channel33(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 1)
+    }
+    #[doc = "Bit 2 - CHANNEL34"]
+    #[inline(always)]
+    pub fn channel34(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 2)
+    }
+    #[doc = "Bit 3 - CHANNEL35"]
+    #[inline(always)]
+    pub fn channel35(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 3)
+    }
+    #[doc = "Bit 4 - CHANNEL36"]
+    #[inline(always)]
+    pub fn channel36(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 4)
+    }
+    #[doc = "Bit 5 - CHANNEL37"]
+    #[inline(always)]
+    pub fn channel37(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 5)
+    }
+    #[doc = "Bit 6 - CHANNEL38"]
+    #[inline(always)]
+    pub fn channel38(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 6)
+    }
+    #[doc = "Bit 7 - CHANNEL39"]
+    #[inline(always)]
+    pub fn channel39(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 7)
+    }
+    #[doc = "Bit 8 - CHANNEL40"]
+    #[inline(always)]
+    pub fn channel40(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 8)
+    }
+    #[doc = "Bit 9 - CHANNEL41"]
+    #[inline(always)]
+    pub fn channel41(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 9)
+    }
+    #[doc = "Bit 10 - CHANNEL42"]
+    #[inline(always)]
+    pub fn channel42(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 10)
+    }
+    #[doc = "Bit 11 - CHANNEL43"]
+    #[inline(always)]
+    pub fn channel43(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 11)
+    }
+    #[doc = "Bit 12 - CHANNEL44"]
+    #[inline(always)]
+    pub fn channel44(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 12)
+    }
+    #[doc = "Bit 13 - CHANNEL45"]
+    #[inline(always)]
+    pub fn channel45(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 13)
+    }
+    #[doc = "Bit 14 - CHANNEL46"]
+    #[inline(always)]
+    pub fn channel46(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 14)
+    }
+    #[doc = "Bit 15 - CHANNEL47"]
+    #[inline(always)]
+    pub fn channel47(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 15)
+    }
+    #[doc = "Bit 16 - CHANNEL48"]
+    #[inline(always)]
+    pub fn channel48(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 16)
+    }
+    #[doc = "Bit 17 - CHANNEL49"]
+    #[inline(always)]
+    pub fn channel49(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 17)
+    }
+    #[doc = "Bit 18 - CHANNEL50"]
+    #[inline(always)]
+    pub fn channel50(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 18)
+    }
+    #[doc = "Bit 19 - CHANNEL51"]
+    #[inline(always)]
+    pub fn channel51(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 19)
+    }
+    #[doc = "Bit 20 - CHANNEL52"]
+    #[inline(always)]
+    pub fn channel52(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 20)
+    }
+    #[doc = "Bit 21 - CHANNEL53"]
+    #[inline(always)]
+    pub fn channel53(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 21)
+    }
+    #[doc = "Bit 22 - CHANNEL54"]
+    #[inline(always)]
+    pub fn channel54(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 22)
+    }
+    #[doc = "Bit 23 - CHANNEL55"]
+    #[inline(always)]
+    pub fn channel55(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 23)
+    }
+    #[doc = "Bit 24 - CHANNEL56"]
+    #[inline(always)]
+    pub fn channel56(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 24)
+    }
+    #[doc = "Bit 25 - CHANNEL57"]
+    #[inline(always)]
+    pub fn channel57(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 25)
+    }
+    #[doc = "Bit 26 - CHANNEL58"]
+    #[inline(always)]
+    pub fn channel58(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 26)
+    }
+    #[doc = "Bit 27 - CHANNEL59"]
+    #[inline(always)]
+    pub fn channel59(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 27)
+    }
+    #[doc = "Bit 28 - CHANNEL60"]
+    #[inline(always)]
+    pub fn channel60(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 28)
+    }
+    #[doc = "Bit 29 - CHANNEL61"]
+    #[inline(always)]
+    pub fn channel61(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 29)
+    }
+    #[doc = "Bit 30 - CHANNEL62"]
+    #[inline(always)]
+    pub fn channel62(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 30)
+    }
+    #[doc = "Bit 31 - CHANNEL63"]
+    #[inline(always)]
+    pub fn channel63(&mut self) -> ChannelW<Abort1Spec> {
+        ChannelW::new(self, 31)
     }
 }
 #[doc = "Channel Abort control for all DMA channels.\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`abort1::W`](W). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

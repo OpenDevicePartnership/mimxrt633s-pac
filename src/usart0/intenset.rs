@@ -104,55 +104,46 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 3 - When 1, enables an interrupt when the transmitter becomes idle (TXIDLE = 1)."]
     #[inline(always)]
-    #[must_use]
     pub fn txidleen(&mut self) -> TxidleenW<IntensetSpec> {
         TxidleenW::new(self, 3)
     }
     #[doc = "Bit 5 - When 1, enables an interrupt when there is a change in the state of the CTS input."]
     #[inline(always)]
-    #[must_use]
     pub fn deltactsen(&mut self) -> DeltactsenW<IntensetSpec> {
         DeltactsenW::new(self, 5)
     }
     #[doc = "Bit 6 - When 1, enables an interrupt when the transmitter is fully disabled as indicated by the TXDISINT flag in STAT. See description of the TXDISINT bit for details."]
     #[inline(always)]
-    #[must_use]
     pub fn txdisen(&mut self) -> TxdisenW<IntensetSpec> {
         TxdisenW::new(self, 6)
     }
     #[doc = "Bit 11 - When 1, enables an interrupt when a change of state has occurred in the detection of a received break condition (break condition asserted or deasserted)."]
     #[inline(always)]
-    #[must_use]
     pub fn deltarxbrken(&mut self) -> DeltarxbrkenW<IntensetSpec> {
         DeltarxbrkenW::new(self, 11)
     }
     #[doc = "Bit 12 - When 1, enables an interrupt when a received start bit has been detected."]
     #[inline(always)]
-    #[must_use]
     pub fn starten(&mut self) -> StartenW<IntensetSpec> {
         StartenW::new(self, 12)
     }
     #[doc = "Bit 13 - When 1, enables an interrupt when a framing error has been detected."]
     #[inline(always)]
-    #[must_use]
     pub fn framerren(&mut self) -> FramerrenW<IntensetSpec> {
         FramerrenW::new(self, 13)
     }
     #[doc = "Bit 14 - When 1, enables an interrupt when a parity error has been detected."]
     #[inline(always)]
-    #[must_use]
     pub fn parityerren(&mut self) -> ParityerrenW<IntensetSpec> {
         ParityerrenW::new(self, 14)
     }
     #[doc = "Bit 15 - When 1, enables an interrupt when noise is detected. See description of the RXNOISEINT bit in Table 354."]
     #[inline(always)]
-    #[must_use]
     pub fn rxnoiseen(&mut self) -> RxnoiseenW<IntensetSpec> {
         RxnoiseenW::new(self, 15)
     }
     #[doc = "Bit 16 - When 1, enables an interrupt when an auto baud error occurs."]
     #[inline(always)]
-    #[must_use]
     pub fn aberren(&mut self) -> AberrenW<IntensetSpec> {
         AberrenW::new(self, 16)
     }

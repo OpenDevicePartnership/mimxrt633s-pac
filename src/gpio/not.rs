@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<NotSpec> {
 impl W {
     #[doc = "Bits 0:31 - Toggle output bits (bit 0 = PIOn_0, bit 1 = PIOn_1, etc.). Supported pins depends on the specific device and package. 0 = no operation. 1 = Toggle output bit."]
     #[inline(always)]
-    #[must_use]
     pub fn notp(&mut self) -> NotpW<NotSpec> {
         NotpW::new(self, 0)
     }

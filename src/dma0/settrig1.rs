@@ -79,13 +79,11 @@ impl core::fmt::Debug for crate::generic::Reg<Settrig1Spec> {
 impl W {
     #[doc = "Bit 0 - Set Trigger control bit for DMA channel 32."]
     #[inline(always)]
-    #[must_use]
     pub fn settrig32(&mut self) -> Settrig32W<Settrig1Spec> {
         Settrig32W::new(self, 0)
     }
     #[doc = "Bits 1:31 - Additional Set Trigger control bits for remaining DMA channels in the range 63 to 33. Any bits above the actually implemented channels are reserved."]
     #[inline(always)]
-    #[must_use]
     pub fn settrig63_33(&mut self) -> Settrig63_33W<Settrig1Spec> {
         Settrig63_33W::new(self, 1)
     }

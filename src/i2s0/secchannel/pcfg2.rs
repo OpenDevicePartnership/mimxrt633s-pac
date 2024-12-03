@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 16:24 - Data Position."]
     #[inline(always)]
-    #[must_use]
     pub fn position(&mut self) -> PositionW<Pcfg2Spec> {
         PositionW::new(self, 16)
     }

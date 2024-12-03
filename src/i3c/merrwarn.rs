@@ -114,61 +114,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 2 - Not acknowledge (NACK) error"]
     #[inline(always)]
-    #[must_use]
     pub fn nack(&mut self) -> NackW<MerrwarnSpec> {
         NackW::new(self, 2)
     }
     #[doc = "Bit 3 - WRABT (Write abort) error"]
     #[inline(always)]
-    #[must_use]
     pub fn wrabt(&mut self) -> WrabtW<MerrwarnSpec> {
         WrabtW::new(self, 3)
     }
     #[doc = "Bit 4 - Terminate error"]
     #[inline(always)]
-    #[must_use]
     pub fn term(&mut self) -> TermW<MerrwarnSpec> {
         TermW::new(self, 4)
     }
     #[doc = "Bit 9 - High data rate parity"]
     #[inline(always)]
-    #[must_use]
     pub fn hpar(&mut self) -> HparW<MerrwarnSpec> {
         HparW::new(self, 9)
     }
     #[doc = "Bit 10 - High data rate CRC error"]
     #[inline(always)]
-    #[must_use]
     pub fn hcrc(&mut self) -> HcrcW<MerrwarnSpec> {
         HcrcW::new(self, 10)
     }
     #[doc = "Bit 16 - Over-read error"]
     #[inline(always)]
-    #[must_use]
     pub fn oread(&mut self) -> OreadW<MerrwarnSpec> {
         OreadW::new(self, 16)
     }
     #[doc = "Bit 17 - Over-write error"]
     #[inline(always)]
-    #[must_use]
     pub fn owrite(&mut self) -> OwriteW<MerrwarnSpec> {
         OwriteW::new(self, 17)
     }
     #[doc = "Bit 18 - Message error"]
     #[inline(always)]
-    #[must_use]
     pub fn msgerr(&mut self) -> MsgerrW<MerrwarnSpec> {
         MsgerrW::new(self, 18)
     }
     #[doc = "Bit 19 - Invalid request error"]
     #[inline(always)]
-    #[must_use]
     pub fn invreq(&mut self) -> InvreqW<MerrwarnSpec> {
         InvreqW::new(self, 19)
     }
     #[doc = "Bit 20 - TIMEOUT error"]
     #[inline(always)]
-    #[must_use]
     pub fn timeout(&mut self) -> TimeoutW<MerrwarnSpec> {
         TimeoutW::new(self, 20)
     }

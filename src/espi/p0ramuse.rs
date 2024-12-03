@@ -6,9 +6,9 @@ pub type W = crate::W<P0ramuseSpec>;
 pub type OffR = crate::FieldReader<u16>;
 #[doc = "Field `OFF` writer - This is the word offset into the RAM"]
 pub type OffW<'a, REG> = crate::FieldWriter<'a, REG, 12, u16>;
-#[doc = "Field `LEN` reader - This is the length of the mailbox or mastering area as 4&lt;&lt;LEN per direction"]
+#[doc = "Field `LEN` reader - This is the length of the mailbox or mastering area as 4<<LEN per direction"]
 pub type LenR = crate::FieldReader;
-#[doc = "Field `LEN` writer - This is the length of the mailbox or mastering area as 4&lt;&lt;LEN per direction"]
+#[doc = "Field `LEN` writer - This is the length of the mailbox or mastering area as 4<<LEN per direction"]
 pub type LenW<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 impl R {
     #[doc = "Bits 0:11 - This is the word offset into the RAM"]
@@ -16,7 +16,7 @@ impl R {
     pub fn off(&self) -> OffR {
         OffR::new((self.bits & 0x0fff) as u16)
     }
-    #[doc = "Bits 16:18 - This is the length of the mailbox or mastering area as 4&lt;&lt;LEN per direction"]
+    #[doc = "Bits 16:18 - This is the length of the mailbox or mastering area as 4<<LEN per direction"]
     #[inline(always)]
     pub fn len(&self) -> LenR {
         LenR::new(((self.bits >> 16) & 7) as u8)
@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:11 - This is the word offset into the RAM"]
     #[inline(always)]
-    #[must_use]
     pub fn off(&mut self) -> OffW<P0ramuseSpec> {
         OffW::new(self, 0)
     }
-    #[doc = "Bits 16:18 - This is the length of the mailbox or mastering area as 4&lt;&lt;LEN per direction"]
+    #[doc = "Bits 16:18 - This is the length of the mailbox or mastering area as 4<<LEN per direction"]
     #[inline(always)]
-    #[must_use]
     pub fn len(&mut self) -> LenW<P0ramuseSpec> {
         LenW::new(self, 16)
     }

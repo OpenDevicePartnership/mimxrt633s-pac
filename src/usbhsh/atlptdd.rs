@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - The bit corresponding to a certain PTD will be set to logic 1 as soon as that PTD execution is completed."]
     #[inline(always)]
-    #[must_use]
     pub fn atl_done(&mut self) -> AtlDoneW<AtlptddSpec> {
         AtlDoneW::new(self, 0)
     }

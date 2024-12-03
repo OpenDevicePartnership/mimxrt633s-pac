@@ -64,31 +64,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - DLL calibration enable."]
     #[inline(always)]
-    #[must_use]
     pub fn dllen(&mut self) -> DllenW<DllcrSpec> {
         DllenW::new(self, 0)
     }
     #[doc = "Bit 1 - Software could force a reset on DLL by setting this field to 0x1. This will cause the DLL to lose lock and re-calibrate to detect an ref_clock half period phase shift. The reset action is edge triggered, so software need to clear this bit after set this bit (no delay limitation)."]
     #[inline(always)]
-    #[must_use]
     pub fn dllreset(&mut self) -> DllresetW<DllcrSpec> {
         DllresetW::new(self, 1)
     }
     #[doc = "Bits 3:6 - The delay target for slave delay line is: ((SLVDLYTARGET+1) * 1/32 * clock cycle of reference clock (serial root clock). If serial root clock is >= 100 MHz, DLLEN set to 0x1, OVRDEN set to =0x0, then SLVDLYTARGET setting of 0xF is recommended."]
     #[inline(always)]
-    #[must_use]
     pub fn slvdlytarget(&mut self) -> SlvdlytargetW<DllcrSpec> {
         SlvdlytargetW::new(self, 3)
     }
     #[doc = "Bit 8 - Slave clock delay line delay cell number selection override enable."]
     #[inline(always)]
-    #[must_use]
     pub fn ovrden(&mut self) -> OvrdenW<DllcrSpec> {
         OvrdenW::new(self, 8)
     }
     #[doc = "Bits 9:14 - Slave clock delay line delay cell number selection override value."]
     #[inline(always)]
-    #[must_use]
     pub fn ovrdval(&mut self) -> OvrdvalW<DllcrSpec> {
         OvrdvalW::new(self, 9)
     }

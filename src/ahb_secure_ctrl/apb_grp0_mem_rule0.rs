@@ -64,31 +64,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - 0x4000 0000--0x4000 0FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn rstctl0_rule(&mut self) -> Rstctl0RuleW<ApbGrp0MemRule0Spec> {
         Rstctl0RuleW::new(self, 0)
     }
     #[doc = "Bits 4:5 - 0x4000 1000--0x4000 1FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn clkctl0_rule(&mut self) -> Clkctl0RuleW<ApbGrp0MemRule0Spec> {
         Clkctl0RuleW::new(self, 4)
     }
     #[doc = "Bits 8:9 - 0x4000 2000--0x4000 2FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn sysctl0_rule(&mut self) -> Sysctl0RuleW<ApbGrp0MemRule0Spec> {
         Sysctl0RuleW::new(self, 8)
     }
     #[doc = "Bits 16:17 - 0x4000 4000--0x4000 4FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn iopctl_rule(&mut self) -> IopctlRuleW<ApbGrp0MemRule0Spec> {
         IopctlRuleW::new(self, 16)
     }
     #[doc = "Bits 24:25 - 0x4000 6000--0x4000 6FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn pufctrl_rule(&mut self) -> PufctrlRuleW<ApbGrp0MemRule0Spec> {
         PufctrlRuleW::new(self, 24)
     }

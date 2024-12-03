@@ -454,55 +454,46 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Peripheral request Enable. If a DMA channel is used to perform a memory-to-memory move, any peripheral DMA request associated with that channel can be disabled to prevent any interaction between the peripheral and the DMA controller."]
     #[inline(always)]
-    #[must_use]
     pub fn periphreqen(&mut self) -> PeriphreqenW<CfgSpec> {
         PeriphreqenW::new(self, 0)
     }
     #[doc = "Bit 1 - Hardware Triggering Enable for this channel."]
     #[inline(always)]
-    #[must_use]
     pub fn hwtrigen(&mut self) -> HwtrigenW<CfgSpec> {
         HwtrigenW::new(self, 1)
     }
     #[doc = "Bit 4 - Trigger Polarity. Selects the polarity of a hardware trigger for this channel."]
     #[inline(always)]
-    #[must_use]
     pub fn trigpol(&mut self) -> TrigpolW<CfgSpec> {
         TrigpolW::new(self, 4)
     }
     #[doc = "Bit 5 - Trigger Type. Selects hardware trigger as edge triggered or level triggered."]
     #[inline(always)]
-    #[must_use]
     pub fn trigtype(&mut self) -> TrigtypeW<CfgSpec> {
         TrigtypeW::new(self, 5)
     }
     #[doc = "Bit 6 - Trigger Burst. Selects whether hardware triggers cause a single or burst transfer."]
     #[inline(always)]
-    #[must_use]
     pub fn trigburst(&mut self) -> TrigburstW<CfgSpec> {
         TrigburstW::new(self, 6)
     }
     #[doc = "Bits 8:11 - Burst Power is used in two ways. It always selects the address wrap size when SRCBURSTWRAP and/or DSTBURSTWRAP modes are selected (see descriptions elsewhere in this register). When the TRIGBURST field elsewhere in this register = 1, Burst Power selects how many transfers are performed for each DMA trigger. This can be used, for example, with peripherals that contain a FIFO that can initiate a DMA operation when the FIFO reaches a certain level. 0000: Burst size = 1 (20). 0001: Burst size = 2 (21). 0010: Burst size = 4 (22). 1010: Burst size = 1024 (210). This corresponds to the maximum supported transfer count. others: not supported. The total transfer length as defined in the XFERCOUNT bits in the XFERCFG register must be an even multiple of the burst size."]
     #[inline(always)]
-    #[must_use]
     pub fn burstpower(&mut self) -> BurstpowerW<CfgSpec> {
         BurstpowerW::new(self, 8)
     }
     #[doc = "Bit 14 - Source Burst Wrap. When enabled, the source data address for the DMA is 'wrapped', meaning that the source address range for each burst will be the same. As an example, this could be used to read several sequential registers from a peripheral for each DMA burst, reading the same registers again for each burst."]
     #[inline(always)]
-    #[must_use]
     pub fn srcburstwrap(&mut self) -> SrcburstwrapW<CfgSpec> {
         SrcburstwrapW::new(self, 14)
     }
     #[doc = "Bit 15 - Destination Burst Wrap. When enabled, the destination data address for the DMA is 'wrapped', meaning that the destination address range for each burst will be the same. As an example, this could be used to write several sequential registers to a peripheral for each DMA burst, writing the same registers again for each burst."]
     #[inline(always)]
-    #[must_use]
     pub fn dstburstwrap(&mut self) -> DstburstwrapW<CfgSpec> {
         DstburstwrapW::new(self, 15)
     }
     #[doc = "Bits 16:18 - Priority of this channel when multiple DMA requests are pending. Eight priority levels are supported: 0x0 = highest priority. 0x7 = lowest priority."]
     #[inline(always)]
-    #[must_use]
     pub fn chpriority(&mut self) -> ChpriorityW<CfgSpec> {
         ChpriorityW::new(self, 16)
     }

@@ -1,0 +1,343 @@
+DMA*:
+  ABORT0:
+    # Delete current ABORTCTRL field
+    _delete:
+      - "ABORTCTRL"
+
+    # Add new CHANNEL field for each bit
+    _add:
+      CHANNEL0:
+        bitOffset: 0
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL1:
+        bitOffset: 1
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL2:
+        bitOffset: 2
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL3:
+        bitOffset: 3
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL4:
+        bitOffset: 4
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL5:
+        bitOffset: 5
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL6:
+        bitOffset: 6
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL7:
+        bitOffset: 7
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL8:
+        bitOffset: 8
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL9:
+        bitOffset: 9
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL10:
+        bitOffset: 10
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL11:
+        bitOffset: 11
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL12:
+        bitOffset: 12
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL13:
+        bitOffset: 13
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL14:
+        bitOffset: 14
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL15:
+        bitOffset: 15
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL16:
+        bitOffset: 16
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL17:
+        bitOffset: 17
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL18:
+        bitOffset: 18
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL19:
+        bitOffset: 19
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL20:
+        bitOffset: 20
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL21:
+        bitOffset: 21
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL22:
+        bitOffset: 22
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL23:
+        bitOffset: 23
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL24:
+        bitOffset: 24
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL25:
+        bitOffset: 25
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL26:
+        bitOffset: 26
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL27:
+        bitOffset: 27
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL28:
+        bitOffset: 28
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL29:
+        bitOffset: 29
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL30:
+        bitOffset: 30
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL31:
+        bitOffset: 31
+        bitWidth: 1
+        access: write-only
+
+    # Collect them into an array to create a <dim>
+    _array:
+      CHANNEL*: {}
+
+  ABORT1:
+    # Delete current ABORT* fields
+    _delete:
+      - "ABORT32"
+      - "ABORT63_33"
+
+    # Add new CHANNEL field for each bit
+    _add:
+      CHANNEL32:
+        bitOffset: 0
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL33:
+        bitOffset: 1
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL34:
+        bitOffset: 2
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL35:
+        bitOffset: 3
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL36:
+        bitOffset: 4
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL37:
+        bitOffset: 5
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL38:
+        bitOffset: 6
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL39:
+        bitOffset: 7
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL40:
+        bitOffset: 8
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL41:
+        bitOffset: 9
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL42:
+        bitOffset: 10
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL43:
+        bitOffset: 11
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL44:
+        bitOffset: 12
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL45:
+        bitOffset: 13
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL46:
+        bitOffset: 14
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL47:
+        bitOffset: 15
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL48:
+        bitOffset: 16
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL49:
+        bitOffset: 17
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL50:
+        bitOffset: 18
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL51:
+        bitOffset: 19
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL52:
+        bitOffset: 20
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL53:
+        bitOffset: 21
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL54:
+        bitOffset: 22
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL55:
+        bitOffset: 23
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL56:
+        bitOffset: 24
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL57:
+        bitOffset: 25
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL58:
+        bitOffset: 26
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL59:
+        bitOffset: 27
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL60:
+        bitOffset: 28
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL61:
+        bitOffset: 29
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL62:
+        bitOffset: 30
+        bitWidth: 1
+        access: write-only
+
+      CHANNEL63:
+        bitOffset: 31
+        bitWidth: 1
+        access: write-only
+
+    # Collect them into an array to create a <dim>
+    _array:
+      CHANNEL*: {}

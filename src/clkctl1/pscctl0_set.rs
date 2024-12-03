@@ -393,73 +393,61 @@ impl core::fmt::Debug for crate::generic::Reg<Pscctl0SetSpec> {
 impl W {
     #[doc = "Bit 8 - flexcomm 0 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn fc0_clk_set(&mut self) -> Fc0ClkSetW<Pscctl0SetSpec> {
         Fc0ClkSetW::new(self, 8)
     }
     #[doc = "Bit 9 - flexcomm 1 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn fc1_clk_set(&mut self) -> Fc1ClkSetW<Pscctl0SetSpec> {
         Fc1ClkSetW::new(self, 9)
     }
     #[doc = "Bit 10 - flexcomm 2 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn fc2_clk_set(&mut self) -> Fc2ClkSetW<Pscctl0SetSpec> {
         Fc2ClkSetW::new(self, 10)
     }
     #[doc = "Bit 11 - flexcomm 3 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn fc3_clk_set(&mut self) -> Fc3ClkSetW<Pscctl0SetSpec> {
         Fc3ClkSetW::new(self, 11)
     }
     #[doc = "Bit 12 - flexcomm 4 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn fc4_clk_set(&mut self) -> Fc4ClkSetW<Pscctl0SetSpec> {
         Fc4ClkSetW::new(self, 12)
     }
     #[doc = "Bit 13 - flexcomm 5 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn fc5_clk_set(&mut self) -> Fc5ClkSetW<Pscctl0SetSpec> {
         Fc5ClkSetW::new(self, 13)
     }
     #[doc = "Bit 14 - flexcomm 6 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn fc6_clk_set(&mut self) -> Fc6ClkSetW<Pscctl0SetSpec> {
         Fc6ClkSetW::new(self, 14)
     }
     #[doc = "Bit 15 - flexcomm 7 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn fc7_clk_set(&mut self) -> Fc7ClkSetW<Pscctl0SetSpec> {
         Fc7ClkSetW::new(self, 15)
     }
     #[doc = "Bit 22 - flexcomm 14 spi clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn fc14_spi_clk_set(&mut self) -> Fc14SpiClkSetW<Pscctl0SetSpec> {
         Fc14SpiClkSetW::new(self, 22)
     }
     #[doc = "Bit 23 - flexcomm 15 i2c clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn fc15_i2c_clk_set(&mut self) -> Fc15I2cClkSetW<Pscctl0SetSpec> {
         Fc15I2cClkSetW::new(self, 23)
     }
     #[doc = "Bit 24 - DMIC0 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0_clk_set(&mut self) -> Dmic0ClkSetW<Pscctl0SetSpec> {
         Dmic0ClkSetW::new(self, 24)
     }
     #[doc = "Bit 27 - OS event timer clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn osevent_timer_clk_set(&mut self) -> OseventTimerClkSetW<Pscctl0SetSpec> {
         OseventTimerClkSetW::new(self, 27)
     }

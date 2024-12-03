@@ -117,61 +117,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - DLL_CTRL_ENABLE"]
     #[inline(always)]
-    #[must_use]
     pub fn dll_ctrl_enable(&mut self) -> DllCtrlEnableW<DllCtrlSpec> {
         DllCtrlEnableW::new(self, 0)
     }
     #[doc = "Bit 1 - DLL_CTRL_RESET"]
     #[inline(always)]
-    #[must_use]
     pub fn dll_ctrl_reset(&mut self) -> DllCtrlResetW<DllCtrlSpec> {
         DllCtrlResetW::new(self, 1)
     }
     #[doc = "Bit 2 - DLL_CTRL_SLV_FORCE_UPD"]
     #[inline(always)]
-    #[must_use]
     pub fn dll_ctrl_slv_force_upd(&mut self) -> DllCtrlSlvForceUpdW<DllCtrlSpec> {
         DllCtrlSlvForceUpdW::new(self, 2)
     }
     #[doc = "Bits 3:6 - DLL_CTRL_SLV_DLY_TARGET0"]
     #[inline(always)]
-    #[must_use]
     pub fn dll_ctrl_slv_dly_target0(&mut self) -> DllCtrlSlvDlyTarget0W<DllCtrlSpec> {
         DllCtrlSlvDlyTarget0W::new(self, 3)
     }
     #[doc = "Bit 7 - DLL_CTRL_GATE_UPDATE"]
     #[inline(always)]
-    #[must_use]
     pub fn dll_ctrl_gate_update(&mut self) -> DllCtrlGateUpdateW<DllCtrlSpec> {
         DllCtrlGateUpdateW::new(self, 7)
     }
     #[doc = "Bit 8 - DLL_CTRL_SLV_OVERRIDE"]
     #[inline(always)]
-    #[must_use]
     pub fn dll_ctrl_slv_override(&mut self) -> DllCtrlSlvOverrideW<DllCtrlSpec> {
         DllCtrlSlvOverrideW::new(self, 8)
     }
     #[doc = "Bits 9:15 - DLL_CTRL_SLV_OVERRIDE_VAL"]
     #[inline(always)]
-    #[must_use]
     pub fn dll_ctrl_slv_override_val(&mut self) -> DllCtrlSlvOverrideValW<DllCtrlSpec> {
         DllCtrlSlvOverrideValW::new(self, 9)
     }
     #[doc = "Bits 16:18 - DLL_CTRL_SLV_DLY_TARGET1"]
     #[inline(always)]
-    #[must_use]
     pub fn dll_ctrl_slv_dly_target1(&mut self) -> DllCtrlSlvDlyTarget1W<DllCtrlSpec> {
         DllCtrlSlvDlyTarget1W::new(self, 16)
     }
     #[doc = "Bits 20:27 - DLL_CTRL_SLV_UPDATE_INT"]
     #[inline(always)]
-    #[must_use]
     pub fn dll_ctrl_slv_update_int(&mut self) -> DllCtrlSlvUpdateIntW<DllCtrlSpec> {
         DllCtrlSlvUpdateIntW::new(self, 20)
     }
     #[doc = "Bits 28:31 - DLL_CTRL_REF_UPDATE_INT"]
     #[inline(always)]
-    #[must_use]
     pub fn dll_ctrl_ref_update_int(&mut self) -> DllCtrlRefUpdateIntW<DllCtrlSpec> {
         DllCtrlRefUpdateIntW::new(self, 28)
     }

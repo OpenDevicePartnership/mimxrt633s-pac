@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Interrupt flag. 0 = No interrupt is pending. 1 = An interrupt is pending. A write of any value to this register clears this flag."]
     #[inline(always)]
-    #[must_use]
     pub fn intr(&mut self) -> IntrW<StatSpec> {
         IntrW::new(self, 0)
     }
     #[doc = "Bit 1 - Active flag. 0 = The Micro-Tick Timer is stopped. 1 = The Micro-Tick Timer is currently active."]
     #[inline(always)]
-    #[must_use]
     pub fn active(&mut self) -> ActiveW<StatSpec> {
         ActiveW::new(self, 1)
     }

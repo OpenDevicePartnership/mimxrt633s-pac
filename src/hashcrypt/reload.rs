@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<ReloadSpec> {
 impl W {
     #[doc = "Bits 0:31 - SHA Digest word to reload."]
     #[inline(always)]
-    #[must_use]
     pub fn digest(&mut self) -> DigestW<ReloadSpec> {
         DigestW::new(self, 0)
     }

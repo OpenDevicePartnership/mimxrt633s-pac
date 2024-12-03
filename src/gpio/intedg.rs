@@ -81,7 +81,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - choose level or edge based detection for each pin(bit0 for pion_0, bit1 for pion_1, etc)"]
     #[inline(always)]
-    #[must_use]
     pub fn edge(&mut self) -> EdgeW<IntedgSpec> {
         EdgeW::new(self, 0)
     }

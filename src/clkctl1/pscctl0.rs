@@ -734,73 +734,61 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 8 - flexcomm 0 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn fc0_clk(&mut self) -> Fc0ClkW<Pscctl0Spec> {
         Fc0ClkW::new(self, 8)
     }
     #[doc = "Bit 9 - flexcomm 1 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn fc1_clk(&mut self) -> Fc1ClkW<Pscctl0Spec> {
         Fc1ClkW::new(self, 9)
     }
     #[doc = "Bit 10 - flexcomm 2 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn fc2_clk(&mut self) -> Fc2ClkW<Pscctl0Spec> {
         Fc2ClkW::new(self, 10)
     }
     #[doc = "Bit 11 - flexcomm 3 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn fc3_clk(&mut self) -> Fc3ClkW<Pscctl0Spec> {
         Fc3ClkW::new(self, 11)
     }
     #[doc = "Bit 12 - flexcomm 4 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn fc4_clk(&mut self) -> Fc4ClkW<Pscctl0Spec> {
         Fc4ClkW::new(self, 12)
     }
     #[doc = "Bit 13 - flexcomm 5 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn fc5_clk(&mut self) -> Fc5ClkW<Pscctl0Spec> {
         Fc5ClkW::new(self, 13)
     }
     #[doc = "Bit 14 - flexcomm 6 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn fc6_clk(&mut self) -> Fc6ClkW<Pscctl0Spec> {
         Fc6ClkW::new(self, 14)
     }
     #[doc = "Bit 15 - flexcomm 7 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn fc7_clk(&mut self) -> Fc7ClkW<Pscctl0Spec> {
         Fc7ClkW::new(self, 15)
     }
     #[doc = "Bit 22 - flexcomm 14 spi clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn fc14_spi_clk(&mut self) -> Fc14SpiClkW<Pscctl0Spec> {
         Fc14SpiClkW::new(self, 22)
     }
     #[doc = "Bit 23 - flexcomm 15 i2c clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn fc15_i2c_clk(&mut self) -> Fc15I2cClkW<Pscctl0Spec> {
         Fc15I2cClkW::new(self, 23)
     }
     #[doc = "Bit 24 - DMIC0 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0_clk(&mut self) -> Dmic0ClkW<Pscctl0Spec> {
         Dmic0ClkW::new(self, 24)
     }
     #[doc = "Bit 27 - OS event timer clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn osevent_timer_clk(&mut self) -> OseventTimerClkW<Pscctl0Spec> {
         OseventTimerClkW::new(self, 27)
     }

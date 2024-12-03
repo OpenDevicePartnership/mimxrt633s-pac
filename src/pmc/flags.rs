@@ -674,67 +674,56 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 16 - vddcore POR Flag"]
     #[inline(always)]
-    #[must_use]
     pub fn porcoref(&mut self) -> PorcorefW<FlagsSpec> {
         PorcorefW::new(self, 16)
     }
     #[doc = "Bit 17 - vdd1v8 power on reset flag"]
     #[inline(always)]
-    #[must_use]
     pub fn por1v8f(&mut self) -> Por1v8fW<FlagsSpec> {
         Por1v8fW::new(self, 17)
     }
     #[doc = "Bit 18 - vdd_ao18 power on reset flag"]
     #[inline(always)]
-    #[must_use]
     pub fn porao18f(&mut self) -> Porao18fW<FlagsSpec> {
         Porao18fW::new(self, 18)
     }
     #[doc = "Bit 20 - vddcore Low-Voltage Detector Flag This flag is set when a low voltage event was detected by the vddcore LVD monitor and it is enabled for interrupt or reset"]
     #[inline(always)]
-    #[must_use]
     pub fn lvdcoref(&mut self) -> LvdcorefW<FlagsSpec> {
         LvdcorefW::new(self, 20)
     }
     #[doc = "Bit 22 - vddcore High-Voltage Detector Flag This flag is set when a high-voltage event was detected by the vddcore HVD monitor and it is enabled for interrupt or reset"]
     #[inline(always)]
-    #[must_use]
     pub fn hvdcoref(&mut self) -> HvdcorefW<FlagsSpec> {
         HvdcorefW::new(self, 22)
     }
     #[doc = "Bit 24 - vdd1v8 High-Voltage Detector Flag This flag is set when a high-voltage event was detected by the vdd1v8 HVD monitor and it is enabled for interrupt or reset"]
     #[inline(always)]
-    #[must_use]
     pub fn hvd1v8f(&mut self) -> Hvd1v8fW<FlagsSpec> {
         Hvd1v8fW::new(self, 24)
     }
     #[doc = "Bit 27 - RTC Wakeup from deep powerdown mode flag."]
     #[inline(always)]
-    #[must_use]
     pub fn rtcf(&mut self) -> RtcfW<FlagsSpec> {
         RtcfW::new(self, 27)
     }
     #[doc = "Bit 28 - PMC Auto Wakeup Interrupt flag."]
     #[inline(always)]
-    #[must_use]
     pub fn autowkf(&mut self) -> AutowkfW<FlagsSpec> {
         AutowkfW::new(self, 28)
     }
     #[doc = "Bit 29 - PMIC interrupt pin flag"]
     #[inline(always)]
-    #[must_use]
     pub fn intnpadf(&mut self) -> IntnpadfW<FlagsSpec> {
         IntnpadfW::new(self, 29)
     }
     #[doc = "Bit 30 - Reset pad flag"]
     #[inline(always)]
-    #[must_use]
     pub fn resetnpadf(&mut self) -> ResetnpadfW<FlagsSpec> {
         ResetnpadfW::new(self, 30)
     }
     #[doc = "Bit 31 - Deep powerdown wakeup flag"]
     #[inline(always)]
-    #[must_use]
     pub fn deeppdf(&mut self) -> DeeppdfW<FlagsSpec> {
         DeeppdfW::new(self, 31)
     }

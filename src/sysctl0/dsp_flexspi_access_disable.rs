@@ -77,7 +77,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_flexspi_access_disable(
         &mut self,
     ) -> DspFlexspiAccessDisableW<DspFlexspiAccessDisableSpec> {

@@ -64,31 +64,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - 0x4011 0000--0x4011 0FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn mu0_m33_rule(&mut self) -> Mu0M33RuleW<AipsBridge0MemRule0Spec> {
         Mu0M33RuleW::new(self, 0)
     }
     #[doc = "Bits 4:5 - 0x4011 1000--0x4011 1FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn mu0_dsp_rule(&mut self) -> Mu0DspRuleW<AipsBridge0MemRule0Spec> {
         Mu0DspRuleW::new(self, 4)
     }
     #[doc = "Bits 8:9 - 0x4011 2000--0x4011 2FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn semaphore_rule(&mut self) -> SemaphoreRuleW<AipsBridge0MemRule0Spec> {
         SemaphoreRuleW::new(self, 8)
     }
     #[doc = "Bits 12:13 - 0x4011 3000--0x4011 3FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn os_event_timer_m33_rule(&mut self) -> OsEventTimerM33RuleW<AipsBridge0MemRule0Spec> {
         OsEventTimerM33RuleW::new(self, 12)
     }
     #[doc = "Bits 16:17 - 0x4011 4000--0x4011 4FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn os_event_timer_dsp_rule(&mut self) -> OsEventTimerDspRuleW<AipsBridge0MemRule0Spec> {
         OsEventTimerDspRuleW::new(self, 16)
     }

@@ -494,49 +494,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Invalid entry point."]
     #[inline(always)]
-    #[must_use]
     pub fn invep(&mut self) -> InvepW<SfsrSpec> {
         InvepW::new(self, 0)
     }
     #[doc = "Bit 1 - Invalid integrity signature flag."]
     #[inline(always)]
-    #[must_use]
     pub fn invis(&mut self) -> InvisW<SfsrSpec> {
         InvisW::new(self, 1)
     }
     #[doc = "Bit 2 - Invalid exception return flag."]
     #[inline(always)]
-    #[must_use]
     pub fn inver(&mut self) -> InverW<SfsrSpec> {
         InverW::new(self, 2)
     }
     #[doc = "Bit 3 - Attribution unit violation flag."]
     #[inline(always)]
-    #[must_use]
     pub fn auviol(&mut self) -> AuviolW<SfsrSpec> {
         AuviolW::new(self, 3)
     }
     #[doc = "Bit 4 - Invalid transition flag."]
     #[inline(always)]
-    #[must_use]
     pub fn invtran(&mut self) -> InvtranW<SfsrSpec> {
         InvtranW::new(self, 4)
     }
     #[doc = "Bit 5 - Lazy state preservation error flag."]
     #[inline(always)]
-    #[must_use]
     pub fn lsperr(&mut self) -> LsperrW<SfsrSpec> {
         LsperrW::new(self, 5)
     }
     #[doc = "Bit 6 - Secure fault address valid."]
     #[inline(always)]
-    #[must_use]
     pub fn sfarvalid(&mut self) -> SfarvalidW<SfsrSpec> {
         SfarvalidW::new(self, 6)
     }
     #[doc = "Bit 7 - Lazy state error flag."]
     #[inline(always)]
-    #[must_use]
     pub fn lserr(&mut self) -> LserrW<SfsrSpec> {
         LserrW::new(self, 7)
     }

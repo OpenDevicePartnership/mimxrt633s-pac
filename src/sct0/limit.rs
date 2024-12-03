@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - If bit n is one, event n is used as a counter limit for the L or unified counter (event 0 = bit 0, event 1 = bit 1, etc.). The number of bits = number of events in this SCT."]
     #[inline(always)]
-    #[must_use]
     pub fn limmsk_l(&mut self) -> LimmskLW<LimitSpec> {
         LimmskLW::new(self, 0)
     }
     #[doc = "Bits 16:31 - If bit n is one, event n is used as a counter limit for the H counter (event 0 = bit 16, event 1 = bit 17, etc.). The number of bits = number of events in this SCT."]
     #[inline(always)]
-    #[must_use]
     pub fn limmsk_h(&mut self) -> LimmskHW<LimitSpec> {
         LimmskHW::new(self, 16)
     }

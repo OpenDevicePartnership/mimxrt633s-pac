@@ -84,13 +84,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Enables mastering."]
     #[inline(always)]
-    #[must_use]
     pub fn master(&mut self) -> MasterW<MemctrlSpec> {
         MasterW::new(self, 0)
     }
     #[doc = "Bits 16:26 - Number of 512-bit (128-bit if AES, except 1st block which may include key and IV) blocks to copy starting at MEMADDR. This register will decrement after each block is copied, ending in 0. For Hash, the DIGEST interrupt will occur when it reaches 0. Fro AES, the DIGEST/OUTDATA interrupt will occur on ever block. If a bus error occurs, it will stop with this field set to the block that failed. 0:Done - nothing to process. 1 to 2K: Number of 512-bit (or 128bit) blocks to hash."]
     #[inline(always)]
-    #[must_use]
     pub fn count(&mut self) -> CountW<MemctrlSpec> {
         CountW::new(self, 16)
     }

@@ -192,103 +192,86 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Current Connect Status: Logic 1 indicates a device is present on the port."]
     #[inline(always)]
-    #[must_use]
     pub fn ccs(&mut self) -> CcsW<Portsc1Spec> {
         CcsW::new(self, 0)
     }
     #[doc = "Bit 1 - Connect Status Change: Logic 1 means that the value of CCS has changed."]
     #[inline(always)]
-    #[must_use]
     pub fn csc(&mut self) -> CscW<Portsc1Spec> {
         CscW::new(self, 1)
     }
     #[doc = "Bit 2 - Port Enabled/Disabled."]
     #[inline(always)]
-    #[must_use]
     pub fn ped(&mut self) -> PedW<Portsc1Spec> {
         PedW::new(self, 2)
     }
     #[doc = "Bit 3 - Port Enabled/Disabled Change: Logic 1 means that the value of PED has changed."]
     #[inline(always)]
-    #[must_use]
     pub fn pedc(&mut self) -> PedcW<Portsc1Spec> {
         PedcW::new(self, 3)
     }
     #[doc = "Bit 4 - Over-current active: Logic 1 means that this port has an over-current condition."]
     #[inline(always)]
-    #[must_use]
     pub fn oca(&mut self) -> OcaW<Portsc1Spec> {
         OcaW::new(self, 4)
     }
     #[doc = "Bit 5 - Over-current change: Logic 1 means that the value of OCA has changed."]
     #[inline(always)]
-    #[must_use]
     pub fn occ(&mut self) -> OccW<Portsc1Spec> {
         OccW::new(self, 5)
     }
     #[doc = "Bit 6 - Force Port Resume: Logic 1 means resume (K-state) detected or driven on the port."]
     #[inline(always)]
-    #[must_use]
     pub fn fpr(&mut self) -> FprW<Portsc1Spec> {
         FprW::new(self, 6)
     }
     #[doc = "Bit 7 - Suspend: Logic 1 means port is in the suspend state.Logic 0 means the port is not suspended."]
     #[inline(always)]
-    #[must_use]
     pub fn susp(&mut self) -> SuspW<Portsc1Spec> {
         SuspW::new(self, 7)
     }
     #[doc = "Bit 8 - Port Reset: Logic 1 means the port is in the reset state."]
     #[inline(always)]
-    #[must_use]
     pub fn pr(&mut self) -> PrW<Portsc1Spec> {
         PrW::new(self, 8)
     }
     #[doc = "Bit 9 - Suspend using L1 0b = Suspend using L2 1b = Suspend using L1 When this bit is set to a 1 and a non-zero value is specified in the Device Address field, the host controller will generate an LPM Token to enter the L1 state whenever software writes a one to the Suspend bit, as well as L1 exit timing during any device or host-initiated resume."]
     #[inline(always)]
-    #[must_use]
     pub fn sus_l1(&mut self) -> SusL1W<Portsc1Spec> {
         SusL1W::new(self, 9)
     }
     #[doc = "Bit 12 - Port Power: The function of this bit depends on the value of the Port Power Control (PPC) bit in the HCSPARAMS register."]
     #[inline(always)]
-    #[must_use]
     pub fn pp(&mut self) -> PpW<Portsc1Spec> {
         PpW::new(self, 12)
     }
     #[doc = "Bits 14:15 - Port Indicator Control : Writing to this field has no effect if the P_INDICATOR bit in the HCSPARAMS register is logic 0."]
     #[inline(always)]
-    #[must_use]
     pub fn pic(&mut self) -> PicW<Portsc1Spec> {
         PicW::new(self, 14)
     }
     #[doc = "Bits 16:19 - Port Test Control: A non-zero value indicates that the port is operating in the test mode as indicated by the value."]
     #[inline(always)]
-    #[must_use]
     pub fn ptc(&mut self) -> PtcW<Portsc1Spec> {
         PtcW::new(self, 16)
     }
     #[doc = "Bits 20:21 - Port Speed: 00b: Low-speed 01b: Full-speed 10b: High-speed 11b: Reserved."]
     #[inline(always)]
-    #[must_use]
     pub fn pspd(&mut self) -> PspdW<Portsc1Spec> {
         PspdW::new(self, 20)
     }
     #[doc = "Bit 22 - Wake on overcurrent enable: Writing this bit to a one enables the port to be sensitive to overcurrent conditions as wake-up events."]
     #[inline(always)]
-    #[must_use]
     pub fn woo(&mut self) -> WooW<Portsc1Spec> {
         WooW::new(self, 22)
     }
     #[doc = "Bits 23:24 - These two bits are used by software to determine whether the most recent L1 suspend request was successful: 00b: Success-state transition was successful (ACK) 01b: Not Yet - Device was unable to enter the L1 state at this time (NYET) 10b: Not supported - Device does not support the L1 state (STALL) 11b: Timeout/Error - Device failed to respond or an error occurred."]
     #[inline(always)]
-    #[must_use]
     pub fn sus_stat(&mut self) -> SusStatW<Portsc1Spec> {
         SusStatW::new(self, 23)
     }
     #[doc = "Bits 25:31 - Device Address for LPM tokens."]
     #[inline(always)]
-    #[must_use]
     pub fn dev_add(&mut self) -> DevAddW<Portsc1Spec> {
         DevAddW::new(self, 25)
     }

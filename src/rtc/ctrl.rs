@@ -564,61 +564,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Software reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn swreset(&mut self) -> SwresetW<CtrlSpec> {
         SwresetW::new(self, 0)
     }
     #[doc = "Bit 2 - RTC 1 Hz timer alarm flag status."]
     #[inline(always)]
-    #[must_use]
     pub fn alarm1hz(&mut self) -> Alarm1hzW<CtrlSpec> {
         Alarm1hzW::new(self, 2)
     }
     #[doc = "Bit 3 - RTC 1 kHz timer wake-up flag status."]
     #[inline(always)]
-    #[must_use]
     pub fn wake1khz(&mut self) -> Wake1khzW<CtrlSpec> {
         Wake1khzW::new(self, 3)
     }
     #[doc = "Bit 4 - RTC 1 Hz timer alarm enable for Deep power-down."]
     #[inline(always)]
-    #[must_use]
     pub fn alarmdpd_en(&mut self) -> AlarmdpdEnW<CtrlSpec> {
         AlarmdpdEnW::new(self, 4)
     }
     #[doc = "Bit 5 - RTC 1 kHz timer wake-up enable for Deep power-down."]
     #[inline(always)]
-    #[must_use]
     pub fn wakedpd_en(&mut self) -> WakedpdEnW<CtrlSpec> {
         WakedpdEnW::new(self, 5)
     }
     #[doc = "Bit 6 - RTC 1 kHz clock enable. This bit can be set to 0 to conserve power if the 1 kHz timer is not used. This bit has no effect when the RTC is disabled (bit 7 of this register is 0)."]
     #[inline(always)]
-    #[must_use]
     pub fn rtc1khz_en(&mut self) -> Rtc1khzEnW<CtrlSpec> {
         Rtc1khzEnW::new(self, 6)
     }
     #[doc = "Bit 7 - RTC enable."]
     #[inline(always)]
-    #[must_use]
     pub fn rtc_en(&mut self) -> RtcEnW<CtrlSpec> {
         RtcEnW::new(self, 7)
     }
     #[doc = "Bit 8 - The RTC oscillator enable"]
     #[inline(always)]
-    #[must_use]
     pub fn rtc_osc_pd(&mut self) -> RtcOscPdW<CtrlSpec> {
         RtcOscPdW::new(self, 8)
     }
     #[doc = "Bit 10 - The 32 KHz sub-second counter enable"]
     #[inline(always)]
-    #[must_use]
     pub fn rtc_subsec_ena(&mut self) -> RtcSubsecEnaW<CtrlSpec> {
         RtcSubsecEnaW::new(self, 10)
     }
     #[doc = "Bits 28:31 - capacitive load selection"]
     #[inline(always)]
-    #[must_use]
     pub fn rtc_osc_loadcap(&mut self) -> RtcOscLoadcapW<CtrlSpec> {
         RtcOscLoadcapW::new(self, 28)
     }

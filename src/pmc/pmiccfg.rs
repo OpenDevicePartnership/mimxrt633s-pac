@@ -494,49 +494,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - vddcore state in PMIC mode 0"]
     #[inline(always)]
-    #[must_use]
     pub fn vddcorem0(&mut self) -> Vddcorem0W<PmiccfgSpec> {
         Vddcorem0W::new(self, 0)
     }
     #[doc = "Bit 1 - vddcore state in PMIC mode 1"]
     #[inline(always)]
-    #[must_use]
     pub fn vddcorem1(&mut self) -> Vddcorem1W<PmiccfgSpec> {
         Vddcorem1W::new(self, 1)
     }
     #[doc = "Bit 2 - vddcore state in PMIC mode 2"]
     #[inline(always)]
-    #[must_use]
     pub fn vddcorem2(&mut self) -> Vddcorem2W<PmiccfgSpec> {
         Vddcorem2W::new(self, 2)
     }
     #[doc = "Bit 3 - vddcore state in PMIC mode 3"]
     #[inline(always)]
-    #[must_use]
     pub fn vddcorem3(&mut self) -> Vddcorem3W<PmiccfgSpec> {
         Vddcorem3W::new(self, 3)
     }
     #[doc = "Bit 4 - vdd1v8 state in PMIC mode 0"]
     #[inline(always)]
-    #[must_use]
     pub fn vdd1v8m0(&mut self) -> Vdd1v8m0W<PmiccfgSpec> {
         Vdd1v8m0W::new(self, 4)
     }
     #[doc = "Bit 5 - vdd1v8 state in PMIC mode 1"]
     #[inline(always)]
-    #[must_use]
     pub fn vdd1v8m1(&mut self) -> Vdd1v8m1W<PmiccfgSpec> {
         Vdd1v8m1W::new(self, 5)
     }
     #[doc = "Bit 6 - vdd1v8 state in PMIC mode 2"]
     #[inline(always)]
-    #[must_use]
     pub fn vdd1v8m2(&mut self) -> Vdd1v8m2W<PmiccfgSpec> {
         Vdd1v8m2W::new(self, 6)
     }
     #[doc = "Bit 7 - vdd1v8 state in PMIC mode 3"]
     #[inline(always)]
-    #[must_use]
     pub fn vdd1v8m3(&mut self) -> Vdd1v8m3W<PmiccfgSpec> {
         Vdd1v8m3W::new(self, 7)
     }

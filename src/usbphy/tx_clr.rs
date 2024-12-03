@@ -134,31 +134,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Decode to trim the nominal 17"]
     #[inline(always)]
-    #[must_use]
     pub fn d_cal(&mut self) -> DCalW<TxClrSpec> {
         DCalW::new(self, 0)
     }
     #[doc = "Bits 8:11 - Decode to trim the nominal 45ohm series termination resistance to the USB_DM output pin"]
     #[inline(always)]
-    #[must_use]
     pub fn txcal45dm(&mut self) -> Txcal45dmW<TxClrSpec> {
         Txcal45dmW::new(self, 8)
     }
     #[doc = "Bit 13 - Enable resistance calibration on DN."]
     #[inline(always)]
-    #[must_use]
     pub fn txencal45dn(&mut self) -> Txencal45dnW<TxClrSpec> {
         Txencal45dnW::new(self, 13)
     }
     #[doc = "Bits 16:19 - Decode to trim the nominal 45ohm series termination resistance to the USB_DP output pin"]
     #[inline(always)]
-    #[must_use]
     pub fn txcal45dp(&mut self) -> Txcal45dpW<TxClrSpec> {
         Txcal45dpW::new(self, 16)
     }
     #[doc = "Bit 21 - Enable resistance calibration on DP."]
     #[inline(always)]
-    #[must_use]
     pub fn txencal45dp(&mut self) -> Txencal45dpW<TxClrSpec> {
         Txencal45dpW::new(self, 21)
     }

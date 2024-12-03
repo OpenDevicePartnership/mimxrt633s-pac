@@ -854,85 +854,71 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - HSGPIO0 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio0_clk(&mut self) -> Hsgpio0ClkW<Pscctl1Spec> {
         Hsgpio0ClkW::new(self, 0)
     }
     #[doc = "Bit 1 - HSGPIO1 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio1_clk(&mut self) -> Hsgpio1ClkW<Pscctl1Spec> {
         Hsgpio1ClkW::new(self, 1)
     }
     #[doc = "Bit 2 - HSGPIO2 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio2_clk(&mut self) -> Hsgpio2ClkW<Pscctl1Spec> {
         Hsgpio2ClkW::new(self, 2)
     }
     #[doc = "Bit 3 - HSGPIO3 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio3_clk(&mut self) -> Hsgpio3ClkW<Pscctl1Spec> {
         Hsgpio3ClkW::new(self, 3)
     }
     #[doc = "Bit 4 - HSGPIO4 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio4_clk(&mut self) -> Hsgpio4ClkW<Pscctl1Spec> {
         Hsgpio4ClkW::new(self, 4)
     }
     #[doc = "Bit 5 - HSGPIO5 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio5_clk(&mut self) -> Hsgpio5ClkW<Pscctl1Spec> {
         Hsgpio5ClkW::new(self, 5)
     }
     #[doc = "Bit 6 - HSGPIO6 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio6_clk(&mut self) -> Hsgpio6ClkW<Pscctl1Spec> {
         Hsgpio6ClkW::new(self, 6)
     }
     #[doc = "Bit 7 - HSGPIO7 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio7_clk(&mut self) -> Hsgpio7ClkW<Pscctl1Spec> {
         Hsgpio7ClkW::new(self, 7)
     }
     #[doc = "Bit 16 - CRC clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_clk(&mut self) -> CrcClkW<Pscctl1Spec> {
         CrcClkW::new(self, 16)
     }
     #[doc = "Bit 23 - DMAC0 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_clk(&mut self) -> Dmac0ClkW<Pscctl1Spec> {
         Dmac0ClkW::new(self, 23)
     }
     #[doc = "Bit 24 - DMAC1 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_clk(&mut self) -> Dmac1ClkW<Pscctl1Spec> {
         Dmac1ClkW::new(self, 24)
     }
     #[doc = "Bit 28 - MU clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn mu_clk(&mut self) -> MuClkW<Pscctl1Spec> {
         MuClkW::new(self, 28)
     }
     #[doc = "Bit 29 - SEMA clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn sema_clk(&mut self) -> SemaClkW<Pscctl1Spec> {
         SemaClkW::new(self, 29)
     }
     #[doc = "Bit 31 - FREQME clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn freqme_clk(&mut self) -> FreqmeClkW<Pscctl1Spec> {
         FreqmeClkW::new(self, 31)
     }

@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 10:26 - Upper limit of Region 0"]
     #[inline(always)]
-    #[must_use]
     pub fn reg0_top(&mut self) -> Reg0TopW<Reg0TopSpec> {
         Reg0TopW::new(self, 10)
     }

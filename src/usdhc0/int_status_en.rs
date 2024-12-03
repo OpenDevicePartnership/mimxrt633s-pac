@@ -1274,127 +1274,106 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Command Complete Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ccsen(&mut self) -> CcsenW<IntStatusEnSpec> {
         CcsenW::new(self, 0)
     }
     #[doc = "Bit 1 - Transfer Complete Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn tcsen(&mut self) -> TcsenW<IntStatusEnSpec> {
         TcsenW::new(self, 1)
     }
     #[doc = "Bit 2 - Block Gap Event Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn bgesen(&mut self) -> BgesenW<IntStatusEnSpec> {
         BgesenW::new(self, 2)
     }
     #[doc = "Bit 3 - DMA Interrupt Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dintsen(&mut self) -> DintsenW<IntStatusEnSpec> {
         DintsenW::new(self, 3)
     }
     #[doc = "Bit 4 - Buffer Write Ready Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn bwrsen(&mut self) -> BwrsenW<IntStatusEnSpec> {
         BwrsenW::new(self, 4)
     }
     #[doc = "Bit 5 - Buffer Read Ready Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn brrsen(&mut self) -> BrrsenW<IntStatusEnSpec> {
         BrrsenW::new(self, 5)
     }
     #[doc = "Bit 6 - Card Insertion Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn cinssen(&mut self) -> CinssenW<IntStatusEnSpec> {
         CinssenW::new(self, 6)
     }
     #[doc = "Bit 7 - Card Removal Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn crmsen(&mut self) -> CrmsenW<IntStatusEnSpec> {
         CrmsenW::new(self, 7)
     }
     #[doc = "Bit 8 - Card Interrupt Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn cintsen(&mut self) -> CintsenW<IntStatusEnSpec> {
         CintsenW::new(self, 8)
     }
     #[doc = "Bit 12 - Re-Tuning Event Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn rtesen(&mut self) -> RtesenW<IntStatusEnSpec> {
         RtesenW::new(self, 12)
     }
     #[doc = "Bit 14 - Tuning Pass Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn tpsen(&mut self) -> TpsenW<IntStatusEnSpec> {
         TpsenW::new(self, 14)
     }
     #[doc = "Bit 16 - Command Timeout Error Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ctoesen(&mut self) -> CtoesenW<IntStatusEnSpec> {
         CtoesenW::new(self, 16)
     }
     #[doc = "Bit 17 - Command CRC Error Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ccesen(&mut self) -> CcesenW<IntStatusEnSpec> {
         CcesenW::new(self, 17)
     }
     #[doc = "Bit 18 - Command End Bit Error Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn cebesen(&mut self) -> CebesenW<IntStatusEnSpec> {
         CebesenW::new(self, 18)
     }
     #[doc = "Bit 19 - Command Index Error Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ciesen(&mut self) -> CiesenW<IntStatusEnSpec> {
         CiesenW::new(self, 19)
     }
     #[doc = "Bit 20 - Data Timeout Error Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dtoesen(&mut self) -> DtoesenW<IntStatusEnSpec> {
         DtoesenW::new(self, 20)
     }
     #[doc = "Bit 21 - Data CRC Error Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dcesen(&mut self) -> DcesenW<IntStatusEnSpec> {
         DcesenW::new(self, 21)
     }
     #[doc = "Bit 22 - Data End Bit Error Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn debesen(&mut self) -> DebesenW<IntStatusEnSpec> {
         DebesenW::new(self, 22)
     }
     #[doc = "Bit 24 - Auto CMD12 Error Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ac12esen(&mut self) -> Ac12esenW<IntStatusEnSpec> {
         Ac12esenW::new(self, 24)
     }
     #[doc = "Bit 26 - Tuning Error Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn tnesen(&mut self) -> TnesenW<IntStatusEnSpec> {
         TnesenW::new(self, 26)
     }
     #[doc = "Bit 28 - DMA Error Status Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dmaesen(&mut self) -> DmaesenW<IntStatusEnSpec> {
         DmaesenW::new(self, 28)
     }

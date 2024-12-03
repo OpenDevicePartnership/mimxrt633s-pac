@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:8 - CRC starting fuse word address"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_start_addr(&mut self) -> CrcStartAddrW<OtpCrcAddrSpec> {
         CrcStartAddrW::new(self, 0)
     }
     #[doc = "Bits 12:20 - CRC ending fuse word address"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_end_addr(&mut self) -> CrcEndAddrW<OtpCrcAddrSpec> {
         CrcEndAddrW::new(self, 12)
     }
     #[doc = "Bits 24:26 - Specify which of the 8 CRC reference value to use for CRC calculation. When the CRC result for the fuse data from CRC_START_ADDR to CRC_AND_ADDR and this CRC reference value is 0, the CRC check passes."]
     #[inline(always)]
-    #[must_use]
     pub fn crc_ref_addr(&mut self) -> CrcRefAddrW<OtpCrcAddrSpec> {
         CrcRefAddrW::new(self, 24)
     }

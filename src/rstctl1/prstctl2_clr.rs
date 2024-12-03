@@ -322,61 +322,51 @@ impl core::fmt::Debug for crate::generic::Reg<Prstctl2ClrSpec> {
 impl W {
     #[doc = "Bit 0 - CT32BIT0 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit0_rst_clr(&mut self) -> Ct32bit0RstClrW<Prstctl2ClrSpec> {
         Ct32bit0RstClrW::new(self, 0)
     }
     #[doc = "Bit 1 - CT32BIT1 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit1_rst_clr(&mut self) -> Ct32bit1RstClrW<Prstctl2ClrSpec> {
         Ct32bit1RstClrW::new(self, 1)
     }
     #[doc = "Bit 2 - CT32BIT2 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit2_rst_clr(&mut self) -> Ct32bit2RstClrW<Prstctl2ClrSpec> {
         Ct32bit2RstClrW::new(self, 2)
     }
     #[doc = "Bit 3 - CT32BIT3 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit3_rst_clr(&mut self) -> Ct32bit3RstClrW<Prstctl2ClrSpec> {
         Ct32bit3RstClrW::new(self, 3)
     }
     #[doc = "Bit 4 - CT32BIT4 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit4_rst_clr(&mut self) -> Ct32bit4RstClrW<Prstctl2ClrSpec> {
         Ct32bit4RstClrW::new(self, 4)
     }
     #[doc = "Bit 8 - MRT0 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn mrt0_rst_clr(&mut self) -> Mrt0RstClrW<Prstctl2ClrSpec> {
         Mrt0RstClrW::new(self, 8)
     }
     #[doc = "Bit 10 - WWDT1 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn wwdt1_rst_clr(&mut self) -> Wwdt1RstClrW<Prstctl2ClrSpec> {
         Wwdt1RstClrW::new(self, 10)
     }
     #[doc = "Bit 16 - I3C0 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn i3c0_rst_clr(&mut self) -> I3c0RstClrW<Prstctl2ClrSpec> {
         I3c0RstClrW::new(self, 16)
     }
     #[doc = "Bit 30 - GPIOINTCTL reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn gpiointctl_rst_clr(&mut self) -> GpiointctlRstClrW<Prstctl2ClrSpec> {
         GpiointctlRstClrW::new(self, 30)
     }
     #[doc = "Bit 31 - PMC reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn pimctl_rst_clr(&mut self) -> PimctlRstClrW<Prstctl2ClrSpec> {
         PimctlRstClrW::new(self, 31)
     }

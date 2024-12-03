@@ -141,13 +141,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Interrupt A status for DMA channel 32."]
     #[inline(always)]
-    #[must_use]
     pub fn inta32(&mut self) -> Inta32W<Inta1Spec> {
         Inta32W::new(self, 0)
     }
     #[doc = "Bits 1:31 - Additional Interrupt A status bits for remaining DMA channels in the range 63 to 33. Any bits above the actually implemented channels are reserved."]
     #[inline(always)]
-    #[must_use]
     pub fn inta63_33(&mut self) -> Inta63_33W<Inta1Spec> {
         Inta63_33W::new(self, 1)
     }

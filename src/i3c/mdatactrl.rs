@@ -72,31 +72,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Flush to-bus buffer/FIFO"]
     #[inline(always)]
-    #[must_use]
     pub fn flushtb(&mut self) -> FlushtbW<MdatactrlSpec> {
         FlushtbW::new(self, 0)
     }
     #[doc = "Bit 1 - Flush from-bus buffer/FIFO"]
     #[inline(always)]
-    #[must_use]
     pub fn flushfb(&mut self) -> FlushfbW<MdatactrlSpec> {
         FlushfbW::new(self, 1)
     }
     #[doc = "Bit 3 - Unlock"]
     #[inline(always)]
-    #[must_use]
     pub fn unlock(&mut self) -> UnlockW<MdatactrlSpec> {
         UnlockW::new(self, 3)
     }
     #[doc = "Bits 4:5 - TX trigger level"]
     #[inline(always)]
-    #[must_use]
     pub fn txtrig(&mut self) -> TxtrigW<MdatactrlSpec> {
         TxtrigW::new(self, 4)
     }
     #[doc = "Bits 6:7 - RX trigger level"]
     #[inline(always)]
-    #[must_use]
     pub fn rxtrig(&mut self) -> RxtrigW<MdatactrlSpec> {
         RxtrigW::new(self, 6)
     }

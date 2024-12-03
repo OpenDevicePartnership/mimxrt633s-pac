@@ -79,31 +79,26 @@ impl core::fmt::Debug for crate::generic::Reg<MwmsgSdrControlSpec> {
 impl W {
     #[doc = "Bit 0 - Direction"]
     #[inline(always)]
-    #[must_use]
     pub fn dir(&mut self) -> DirW<MwmsgSdrControlSpec> {
         DirW::new(self, 0)
     }
     #[doc = "Bits 1:7 - Address to be written to"]
     #[inline(always)]
-    #[must_use]
     pub fn addr(&mut self) -> AddrW<MwmsgSdrControlSpec> {
         AddrW::new(self, 1)
     }
     #[doc = "Bit 8 - End of SDR message"]
     #[inline(always)]
-    #[must_use]
     pub fn end(&mut self) -> EndW<MwmsgSdrControlSpec> {
         EndW::new(self, 8)
     }
     #[doc = "Bit 10 - I2C"]
     #[inline(always)]
-    #[must_use]
     pub fn i2c(&mut self) -> I2cW<MwmsgSdrControlSpec> {
         I2cW::new(self, 10)
     }
     #[doc = "Bits 11:15 - Length"]
     #[inline(always)]
-    #[must_use]
     pub fn len(&mut self) -> LenW<MwmsgSdrControlSpec> {
         LenW::new(self, 11)
     }

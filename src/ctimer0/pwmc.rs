@@ -254,25 +254,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - PWM mode enable for channel0."]
     #[inline(always)]
-    #[must_use]
     pub fn pwmen0(&mut self) -> Pwmen0W<PwmcSpec> {
         Pwmen0W::new(self, 0)
     }
     #[doc = "Bit 1 - PWM mode enable for channel1."]
     #[inline(always)]
-    #[must_use]
     pub fn pwmen1(&mut self) -> Pwmen1W<PwmcSpec> {
         Pwmen1W::new(self, 1)
     }
     #[doc = "Bit 2 - PWM mode enable for channel2."]
     #[inline(always)]
-    #[must_use]
     pub fn pwmen2(&mut self) -> Pwmen2W<PwmcSpec> {
         Pwmen2W::new(self, 2)
     }
     #[doc = "Bit 3 - PWM mode enable for channel3. Note: It is recommended to use match channel 3 to set the PWM cycle."]
     #[inline(always)]
-    #[must_use]
     pub fn pwmen3(&mut self) -> Pwmen3W<PwmcSpec> {
         Pwmen3W::new(self, 3)
     }

@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<TfdrSpec> {
 impl W {
     #[doc = "Bits 0:31 - TX Data"]
     #[inline(always)]
-    #[must_use]
     pub fn txdata(&mut self) -> TxdataW<TfdrSpec> {
         TxdataW::new(self, 0)
     }

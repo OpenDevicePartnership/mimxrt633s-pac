@@ -689,43 +689,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 4:6 - Analog Comparator Phase2 Timing Control."]
     #[inline(always)]
-    #[must_use]
     pub fn acph2tc(&mut self) -> Acph2tcW<C3Spec> {
         Acph2tcW::new(self, 4)
     }
     #[doc = "Bits 8:10 - Analog Comparator Phase1 Timing Control."]
     #[inline(always)]
-    #[must_use]
     pub fn acph1tc(&mut self) -> Acph1tcW<C3Spec> {
         Acph1tcW::new(self, 8)
     }
     #[doc = "Bits 12:14 - Analog Comparator Sampling Time control."]
     #[inline(always)]
-    #[must_use]
     pub fn acsat(&mut self) -> AcsatW<C3Spec> {
         AcsatW::new(self, 12)
     }
     #[doc = "Bit 16 - Discrete Mode Clock Selection"]
     #[inline(always)]
-    #[must_use]
     pub fn dmcs(&mut self) -> DmcsW<C3Spec> {
         DmcsW::new(self, 16)
     }
     #[doc = "Bit 20 - Resistor Divider Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn rdive(&mut self) -> RdiveW<C3Spec> {
         RdiveW::new(self, 20)
     }
     #[doc = "Bit 24 - Negative Channel Continuous Mode Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn nchcten(&mut self) -> NchctenW<C3Spec> {
         NchctenW::new(self, 24)
     }
     #[doc = "Bit 28 - Positive Channel Continuous Mode Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn pchcten(&mut self) -> PchctenW<C3Spec> {
         PchctenW::new(self, 28)
     }

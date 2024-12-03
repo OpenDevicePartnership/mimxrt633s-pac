@@ -16,7 +16,7 @@ pub struct RegisterBlock {
     _reserved6: [u8; 0x7c],
     dmac1_otrig_sel: [Dmac1OtrigSel; 4],
     _reserved7: [u8; 0xf0],
-    ct32bit_cap_sel: [Ct32bitCapSel; 5],
+    ct32bit_cap: [Ct32bitCap; 5],
     _reserved8: [u8; 0xb0],
     fmeasure_ch_sel: [FmeasureChSel; 2],
     _reserved9: [u8; 0x38],
@@ -126,14 +126,14 @@ impl RegisterBlock {
     }
     #[doc = "0x600..0x650 - CT32BITn Counter Timer Capture Trigger Multiplexers"]
     #[inline(always)]
-    pub const fn ct32bit_cap_sel(&self, n: usize) -> &Ct32bitCapSel {
-        &self.ct32bit_cap_sel[n]
+    pub const fn ct32bit_cap(&self, n: usize) -> &Ct32bitCap {
+        &self.ct32bit_cap[n]
     }
     #[doc = "Iterator for array of:"]
     #[doc = "0x600..0x650 - CT32BITn Counter Timer Capture Trigger Multiplexers"]
     #[inline(always)]
-    pub fn ct32bit_cap_sel_iter(&self) -> impl Iterator<Item = &Ct32bitCapSel> {
-        self.ct32bit_cap_sel.iter()
+    pub fn ct32bit_cap_iter(&self) -> impl Iterator<Item = &Ct32bitCap> {
+        self.ct32bit_cap.iter()
     }
     #[doc = "0x700..0x708 - Frequency Measurement Input Channel Multiplexers"]
     #[inline(always)]
@@ -280,10 +280,10 @@ pub type Dmac1OtrigSel = crate::Reg<dmac1_otrig_sel::Dmac1OtrigSelSpec>;
 #[doc = "DMAC1 Output Trigger Multiplexers N"]
 pub mod dmac1_otrig_sel;
 #[doc = "CT32BITn Counter Timer Capture Trigger Multiplexers"]
-pub use self::ct32bit_cap_sel::Ct32bitCapSel;
+pub use self::ct32bit_cap::Ct32bitCap;
 #[doc = r"Cluster"]
 #[doc = "CT32BITn Counter Timer Capture Trigger Multiplexers"]
-pub mod ct32bit_cap_sel;
+pub mod ct32bit_cap;
 #[doc = "FMEASURE_CH_SEL (rw) register accessor: Frequency Measurement Input Channel Multiplexers\n\nYou can [`read`](crate::Reg::read) this register and get [`fmeasure_ch_sel::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`fmeasure_ch_sel::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmeasure_ch_sel`]
 module"]
 #[doc(alias = "FMEASURE_CH_SEL")]

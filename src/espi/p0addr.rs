@@ -124,30 +124,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - Offset from 0 or the selected mapped base for matching memory or IO"]
     #[inline(always)]
-    #[must_use]
     pub fn off(&mut self) -> OffW<P0addrSpec> {
         OffW::new(self, 0)
     }
     #[doc = "Bits 16:17 - The meaning is dependent on type of port:"]
     #[inline(always)]
-    #[must_use]
     pub fn base_or_asz(&mut self) -> BaseOrAszW<P0addrSpec> {
         BaseOrAszW::new(self, 16)
     }
     #[doc = "Bits 24:27 - For index/register only: This is the byte offset of the Index relative to the data (before or after, based on IDX1ST)"]
     #[inline(always)]
-    #[must_use]
     pub fn idxoff(&mut self) -> IdxoffW<P0addrSpec> {
         IdxoffW::new(self, 24)
     }
     #[doc = "Bit 28 - For index/data register only: Is 1 if index is lower address than data (e"]
     #[inline(always)]
-    #[must_use]
     pub fn idx1st(&mut self) -> Idx1stW<P0addrSpec> {
         Idx1stW::new(self, 28)
     }
 }
-#[doc = "The Port Address register is used to set the mapped address in the LPC/eSPI memory space. For normal Ports, this is a 16-bit location in IO space or a 32-bit offset into PCIe address mapped space. It is not used for OOB, Bus Mastering, or Flash; see the PnOMFLEN register for those. For Endpoints, it is the base of a dword (64 bits). For Index/Data, it is the base of a word (32 bits). For mailbox memory, the address is modulus the length of the mailbox (x2 for both directions). So, if a 16-byte mailbox (single), the offset must have bits 3:0 set to 0 (that is &amp;~0xF). If split directions, then normally bits 4:0 would be set to 0 (that is &amp;~0x1F).\n\nYou can [`read`](crate::Reg::read) this register and get [`p0addr::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`p0addr::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "The Port Address register is used to set the mapped address in the LPC/eSPI memory space. For normal Ports, this is a 16-bit location in IO space or a 32-bit offset into PCIe address mapped space. It is not used for OOB, Bus Mastering, or Flash; see the PnOMFLEN register for those. For Endpoints, it is the base of a dword (64 bits). For Index/Data, it is the base of a word (32 bits). For mailbox memory, the address is modulus the length of the mailbox (x2 for both directions). So, if a 16-byte mailbox (single), the offset must have bits 3:0 set to 0 (that is &~0xF). If split directions, then normally bits 4:0 would be set to 0 (that is &~0x1F).\n\nYou can [`read`](crate::Reg::read) this register and get [`p0addr::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`p0addr::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct P0addrSpec;
 impl crate::RegisterSpec for P0addrSpec {
     type Ux = u32;

@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Write 1 to clear mask."]
     #[inline(always)]
-    #[must_use]
     pub fn waiting(&mut self) -> WaitingW<IntenclrSpec> {
         WaitingW::new(self, 0)
     }
     #[doc = "Bit 1 - Write 1 to clear mask."]
     #[inline(always)]
-    #[must_use]
     pub fn digest(&mut self) -> DigestW<IntenclrSpec> {
         DigestW::new(self, 1)
     }
     #[doc = "Bit 2 - Write 1 to clear mask."]
     #[inline(always)]
-    #[must_use]
     pub fn error(&mut self) -> ErrorW<IntenclrSpec> {
         ErrorW::new(self, 2)
     }

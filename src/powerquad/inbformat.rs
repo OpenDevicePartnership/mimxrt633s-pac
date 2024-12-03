@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Input B Internal format (00: q15; 01:q31; 10:float)"]
     #[inline(always)]
-    #[must_use]
     pub fn inb_formatint(&mut self) -> InbFormatintW<InbformatSpec> {
         InbFormatintW::new(self, 0)
     }
     #[doc = "Bits 4:5 - Input B External format (00: q15; 01:q31; 10:float)"]
     #[inline(always)]
-    #[must_use]
     pub fn inb_formatext(&mut self) -> InbFormatextW<InbformatSpec> {
         InbFormatextW::new(self, 4)
     }
     #[doc = "Bits 8:15 - Input B Scaler value (for scaled 'q31' formats)"]
     #[inline(always)]
-    #[must_use]
     pub fn inb_scaler(&mut self) -> InbScalerW<InbformatSpec> {
         InbScalerW::new(self, 8)
     }

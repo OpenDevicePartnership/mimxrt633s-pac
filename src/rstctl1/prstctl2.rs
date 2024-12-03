@@ -614,61 +614,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - CT32BIT0 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit0_rst(&mut self) -> Ct32bit0RstW<Prstctl2Spec> {
         Ct32bit0RstW::new(self, 0)
     }
     #[doc = "Bit 1 - CT32BIT1 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit1_rst(&mut self) -> Ct32bit1RstW<Prstctl2Spec> {
         Ct32bit1RstW::new(self, 1)
     }
     #[doc = "Bit 2 - CT32BIT2 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit2_rst(&mut self) -> Ct32bit2RstW<Prstctl2Spec> {
         Ct32bit2RstW::new(self, 2)
     }
     #[doc = "Bit 3 - CT32BIT3 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit3_rst(&mut self) -> Ct32bit3RstW<Prstctl2Spec> {
         Ct32bit3RstW::new(self, 3)
     }
     #[doc = "Bit 4 - CT32BIT4 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit4_rst(&mut self) -> Ct32bit4RstW<Prstctl2Spec> {
         Ct32bit4RstW::new(self, 4)
     }
     #[doc = "Bit 8 - MRT0 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn mrt0_rst(&mut self) -> Mrt0RstW<Prstctl2Spec> {
         Mrt0RstW::new(self, 8)
     }
     #[doc = "Bit 10 - WWDT1 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn wwdt1_rst(&mut self) -> Wwdt1RstW<Prstctl2Spec> {
         Wwdt1RstW::new(self, 10)
     }
     #[doc = "Bit 16 - I3C0 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn i3c0_rst(&mut self) -> I3c0RstW<Prstctl2Spec> {
         I3c0RstW::new(self, 16)
     }
     #[doc = "Bit 30 - GPIOINTCTL reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn gpiointctl_rst(&mut self) -> GpiointctlRstW<Prstctl2Spec> {
         GpiointctlRstW::new(self, 30)
     }
     #[doc = "Bit 31 - PMC reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn pimctl_rst(&mut self) -> PimctlRstW<Prstctl2Spec> {
         PimctlRstW::new(self, 31)
     }

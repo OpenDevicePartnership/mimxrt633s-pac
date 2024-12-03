@@ -41,14 +41,12 @@ impl W {
     #[doc = "Bits 0:15 - High speed packet number, used when USB1_LOOPBACK\\[TSTI_HSFS_MODE_EN\\]
 is set to value 1'b1."]
     #[inline(always)]
-    #[must_use]
     pub fn tsti_hs_number(&mut self) -> TstiHsNumberW<Usb1LoopbackHsfscntClrSpec> {
         TstiHsNumberW::new(self, 0)
     }
     #[doc = "Bits 16:31 - Full speed packet number, used when USB1_LOOPBACK\\[TSTI_HSFS_MODE_EN\\]
 is set to value 1'b1."]
     #[inline(always)]
-    #[must_use]
     pub fn tsti_fs_number(&mut self) -> TstiFsNumberW<Usb1LoopbackHsfscntClrSpec> {
         TstiFsNumberW::new(self, 16)
     }

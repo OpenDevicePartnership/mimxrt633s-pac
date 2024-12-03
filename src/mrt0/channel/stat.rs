@@ -194,19 +194,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Monitors the interrupt flag."]
     #[inline(always)]
-    #[must_use]
     pub fn intflag(&mut self) -> IntflagW<StatSpec> {
         IntflagW::new(self, 0)
     }
     #[doc = "Bit 1 - Indicates the state of TIMERn. This bit is read-only."]
     #[inline(always)]
-    #[must_use]
     pub fn run(&mut self) -> RunW<StatSpec> {
         RunW::new(self, 1)
     }
     #[doc = "Bit 2 - Channel In Use flag. Operating details depend on the MULTITASK bit in the MODCFG register, and affects the use of IDLE_CH. See Idle channel register for details of the two operating modes."]
     #[inline(always)]
-    #[must_use]
     pub fn inuse(&mut self) -> InuseW<StatSpec> {
         InuseW::new(self, 2)
     }

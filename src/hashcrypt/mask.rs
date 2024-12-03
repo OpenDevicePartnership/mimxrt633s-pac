@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<MaskSpec> {
 impl W {
     #[doc = "Bits 0:31 - A random word."]
     #[inline(always)]
-    #[must_use]
     pub fn mask(&mut self) -> MaskW<MaskSpec> {
         MaskW::new(self, 0)
     }

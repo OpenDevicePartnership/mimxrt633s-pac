@@ -141,13 +141,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Error Interrupt flag for DMA channel 32."]
     #[inline(always)]
-    #[must_use]
     pub fn err32(&mut self) -> Err32W<Errint1Spec> {
         Err32W::new(self, 0)
     }
     #[doc = "Bits 1:31 - Additional error Interrupt flags for remaining DMA channels in the range 63 to 33. Any bits above the actually implemented channels are reserved."]
     #[inline(always)]
-    #[must_use]
     pub fn err63_33(&mut self) -> Err63_33W<Errint1Spec> {
         Err63_33W::new(self, 1)
     }

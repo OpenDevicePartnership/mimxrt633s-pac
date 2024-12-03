@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - Bit n is one if a no-change conflict event occurred on output n since reset or a 1 was last written to this bit (output 0 = bit 0, output 1 = bit 1, etc.). The number of bits = number of outputs in this SCT."]
     #[inline(always)]
-    #[must_use]
     pub fn ncflag(&mut self) -> NcflagW<ConflagSpec> {
         NcflagW::new(self, 0)
     }
     #[doc = "Bit 30 - The most recent bus error from this SCT involved writing CTR L/Unified, STATE L/Unified, MATCH L/Unified, or the Output register when the L/U counter was not halted. A word write to certain L and H registers can be half successful and half unsuccessful."]
     #[inline(always)]
-    #[must_use]
     pub fn buserrl(&mut self) -> BuserrlW<ConflagSpec> {
         BuserrlW::new(self, 30)
     }
     #[doc = "Bit 31 - The most recent bus error from this SCT involved writing CTR H, STATE H, MATCH H, or the Output register when the H counter was not halted."]
     #[inline(always)]
-    #[must_use]
     pub fn buserrh(&mut self) -> BuserrhW<ConflagSpec> {
         BuserrhW::new(self, 31)
     }

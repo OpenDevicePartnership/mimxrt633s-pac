@@ -141,13 +141,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Enable for DMA channel 32"]
     #[inline(always)]
-    #[must_use]
     pub fn enable32(&mut self) -> Enable32W<Enableset1Spec> {
         Enable32W::new(self, 0)
     }
     #[doc = "Bits 1:31 - Additional enables for remaining DMA channels in the range 63 to 33."]
     #[inline(always)]
-    #[must_use]
     pub fn enable63_33(&mut self) -> Enable63_33W<Enableset1Spec> {
         Enable63_33W::new(self, 1)
     }

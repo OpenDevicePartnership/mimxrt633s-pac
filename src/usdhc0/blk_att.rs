@@ -265,13 +265,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:12 - Block Size"]
     #[inline(always)]
-    #[must_use]
     pub fn blksize(&mut self) -> BlksizeW<BlkAttSpec> {
         BlksizeW::new(self, 0)
     }
     #[doc = "Bits 16:31 - Block Count"]
     #[inline(always)]
-    #[must_use]
     pub fn blkcnt(&mut self) -> BlkcntW<BlkAttSpec> {
         BlkcntW::new(self, 16)
     }

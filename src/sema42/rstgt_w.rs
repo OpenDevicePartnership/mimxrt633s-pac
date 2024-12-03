@@ -13,13 +13,11 @@ impl core::fmt::Debug for crate::generic::Reg<RstgtWSpec> {
 impl W {
     #[doc = "Bits 0:7 - RSTGTN"]
     #[inline(always)]
-    #[must_use]
     pub fn rstgtn(&mut self) -> RstgtnW<RstgtWSpec> {
         RstgtnW::new(self, 0)
     }
     #[doc = "Bits 8:15 - RSTGDP"]
     #[inline(always)]
-    #[must_use]
     pub fn rstgdp(&mut self) -> RstgdpW<RstgtWSpec> {
         RstgdpW::new(self, 8)
     }

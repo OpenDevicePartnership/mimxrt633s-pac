@@ -84,43 +84,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Enable corresponding interrupt in STAT, which indicates that the initialization or a operation is completed."]
     #[inline(always)]
-    #[must_use]
     pub fn readyen(&mut self) -> ReadyenW<IntenSpec> {
         ReadyenW::new(self, 0)
     }
     #[doc = "Bit 1 - Enable corresponding interrupt in STAT, which indicates last operation was successful."]
     #[inline(always)]
-    #[must_use]
     pub fn succesen(&mut self) -> SuccesenW<IntenSpec> {
         SuccesenW::new(self, 1)
     }
     #[doc = "Bit 2 - Enable corresponding interrupt in STAT, which indicates that PUF is in the error state and no operations can be performed."]
     #[inline(always)]
-    #[must_use]
     pub fn erroren(&mut self) -> ErrorenW<IntenSpec> {
         ErrorenW::new(self, 2)
     }
     #[doc = "Bit 4 - Enable corresponding interrupt in STAT, which is request for next part of key."]
     #[inline(always)]
-    #[must_use]
     pub fn keyinreqen(&mut self) -> KeyinreqenW<IntenSpec> {
         KeyinreqenW::new(self, 4)
     }
     #[doc = "Bit 5 - Enable corresponding interrupt in STAT, which is next part of key is available."]
     #[inline(always)]
-    #[must_use]
     pub fn keyoutavailen(&mut self) -> KeyoutavailenW<IntenSpec> {
         KeyoutavailenW::new(self, 5)
     }
     #[doc = "Bit 6 - Enable corresponding interrupt in STAT, which is request for next part of AC/KC."]
     #[inline(always)]
-    #[must_use]
     pub fn codeinreqen(&mut self) -> CodeinreqenW<IntenSpec> {
         CodeinreqenW::new(self, 6)
     }
     #[doc = "Bit 7 - Enable corresponding interrupt in STAT, which is next part of AC/KC is available."]
     #[inline(always)]
-    #[must_use]
     pub fn codeoutavailen(&mut self) -> CodeoutavailenW<IntenSpec> {
         CodeoutavailenW::new(self, 7)
     }

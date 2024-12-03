@@ -1814,181 +1814,151 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if0_apd(&mut self) -> SramIf0ApdW<Pdruncfg2Spec> {
         SramIf0ApdW::new(self, 0)
     }
     #[doc = "Bit 1 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if1_apd(&mut self) -> SramIf1ApdW<Pdruncfg2Spec> {
         SramIf1ApdW::new(self, 1)
     }
     #[doc = "Bit 2 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if2_apd(&mut self) -> SramIf2ApdW<Pdruncfg2Spec> {
         SramIf2ApdW::new(self, 2)
     }
     #[doc = "Bit 3 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if3_apd(&mut self) -> SramIf3ApdW<Pdruncfg2Spec> {
         SramIf3ApdW::new(self, 3)
     }
     #[doc = "Bit 4 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if4_apd(&mut self) -> SramIf4ApdW<Pdruncfg2Spec> {
         SramIf4ApdW::new(self, 4)
     }
     #[doc = "Bit 5 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if5_apd(&mut self) -> SramIf5ApdW<Pdruncfg2Spec> {
         SramIf5ApdW::new(self, 5)
     }
     #[doc = "Bit 6 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if6_apd(&mut self) -> SramIf6ApdW<Pdruncfg2Spec> {
         SramIf6ApdW::new(self, 6)
     }
     #[doc = "Bit 7 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if7_apd(&mut self) -> SramIf7ApdW<Pdruncfg2Spec> {
         SramIf7ApdW::new(self, 7)
     }
     #[doc = "Bit 8 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if8_apd(&mut self) -> SramIf8ApdW<Pdruncfg2Spec> {
         SramIf8ApdW::new(self, 8)
     }
     #[doc = "Bit 9 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if9_apd(&mut self) -> SramIf9ApdW<Pdruncfg2Spec> {
         SramIf9ApdW::new(self, 9)
     }
     #[doc = "Bit 10 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if10_apd(&mut self) -> SramIf10ApdW<Pdruncfg2Spec> {
         SramIf10ApdW::new(self, 10)
     }
     #[doc = "Bit 11 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if11_apd(&mut self) -> SramIf11ApdW<Pdruncfg2Spec> {
         SramIf11ApdW::new(self, 11)
     }
     #[doc = "Bit 12 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if12_apd(&mut self) -> SramIf12ApdW<Pdruncfg2Spec> {
         SramIf12ApdW::new(self, 12)
     }
     #[doc = "Bit 13 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if13_apd(&mut self) -> SramIf13ApdW<Pdruncfg2Spec> {
         SramIf13ApdW::new(self, 13)
     }
     #[doc = "Bit 14 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if14_apd(&mut self) -> SramIf14ApdW<Pdruncfg2Spec> {
         SramIf14ApdW::new(self, 14)
     }
     #[doc = "Bit 15 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if15_apd(&mut self) -> SramIf15ApdW<Pdruncfg2Spec> {
         SramIf15ApdW::new(self, 15)
     }
     #[doc = "Bit 16 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if16_apd(&mut self) -> SramIf16ApdW<Pdruncfg2Spec> {
         SramIf16ApdW::new(self, 16)
     }
     #[doc = "Bit 17 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if17_apd(&mut self) -> SramIf17ApdW<Pdruncfg2Spec> {
         SramIf17ApdW::new(self, 17)
     }
     #[doc = "Bit 18 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if18_apd(&mut self) -> SramIf18ApdW<Pdruncfg2Spec> {
         SramIf18ApdW::new(self, 18)
     }
     #[doc = "Bit 19 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if19_apd(&mut self) -> SramIf19ApdW<Pdruncfg2Spec> {
         SramIf19ApdW::new(self, 19)
     }
     #[doc = "Bit 20 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if20_apd(&mut self) -> SramIf20ApdW<Pdruncfg2Spec> {
         SramIf20ApdW::new(self, 20)
     }
     #[doc = "Bit 21 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if21_apd(&mut self) -> SramIf21ApdW<Pdruncfg2Spec> {
         SramIf21ApdW::new(self, 21)
     }
     #[doc = "Bit 22 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if22_apd(&mut self) -> SramIf22ApdW<Pdruncfg2Spec> {
         SramIf22ApdW::new(self, 22)
     }
     #[doc = "Bit 23 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if23_apd(&mut self) -> SramIf23ApdW<Pdruncfg2Spec> {
         SramIf23ApdW::new(self, 23)
     }
     #[doc = "Bit 24 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if24_apd(&mut self) -> SramIf24ApdW<Pdruncfg2Spec> {
         SramIf24ApdW::new(self, 24)
     }
     #[doc = "Bit 25 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if25_apd(&mut self) -> SramIf25ApdW<Pdruncfg2Spec> {
         SramIf25ApdW::new(self, 25)
     }
     #[doc = "Bit 26 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if26_apd(&mut self) -> SramIf26ApdW<Pdruncfg2Spec> {
         SramIf26ApdW::new(self, 26)
     }
     #[doc = "Bit 27 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if27_apd(&mut self) -> SramIf27ApdW<Pdruncfg2Spec> {
         SramIf27ApdW::new(self, 27)
     }
     #[doc = "Bit 28 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if28_apd(&mut self) -> SramIf28ApdW<Pdruncfg2Spec> {
         SramIf28ApdW::new(self, 28)
     }
     #[doc = "Bit 29 - Array Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if29_apd(&mut self) -> SramIf29ApdW<Pdruncfg2Spec> {
         SramIf29ApdW::new(self, 29)
     }

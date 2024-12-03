@@ -457,85 +457,71 @@ impl core::fmt::Debug for crate::generic::Reg<Prstctl1SetSpec> {
 impl W {
     #[doc = "Bit 0 - HSGPIO0 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio0_rst_set(&mut self) -> Hsgpio0RstSetW<Prstctl1SetSpec> {
         Hsgpio0RstSetW::new(self, 0)
     }
     #[doc = "Bit 1 - HSGPIO1 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio1_rst_set(&mut self) -> Hsgpio1RstSetW<Prstctl1SetSpec> {
         Hsgpio1RstSetW::new(self, 1)
     }
     #[doc = "Bit 2 - HSGPIO2 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio2_rst_set(&mut self) -> Hsgpio2RstSetW<Prstctl1SetSpec> {
         Hsgpio2RstSetW::new(self, 2)
     }
     #[doc = "Bit 3 - HSGPIO3 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio3_rst_set(&mut self) -> Hsgpio3RstSetW<Prstctl1SetSpec> {
         Hsgpio3RstSetW::new(self, 3)
     }
     #[doc = "Bit 4 - HSGPIO4 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio4_rst_set(&mut self) -> Hsgpio4RstSetW<Prstctl1SetSpec> {
         Hsgpio4RstSetW::new(self, 4)
     }
     #[doc = "Bit 5 - HSGPIO5 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio5_rst_set(&mut self) -> Hsgpio5RstSetW<Prstctl1SetSpec> {
         Hsgpio5RstSetW::new(self, 5)
     }
     #[doc = "Bit 6 - HSGPIO6 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio6_rst_set(&mut self) -> Hsgpio6RstSetW<Prstctl1SetSpec> {
         Hsgpio6RstSetW::new(self, 6)
     }
     #[doc = "Bit 7 - HSGPIO7 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio7_rst_set(&mut self) -> Hsgpio7RstSetW<Prstctl1SetSpec> {
         Hsgpio7RstSetW::new(self, 7)
     }
     #[doc = "Bit 16 - CRC reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_rst_set(&mut self) -> CrcRstSetW<Prstctl1SetSpec> {
         CrcRstSetW::new(self, 16)
     }
     #[doc = "Bit 23 - DMAC0 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_rst_set(&mut self) -> Dmac0RstSetW<Prstctl1SetSpec> {
         Dmac0RstSetW::new(self, 23)
     }
     #[doc = "Bit 24 - DMAC1 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_rst_set(&mut self) -> Dmac1RstSetW<Prstctl1SetSpec> {
         Dmac1RstSetW::new(self, 24)
     }
     #[doc = "Bit 28 - MU reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn mu_rst_set(&mut self) -> MuRstSetW<Prstctl1SetSpec> {
         MuRstSetW::new(self, 28)
     }
     #[doc = "Bit 29 - SEMA reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn sema_rst_set(&mut self) -> SemaRstSetW<Prstctl1SetSpec> {
         SemaRstSetW::new(self, 29)
     }
     #[doc = "Bit 31 - FREQME reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn freqme_rst_set(&mut self) -> FreqmeRstSetW<Prstctl1SetSpec> {
         FreqmeRstSetW::new(self, 31)
     }

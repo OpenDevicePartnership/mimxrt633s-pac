@@ -674,67 +674,56 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Master Pending interrupt Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn mstpendingen(&mut self) -> MstpendingenW<IntensetSpec> {
         MstpendingenW::new(self, 0)
     }
     #[doc = "Bit 4 - Master Arbitration Loss interrupt Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn mstarblossen(&mut self) -> MstarblossenW<IntensetSpec> {
         MstarblossenW::new(self, 4)
     }
     #[doc = "Bit 6 - Master Start/Stop Error interrupt Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn mstststperren(&mut self) -> MstststperrenW<IntensetSpec> {
         MstststperrenW::new(self, 6)
     }
     #[doc = "Bit 8 - Slave Pending interrupt Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn slvpendingen(&mut self) -> SlvpendingenW<IntensetSpec> {
         SlvpendingenW::new(self, 8)
     }
     #[doc = "Bit 11 - Slave Not Stretching interrupt Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn slvnotstren(&mut self) -> SlvnotstrenW<IntensetSpec> {
         SlvnotstrenW::new(self, 11)
     }
     #[doc = "Bit 15 - Slave Deselect interrupt Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn slvdeselen(&mut self) -> SlvdeselenW<IntensetSpec> {
         SlvdeselenW::new(self, 15)
     }
     #[doc = "Bit 16 - Monitor data Ready interrupt Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn monrdyen(&mut self) -> MonrdyenW<IntensetSpec> {
         MonrdyenW::new(self, 16)
     }
     #[doc = "Bit 17 - Monitor Overrun interrupt Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn monoven(&mut self) -> MonovenW<IntensetSpec> {
         MonovenW::new(self, 17)
     }
     #[doc = "Bit 19 - Monitor Idle interrupt Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn monidleen(&mut self) -> MonidleenW<IntensetSpec> {
         MonidleenW::new(self, 19)
     }
     #[doc = "Bit 24 - Event time-out interrupt Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn eventtimeouten(&mut self) -> EventtimeoutenW<IntensetSpec> {
         EventtimeoutenW::new(self, 24)
     }
     #[doc = "Bit 25 - SCL time-out interrupt Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn scltimeouten(&mut self) -> ScltimeoutenW<IntensetSpec> {
         ScltimeoutenW::new(self, 25)
     }

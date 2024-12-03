@@ -482,25 +482,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Key 0"]
     #[inline(always)]
-    #[must_use]
     pub fn key0(&mut self) -> Key0W<KeylockSpec> {
         Key0W::new(self, 0)
     }
     #[doc = "Bits 2:3 - Key 1"]
     #[inline(always)]
-    #[must_use]
     pub fn key1(&mut self) -> Key1W<KeylockSpec> {
         Key1W::new(self, 2)
     }
     #[doc = "Bits 4:5 - Key 2"]
     #[inline(always)]
-    #[must_use]
     pub fn key2(&mut self) -> Key2W<KeylockSpec> {
         Key2W::new(self, 4)
     }
     #[doc = "Bits 6:7 - Key 3"]
     #[inline(always)]
-    #[must_use]
     pub fn key3(&mut self) -> Key3W<KeylockSpec> {
         Key3W::new(self, 6)
     }

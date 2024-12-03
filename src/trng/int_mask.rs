@@ -194,19 +194,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Bit position that can be cleared if corresponding bit of INT_STATUS has been asserted."]
     #[inline(always)]
-    #[must_use]
     pub fn hw_err(&mut self) -> HwErrW<IntMaskSpec> {
         HwErrW::new(self, 0)
     }
     #[doc = "Bit 1 - Same behavior as bit 0 above."]
     #[inline(always)]
-    #[must_use]
     pub fn ent_val(&mut self) -> EntValW<IntMaskSpec> {
         EntValW::new(self, 1)
     }
     #[doc = "Bit 2 - Same behavior as bit 0 above."]
     #[inline(always)]
-    #[must_use]
     pub fn frq_ct_fail(&mut self) -> FrqCtFailW<IntMaskSpec> {
         FrqCtFailW::new(self, 2)
     }

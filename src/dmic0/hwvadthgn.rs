@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Gain Factor for Noise-floor - use a positive number to make average less sensitive to sudden changes"]
     #[inline(always)]
-    #[must_use]
     pub fn thgn(&mut self) -> ThgnW<HwvadthgnSpec> {
         ThgnW::new(self, 0)
     }

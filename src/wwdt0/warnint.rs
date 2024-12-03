@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:9 - Watchdog warning interrupt compare value."]
     #[inline(always)]
-    #[must_use]
     pub fn warnint(&mut self) -> WarnintW<WarnintSpec> {
         WarnintW::new(self, 0)
     }
