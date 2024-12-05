@@ -887,43 +887,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 4 - Master Arbitration Loss flag. This flag can be cleared by software writing a 1 to this bit. It is also cleared automatically a 1 is written to MSTCONTINUE."]
     #[inline(always)]
-    #[must_use]
     pub fn mstarbloss(&mut self) -> MstarblossW<StatSpec> {
         MstarblossW::new(self, 4)
     }
     #[doc = "Bit 6 - Master Start/Stop Error flag. This flag can be cleared by software writing a 1 to this bit. It is also cleared automatically a 1 is written to MSTCONTINUE."]
     #[inline(always)]
-    #[must_use]
     pub fn mstststperr(&mut self) -> MstststperrW<StatSpec> {
         MstststperrW::new(self, 6)
     }
     #[doc = "Bit 15 - Slave Deselected flag. This flag will cause an interrupt when set if enabled via INTENSET. This flag can be cleared by writing a 1 to this bit."]
     #[inline(always)]
-    #[must_use]
     pub fn slvdesel(&mut self) -> SlvdeselW<StatSpec> {
         SlvdeselW::new(self, 15)
     }
     #[doc = "Bit 17 - Monitor Overflow flag."]
     #[inline(always)]
-    #[must_use]
     pub fn monov(&mut self) -> MonovW<StatSpec> {
         MonovW::new(self, 17)
     }
     #[doc = "Bit 19 - Monitor Idle flag. This flag is set when the Monitor function sees the I2C bus change from active to inactive. This can be used by software to decide when to process data accumulated by the Monitor function. This flag will cause an interrupt when set if enabled via the INTENSET register. The flag can be cleared by writing a 1 to this bit."]
     #[inline(always)]
-    #[must_use]
     pub fn monidle(&mut self) -> MonidleW<StatSpec> {
         MonidleW::new(self, 19)
     }
     #[doc = "Bit 24 - Event Time-out Interrupt flag. Indicates when the time between events has been longer than the time specified by the TIMEOUT register. Events include Start, Stop, and clock edges. The flag is cleared by writing a 1 to this bit. No time-out is created when the I2C-bus is idle."]
     #[inline(always)]
-    #[must_use]
     pub fn eventtimeout(&mut self) -> EventtimeoutW<StatSpec> {
         EventtimeoutW::new(self, 24)
     }
     #[doc = "Bit 25 - SCL Time-out Interrupt flag. Indicates when SCL has remained low longer than the time specific by the TIMEOUT register. The flag is cleared by writing a 1 to this bit."]
     #[inline(always)]
-    #[must_use]
     pub fn scltimeout(&mut self) -> ScltimeoutW<StatSpec> {
         ScltimeoutW::new(self, 25)
     }

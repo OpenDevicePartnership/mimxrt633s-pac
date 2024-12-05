@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Slave function data register. Read: read the most recently received data for the Slave function. Write: transmit data using the Slave function."]
     #[inline(always)]
-    #[must_use]
     pub fn data(&mut self) -> DataW<SlvdatSpec> {
         DataW::new(self, 0)
     }

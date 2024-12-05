@@ -484,7 +484,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:5 - DMAC0 Output Triggers Select for A, B, C, D IE.,DMAC0_OTRIG_A, DMAC0_OTRIG_B, DMAC0_OTRIG_C, DMAC0_OTRIG_D DMA0 Output Triggers(n) Selection. 32:1 Selection for each. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_otrig_sel(&mut self) -> Dmac0OtrigSelW<Dmac0OtrigSelSpec> {
         Dmac0OtrigSelW::new(self, 0)
     }

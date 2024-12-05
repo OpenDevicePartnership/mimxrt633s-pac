@@ -54,25 +54,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - 0x40140000--0x40143FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_hs_ram_rule(&mut self) -> UsbHsRamRuleW<AhbPeriph2SlaveRule0Spec> {
         UsbHsRamRuleW::new(self, 0)
     }
     #[doc = "Bits 4:5 - 0x40144000--0x40144FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_hs_dev_rule(&mut self) -> UsbHsDevRuleW<AhbPeriph2SlaveRule0Spec> {
         UsbHsDevRuleW::new(self, 4)
     }
     #[doc = "Bits 8:9 - 0x40145000--0x40145FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_hs_host_rule(&mut self) -> UsbHsHostRuleW<AhbPeriph2SlaveRule0Spec> {
         UsbHsHostRuleW::new(self, 8)
     }
     #[doc = "Bits 12:13 - 0x40146000--0x40146FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn sct_rule(&mut self) -> SctRuleW<AhbPeriph2SlaveRule0Spec> {
         SctRuleW::new(self, 12)
     }

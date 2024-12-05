@@ -74,37 +74,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Zeroize. Begin Zeroize operation for Quiddikey and go to Error state"]
     #[inline(always)]
-    #[must_use]
     pub fn zeroize(&mut self) -> ZeroizeW<CtrlSpec> {
         ZeroizeW::new(self, 0)
     }
     #[doc = "Bit 1 - Enroll. Begin Enroll operation"]
     #[inline(always)]
-    #[must_use]
     pub fn enroll(&mut self) -> EnrollW<CtrlSpec> {
         EnrollW::new(self, 1)
     }
     #[doc = "Bit 2 - Start. Begin Start operation"]
     #[inline(always)]
-    #[must_use]
     pub fn start(&mut self) -> StartW<CtrlSpec> {
         StartW::new(self, 2)
     }
     #[doc = "Bit 3 - Set Intrinsic Key. Begin Set Intrinsic Key operation"]
     #[inline(always)]
-    #[must_use]
     pub fn generatekey(&mut self) -> GeneratekeyW<CtrlSpec> {
         GeneratekeyW::new(self, 3)
     }
     #[doc = "Bit 4 - Set Key. Begin Set User Key operation"]
     #[inline(always)]
-    #[must_use]
     pub fn setkey(&mut self) -> SetkeyW<CtrlSpec> {
         SetkeyW::new(self, 4)
     }
     #[doc = "Bit 6 - Get Key. Begin Get Key operation"]
     #[inline(always)]
-    #[must_use]
     pub fn getkey(&mut self) -> GetkeyW<CtrlSpec> {
         GetkeyW::new(self, 6)
     }

@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Data Learning Pattern."]
     #[inline(always)]
-    #[must_use]
     pub fn dlp(&mut self) -> DlpW<DlprSpec> {
         DlpW::new(self, 0)
     }

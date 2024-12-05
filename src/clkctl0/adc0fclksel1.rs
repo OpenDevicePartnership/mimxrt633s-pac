@@ -120,7 +120,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - ADC Functional Clock Source Selection. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn sel(&mut self) -> SelW<Adc0fclksel1Spec> {
         SelW::new(self, 0)
     }

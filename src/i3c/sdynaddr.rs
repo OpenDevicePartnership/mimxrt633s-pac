@@ -98,31 +98,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - DAVALID"]
     #[inline(always)]
-    #[must_use]
     pub fn davalid(&mut self) -> DavalidW<SdynaddrSpec> {
         DavalidW::new(self, 0)
     }
     #[doc = "Bits 1:7 - Dynamic address"]
     #[inline(always)]
-    #[must_use]
     pub fn daddr(&mut self) -> DaddrW<SdynaddrSpec> {
         DaddrW::new(self, 1)
     }
     #[doc = "Bits 8:11 - Mapped Dynamic Address"]
     #[inline(always)]
-    #[must_use]
     pub fn mapidx(&mut self) -> MapidxW<SdynaddrSpec> {
         MapidxW::new(self, 8)
     }
     #[doc = "Bit 12 - Map a Static Address"]
     #[inline(always)]
-    #[must_use]
     pub fn mapsa(&mut self) -> MapsaW<SdynaddrSpec> {
         MapsaW::new(self, 12)
     }
     #[doc = "Bits 16:31 - Key"]
     #[inline(always)]
-    #[must_use]
     pub fn key(&mut self) -> KeyW<SdynaddrSpec> {
         KeyW::new(self, 16)
     }

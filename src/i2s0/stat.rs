@@ -175,7 +175,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 1 - Slave Frame Error flag. This applies when at least one channel pair is operating as a slave. An error indicates that the incoming WS signal did not transition as expected due to a mismatch between FRAMELEN and the actual incoming I2S stream."]
     #[inline(always)]
-    #[must_use]
     pub fn slvfrmerr(&mut self) -> SlvfrmerrW<StatSpec> {
         SlvfrmerrW::new(self, 1)
     }

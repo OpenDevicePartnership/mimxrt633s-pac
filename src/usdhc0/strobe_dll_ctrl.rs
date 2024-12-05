@@ -138,19 +138,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Strobe DLL Control Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn strobe_dll_ctrl_enable(&mut self) -> StrobeDllCtrlEnableW<StrobeDllCtrlSpec> {
         StrobeDllCtrlEnableW::new(self, 0)
     }
     #[doc = "Bit 1 - Strobe DLL Control Reset"]
     #[inline(always)]
-    #[must_use]
     pub fn strobe_dll_ctrl_reset(&mut self) -> StrobeDllCtrlResetW<StrobeDllCtrlSpec> {
         StrobeDllCtrlResetW::new(self, 1)
     }
     #[doc = "Bit 2 - Strobe DLL Control Slave Force Updated"]
     #[inline(always)]
-    #[must_use]
     pub fn strobe_dll_ctrl_slv_force_upd(
         &mut self,
     ) -> StrobeDllCtrlSlvForceUpdW<StrobeDllCtrlSpec> {
@@ -158,7 +155,6 @@ impl W {
     }
     #[doc = "Bits 3:5 - Strobe DLL Control Slave Delay Target"]
     #[inline(always)]
-    #[must_use]
     pub fn strobe_dll_ctrl_slv_dly_target(
         &mut self,
     ) -> StrobeDllCtrlSlvDlyTargetW<StrobeDllCtrlSpec> {
@@ -166,7 +162,6 @@ impl W {
     }
     #[doc = "Bit 6 - Strobe DLL Control Gate Update"]
     #[inline(always)]
-    #[must_use]
     pub fn strobe_dll_ctrl_gate_update_0(
         &mut self,
     ) -> StrobeDllCtrlGateUpdate0W<StrobeDllCtrlSpec> {
@@ -174,7 +169,6 @@ impl W {
     }
     #[doc = "Bit 7 - Strobe DLL Control Gate Update"]
     #[inline(always)]
-    #[must_use]
     pub fn strobe_dll_ctrl_gate_update_1(
         &mut self,
     ) -> StrobeDllCtrlGateUpdate1W<StrobeDllCtrlSpec> {
@@ -182,13 +176,11 @@ impl W {
     }
     #[doc = "Bit 8 - Strobe DLL Control Slave Override"]
     #[inline(always)]
-    #[must_use]
     pub fn strobe_dll_ctrl_slv_override(&mut self) -> StrobeDllCtrlSlvOverrideW<StrobeDllCtrlSpec> {
         StrobeDllCtrlSlvOverrideW::new(self, 8)
     }
     #[doc = "Bits 9:15 - Strobe DLL Control Slave Override Value"]
     #[inline(always)]
-    #[must_use]
     pub fn strobe_dll_ctrl_slv_override_val(
         &mut self,
     ) -> StrobeDllCtrlSlvOverrideValW<StrobeDllCtrlSpec> {
@@ -196,7 +188,6 @@ impl W {
     }
     #[doc = "Bits 20:27 - Strobe DLL Control Slave Update Interval"]
     #[inline(always)]
-    #[must_use]
     pub fn strobe_dll_ctrl_slv_update_int(
         &mut self,
     ) -> StrobeDllCtrlSlvUpdateIntW<StrobeDllCtrlSpec> {
@@ -204,7 +195,6 @@ impl W {
     }
     #[doc = "Bits 28:31 - Strobe DLL Control Reference Update Interval"]
     #[inline(always)]
-    #[must_use]
     pub fn strobe_dll_ctrl_ref_update_int(
         &mut self,
     ) -> StrobeDllCtrlRefUpdateIntW<StrobeDllCtrlSpec> {

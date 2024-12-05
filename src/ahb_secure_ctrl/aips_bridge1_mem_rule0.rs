@@ -84,43 +84,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - 0x4013 0000--0x4013 0FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn otp_rule0(&mut self) -> OtpRule0W<AipsBridge1MemRule0Spec> {
         OtpRule0W::new(self, 0)
     }
     #[doc = "Bits 4:5 - 0x4013 1000--0x4013 1FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn otp_rule1(&mut self) -> OtpRule1W<AipsBridge1MemRule0Spec> {
         OtpRule1W::new(self, 4)
     }
     #[doc = "Bits 8:9 - 0x4013 2000--0x4013 2FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn otp_rule2(&mut self) -> OtpRule2W<AipsBridge1MemRule0Spec> {
         OtpRule2W::new(self, 8)
     }
     #[doc = "Bits 12:13 - 0x4013 3000--0x4013 3FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn otp_rule3(&mut self) -> OtpRule3W<AipsBridge1MemRule0Spec> {
         OtpRule3W::new(self, 12)
     }
     #[doc = "Bits 16:17 - 0x4013 4000--0x4013 4FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn flexspi_and_otfad_rule(&mut self) -> FlexspiAndOtfadRuleW<AipsBridge1MemRule0Spec> {
         FlexspiAndOtfadRuleW::new(self, 16)
     }
     #[doc = "Bits 24:25 - 0x4013 6000--0x4013 6FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio0_rule(&mut self) -> Sdio0RuleW<AipsBridge1MemRule0Spec> {
         Sdio0RuleW::new(self, 24)
     }
     #[doc = "Bits 28:29 - 0x4013 7000--0x4013 7FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio1_rule(&mut self) -> Sdio1RuleW<AipsBridge1MemRule0Spec> {
         Sdio1RuleW::new(self, 28)
     }

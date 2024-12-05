@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 24:25 - 0x4000 E000--0x4000 EFFF"]
     #[inline(always)]
-    #[must_use]
     pub fn wwdt0_rule(&mut self) -> Wwdt0RuleW<ApbGrp0MemRule1Spec> {
         Wwdt0RuleW::new(self, 24)
     }
     #[doc = "Bits 28:29 - 0x4000 F000--0x4000 FFFF"]
     #[inline(always)]
-    #[must_use]
     pub fn utick_rule(&mut self) -> UtickRuleW<ApbGrp0MemRule1Spec> {
         UtickRuleW::new(self, 28)
     }

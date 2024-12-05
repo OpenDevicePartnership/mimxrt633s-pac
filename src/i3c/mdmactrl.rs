@@ -254,19 +254,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - DMA from bus"]
     #[inline(always)]
-    #[must_use]
     pub fn dmafb(&mut self) -> DmafbW<MdmactrlSpec> {
         DmafbW::new(self, 0)
     }
     #[doc = "Bits 2:3 - DMA to bus"]
     #[inline(always)]
-    #[must_use]
     pub fn dmatb(&mut self) -> DmatbW<MdmactrlSpec> {
         DmatbW::new(self, 2)
     }
     #[doc = "Bits 4:5 - DMA width"]
     #[inline(always)]
-    #[must_use]
     pub fn dmawidth(&mut self) -> DmawidthW<MdmactrlSpec> {
         DmawidthW::new(self, 4)
     }

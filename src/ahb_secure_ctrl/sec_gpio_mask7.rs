@@ -334,193 +334,161 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - 0 : Pin PIO7_0 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin0_sec_mask(&mut self) -> Pio7Pin0SecMaskW<SecGpioMask7Spec> {
         Pio7Pin0SecMaskW::new(self, 0)
     }
     #[doc = "Bit 1 - 0 : Pin PIO7_1 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin1_sec_mask(&mut self) -> Pio7Pin1SecMaskW<SecGpioMask7Spec> {
         Pio7Pin1SecMaskW::new(self, 1)
     }
     #[doc = "Bit 2 - 0 : Pin PIO7_2 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin2_sec_mask(&mut self) -> Pio7Pin2SecMaskW<SecGpioMask7Spec> {
         Pio7Pin2SecMaskW::new(self, 2)
     }
     #[doc = "Bit 3 - 0 : Pin PIO7_3 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin3_sec_mask(&mut self) -> Pio7Pin3SecMaskW<SecGpioMask7Spec> {
         Pio7Pin3SecMaskW::new(self, 3)
     }
     #[doc = "Bit 4 - 0 : Pin PIO7_4 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin4_sec_mask(&mut self) -> Pio7Pin4SecMaskW<SecGpioMask7Spec> {
         Pio7Pin4SecMaskW::new(self, 4)
     }
     #[doc = "Bit 5 - 0 : Pin PIO7_5 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin5_sec_mask(&mut self) -> Pio7Pin5SecMaskW<SecGpioMask7Spec> {
         Pio7Pin5SecMaskW::new(self, 5)
     }
     #[doc = "Bit 6 - 0 : Pin PIO7_6 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin6_sec_mask(&mut self) -> Pio7Pin6SecMaskW<SecGpioMask7Spec> {
         Pio7Pin6SecMaskW::new(self, 6)
     }
     #[doc = "Bit 7 - 0 : Pin PIO7_7 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin7_sec_mask(&mut self) -> Pio7Pin7SecMaskW<SecGpioMask7Spec> {
         Pio7Pin7SecMaskW::new(self, 7)
     }
     #[doc = "Bit 8 - 0 : Pin PIO7_8 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin8_sec_mask(&mut self) -> Pio7Pin8SecMaskW<SecGpioMask7Spec> {
         Pio7Pin8SecMaskW::new(self, 8)
     }
     #[doc = "Bit 9 - 0 : Pin PIO7_9 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin9_sec_mask(&mut self) -> Pio7Pin9SecMaskW<SecGpioMask7Spec> {
         Pio7Pin9SecMaskW::new(self, 9)
     }
     #[doc = "Bit 10 - 0 : Pin PIO7_10 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin10_sec_mask(&mut self) -> Pio7Pin10SecMaskW<SecGpioMask7Spec> {
         Pio7Pin10SecMaskW::new(self, 10)
     }
     #[doc = "Bit 11 - 0 : Pin PIO7_11 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin11_sec_mask(&mut self) -> Pio7Pin11SecMaskW<SecGpioMask7Spec> {
         Pio7Pin11SecMaskW::new(self, 11)
     }
     #[doc = "Bit 12 - 0 : Pin PIO7_12 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin12_sec_mask(&mut self) -> Pio7Pin12SecMaskW<SecGpioMask7Spec> {
         Pio7Pin12SecMaskW::new(self, 12)
     }
     #[doc = "Bit 13 - 0 : Pin PIO7_13 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin13_sec_mask(&mut self) -> Pio7Pin13SecMaskW<SecGpioMask7Spec> {
         Pio7Pin13SecMaskW::new(self, 13)
     }
     #[doc = "Bit 14 - 0 : Pin PIO7_14 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin14_sec_mask(&mut self) -> Pio7Pin14SecMaskW<SecGpioMask7Spec> {
         Pio7Pin14SecMaskW::new(self, 14)
     }
     #[doc = "Bit 15 - 0 : Pin PIO7_15 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin15_sec_mask(&mut self) -> Pio7Pin15SecMaskW<SecGpioMask7Spec> {
         Pio7Pin15SecMaskW::new(self, 15)
     }
     #[doc = "Bit 16 - 0 : Pin PIO7_16 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin16_sec_mask(&mut self) -> Pio7Pin16SecMaskW<SecGpioMask7Spec> {
         Pio7Pin16SecMaskW::new(self, 16)
     }
     #[doc = "Bit 17 - 0 : Pin PIO7_17 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin17_sec_mask(&mut self) -> Pio7Pin17SecMaskW<SecGpioMask7Spec> {
         Pio7Pin17SecMaskW::new(self, 17)
     }
     #[doc = "Bit 18 - 0 : Pin PIO7_18 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin18_sec_mask(&mut self) -> Pio7Pin18SecMaskW<SecGpioMask7Spec> {
         Pio7Pin18SecMaskW::new(self, 18)
     }
     #[doc = "Bit 19 - 0 : Pin PIO7_19 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin19_sec_mask(&mut self) -> Pio7Pin19SecMaskW<SecGpioMask7Spec> {
         Pio7Pin19SecMaskW::new(self, 19)
     }
     #[doc = "Bit 20 - 0 : Pin PIO7_20 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin20_sec_mask(&mut self) -> Pio7Pin20SecMaskW<SecGpioMask7Spec> {
         Pio7Pin20SecMaskW::new(self, 20)
     }
     #[doc = "Bit 21 - 0 : Pin PIO7_21 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin21_sec_mask(&mut self) -> Pio7Pin21SecMaskW<SecGpioMask7Spec> {
         Pio7Pin21SecMaskW::new(self, 21)
     }
     #[doc = "Bit 22 - 0 : Pin PIO7_22 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin22_sec_mask(&mut self) -> Pio7Pin22SecMaskW<SecGpioMask7Spec> {
         Pio7Pin22SecMaskW::new(self, 22)
     }
     #[doc = "Bit 23 - 0 : Pin PIO7_23 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin23_sec_mask(&mut self) -> Pio7Pin23SecMaskW<SecGpioMask7Spec> {
         Pio7Pin23SecMaskW::new(self, 23)
     }
     #[doc = "Bit 24 - 0 : Pin PIO7_24 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin24_sec_mask(&mut self) -> Pio7Pin24SecMaskW<SecGpioMask7Spec> {
         Pio7Pin24SecMaskW::new(self, 24)
     }
     #[doc = "Bit 25 - 0 : Pin PIO7_25 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin25_sec_mask(&mut self) -> Pio7Pin25SecMaskW<SecGpioMask7Spec> {
         Pio7Pin25SecMaskW::new(self, 25)
     }
     #[doc = "Bit 26 - 0 : Pin PIO7_26 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin26_sec_mask(&mut self) -> Pio7Pin26SecMaskW<SecGpioMask7Spec> {
         Pio7Pin26SecMaskW::new(self, 26)
     }
     #[doc = "Bit 27 - 0 : Pin PIO7_27 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin27_sec_mask(&mut self) -> Pio7Pin27SecMaskW<SecGpioMask7Spec> {
         Pio7Pin27SecMaskW::new(self, 27)
     }
     #[doc = "Bit 28 - 0 : Pin PIO7_28 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin28_sec_mask(&mut self) -> Pio7Pin28SecMaskW<SecGpioMask7Spec> {
         Pio7Pin28SecMaskW::new(self, 28)
     }
     #[doc = "Bit 29 - 0 : Pin PIO7_29 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin29_sec_mask(&mut self) -> Pio7Pin29SecMaskW<SecGpioMask7Spec> {
         Pio7Pin29SecMaskW::new(self, 29)
     }
     #[doc = "Bit 30 - 0 : Pin PIO7_30 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin30_sec_mask(&mut self) -> Pio7Pin30SecMaskW<SecGpioMask7Spec> {
         Pio7Pin30SecMaskW::new(self, 30)
     }
     #[doc = "Bit 31 - 0 : Pin PIO7_31 state is readable by non-secure world through non-secure GPIO port control registers"]
     #[inline(always)]
-    #[must_use]
     pub fn pio7_pin31_sec_mask(&mut self) -> Pio7Pin31SecMaskW<SecGpioMask7Spec> {
         Pio7Pin31SecMaskW::new(self, 31)
     }

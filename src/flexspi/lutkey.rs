@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - The Key to lock or unlock LUT."]
     #[inline(always)]
-    #[must_use]
     pub fn key(&mut self) -> KeyW<LutkeySpec> {
         KeyW::new(self, 0)
     }

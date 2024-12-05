@@ -743,55 +743,46 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Function Selector. . .(FSELs Sources can be found in the next several pages.)"]
     #[inline(always)]
-    #[must_use]
     pub fn fsel(&mut self) -> FselW<Fc15I2cSclSpec> {
         FselW::new(self, 0)
     }
     #[doc = "Bit 4 - Pullup / Pulldown Enable. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn pupdena(&mut self) -> PupdenaW<Fc15I2cSclSpec> {
         PupdenaW::new(self, 4)
     }
     #[doc = "Bit 5 - Pullup or Pulldown Selector. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn pupdsel(&mut self) -> PupdselW<Fc15I2cSclSpec> {
         PupdselW::new(self, 5)
     }
     #[doc = "Bit 6 - Input Buffer Enable. ."]
     #[inline(always)]
-    #[must_use]
     pub fn ibena(&mut self) -> IbenaW<Fc15I2cSclSpec> {
         IbenaW::new(self, 6)
     }
     #[doc = "Bit 7 - Slew Rate Control. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn slewrate(&mut self) -> SlewrateW<Fc15I2cSclSpec> {
         SlewrateW::new(self, 7)
     }
     #[doc = "Bit 8 - Drive Selector. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn fulldrive(&mut self) -> FulldriveW<Fc15I2cSclSpec> {
         FulldriveW::new(self, 8)
     }
     #[doc = "Bit 9 - Analog Mux Enable. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn amena(&mut self) -> AmenaW<Fc15I2cSclSpec> {
         AmenaW::new(self, 9)
     }
     #[doc = "Bit 10 - Pseudo Output Drain Enable. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn odena(&mut self) -> OdenaW<Fc15I2cSclSpec> {
         OdenaW::new(self, 10)
     }
     #[doc = "Bit 11 - Input Invert Enable. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn iiena(&mut self) -> IienaW<Fc15I2cSclSpec> {
         IienaW::new(self, 11)
     }

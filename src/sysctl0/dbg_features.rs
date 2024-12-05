@@ -386,25 +386,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - CM33 Debug Enable Control"]
     #[inline(always)]
-    #[must_use]
     pub fn dbgen(&mut self) -> DbgenW<DbgFeaturesSpec> {
         DbgenW::new(self, 0)
     }
     #[doc = "Bits 2:3 - CM33 NID Enable Control"]
     #[inline(always)]
-    #[must_use]
     pub fn niden(&mut self) -> NidenW<DbgFeaturesSpec> {
         NidenW::new(self, 2)
     }
     #[doc = "Bits 4:5 - CM33 SPID Enable Control"]
     #[inline(always)]
-    #[must_use]
     pub fn spiden(&mut self) -> SpidenW<DbgFeaturesSpec> {
         SpidenW::new(self, 4)
     }
     #[doc = "Bits 6:7 - CM33 SPNIDEN Enable Control"]
     #[inline(always)]
-    #[must_use]
     pub fn spniden(&mut self) -> SpnidenW<DbgFeaturesSpec> {
         SpnidenW::new(self, 6)
     }

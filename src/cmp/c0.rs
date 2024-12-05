@@ -1050,97 +1050,81 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Comparator hard block hysteresis control. See chip data sheet to get the actual hystersis value with each level"]
     #[inline(always)]
-    #[must_use]
     pub fn hystctr(&mut self) -> HystctrW<C0Spec> {
         HystctrW::new(self, 0)
     }
     #[doc = "Bits 4:6 - Filter Sample Count"]
     #[inline(always)]
-    #[must_use]
     pub fn filter_cnt(&mut self) -> FilterCntW<C0Spec> {
         FilterCntW::new(self, 4)
     }
     #[doc = "Bit 8 - Comparator Module Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn en(&mut self) -> EnW<C0Spec> {
         EnW::new(self, 8)
     }
     #[doc = "Bit 9 - Comparator Output Pin Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ope(&mut self) -> OpeW<C0Spec> {
         OpeW::new(self, 9)
     }
     #[doc = "Bit 10 - Comparator Output Select"]
     #[inline(always)]
-    #[must_use]
     pub fn cos(&mut self) -> CosW<C0Spec> {
         CosW::new(self, 10)
     }
     #[doc = "Bit 11 - Comparator invert"]
     #[inline(always)]
-    #[must_use]
     pub fn invt(&mut self) -> InvtW<C0Spec> {
         InvtW::new(self, 11)
     }
     #[doc = "Bit 12 - Power Mode Select"]
     #[inline(always)]
-    #[must_use]
     pub fn pmode(&mut self) -> PmodeW<C0Spec> {
         PmodeW::new(self, 12)
     }
     #[doc = "Bit 14 - Windowing Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn we(&mut self) -> WeW<C0Spec> {
         WeW::new(self, 14)
     }
     #[doc = "Bit 15 - Sample Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn se(&mut self) -> SeW<C0Spec> {
         SeW::new(self, 15)
     }
     #[doc = "Bits 16:23 - Filter Sample Period"]
     #[inline(always)]
-    #[must_use]
     pub fn fpr(&mut self) -> FprW<C0Spec> {
         FprW::new(self, 16)
     }
     #[doc = "Bit 25 - Analog Comparator Flag Falling"]
     #[inline(always)]
-    #[must_use]
     pub fn cff(&mut self) -> CffW<C0Spec> {
         CffW::new(self, 25)
     }
     #[doc = "Bit 26 - Analog Comparator Flag Rising"]
     #[inline(always)]
-    #[must_use]
     pub fn cfr(&mut self) -> CfrW<C0Spec> {
         CfrW::new(self, 26)
     }
     #[doc = "Bit 27 - Comparator Interrupt Enable Falling"]
     #[inline(always)]
-    #[must_use]
     pub fn ief(&mut self) -> IefW<C0Spec> {
         IefW::new(self, 27)
     }
     #[doc = "Bit 28 - Comparator Interrupt Enable Rising"]
     #[inline(always)]
-    #[must_use]
     pub fn ier(&mut self) -> IerW<C0Spec> {
         IerW::new(self, 28)
     }
     #[doc = "Bit 30 - DMA Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dmaen(&mut self) -> DmaenW<C0Spec> {
         DmaenW::new(self, 30)
     }
     #[doc = "Bit 31 - CMP to DAC link enable."]
     #[inline(always)]
-    #[must_use]
     pub fn linken(&mut self) -> LinkenW<C0Spec> {
         LinkenW::new(self, 31)
     }

@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - If bit n is one, event n sets the HALT_L bit in the CTRL register (event 0 = bit 0, event 1 = bit 1, etc.). The number of bits = number of events in this SCT."]
     #[inline(always)]
-    #[must_use]
     pub fn haltmsk_l(&mut self) -> HaltmskLW<HaltSpec> {
         HaltmskLW::new(self, 0)
     }
     #[doc = "Bits 16:31 - If bit n is one, event n sets the HALT_H bit in the CTRL register (event 0 = bit 16, event 1 = bit 17, etc.). The number of bits = number of events in this SCT."]
     #[inline(always)]
-    #[must_use]
     pub fn haltmsk_h(&mut self) -> HaltmskHW<HaltSpec> {
         HaltmskHW::new(self, 16)
     }

@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - If bit n is one, event n triggers DMA request 0 (event 0 = bit 0, event 1 = bit 1, etc.). The number of bits = number of events in this SCT."]
     #[inline(always)]
-    #[must_use]
     pub fn dev_0(&mut self) -> Dev0W<Dmareq0Spec> {
         Dev0W::new(self, 0)
     }
     #[doc = "Bit 30 - A 1 in this bit triggers DMA request 0 when it loads the MATCH_L/Unified registers from the RELOAD_L/Unified registers."]
     #[inline(always)]
-    #[must_use]
     pub fn drl0(&mut self) -> Drl0W<Dmareq0Spec> {
         Drl0W::new(self, 30)
     }
     #[doc = "Bit 31 - This read-only bit indicates the state of DMA Request 0. Note that if the related DMA channel is enabled and properly set up, it is unlikely that software will see this flag, it will be cleared rapidly by the DMA service. The flag remaining set could point to an issue with DMA setup."]
     #[inline(always)]
-    #[must_use]
     pub fn drq0(&mut self) -> Drq0W<Dmareq0Spec> {
         Drq0W::new(self, 31)
     }

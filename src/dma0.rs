@@ -175,7 +175,7 @@ impl RegisterBlock {
         #[allow(clippy::no_effect)]
         [(); 33][n];
         unsafe {
-            &*(self as *const Self)
+            &*core::ptr::from_ref(self)
                 .cast::<u8>()
                 .add(1024)
                 .add(16 * n)
@@ -187,7 +187,7 @@ impl RegisterBlock {
     #[inline(always)]
     pub fn channel_iter(&self) -> impl Iterator<Item = &Channel> {
         (0..33).map(move |n| unsafe {
-            &*(self as *const Self)
+            &*core::ptr::from_ref(self)
                 .cast::<u8>()
                 .add(1024)
                 .add(16 * n)

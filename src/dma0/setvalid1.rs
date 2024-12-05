@@ -79,13 +79,11 @@ impl core::fmt::Debug for crate::generic::Reg<Setvalid1Spec> {
 impl W {
     #[doc = "Bit 0 - SetValid control for DMA channel 32."]
     #[inline(always)]
-    #[must_use]
     pub fn setvalid32(&mut self) -> Setvalid32W<Setvalid1Spec> {
         Setvalid32W::new(self, 0)
     }
     #[doc = "Bits 1:31 - Additional SetValid controls for remaining DMA channels in the range 63 to 33. Any bits above the actually implemented channels are reserved."]
     #[inline(always)]
-    #[must_use]
     pub fn setvalid63_33(&mut self) -> Setvalid63_33W<Setvalid1Spec> {
         Setvalid63_33W::new(self, 1)
     }

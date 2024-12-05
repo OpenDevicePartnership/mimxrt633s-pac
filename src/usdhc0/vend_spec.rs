@@ -314,31 +314,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 1 - Voltage selection"]
     #[inline(always)]
-    #[must_use]
     pub fn vselect(&mut self) -> VselectW<VendSpecSpec> {
         VselectW::new(self, 1)
     }
     #[doc = "Bit 3 - Check busy enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ac12_wr_chkbusy_en(&mut self) -> Ac12WrChkbusyEnW<VendSpecSpec> {
         Ac12WrChkbusyEnW::new(self, 3)
     }
     #[doc = "Bit 8 - Force CLK"]
     #[inline(always)]
-    #[must_use]
     pub fn frc_sdclk_on(&mut self) -> FrcSdclkOnW<VendSpecSpec> {
         FrcSdclkOnW::new(self, 8)
     }
     #[doc = "Bit 15 - CRC Check Disable"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_chk_dis(&mut self) -> CrcChkDisW<VendSpecSpec> {
         CrcChkDisW::new(self, 15)
     }
     #[doc = "Bit 31 - Byte access"]
     #[inline(always)]
-    #[must_use]
     pub fn cmd_byte_en(&mut self) -> CmdByteEnW<VendSpecSpec> {
         CmdByteEnW::new(self, 31)
     }

@@ -146,7 +146,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - DMIC Functional Clock Source Selection. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn sel(&mut self) -> SelW<Dmic0fclkselSpec> {
         SelW::new(self, 0)
     }

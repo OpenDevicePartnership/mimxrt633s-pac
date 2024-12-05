@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Intr status ( 1 bit to indicate interrupt captured, 0 means no new interrupt), write any value will clear this bit"]
     #[inline(always)]
-    #[must_use]
     pub fn intr_stat(&mut self) -> IntrStatW<IntrstatSpec> {
         IntrStatW::new(self, 0)
     }

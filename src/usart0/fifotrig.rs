@@ -154,25 +154,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Transmit FIFO level trigger enable. This trigger will become an interrupt if enabled in FIFOINTENSET, or a DMA trigger if DMATX in FIFOCFG is set."]
     #[inline(always)]
-    #[must_use]
     pub fn txlvlena(&mut self) -> TxlvlenaW<FifotrigSpec> {
         TxlvlenaW::new(self, 0)
     }
     #[doc = "Bit 1 - Receive FIFO level trigger enable. This trigger will become an interrupt if enabled in FIFOINTENSET, or a DMA trigger if DMARX in FIFOCFG is set."]
     #[inline(always)]
-    #[must_use]
     pub fn rxlvlena(&mut self) -> RxlvlenaW<FifotrigSpec> {
         RxlvlenaW::new(self, 1)
     }
     #[doc = "Bits 8:11 - Transmit FIFO level trigger point. This field is used only when TXLVLENA = 1. If enabled to do so, the FIFO level can wake up the device just enough to perform DMA, then return to the reduced power mode. See Hardware Wake-up control register. 0 = trigger when the TX FIFO becomes empty. 1 = trigger when the TX FIFO level decreases to one entry. 15 = trigger when the TX FIFO level decreases to 15 entries (is no longer full)."]
     #[inline(always)]
-    #[must_use]
     pub fn txlvl(&mut self) -> TxlvlW<FifotrigSpec> {
         TxlvlW::new(self, 8)
     }
     #[doc = "Bits 16:19 - Receive FIFO level trigger point. The RX FIFO level is checked when a new piece of data is received. This field is used only when RXLVLENA = 1. If enabled to do so, the FIFO level can wake up the device just enough to perform DMA, then return to the reduced power mode. See Hardware Wake-up control register. 0 = trigger when the RX FIFO has received one entry (is no longer empty). 1 = trigger when the RX FIFO has received two entries. 15 = trigger when the RX FIFO has received 16 entries (has become full)."]
     #[inline(always)]
-    #[must_use]
     pub fn rxlvl(&mut self) -> RxlvlW<FifotrigSpec> {
         RxlvlW::new(self, 16)
     }

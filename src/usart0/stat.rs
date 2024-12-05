@@ -116,43 +116,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 5 - This bit is set when a change in the state is detected for the CTS flag above. This bit is cleared by software."]
     #[inline(always)]
-    #[must_use]
     pub fn deltacts(&mut self) -> DeltactsW<StatSpec> {
         DeltactsW::new(self, 5)
     }
     #[doc = "Bit 11 - This bit is set when a change in the state of receiver break detection occurs. Cleared by software."]
     #[inline(always)]
-    #[must_use]
     pub fn deltarxbrk(&mut self) -> DeltarxbrkW<StatSpec> {
         DeltarxbrkW::new(self, 11)
     }
     #[doc = "Bit 12 - This bit is set when a start is detected on the receiver input. Its purpose is primarily to allow wake-up from Deep-sleep or Power-down mode immediately when a start is detected. Cleared by software."]
     #[inline(always)]
-    #[must_use]
     pub fn start(&mut self) -> StartW<StatSpec> {
         StartW::new(self, 12)
     }
     #[doc = "Bit 13 - Framing Error interrupt flag. This flag is set when a character is received with a missing stop bit at the expected location. This could be an indication of a baud rate or configuration mismatch with the transmitting source."]
     #[inline(always)]
-    #[must_use]
     pub fn framerrint(&mut self) -> FramerrintW<StatSpec> {
         FramerrintW::new(self, 13)
     }
     #[doc = "Bit 14 - Parity Error interrupt flag. This flag is set when a parity error is detected in a received character."]
     #[inline(always)]
-    #[must_use]
     pub fn parityerrint(&mut self) -> ParityerrintW<StatSpec> {
         ParityerrintW::new(self, 14)
     }
     #[doc = "Bit 15 - Received Noise interrupt flag. Three samples of received data are taken in order to determine the value of each received data bit, except in synchronous mode. This acts as a noise filter if one sample disagrees. This flag is set when a received data bit contains one disagreeing sample. This could indicate line noise, a baud rate or character format mismatch, or loss of synchronization during data reception."]
     #[inline(always)]
-    #[must_use]
     pub fn rxnoiseint(&mut self) -> RxnoiseintW<StatSpec> {
         RxnoiseintW::new(self, 15)
     }
     #[doc = "Bit 16 - Auto baud Error. An auto baud error can occur if the BRG counts to its limit before the end of the start bit that is being measured, essentially an auto baud time-out."]
     #[inline(always)]
-    #[must_use]
     pub fn aberr(&mut self) -> AberrW<StatSpec> {
         AberrW::new(self, 16)
     }

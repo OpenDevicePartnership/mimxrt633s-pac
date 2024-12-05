@@ -260,19 +260,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - The ENVADJ field adjusts the trip point for the envelope detector"]
     #[inline(always)]
-    #[must_use]
     pub fn envadj(&mut self) -> EnvadjW<RxTogSpec> {
         EnvadjW::new(self, 0)
     }
     #[doc = "Bits 4:6 - The DISCONADJ field adjusts the trip point for the disconnect detector."]
     #[inline(always)]
-    #[must_use]
     pub fn disconadj(&mut self) -> DisconadjW<RxTogSpec> {
         DisconadjW::new(self, 4)
     }
     #[doc = "Bit 22 - This test mode is intended for lab use only, replace FS differential receiver with DP single ended receiver"]
     #[inline(always)]
-    #[must_use]
     pub fn rxdbypass(&mut self) -> RxdbypassW<RxTogSpec> {
         RxdbypassW::new(self, 22)
     }

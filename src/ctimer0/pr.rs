@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Prescale counter value."]
     #[inline(always)]
-    #[must_use]
     pub fn prval(&mut self) -> PrvalW<PrSpec> {
         PrvalW::new(self, 0)
     }

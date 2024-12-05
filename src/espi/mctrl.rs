@@ -134,31 +134,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - The main enable for the whole block"]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> EnableW<MctrlSpec> {
         EnableW::new(self, 0)
     }
     #[doc = "Bits 8:12 - Port enable bits."]
     #[inline(always)]
-    #[must_use]
     pub fn pena(&mut self) -> PenaW<MctrlSpec> {
         PenaW::new(self, 8)
     }
     #[doc = "Bit 16 - Port 80 enable."]
     #[inline(always)]
-    #[must_use]
     pub fn p80ena(&mut self) -> P80enaW<MctrlSpec> {
         P80enaW::new(self, 16)
     }
     #[doc = "Bit 17 - Status block is enabled and mapped according to the STATADDR register."]
     #[inline(always)]
-    #[must_use]
     pub fn sblkena(&mut self) -> SblkenaW<MctrlSpec> {
         SblkenaW::new(self, 17)
     }
     #[doc = "Bit 20 - If 1, then the functional clock provided to the block is 60MHz vs"]
     #[inline(always)]
-    #[must_use]
     pub fn use60mhz(&mut self) -> Use60mhzW<MctrlSpec> {
         Use60mhzW::new(self, 20)
     }

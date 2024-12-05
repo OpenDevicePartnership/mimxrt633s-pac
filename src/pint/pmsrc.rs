@@ -1174,49 +1174,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 8:10 - Selects the input source for bit slice 0"]
     #[inline(always)]
-    #[must_use]
     pub fn src0(&mut self) -> Src0W<PmsrcSpec> {
         Src0W::new(self, 8)
     }
     #[doc = "Bits 11:13 - Selects the input source for bit slice 1"]
     #[inline(always)]
-    #[must_use]
     pub fn src1(&mut self) -> Src1W<PmsrcSpec> {
         Src1W::new(self, 11)
     }
     #[doc = "Bits 14:16 - Selects the input source for bit slice 2"]
     #[inline(always)]
-    #[must_use]
     pub fn src2(&mut self) -> Src2W<PmsrcSpec> {
         Src2W::new(self, 14)
     }
     #[doc = "Bits 17:19 - Selects the input source for bit slice 3"]
     #[inline(always)]
-    #[must_use]
     pub fn src3(&mut self) -> Src3W<PmsrcSpec> {
         Src3W::new(self, 17)
     }
     #[doc = "Bits 20:22 - Selects the input source for bit slice 4"]
     #[inline(always)]
-    #[must_use]
     pub fn src4(&mut self) -> Src4W<PmsrcSpec> {
         Src4W::new(self, 20)
     }
     #[doc = "Bits 23:25 - Selects the input source for bit slice 5"]
     #[inline(always)]
-    #[must_use]
     pub fn src5(&mut self) -> Src5W<PmsrcSpec> {
         Src5W::new(self, 23)
     }
     #[doc = "Bits 26:28 - Selects the input source for bit slice 6"]
     #[inline(always)]
-    #[must_use]
     pub fn src6(&mut self) -> Src6W<PmsrcSpec> {
         Src6W::new(self, 26)
     }
     #[doc = "Bits 29:31 - Selects the input source for bit slice 7"]
     #[inline(always)]
-    #[must_use]
     pub fn src7(&mut self) -> Src7W<PmsrcSpec> {
         Src7W::new(self, 29)
     }

@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Enables the rising edge or level interrupt for each pin interrupt. Bit n configures the pin interrupt selected in PINTSELn. 0 = Disable rising edge or level interrupt. 1 = Enable rising edge or level interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn enrl(&mut self) -> EnrlW<IenrSpec> {
         EnrlW::new(self, 0)
     }

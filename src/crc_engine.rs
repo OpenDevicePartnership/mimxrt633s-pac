@@ -20,12 +20,12 @@ impl RegisterBlock {
     #[doc = "0x08 - CRC data register"]
     #[inline(always)]
     pub const fn wr_data(&self) -> &WrData {
-        unsafe { &*(self as *const Self).cast::<u8>().add(8).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(8).cast() }
     }
     #[doc = "0x08 - CRC checksum register"]
     #[inline(always)]
     pub const fn sum(&self) -> &Sum {
-        unsafe { &*(self as *const Self).cast::<u8>().add(8).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(8).cast() }
     }
 }
 #[doc = "MODE (rw) register accessor: CRC mode register\n\nYou can [`read`](crate::Reg::read) this register and get [`mode::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`mode::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@mode`]

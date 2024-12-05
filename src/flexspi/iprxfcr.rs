@@ -94,19 +94,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Clear all valid data entries in IP RX FIFO."]
     #[inline(always)]
-    #[must_use]
     pub fn clriprxf(&mut self) -> ClriprxfW<IprxfcrSpec> {
         ClriprxfW::new(self, 0)
     }
     #[doc = "Bit 1 - IP RX FIFO reading by DMA enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn rxdmaen(&mut self) -> RxdmaenW<IprxfcrSpec> {
         RxdmaenW::new(self, 1)
     }
     #[doc = "Bits 2:7 - Watermark level is (RXWMRK+1)*64 Bits."]
     #[inline(always)]
-    #[must_use]
     pub fn rxwmrk(&mut self) -> RxwmrkW<IprxfcrSpec> {
         RxwmrkW::new(self, 2)
     }

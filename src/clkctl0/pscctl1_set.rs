@@ -169,31 +169,26 @@ impl core::fmt::Debug for crate::generic::Reg<Pscctl1SetSpec> {
 impl W {
     #[doc = "Bit 2 - SDIO0 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio0_clk(&mut self) -> Sdio0ClkW<Pscctl1SetSpec> {
         Sdio0ClkW::new(self, 2)
     }
     #[doc = "Bit 3 - SDIO1 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio1_clk(&mut self) -> Sdio1ClkW<Pscctl1SetSpec> {
         Sdio1ClkW::new(self, 3)
     }
     #[doc = "Bit 15 - Analog comparator clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn acmp0_clk(&mut self) -> Acmp0ClkW<Pscctl1SetSpec> {
         Acmp0ClkW::new(self, 15)
     }
     #[doc = "Bit 16 - ADC clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn adc0_clk(&mut self) -> Adc0ClkW<Pscctl1SetSpec> {
         Adc0ClkW::new(self, 16)
     }
     #[doc = "Bit 24 - SHSGPIO0 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn shsgpio0_clk(&mut self) -> Shsgpio0ClkW<Pscctl1SetSpec> {
         Shsgpio0ClkW::new(self, 24)
     }

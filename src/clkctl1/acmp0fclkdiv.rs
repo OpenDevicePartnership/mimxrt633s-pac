@@ -54,25 +54,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Clock Divider Value Selection. . . 0: Divide by 1. ... 255: Divide by 256."]
     #[inline(always)]
-    #[must_use]
     pub fn div(&mut self) -> DivW<Acmp0fclkdivSpec> {
         DivW::new(self, 0)
     }
     #[doc = "Bit 29 - Resets the divider counter. Can be used to make sure a new divider value is used right away rather than completing the previous count."]
     #[inline(always)]
-    #[must_use]
     pub fn reset(&mut self) -> ResetW<Acmp0fclkdivSpec> {
         ResetW::new(self, 29)
     }
     #[doc = "Bit 30 - Halts the divider counter. The intent is to allow the divider clock source to be changed without the risk of a glitch at the output."]
     #[inline(always)]
-    #[must_use]
     pub fn halt(&mut self) -> HaltW<Acmp0fclkdivSpec> {
         HaltW::new(self, 30)
     }
     #[doc = "Bit 31 - Divider status flag. Set when a change is made to the divider value, cleared when the change is complete."]
     #[inline(always)]
-    #[must_use]
     pub fn reqflag(&mut self) -> ReqflagW<Acmp0fclkdivSpec> {
         ReqflagW::new(self, 31)
     }

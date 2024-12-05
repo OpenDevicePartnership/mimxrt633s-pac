@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:21 - Frequency Counter Maximum Limit"]
     #[inline(always)]
-    #[must_use]
     pub fn frq_max(&mut self) -> FrqMaxW<FrqmaxSpec> {
         FrqMaxW::new(self, 0)
     }

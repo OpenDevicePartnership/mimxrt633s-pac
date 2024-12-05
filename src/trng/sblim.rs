@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:9 - Sparse Bit Limit"]
     #[inline(always)]
-    #[must_use]
     pub fn sb_lim(&mut self) -> SbLimW<SblimSpec> {
         SbLimW::new(self, 0)
     }

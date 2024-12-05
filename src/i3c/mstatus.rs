@@ -274,31 +274,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 8 - Slave start"]
     #[inline(always)]
-    #[must_use]
     pub fn slvstart(&mut self) -> SlvstartW<MstatusSpec> {
         SlvstartW::new(self, 8)
     }
     #[doc = "Bit 9 - Master control done"]
     #[inline(always)]
-    #[must_use]
     pub fn mctrldone(&mut self) -> MctrldoneW<MstatusSpec> {
         MctrldoneW::new(self, 9)
     }
     #[doc = "Bit 10 - COMPLETE"]
     #[inline(always)]
-    #[must_use]
     pub fn complete(&mut self) -> CompleteW<MstatusSpec> {
         CompleteW::new(self, 10)
     }
     #[doc = "Bit 13 - In-Band Interrupt (IBI) won"]
     #[inline(always)]
-    #[must_use]
     pub fn ibiwon(&mut self) -> IbiwonW<MstatusSpec> {
         IbiwonW::new(self, 13)
     }
     #[doc = "Bit 19 - Now master (now this module is a master)"]
     #[inline(always)]
-    #[must_use]
     pub fn nowmaster(&mut self) -> NowmasterW<MstatusSpec> {
         NowmasterW::new(self, 19)
     }

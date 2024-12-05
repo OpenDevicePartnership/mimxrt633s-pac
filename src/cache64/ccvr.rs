@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Cache read/write Data"]
     #[inline(always)]
-    #[must_use]
     pub fn data(&mut self) -> DataW<CcvrSpec> {
         DataW::new(self, 0)
     }

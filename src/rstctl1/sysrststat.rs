@@ -314,31 +314,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - VDD POR Event Detected:"]
     #[inline(always)]
-    #[must_use]
     pub fn vdd_por(&mut self) -> VddPorW<SysrststatSpec> {
         VddPorW::new(self, 0)
     }
     #[doc = "Bit 4 - PAD RESET Event Detected:"]
     #[inline(always)]
-    #[must_use]
     pub fn pad_reset(&mut self) -> PadResetW<SysrststatSpec> {
         PadResetW::new(self, 4)
     }
     #[doc = "Bit 5 - ARM RESET Event Detected:"]
     #[inline(always)]
-    #[must_use]
     pub fn arm_apd_reset(&mut self) -> ArmApdResetW<SysrststatSpec> {
         ArmApdResetW::new(self, 5)
     }
     #[doc = "Bit 6 - WDT0 RESET Event Detected:"]
     #[inline(always)]
-    #[must_use]
     pub fn wdt0_reset(&mut self) -> Wdt0ResetW<SysrststatSpec> {
         Wdt0ResetW::new(self, 6)
     }
     #[doc = "Bit 7 - WDT1 RESET Event Detected:"]
     #[inline(always)]
-    #[must_use]
     pub fn wdt1_reset(&mut self) -> Wdt1ResetW<SysrststatSpec> {
         Wdt1ResetW::new(self, 7)
     }

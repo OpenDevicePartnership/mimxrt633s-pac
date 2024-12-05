@@ -614,61 +614,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - SPI enable."]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> EnableW<CfgSpec> {
         EnableW::new(self, 0)
     }
     #[doc = "Bit 2 - Master mode select."]
     #[inline(always)]
-    #[must_use]
     pub fn master(&mut self) -> MasterW<CfgSpec> {
         MasterW::new(self, 2)
     }
     #[doc = "Bit 3 - LSB First mode enable."]
     #[inline(always)]
-    #[must_use]
     pub fn lsbf(&mut self) -> LsbfW<CfgSpec> {
         LsbfW::new(self, 3)
     }
     #[doc = "Bit 4 - Clock Phase select."]
     #[inline(always)]
-    #[must_use]
     pub fn cpha(&mut self) -> CphaW<CfgSpec> {
         CphaW::new(self, 4)
     }
     #[doc = "Bit 5 - Clock Polarity select."]
     #[inline(always)]
-    #[must_use]
     pub fn cpol(&mut self) -> CpolW<CfgSpec> {
         CpolW::new(self, 5)
     }
     #[doc = "Bit 7 - Loopback mode enable. Loopback mode applies only to Master mode, and connects transmit and receive data connected together to allow simple software testing."]
     #[inline(always)]
-    #[must_use]
     pub fn loop_(&mut self) -> LoopW<CfgSpec> {
         LoopW::new(self, 7)
     }
     #[doc = "Bit 8 - SSEL0 Polarity select."]
     #[inline(always)]
-    #[must_use]
     pub fn spol0(&mut self) -> Spol0W<CfgSpec> {
         Spol0W::new(self, 8)
     }
     #[doc = "Bit 9 - SSEL1 Polarity select."]
     #[inline(always)]
-    #[must_use]
     pub fn spol1(&mut self) -> Spol1W<CfgSpec> {
         Spol1W::new(self, 9)
     }
     #[doc = "Bit 10 - SSEL2 Polarity select."]
     #[inline(always)]
-    #[must_use]
     pub fn spol2(&mut self) -> Spol2W<CfgSpec> {
         Spol2W::new(self, 10)
     }
     #[doc = "Bit 11 - SSEL3 Polarity select."]
     #[inline(always)]
-    #[must_use]
     pub fn spol3(&mut self) -> Spol3W<CfgSpec> {
         Spol3W::new(self, 11)
     }

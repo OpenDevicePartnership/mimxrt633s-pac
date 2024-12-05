@@ -393,73 +393,61 @@ impl core::fmt::Debug for crate::generic::Reg<Prstctl0ClrSpec> {
 impl W {
     #[doc = "Bit 8 - FLEXCOMM0 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm0_rst_clr(&mut self) -> Flexcomm0RstClrW<Prstctl0ClrSpec> {
         Flexcomm0RstClrW::new(self, 8)
     }
     #[doc = "Bit 9 - FLEXCOMM1 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm1_rst_clr(&mut self) -> Flexcomm1RstClrW<Prstctl0ClrSpec> {
         Flexcomm1RstClrW::new(self, 9)
     }
     #[doc = "Bit 10 - FLEXCOMM2 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm2_rst_clr(&mut self) -> Flexcomm2RstClrW<Prstctl0ClrSpec> {
         Flexcomm2RstClrW::new(self, 10)
     }
     #[doc = "Bit 11 - FLEXCOMM3 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm3_rst_clr(&mut self) -> Flexcomm3RstClrW<Prstctl0ClrSpec> {
         Flexcomm3RstClrW::new(self, 11)
     }
     #[doc = "Bit 12 - FLEXCOMM4 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm4_rst_clr(&mut self) -> Flexcomm4RstClrW<Prstctl0ClrSpec> {
         Flexcomm4RstClrW::new(self, 12)
     }
     #[doc = "Bit 13 - FLEXCOMM5 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm5_rst_clr(&mut self) -> Flexcomm5RstClrW<Prstctl0ClrSpec> {
         Flexcomm5RstClrW::new(self, 13)
     }
     #[doc = "Bit 14 - FLEXCOMM6 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm6_rst_clr(&mut self) -> Flexcomm6RstClrW<Prstctl0ClrSpec> {
         Flexcomm6RstClrW::new(self, 14)
     }
     #[doc = "Bit 15 - FLEXCOMM7 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm7_rst_clr(&mut self) -> Flexcomm7RstClrW<Prstctl0ClrSpec> {
         Flexcomm7RstClrW::new(self, 15)
     }
     #[doc = "Bit 22 - FLEXCOMM14 SPI reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm14_spi_rst_clr(&mut self) -> Flexcomm14SpiRstClrW<Prstctl0ClrSpec> {
         Flexcomm14SpiRstClrW::new(self, 22)
     }
     #[doc = "Bit 23 - FLEXCOMM15 I2C reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm15_i2c_rst_clr(&mut self) -> Flexcomm15I2cRstClrW<Prstctl0ClrSpec> {
         Flexcomm15I2cRstClrW::new(self, 23)
     }
     #[doc = "Bit 24 - DMIC0 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0_rst_clr(&mut self) -> Dmic0RstClrW<Prstctl0ClrSpec> {
         Dmic0RstClrW::new(self, 24)
     }
     #[doc = "Bit 27 - osevent timer reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn osevt_timer_rst_clr(&mut self) -> OsevtTimerRstClrW<Prstctl0ClrSpec> {
         OsevtTimerRstClrW::new(self, 27)
     }

@@ -531,13 +531,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 8:11 - Time Counter for Retuning"]
     #[inline(always)]
-    #[must_use]
     pub fn time_count_retuning(&mut self) -> TimeCountRetuningW<HostCtrlCapSpec> {
         TimeCountRetuningW::new(self, 8)
     }
     #[doc = "Bit 13 - Use Tuning for SDR50"]
     #[inline(always)]
-    #[must_use]
     pub fn use_tuning_sdr50(&mut self) -> UseTuningSdr50W<HostCtrlCapSpec> {
         UseTuningSdr50W::new(self, 13)
     }

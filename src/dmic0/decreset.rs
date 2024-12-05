@@ -81,7 +81,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn decreset(&mut self) -> DecresetW<DecresetSpec> {
         DecresetW::new(self, 0)
     }

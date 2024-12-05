@@ -74,37 +74,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - 1 : Enable interrupt on Floating point overflow"]
     #[inline(always)]
-    #[must_use]
     pub fn intr_oflow(&mut self) -> IntrOflowW<IntrenSpec> {
         IntrOflowW::new(self, 0)
     }
     #[doc = "Bit 1 - 1 : Enable interrupt on Floating point NaN"]
     #[inline(always)]
-    #[must_use]
     pub fn intr_nan(&mut self) -> IntrNanW<IntrenSpec> {
         IntrNanW::new(self, 1)
     }
     #[doc = "Bit 2 - 1: Enable interrupt on Fixed point Overflow"]
     #[inline(always)]
-    #[must_use]
     pub fn intr_fixed(&mut self) -> IntrFixedW<IntrenSpec> {
         IntrFixedW::new(self, 2)
     }
     #[doc = "Bit 3 - 1 : Enable interrupt on Subnormal truncation"]
     #[inline(always)]
-    #[must_use]
     pub fn intr_uflow(&mut self) -> IntrUflowW<IntrenSpec> {
         IntrUflowW::new(self, 3)
     }
     #[doc = "Bit 4 - 1: Enable interrupt on AHBM Buss Error"]
     #[inline(always)]
-    #[must_use]
     pub fn intr_berr(&mut self) -> IntrBerrW<IntrenSpec> {
         IntrBerrW::new(self, 4)
     }
     #[doc = "Bit 7 - 1: Enable interrupt on instruction completion"]
     #[inline(always)]
-    #[must_use]
     pub fn intr_comp(&mut self) -> IntrCompW<IntrenSpec> {
         IntrCompW::new(self, 7)
     }

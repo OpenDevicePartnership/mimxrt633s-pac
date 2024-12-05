@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Controls HIFI4 AP Enable. Magic Value: 0x1234 5678"]
     #[inline(always)]
-    #[must_use]
     pub fn cs_protcpu1(&mut self) -> CsProtcpu1W<CsProtcpu1Spec> {
         CsProtcpu1W::new(self, 0)
     }

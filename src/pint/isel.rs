@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Selects the interrupt mode for each pin interrupt. Bit n configures the pin interrupt selected in PINTSELn. 0 = Edge sensitive 1 = Level sensitive"]
     #[inline(always)]
-    #[must_use]
     pub fn pmode(&mut self) -> PmodeW<IselSpec> {
         PmodeW::new(self, 0)
     }

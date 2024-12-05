@@ -160,7 +160,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Indicates if the accelerator has finished an operation. Write 1 to clear, or write CTRL1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn done(&mut self) -> DoneW<StatusSpec> {
         DoneW::new(self, 0)
     }

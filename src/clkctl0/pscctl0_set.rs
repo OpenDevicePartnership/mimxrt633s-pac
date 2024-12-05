@@ -425,79 +425,66 @@ impl core::fmt::Debug for crate::generic::Reg<Pscctl0SetSpec> {
 impl W {
     #[doc = "Bit 2 - 128KB ROM controller clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn rom_ctl_128kb_clk(&mut self) -> RomCtl128kbClkW<Pscctl0SetSpec> {
         RomCtl128kbClkW::new(self, 2)
     }
     #[doc = "Bit 8 - powerquad clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn powerquad_clk(&mut self) -> PowerquadClkW<Pscctl0SetSpec> {
         PowerquadClkW::new(self, 8)
     }
     #[doc = "Bit 9 - CAPSER clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn casper_clk(&mut self) -> CasperClkW<Pscctl0SetSpec> {
         CasperClkW::new(self, 9)
     }
     #[doc = "Bit 10 - HASHCRYPT clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn hashcrypt_clk(&mut self) -> HashcryptClkW<Pscctl0SetSpec> {
         HashcryptClkW::new(self, 10)
     }
     #[doc = "Bit 11 - PUF clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn puf_clk(&mut self) -> PufClkW<Pscctl0SetSpec> {
         PufClkW::new(self, 11)
     }
     #[doc = "Bit 12 - RNG clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn rng_clk(&mut self) -> RngClkW<Pscctl0SetSpec> {
         RngClkW::new(self, 12)
     }
     #[doc = "Bit 16 - FLEXSPI clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexspi_otfad_clk(&mut self) -> FlexspiOtfadClkW<Pscctl0SetSpec> {
         FlexspiOtfadClkW::new(self, 16)
     }
     #[doc = "Bit 17 - OTP clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn otp_clk(&mut self) -> OtpClkW<Pscctl0SetSpec> {
         OtpClkW::new(self, 17)
     }
     #[doc = "Bit 20 - USB PHY clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn usbhs_phy_clk(&mut self) -> UsbhsPhyClkW<Pscctl0SetSpec> {
         UsbhsPhyClkW::new(self, 20)
     }
     #[doc = "Bit 21 - USB DEVICE clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn usbhs_device_clk(&mut self) -> UsbhsDeviceClkW<Pscctl0SetSpec> {
         UsbhsDeviceClkW::new(self, 21)
     }
     #[doc = "Bit 22 - USB HOST clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn usbhs_host_clk(&mut self) -> UsbhsHostClkW<Pscctl0SetSpec> {
         UsbhsHostClkW::new(self, 22)
     }
     #[doc = "Bit 23 - USBHS RAM clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn usbhs_sram_clk(&mut self) -> UsbhsSramClkW<Pscctl0SetSpec> {
         UsbhsSramClkW::new(self, 23)
     }
     #[doc = "Bit 24 - SCT clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn sct_clk(&mut self) -> SctClkW<Pscctl0SetSpec> {
         SctClkW::new(self, 24)
     }

@@ -452,25 +452,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Trigger enable"]
     #[inline(always)]
-    #[must_use]
     pub fn hten(&mut self) -> HtenW<TctrlSpec> {
         HtenW::new(self, 0)
     }
     #[doc = "Bits 8:11 - Trigger priority setting"]
     #[inline(always)]
-    #[must_use]
     pub fn tpri(&mut self) -> TpriW<TctrlSpec> {
         TpriW::new(self, 8)
     }
     #[doc = "Bits 16:19 - Trigger delay select"]
     #[inline(always)]
-    #[must_use]
     pub fn tdly(&mut self) -> TdlyW<TctrlSpec> {
         TdlyW::new(self, 16)
     }
     #[doc = "Bits 24:27 - Trigger command select"]
     #[inline(always)]
-    #[must_use]
     pub fn tcmd(&mut self) -> TcmdW<TctrlSpec> {
         TcmdW::new(self, 24)
     }

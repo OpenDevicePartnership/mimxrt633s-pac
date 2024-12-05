@@ -434,43 +434,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - sdio 0 clock override"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio_0(&mut self) -> Sdio0W<Clkgateoverride0Spec> {
         Sdio0W::new(self, 0)
     }
     #[doc = "Bit 1 - sdio 1 clock override"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio_1(&mut self) -> Sdio1W<Clkgateoverride0Spec> {
         Sdio1W::new(self, 1)
     }
     #[doc = "Bit 2 - usbhsphy clock override"]
     #[inline(always)]
-    #[must_use]
     pub fn usbhsphy(&mut self) -> UsbhsphyW<Clkgateoverride0Spec> {
         UsbhsphyW::new(self, 2)
     }
     #[doc = "Bit 3 - adc clock override"]
     #[inline(always)]
-    #[must_use]
     pub fn adc(&mut self) -> AdcW<Clkgateoverride0Spec> {
         AdcW::new(self, 3)
     }
     #[doc = "Bit 4 - mu clock override"]
     #[inline(always)]
-    #[must_use]
     pub fn mu(&mut self) -> MuW<Clkgateoverride0Spec> {
         MuW::new(self, 4)
     }
     #[doc = "Bit 5 - acomparator clock override"]
     #[inline(always)]
-    #[must_use]
     pub fn acmp(&mut self) -> AcmpW<Clkgateoverride0Spec> {
         AcmpW::new(self, 5)
     }
     #[doc = "Bit 6 - pmc clock override"]
     #[inline(always)]
-    #[must_use]
     pub fn pmc(&mut self) -> PmcW<Clkgateoverride0Spec> {
         PmcW::new(self, 6)
     }

@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - When the SFARVALID bit of the SFSR is set to 1, this field holds the address of an access that caused an SAU violation."]
     #[inline(always)]
-    #[must_use]
     pub fn address(&mut self) -> AddressW<SfarSpec> {
         AddressW::new(self, 0)
     }

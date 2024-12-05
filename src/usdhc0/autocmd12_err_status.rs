@@ -342,13 +342,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 22 - Execute Tuning"]
     #[inline(always)]
-    #[must_use]
     pub fn execute_tuning(&mut self) -> ExecuteTuningW<Autocmd12ErrStatusSpec> {
         ExecuteTuningW::new(self, 22)
     }
     #[doc = "Bit 23 - Sample Clock Select"]
     #[inline(always)]
-    #[must_use]
     pub fn smp_clk_sel(&mut self) -> SmpClkSelW<Autocmd12ErrStatusSpec> {
         SmpClkSelW::new(self, 23)
     }

@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Clock Divider Value Selection. . . 0: Divide by 1. ... 255: Divide by 256."]
     #[inline(always)]
-    #[must_use]
     pub fn div(&mut self) -> DivW<SyscpuahbclkdivSpec> {
         DivW::new(self, 0)
     }
     #[doc = "Bit 31 - Divider status flag. Set when a change is made to the divider value, cleared when the change is complete."]
     #[inline(always)]
-    #[must_use]
     pub fn reqflag(&mut self) -> ReqflagW<SyscpuahbclkdivSpec> {
         ReqflagW::new(self, 31)
     }

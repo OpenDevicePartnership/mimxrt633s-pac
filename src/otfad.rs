@@ -25,7 +25,7 @@ impl RegisterBlock {
         #[allow(clippy::no_effect)]
         [(); 4][n];
         unsafe {
-            &*(self as *const Self)
+            &*core::ptr::from_ref(self)
                 .cast::<u8>()
                 .add(3328)
                 .add(64 * n)
@@ -37,7 +37,7 @@ impl RegisterBlock {
     #[inline(always)]
     pub fn ctx_iter(&self) -> impl Iterator<Item = &Ctx> {
         (0..4).map(move |n| unsafe {
-            &*(self as *const Self)
+            &*core::ptr::from_ref(self)
                 .cast::<u8>()
                 .add(3328)
                 .add(64 * n)

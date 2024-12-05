@@ -197,31 +197,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Iteration counter. Is number_cycles - 1. write 0 means Does one cycle - does not iterate."]
     #[inline(always)]
-    #[must_use]
     pub fn iter(&mut self) -> IterW<Ctrl1Spec> {
         IterW::new(self, 0)
     }
     #[doc = "Bits 8:15 - Operation mode to perform. write 0 means Accelerator is inactive. write others means accelerator is active."]
     #[inline(always)]
-    #[must_use]
     pub fn mode(&mut self) -> ModeW<Ctrl1Spec> {
         ModeW::new(self, 8)
     }
     #[doc = "Bit 16 - Which bank-pair the offset RESOFF is within. This must be 0 if only 2-up. Ideally this is not the same bank as ABBPAIR (when 4-up supported)"]
     #[inline(always)]
-    #[must_use]
     pub fn resbpair(&mut self) -> ResbpairW<Ctrl1Spec> {
         ResbpairW::new(self, 16)
     }
     #[doc = "Bits 18:28 - Word or DWord Offset of result. Word offset only allowed if 32 bit operation. Ideally not in the same RAM as the AB and CD values"]
     #[inline(always)]
-    #[must_use]
     pub fn resoff(&mut self) -> ResoffW<Ctrl1Spec> {
         ResoffW::new(self, 18)
     }
     #[doc = "Bits 30:31 - Skip rules on Carry if needed. This operation will be skipped based on Carry value (from previous operation) if not 0:"]
     #[inline(always)]
-    #[must_use]
     pub fn cskip(&mut self) -> CskipW<Ctrl1Spec> {
         CskipW::new(self, 30)
     }

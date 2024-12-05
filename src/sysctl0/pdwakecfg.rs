@@ -134,13 +134,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - RBB mode on wakeup"]
     #[inline(always)]
-    #[must_use]
     pub fn rbbkeepst(&mut self) -> RbbkeepstW<PdwakecfgSpec> {
         RbbkeepstW::new(self, 0)
     }
     #[doc = "Bit 1 - FBB mode on wakeup"]
     #[inline(always)]
-    #[must_use]
     pub fn fbbkeepst(&mut self) -> FbbkeepstW<PdwakecfgSpec> {
         FbbkeepstW::new(self, 1)
     }

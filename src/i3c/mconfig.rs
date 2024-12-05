@@ -267,61 +267,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Master enable"]
     #[inline(always)]
-    #[must_use]
     pub fn mstena(&mut self) -> MstenaW<MconfigSpec> {
         MstenaW::new(self, 0)
     }
     #[doc = "Bit 3 - Disable Timeout"]
     #[inline(always)]
-    #[must_use]
     pub fn disto(&mut self) -> DistoW<MconfigSpec> {
         DistoW::new(self, 3)
     }
     #[doc = "Bits 4:5 - High-Keeper"]
     #[inline(always)]
-    #[must_use]
     pub fn hkeep(&mut self) -> HkeepW<MconfigSpec> {
         HkeepW::new(self, 4)
     }
     #[doc = "Bit 6 - Open drain stop"]
     #[inline(always)]
-    #[must_use]
     pub fn odstop(&mut self) -> OdstopW<MconfigSpec> {
         OdstopW::new(self, 6)
     }
     #[doc = "Bits 8:11 - Push-pull baud rate"]
     #[inline(always)]
-    #[must_use]
     pub fn ppbaud(&mut self) -> PpbaudW<MconfigSpec> {
         PpbaudW::new(self, 8)
     }
     #[doc = "Bits 12:15 - Push-Pull low"]
     #[inline(always)]
-    #[must_use]
     pub fn pplow(&mut self) -> PplowW<MconfigSpec> {
         PplowW::new(self, 12)
     }
     #[doc = "Bits 16:23 - Open drain baud rate"]
     #[inline(always)]
-    #[must_use]
     pub fn odbaud(&mut self) -> OdbaudW<MconfigSpec> {
         OdbaudW::new(self, 16)
     }
     #[doc = "Bit 24 - Open drain high push-pull"]
     #[inline(always)]
-    #[must_use]
     pub fn odhpp(&mut self) -> OdhppW<MconfigSpec> {
         OdhppW::new(self, 24)
     }
     #[doc = "Bits 25:27 - Skew"]
     #[inline(always)]
-    #[must_use]
     pub fn skew(&mut self) -> SkewW<MconfigSpec> {
         SkewW::new(self, 25)
     }
     #[doc = "Bits 28:31 - I2C baud rate"]
     #[inline(always)]
-    #[must_use]
     pub fn i2cbaud(&mut self) -> I2cbaudW<MconfigSpec> {
         I2cbaudW::new(self, 28)
     }

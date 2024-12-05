@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:11 - Maximum read length"]
     #[inline(always)]
-    #[must_use]
     pub fn maxrd(&mut self) -> MaxrdW<SmaxlimitsSpec> {
         MaxrdW::new(self, 0)
     }
     #[doc = "Bits 16:27 - Maximum write length"]
     #[inline(always)]
-    #[must_use]
     pub fn maxwr(&mut self) -> MaxwrW<SmaxlimitsSpec> {
         MaxwrW::new(self, 16)
     }

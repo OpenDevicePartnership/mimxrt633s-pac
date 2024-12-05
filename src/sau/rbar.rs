@@ -32,7 +32,6 @@ impl W {
 of the base address for the selected SAU region. Bits\\[4:0\\]
 of the base address are defined as 0x00."]
     #[inline(always)]
-    #[must_use]
     pub fn baddr(&mut self) -> BaddrW<RbarSpec> {
         BaddrW::new(self, 5)
     }

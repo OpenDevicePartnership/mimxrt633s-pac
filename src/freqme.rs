@@ -8,12 +8,12 @@ impl RegisterBlock {
     #[doc = "0x00 - Freqeuncy Measurement (in Write mode)"]
     #[inline(always)]
     pub const fn freqmectrl_w(&self) -> &FreqmectrlW {
-        unsafe { &*(self as *const Self).cast::<u8>().add(0).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().cast() }
     }
     #[doc = "0x00 - Frequency Measurement (in Read mode)"]
     #[inline(always)]
     pub const fn freqmectrl_r(&self) -> &FreqmectrlR {
-        unsafe { &*(self as *const Self).cast::<u8>().add(0).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().cast() }
     }
 }
 #[doc = "FREQMECTRL_R (r) register accessor: Frequency Measurement (in Read mode)\n\nYou can [`read`](crate::Reg::read) this register and get [`freqmectrl_r::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@freqmectrl_r`]

@@ -94,49 +94,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Enable Capture 0. 1 = Enabled, 0 = Disabled."]
     #[inline(always)]
-    #[must_use]
     pub fn capen0(&mut self) -> Capen0W<CfgSpec> {
         Capen0W::new(self, 0)
     }
     #[doc = "Bit 1 - Enable Capture 1. 1 = Enabled, 0 = Disabled."]
     #[inline(always)]
-    #[must_use]
     pub fn capen1(&mut self) -> Capen1W<CfgSpec> {
         Capen1W::new(self, 1)
     }
     #[doc = "Bit 2 - Enable Capture 2. 1 = Enabled, 0 = Disabled."]
     #[inline(always)]
-    #[must_use]
     pub fn capen2(&mut self) -> Capen2W<CfgSpec> {
         Capen2W::new(self, 2)
     }
     #[doc = "Bit 3 - Enable Capture 3. 1 = Enabled, 0 = Disabled."]
     #[inline(always)]
-    #[must_use]
     pub fn capen3(&mut self) -> Capen3W<CfgSpec> {
         Capen3W::new(self, 3)
     }
     #[doc = "Bit 8 - Capture Polarity 0. 0 = Positive edge capture, 1 = Negative edge capture."]
     #[inline(always)]
-    #[must_use]
     pub fn cappol0(&mut self) -> Cappol0W<CfgSpec> {
         Cappol0W::new(self, 8)
     }
     #[doc = "Bit 9 - Capture Polarity 1. 0 = Positive edge capture, 1 = Negative edge capture."]
     #[inline(always)]
-    #[must_use]
     pub fn cappol1(&mut self) -> Cappol1W<CfgSpec> {
         Cappol1W::new(self, 9)
     }
     #[doc = "Bit 10 - Capture Polarity 2. 0 = Positive edge capture, 1 = Negative edge capture."]
     #[inline(always)]
-    #[must_use]
     pub fn cappol2(&mut self) -> Cappol2W<CfgSpec> {
         Cappol2W::new(self, 10)
     }
     #[doc = "Bit 11 - Capture Polarity 3. 0 = Positive edge capture, 1 = Negative edge capture."]
     #[inline(always)]
-    #[must_use]
     pub fn cappol3(&mut self) -> Cappol3W<CfgSpec> {
         Cappol3W::new(self, 11)
     }

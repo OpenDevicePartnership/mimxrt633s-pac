@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - A write access to this register will load CRC seed value to CRC_SUM register with selected bit order and 1's complement pre-processes. A write access to this register will overrule the CRC calculation in progresses."]
     #[inline(always)]
-    #[must_use]
     pub fn crc_seed(&mut self) -> CrcSeedW<SeedSpec> {
         CrcSeedW::new(self, 0)
     }

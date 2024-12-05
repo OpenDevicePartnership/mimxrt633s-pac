@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Update Safe Mode Control. In order to change any of the TRIM values, the user first needs to set the update safe mode bit, then proceed to change the respective TRIM values needed, followed by clearing the update safe mode bit."]
     #[inline(always)]
-    #[must_use]
     pub fn update(&mut self) -> UpdateW<Ffroctl1Spec> {
         UpdateW::new(self, 0)
     }

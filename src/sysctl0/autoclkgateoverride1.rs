@@ -1764,181 +1764,151 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if0(&mut self) -> SramIf0W<Autoclkgateoverride1Spec> {
         SramIf0W::new(self, 0)
     }
     #[doc = "Bit 1 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if1(&mut self) -> SramIf1W<Autoclkgateoverride1Spec> {
         SramIf1W::new(self, 1)
     }
     #[doc = "Bit 2 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if2(&mut self) -> SramIf2W<Autoclkgateoverride1Spec> {
         SramIf2W::new(self, 2)
     }
     #[doc = "Bit 3 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if3(&mut self) -> SramIf3W<Autoclkgateoverride1Spec> {
         SramIf3W::new(self, 3)
     }
     #[doc = "Bit 4 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if4(&mut self) -> SramIf4W<Autoclkgateoverride1Spec> {
         SramIf4W::new(self, 4)
     }
     #[doc = "Bit 5 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if5(&mut self) -> SramIf5W<Autoclkgateoverride1Spec> {
         SramIf5W::new(self, 5)
     }
     #[doc = "Bit 6 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if6(&mut self) -> SramIf6W<Autoclkgateoverride1Spec> {
         SramIf6W::new(self, 6)
     }
     #[doc = "Bit 7 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if7(&mut self) -> SramIf7W<Autoclkgateoverride1Spec> {
         SramIf7W::new(self, 7)
     }
     #[doc = "Bit 8 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if8(&mut self) -> SramIf8W<Autoclkgateoverride1Spec> {
         SramIf8W::new(self, 8)
     }
     #[doc = "Bit 9 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if9(&mut self) -> SramIf9W<Autoclkgateoverride1Spec> {
         SramIf9W::new(self, 9)
     }
     #[doc = "Bit 10 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if10(&mut self) -> SramIf10W<Autoclkgateoverride1Spec> {
         SramIf10W::new(self, 10)
     }
     #[doc = "Bit 11 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if11(&mut self) -> SramIf11W<Autoclkgateoverride1Spec> {
         SramIf11W::new(self, 11)
     }
     #[doc = "Bit 12 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if12(&mut self) -> SramIf12W<Autoclkgateoverride1Spec> {
         SramIf12W::new(self, 12)
     }
     #[doc = "Bit 13 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if13(&mut self) -> SramIf13W<Autoclkgateoverride1Spec> {
         SramIf13W::new(self, 13)
     }
     #[doc = "Bit 14 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if14(&mut self) -> SramIf14W<Autoclkgateoverride1Spec> {
         SramIf14W::new(self, 14)
     }
     #[doc = "Bit 15 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if15(&mut self) -> SramIf15W<Autoclkgateoverride1Spec> {
         SramIf15W::new(self, 15)
     }
     #[doc = "Bit 16 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if16(&mut self) -> SramIf16W<Autoclkgateoverride1Spec> {
         SramIf16W::new(self, 16)
     }
     #[doc = "Bit 17 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if17(&mut self) -> SramIf17W<Autoclkgateoverride1Spec> {
         SramIf17W::new(self, 17)
     }
     #[doc = "Bit 18 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if18(&mut self) -> SramIf18W<Autoclkgateoverride1Spec> {
         SramIf18W::new(self, 18)
     }
     #[doc = "Bit 19 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if19(&mut self) -> SramIf19W<Autoclkgateoverride1Spec> {
         SramIf19W::new(self, 19)
     }
     #[doc = "Bit 20 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if20(&mut self) -> SramIf20W<Autoclkgateoverride1Spec> {
         SramIf20W::new(self, 20)
     }
     #[doc = "Bit 21 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if21(&mut self) -> SramIf21W<Autoclkgateoverride1Spec> {
         SramIf21W::new(self, 21)
     }
     #[doc = "Bit 22 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if22(&mut self) -> SramIf22W<Autoclkgateoverride1Spec> {
         SramIf22W::new(self, 22)
     }
     #[doc = "Bit 23 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if23(&mut self) -> SramIf23W<Autoclkgateoverride1Spec> {
         SramIf23W::new(self, 23)
     }
     #[doc = "Bit 24 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if24(&mut self) -> SramIf24W<Autoclkgateoverride1Spec> {
         SramIf24W::new(self, 24)
     }
     #[doc = "Bit 25 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if25(&mut self) -> SramIf25W<Autoclkgateoverride1Spec> {
         SramIf25W::new(self, 25)
     }
     #[doc = "Bit 26 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if26(&mut self) -> SramIf26W<Autoclkgateoverride1Spec> {
         SramIf26W::new(self, 26)
     }
     #[doc = "Bit 27 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if27(&mut self) -> SramIf27W<Autoclkgateoverride1Spec> {
         SramIf27W::new(self, 27)
     }
     #[doc = "Bit 28 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if28(&mut self) -> SramIf28W<Autoclkgateoverride1Spec> {
         SramIf28W::new(self, 28)
     }
     #[doc = "Bit 29 - auto clock gating enable"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if29(&mut self) -> SramIf29W<Autoclkgateoverride1Spec> {
         SramIf29W::new(self, 29)
     }

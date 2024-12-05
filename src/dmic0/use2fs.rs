@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Use 2FS register"]
     #[inline(always)]
-    #[must_use]
     pub fn use2fs(&mut self) -> Use2fsW<Use2fsSpec> {
         Use2fsW::new(self, 0)
     }

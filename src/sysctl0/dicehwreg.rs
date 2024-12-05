@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - DICE General Purpose 32-Bit Data Register"]
     #[inline(always)]
-    #[must_use]
     pub fn dicehwreg(&mut self) -> DicehwregW<DicehwregSpec> {
         DicehwregW::new(self, 0)
     }

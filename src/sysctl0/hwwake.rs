@@ -74,37 +74,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Force peripheral clocking to stay on during deep-sleep mode. When 1, clocking to peripherals is prevented from being shut down when the CPU enters deep-sleep mode. This is intended to allow a coprocessor to continue operating while the main CPU(s) are shut down."]
     #[inline(always)]
-    #[must_use]
     pub fn forcewake(&mut self) -> ForcewakeW<HwwakeSpec> {
         ForcewakeW::new(self, 0)
     }
     #[doc = "Bit 1 - Wake for Flexcomm Interfaces. When 1, any Flexcomm Interface FIFO reaching the level specified by its own TXLVL will cause peripheral clocking to wake up temporarily while the related status is asserted."]
     #[inline(always)]
-    #[must_use]
     pub fn fcwake(&mut self) -> FcwakeW<HwwakeSpec> {
         FcwakeW::new(self, 1)
     }
     #[doc = "Bit 2 - Wake for Digital Microphone. When 1, the digital microphone input FIFO reaching the level specified by TRIGLVL of either channel will cause peripheral clocking to wake up temporarily while the related status is asserted."]
     #[inline(always)]
-    #[must_use]
     pub fn dmicwake(&mut self) -> DmicwakeW<HwwakeSpec> {
         DmicwakeW::new(self, 2)
     }
     #[doc = "Bit 3 - Wake for DMAC0. When 1, DMAC0 being busy will cause peripheral clocking to remain running until DMAC0 completes. This is generally used in conjunction with bit 1 and/or 2 in order to prevent peripheral clocking from being shut down as soon as the cause of wake-up is cleared, but before DMAC0 has completed its related activity."]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0wake(&mut self) -> Dmac0wakeW<HwwakeSpec> {
         Dmac0wakeW::new(self, 3)
     }
     #[doc = "Bit 4 - Wake for DMAC1. When 1, DMAC1 being busy will cause peripheral clocking to remain running until DMAC1 completes. This is generally used in conjunction with bit 1 and/or 2 in order to prevent peripheral clocking from being shut down as soon as the cause of wake-up is cleared, but before DMAC1 has completed its related activity."]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1wake(&mut self) -> Dmac1wakeW<HwwakeSpec> {
         Dmac1wakeW::new(self, 4)
     }
     #[doc = "Bit 5 - Wake for ESPI. When 1, ESPI being busy will cause peripheral clocking to remain running until ESPI completes. This is generally used in conjunction with bit 1 and/or 2 in order to prevent peripheral clocking from being shut down as soon as the cause of wake-up is cleared, but before ESPI has completed its related activity."]
     #[inline(always)]
-    #[must_use]
     pub fn espiwake(&mut self) -> EspiwakeW<HwwakeSpec> {
         EspiwakeW::new(self, 5)
     }

@@ -393,73 +393,61 @@ impl core::fmt::Debug for crate::generic::Reg<Prstctl0SetSpec> {
 impl W {
     #[doc = "Bit 8 - FLEXCOMM0 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm0_rst_set(&mut self) -> Flexcomm0RstSetW<Prstctl0SetSpec> {
         Flexcomm0RstSetW::new(self, 8)
     }
     #[doc = "Bit 9 - FLEXCOMM1 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm1_rst_set(&mut self) -> Flexcomm1RstSetW<Prstctl0SetSpec> {
         Flexcomm1RstSetW::new(self, 9)
     }
     #[doc = "Bit 10 - FLEXCOMM2 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm2_rst_set(&mut self) -> Flexcomm2RstSetW<Prstctl0SetSpec> {
         Flexcomm2RstSetW::new(self, 10)
     }
     #[doc = "Bit 11 - FLEXCOMM3 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm3_rst_set(&mut self) -> Flexcomm3RstSetW<Prstctl0SetSpec> {
         Flexcomm3RstSetW::new(self, 11)
     }
     #[doc = "Bit 12 - FLEXCOMM4 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm4_rst_set(&mut self) -> Flexcomm4RstSetW<Prstctl0SetSpec> {
         Flexcomm4RstSetW::new(self, 12)
     }
     #[doc = "Bit 13 - FLEXCOMM5 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm5_rst_set(&mut self) -> Flexcomm5RstSetW<Prstctl0SetSpec> {
         Flexcomm5RstSetW::new(self, 13)
     }
     #[doc = "Bit 14 - FLEXCOMM6 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm6_rst_set(&mut self) -> Flexcomm6RstSetW<Prstctl0SetSpec> {
         Flexcomm6RstSetW::new(self, 14)
     }
     #[doc = "Bit 15 - FLEXCOMM7 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm7_rst_set(&mut self) -> Flexcomm7RstSetW<Prstctl0SetSpec> {
         Flexcomm7RstSetW::new(self, 15)
     }
     #[doc = "Bit 22 - FLEXCOMM14 SPI reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm14_spi_rst_set(&mut self) -> Flexcomm14SpiRstSetW<Prstctl0SetSpec> {
         Flexcomm14SpiRstSetW::new(self, 22)
     }
     #[doc = "Bit 23 - FLEXCOMM15 I2C reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm15_i2c_rst_set(&mut self) -> Flexcomm15I2cRstSetW<Prstctl0SetSpec> {
         Flexcomm15I2cRstSetW::new(self, 23)
     }
     #[doc = "Bit 24 - DMIC0 reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0_rst_set(&mut self) -> Dmic0RstSetW<Prstctl0SetSpec> {
         Dmic0RstSetW::new(self, 24)
     }
     #[doc = "Bit 27 - osevent timer reset set"]
     #[inline(always)]
-    #[must_use]
     pub fn osevt_timer_rst_set(&mut self) -> OsevtTimerRstSetW<Prstctl0SetSpec> {
         OsevtTimerRstSetW::new(self, 27)
     }

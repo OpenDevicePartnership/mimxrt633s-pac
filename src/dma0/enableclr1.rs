@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<Enableclr1Spec> {
 impl W {
     #[doc = "Bits 0:31 - Writing ones to this register clears the corresponding bits in ENABLESET1."]
     #[inline(always)]
-    #[must_use]
     pub fn clr(&mut self) -> ClrW<Enableclr1Spec> {
         ClrW::new(self, 0)
     }

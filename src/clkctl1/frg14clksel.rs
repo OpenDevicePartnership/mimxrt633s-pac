@@ -120,7 +120,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - Fractional Gen. Clock Source Selection. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn sel(&mut self) -> SelW<Frg14clkselSpec> {
         SelW::new(self, 0)
     }

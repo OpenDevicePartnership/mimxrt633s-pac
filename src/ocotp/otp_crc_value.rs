@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - The CRC result value. When it is locked, reading from it returns value 32hBADA_BADA"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_value(&mut self) -> CrcValueW<OtpCrcValueSpec> {
         CrcValueW::new(self, 0)
     }

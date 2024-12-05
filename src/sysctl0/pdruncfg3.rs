@@ -1814,181 +1814,151 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if0_ppd(&mut self) -> SramIf0PpdW<Pdruncfg3Spec> {
         SramIf0PpdW::new(self, 0)
     }
     #[doc = "Bit 1 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if1_ppd(&mut self) -> SramIf1PpdW<Pdruncfg3Spec> {
         SramIf1PpdW::new(self, 1)
     }
     #[doc = "Bit 2 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if2_ppd(&mut self) -> SramIf2PpdW<Pdruncfg3Spec> {
         SramIf2PpdW::new(self, 2)
     }
     #[doc = "Bit 3 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if3_ppd(&mut self) -> SramIf3PpdW<Pdruncfg3Spec> {
         SramIf3PpdW::new(self, 3)
     }
     #[doc = "Bit 4 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if4_ppd(&mut self) -> SramIf4PpdW<Pdruncfg3Spec> {
         SramIf4PpdW::new(self, 4)
     }
     #[doc = "Bit 5 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if5_ppd(&mut self) -> SramIf5PpdW<Pdruncfg3Spec> {
         SramIf5PpdW::new(self, 5)
     }
     #[doc = "Bit 6 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if6_ppd(&mut self) -> SramIf6PpdW<Pdruncfg3Spec> {
         SramIf6PpdW::new(self, 6)
     }
     #[doc = "Bit 7 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if7_ppd(&mut self) -> SramIf7PpdW<Pdruncfg3Spec> {
         SramIf7PpdW::new(self, 7)
     }
     #[doc = "Bit 8 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if8_ppd(&mut self) -> SramIf8PpdW<Pdruncfg3Spec> {
         SramIf8PpdW::new(self, 8)
     }
     #[doc = "Bit 9 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if9_ppd(&mut self) -> SramIf9PpdW<Pdruncfg3Spec> {
         SramIf9PpdW::new(self, 9)
     }
     #[doc = "Bit 10 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if10_ppd(&mut self) -> SramIf10PpdW<Pdruncfg3Spec> {
         SramIf10PpdW::new(self, 10)
     }
     #[doc = "Bit 11 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if11_ppd(&mut self) -> SramIf11PpdW<Pdruncfg3Spec> {
         SramIf11PpdW::new(self, 11)
     }
     #[doc = "Bit 12 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if12_ppd(&mut self) -> SramIf12PpdW<Pdruncfg3Spec> {
         SramIf12PpdW::new(self, 12)
     }
     #[doc = "Bit 13 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if13_ppd(&mut self) -> SramIf13PpdW<Pdruncfg3Spec> {
         SramIf13PpdW::new(self, 13)
     }
     #[doc = "Bit 14 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if14_ppd(&mut self) -> SramIf14PpdW<Pdruncfg3Spec> {
         SramIf14PpdW::new(self, 14)
     }
     #[doc = "Bit 15 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if15_ppd(&mut self) -> SramIf15PpdW<Pdruncfg3Spec> {
         SramIf15PpdW::new(self, 15)
     }
     #[doc = "Bit 16 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if16_ppd(&mut self) -> SramIf16PpdW<Pdruncfg3Spec> {
         SramIf16PpdW::new(self, 16)
     }
     #[doc = "Bit 17 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if17_ppd(&mut self) -> SramIf17PpdW<Pdruncfg3Spec> {
         SramIf17PpdW::new(self, 17)
     }
     #[doc = "Bit 18 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if18_ppd(&mut self) -> SramIf18PpdW<Pdruncfg3Spec> {
         SramIf18PpdW::new(self, 18)
     }
     #[doc = "Bit 19 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if19_ppd(&mut self) -> SramIf19PpdW<Pdruncfg3Spec> {
         SramIf19PpdW::new(self, 19)
     }
     #[doc = "Bit 20 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if20_ppd(&mut self) -> SramIf20PpdW<Pdruncfg3Spec> {
         SramIf20PpdW::new(self, 20)
     }
     #[doc = "Bit 21 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if21_ppd(&mut self) -> SramIf21PpdW<Pdruncfg3Spec> {
         SramIf21PpdW::new(self, 21)
     }
     #[doc = "Bit 22 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if22_ppd(&mut self) -> SramIf22PpdW<Pdruncfg3Spec> {
         SramIf22PpdW::new(self, 22)
     }
     #[doc = "Bit 23 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if23_ppd(&mut self) -> SramIf23PpdW<Pdruncfg3Spec> {
         SramIf23PpdW::new(self, 23)
     }
     #[doc = "Bit 24 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if24_ppd(&mut self) -> SramIf24PpdW<Pdruncfg3Spec> {
         SramIf24PpdW::new(self, 24)
     }
     #[doc = "Bit 25 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if25_ppd(&mut self) -> SramIf25PpdW<Pdruncfg3Spec> {
         SramIf25PpdW::new(self, 25)
     }
     #[doc = "Bit 26 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if26_ppd(&mut self) -> SramIf26PpdW<Pdruncfg3Spec> {
         SramIf26PpdW::new(self, 26)
     }
     #[doc = "Bit 27 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if27_ppd(&mut self) -> SramIf27PpdW<Pdruncfg3Spec> {
         SramIf27PpdW::new(self, 27)
     }
     #[doc = "Bit 28 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if28_ppd(&mut self) -> SramIf28PpdW<Pdruncfg3Spec> {
         SramIf28PpdW::new(self, 28)
     }
     #[doc = "Bit 29 - Periph Power"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_if29_ppd(&mut self) -> SramIf29PpdW<Pdruncfg3Spec> {
         SramIf29PpdW::new(self, 29)
     }

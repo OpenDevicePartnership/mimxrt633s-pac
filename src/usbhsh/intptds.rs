@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - When a bit in the PTD Skip Map is set to logic 1, the corresponding PTD will be skipped, independent of the V bit setting."]
     #[inline(always)]
-    #[must_use]
     pub fn int_skip(&mut self) -> IntSkipW<IntptdsSpec> {
         IntSkipW::new(self, 0)
     }

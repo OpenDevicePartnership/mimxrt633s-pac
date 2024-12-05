@@ -134,73 +134,61 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - IP triggered Command Sequences Execution finished interrupt. This interrupt is also generated when there is IPCMDGE or IPCMDERR interrupt generated."]
     #[inline(always)]
-    #[must_use]
     pub fn ipcmddone(&mut self) -> IpcmddoneW<IntrSpec> {
         IpcmddoneW::new(self, 0)
     }
     #[doc = "Bit 1 - IP triggered Command Sequences Grant Timeout interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn ipcmdge(&mut self) -> IpcmdgeW<IntrSpec> {
         IpcmdgeW::new(self, 1)
     }
     #[doc = "Bit 2 - AHB triggered Command Sequences Grant Timeout interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn ahbcmdge(&mut self) -> AhbcmdgeW<IntrSpec> {
         AhbcmdgeW::new(self, 2)
     }
     #[doc = "Bit 3 - IP triggered Command Sequences Error Detected interrupt. When an error detected for IP command, this command will be ignored and not executed at all."]
     #[inline(always)]
-    #[must_use]
     pub fn ipcmderr(&mut self) -> IpcmderrW<IntrSpec> {
         IpcmderrW::new(self, 3)
     }
     #[doc = "Bit 4 - AHB triggered Command Sequences Error Detected interrupt. When an error detected for AHB command, this command will be ignored and not executed at all."]
     #[inline(always)]
-    #[must_use]
     pub fn ahbcmderr(&mut self) -> AhbcmderrW<IntrSpec> {
         AhbcmderrW::new(self, 4)
     }
     #[doc = "Bit 5 - IP RX FIFO watermark available interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn iprxwa(&mut self) -> IprxwaW<IntrSpec> {
         IprxwaW::new(self, 5)
     }
     #[doc = "Bit 6 - IP TX FIFO watermark empty interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn iptxwe(&mut self) -> IptxweW<IntrSpec> {
         IptxweW::new(self, 6)
     }
     #[doc = "Bit 7 - Data Learning failed interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn datalearnfail(&mut self) -> DatalearnfailW<IntrSpec> {
         DatalearnfailW::new(self, 7)
     }
     #[doc = "Bit 8 - SCLK is stopped during command sequence because Async RX FIFO full interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn sckstopbyrd(&mut self) -> SckstopbyrdW<IntrSpec> {
         SckstopbyrdW::new(self, 8)
     }
     #[doc = "Bit 9 - SCLK is stopped during command sequence because Async TX FIFO empty interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn sckstopbywr(&mut self) -> SckstopbywrW<IntrSpec> {
         SckstopbywrW::new(self, 9)
     }
     #[doc = "Bit 10 - AHB Bus timeout interrupt.Refer Interrupts chapter for more details."]
     #[inline(always)]
-    #[must_use]
     pub fn ahbbustimeout(&mut self) -> AhbbustimeoutW<IntrSpec> {
         AhbbustimeoutW::new(self, 10)
     }
     #[doc = "Bit 11 - Sequence execution timeout interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn seqtimeout(&mut self) -> SeqtimeoutW<IntrSpec> {
         SeqtimeoutW::new(self, 11)
     }

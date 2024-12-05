@@ -47,7 +47,6 @@ impl core::fmt::Debug for crate::generic::Reg<Settrig0Spec> {
 impl W {
     #[doc = "Bits 0:31 - Set Trigger control bit for DMA channel 0."]
     #[inline(always)]
-    #[must_use]
     pub fn trig(&mut self) -> TrigW<Settrig0Spec> {
         TrigW::new(self, 0)
     }

@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - 8-bit address used with automatic address matching. Used when address detection is enabled (ADDRDET in CTL = 1) and automatic address matching is enabled (AUTOADDR in CFG = 1)."]
     #[inline(always)]
-    #[must_use]
     pub fn address(&mut self) -> AddressW<AddrSpec> {
         AddressW::new(self, 0)
     }

@@ -74,37 +74,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 2 - Port Change Detect: The host controller sets this bit to logic 1 when any port has a change bit transition from a 0 to a one or a Force Port Resume bit transition from a 0 to a 1 as a result of a J-K transition detected on a suspended port. or - the ID pin value changes or - an LPM token has been transmitted to enter LPM L1 suspend state.. Software must write a one to clear the bit"]
     #[inline(always)]
-    #[must_use]
     pub fn pcd(&mut self) -> PcdW<UsbstsSpec> {
         PcdW::new(self, 2)
     }
     #[doc = "Bit 3 - Frame List Rollover: The host controller sets this bit to logic 1 when the frame list index rolls over its maximum value to 0."]
     #[inline(always)]
-    #[must_use]
     pub fn flr(&mut self) -> FlrW<UsbstsSpec> {
         FlrW::new(self, 3)
     }
     #[doc = "Bit 16 - ATL IRQ: Indicates that an ATL PTD (with I-bit set) was completed."]
     #[inline(always)]
-    #[must_use]
     pub fn atl_irq(&mut self) -> AtlIrqW<UsbstsSpec> {
         AtlIrqW::new(self, 16)
     }
     #[doc = "Bit 17 - ISO IRQ: Indicates that an ISO PTD (with I-bit set) was completed."]
     #[inline(always)]
-    #[must_use]
     pub fn iso_irq(&mut self) -> IsoIrqW<UsbstsSpec> {
         IsoIrqW::new(self, 17)
     }
     #[doc = "Bit 18 - INT IRQ: Indicates that an INT PTD (with I-bit set) was completed."]
     #[inline(always)]
-    #[must_use]
     pub fn int_irq(&mut self) -> IntIrqW<UsbstsSpec> {
         IntIrqW::new(self, 18)
     }
     #[doc = "Bit 19 - SOF interrupt: Every time when the host sends a Start of Frame token on the USB bus, this bit is set."]
     #[inline(always)]
-    #[must_use]
     pub fn sof_irq(&mut self) -> SofIrqW<UsbstsSpec> {
         SofIrqW::new(self, 19)
     }

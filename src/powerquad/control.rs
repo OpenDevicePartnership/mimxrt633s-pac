@@ -42,13 +42,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - opcode specific to decode_machine"]
     #[inline(always)]
-    #[must_use]
     pub fn decode_opcode(&mut self) -> DecodeOpcodeW<ControlSpec> {
         DecodeOpcodeW::new(self, 0)
     }
     #[doc = "Bits 4:7 - 0 : Coprocessor , 1 : matrix , 2 : fft , 3 : fir , 4 : stat , 5 : cordic , 6 -15 : NA"]
     #[inline(always)]
-    #[must_use]
     pub fn decode_machine(&mut self) -> DecodeMachineW<ControlSpec> {
         DecodeMachineW::new(self, 4)
     }

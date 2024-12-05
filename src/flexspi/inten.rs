@@ -134,73 +134,61 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - IP triggered Command Sequences Execution finished interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn ipcmddoneen(&mut self) -> IpcmddoneenW<IntenSpec> {
         IpcmddoneenW::new(self, 0)
     }
     #[doc = "Bit 1 - IP triggered Command Sequences Grant Timeout interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn ipcmdgeen(&mut self) -> IpcmdgeenW<IntenSpec> {
         IpcmdgeenW::new(self, 1)
     }
     #[doc = "Bit 2 - AHB triggered Command Sequences Grant Timeout interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn ahbcmdgeen(&mut self) -> AhbcmdgeenW<IntenSpec> {
         AhbcmdgeenW::new(self, 2)
     }
     #[doc = "Bit 3 - IP triggered Command Sequences Error Detected interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn ipcmderren(&mut self) -> IpcmderrenW<IntenSpec> {
         IpcmderrenW::new(self, 3)
     }
     #[doc = "Bit 4 - AHB triggered Command Sequences Error Detected interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn ahbcmderren(&mut self) -> AhbcmderrenW<IntenSpec> {
         AhbcmderrenW::new(self, 4)
     }
     #[doc = "Bit 5 - IP RX FIFO WaterMark available interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn iprxwaen(&mut self) -> IprxwaenW<IntenSpec> {
         IprxwaenW::new(self, 5)
     }
     #[doc = "Bit 6 - IP TX FIFO WaterMark empty interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn iptxween(&mut self) -> IptxweenW<IntenSpec> {
         IptxweenW::new(self, 6)
     }
     #[doc = "Bit 7 - Data Learning failed interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn datalearnfailen(&mut self) -> DatalearnfailenW<IntenSpec> {
         DatalearnfailenW::new(self, 7)
     }
     #[doc = "Bit 8 - SCLK is stopped during command sequence because Async RX FIFO full interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn sckstopbyrden(&mut self) -> SckstopbyrdenW<IntenSpec> {
         SckstopbyrdenW::new(self, 8)
     }
     #[doc = "Bit 9 - SCLK is stopped during command sequence because Async TX FIFO empty interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn sckstopbywren(&mut self) -> SckstopbywrenW<IntenSpec> {
         SckstopbywrenW::new(self, 9)
     }
     #[doc = "Bit 10 - AHB Bus timeout interrupt.Refer Interrupts chapter for more details."]
     #[inline(always)]
-    #[must_use]
     pub fn ahbbustimeouten(&mut self) -> AhbbustimeoutenW<IntenSpec> {
         AhbbustimeoutenW::new(self, 10)
     }
     #[doc = "Bit 11 - Sequence execution timeout interrupt enable.Refer Interrupts chapter for more details."]
     #[inline(always)]
-    #[must_use]
     pub fn seqtimeouten(&mut self) -> SeqtimeoutenW<IntenSpec> {
         SeqtimeoutenW::new(self, 11)
     }

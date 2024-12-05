@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Reset HWVAD. Write back to 0 to release reset."]
     #[inline(always)]
-    #[must_use]
     pub fn rstt(&mut self) -> RsttW<HwvadrsttSpec> {
         RsttW::new(self, 0)
     }

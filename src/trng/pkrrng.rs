@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - Poker Range"]
     #[inline(always)]
-    #[must_use]
     pub fn pkr_rng(&mut self) -> PkrRngW<PkrrngSpec> {
         PkrRngW::new(self, 0)
     }

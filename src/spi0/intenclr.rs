@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 4 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn ssaen(&mut self) -> SsaenW<IntenclrSpec> {
         SsaenW::new(self, 4)
     }
     #[doc = "Bit 5 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn ssden(&mut self) -> SsdenW<IntenclrSpec> {
         SsdenW::new(self, 5)
     }
     #[doc = "Bit 8 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn mstidle(&mut self) -> MstidleW<IntenclrSpec> {
         MstidleW::new(self, 8)
     }

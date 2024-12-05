@@ -13,13 +13,11 @@ impl core::fmt::Debug for crate::generic::Reg<MwmsgSdrDataSpec> {
 impl W {
     #[doc = "Bits 0:15 - Data"]
     #[inline(always)]
-    #[must_use]
     pub fn data16b(&mut self) -> Data16bW<MwmsgSdrDataSpec> {
         Data16bW::new(self, 0)
     }
     #[doc = "Bit 16 - End of message"]
     #[inline(always)]
-    #[must_use]
     pub fn end(&mut self) -> EndW<MwmsgSdrDataSpec> {
         EndW::new(self, 16)
     }

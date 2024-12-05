@@ -128,13 +128,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Reads back with security level locked to, or 0. Writes as 0 to unlock, 1 to lock."]
     #[inline(always)]
-    #[must_use]
     pub fn lock(&mut self) -> LockW<LockSpec> {
         LockW::new(self, 0)
     }
     #[doc = "Bits 4:16 - Must be written as 0x73D to change the register."]
     #[inline(always)]
-    #[must_use]
     pub fn key(&mut self) -> KeyW<LockSpec> {
         KeyW::new(self, 4)
     }

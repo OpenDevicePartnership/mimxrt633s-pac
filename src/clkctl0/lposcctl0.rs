@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 31 - Clock ready flag status. LPOSC clock ready takes 64uS."]
     #[inline(always)]
-    #[must_use]
     pub fn clkrdy(&mut self) -> ClkrdyW<Lposcctl0Spec> {
         ClkrdyW::new(self, 31)
     }

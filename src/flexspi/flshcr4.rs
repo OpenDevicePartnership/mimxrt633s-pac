@@ -194,19 +194,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Write mask option bit 1. This option bit could be used to remove AHB write burst start address alignment limitation."]
     #[inline(always)]
-    #[must_use]
     pub fn wmopt1(&mut self) -> Wmopt1W<Flshcr4Spec> {
         Wmopt1W::new(self, 0)
     }
     #[doc = "Bit 2 - Write mask enable bit for flash device on port A. When write mask function is needed for memory device on port A, this bit must be set."]
     #[inline(always)]
-    #[must_use]
     pub fn wmena(&mut self) -> WmenaW<Flshcr4Spec> {
         WmenaW::new(self, 2)
     }
     #[doc = "Bit 3 - Write mask enable bit for flash device on port B. When write mask function is needed for memory device on port B, this bit must be set."]
     #[inline(always)]
-    #[must_use]
     pub fn wmenb(&mut self) -> WmenbW<Flshcr4Spec> {
         WmenbW::new(self, 3)
     }

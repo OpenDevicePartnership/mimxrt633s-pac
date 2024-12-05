@@ -457,85 +457,71 @@ impl core::fmt::Debug for crate::generic::Reg<Pscctl1SetSpec> {
 impl W {
     #[doc = "Bit 0 - HSGPIO0 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio0_clk_set(&mut self) -> Hsgpio0ClkSetW<Pscctl1SetSpec> {
         Hsgpio0ClkSetW::new(self, 0)
     }
     #[doc = "Bit 1 - HSGPIO1 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio1_clk_set(&mut self) -> Hsgpio1ClkSetW<Pscctl1SetSpec> {
         Hsgpio1ClkSetW::new(self, 1)
     }
     #[doc = "Bit 2 - HSGPIO2 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio2_clk_set(&mut self) -> Hsgpio2ClkSetW<Pscctl1SetSpec> {
         Hsgpio2ClkSetW::new(self, 2)
     }
     #[doc = "Bit 3 - HSGPIO3 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio3_clk_set(&mut self) -> Hsgpio3ClkSetW<Pscctl1SetSpec> {
         Hsgpio3ClkSetW::new(self, 3)
     }
     #[doc = "Bit 4 - HSGPIO4 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio4_clk_set(&mut self) -> Hsgpio4ClkSetW<Pscctl1SetSpec> {
         Hsgpio4ClkSetW::new(self, 4)
     }
     #[doc = "Bit 5 - HSGPIO5 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio5_clk_set(&mut self) -> Hsgpio5ClkSetW<Pscctl1SetSpec> {
         Hsgpio5ClkSetW::new(self, 5)
     }
     #[doc = "Bit 6 - HSGPIO6 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio6_clk_set(&mut self) -> Hsgpio6ClkSetW<Pscctl1SetSpec> {
         Hsgpio6ClkSetW::new(self, 6)
     }
     #[doc = "Bit 7 - HSGPIO7 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio7_clk_set(&mut self) -> Hsgpio7ClkSetW<Pscctl1SetSpec> {
         Hsgpio7ClkSetW::new(self, 7)
     }
     #[doc = "Bit 16 - CRC clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_clk_set(&mut self) -> CrcClkSetW<Pscctl1SetSpec> {
         CrcClkSetW::new(self, 16)
     }
     #[doc = "Bit 23 - DMAC0 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_clk_set(&mut self) -> Dmac0ClkSetW<Pscctl1SetSpec> {
         Dmac0ClkSetW::new(self, 23)
     }
     #[doc = "Bit 24 - DMAC1 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_clk_set(&mut self) -> Dmac1ClkSetW<Pscctl1SetSpec> {
         Dmac1ClkSetW::new(self, 24)
     }
     #[doc = "Bit 28 - MU clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn mu_clk_set(&mut self) -> MuClkSetW<Pscctl1SetSpec> {
         MuClkSetW::new(self, 28)
     }
     #[doc = "Bit 29 - SEMA clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn sema_clk_set(&mut self) -> SemaClkSetW<Pscctl1SetSpec> {
         SemaClkSetW::new(self, 29)
     }
     #[doc = "Bit 31 - FREQME clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn freqme_clk_set(&mut self) -> FreqmeClkSetW<Pscctl1SetSpec> {
         FreqmeClkSetW::new(self, 31)
     }

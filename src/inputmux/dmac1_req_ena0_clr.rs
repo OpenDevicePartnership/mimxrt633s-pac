@@ -969,181 +969,151 @@ impl core::fmt::Debug for crate::generic::Reg<Dmac1ReqEna0ClrSpec> {
 impl W {
     #[doc = "Bit 0 - FLEXCOMM0 RX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm0_rx(&mut self) -> Flexcomm0RxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm0RxW::new(self, 0)
     }
     #[doc = "Bit 1 - FLEXCOMM0 TX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm0_tx(&mut self) -> Flexcomm0TxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm0TxW::new(self, 1)
     }
     #[doc = "Bit 2 - FLEXCOMM1 RX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm1_rx(&mut self) -> Flexcomm1RxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm1RxW::new(self, 2)
     }
     #[doc = "Bit 3 - FLEXCOMM1 TX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm1_tx(&mut self) -> Flexcomm1TxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm1TxW::new(self, 3)
     }
     #[doc = "Bit 4 - FLEXCOMM2 RX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm2_rx(&mut self) -> Flexcomm2RxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm2RxW::new(self, 4)
     }
     #[doc = "Bit 5 - FLEXCOMM2 TX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm2_tx(&mut self) -> Flexcomm2TxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm2TxW::new(self, 5)
     }
     #[doc = "Bit 6 - FLEXCOMM3 RX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm3_rx(&mut self) -> Flexcomm3RxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm3RxW::new(self, 6)
     }
     #[doc = "Bit 7 - FLEXCOMM3 TX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm3_tx(&mut self) -> Flexcomm3TxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm3TxW::new(self, 7)
     }
     #[doc = "Bit 8 - FLEXCOMM4 RX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm4_rx(&mut self) -> Flexcomm4RxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm4RxW::new(self, 8)
     }
     #[doc = "Bit 9 - FLEXCOMM4 TX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm4_tx(&mut self) -> Flexcomm4TxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm4TxW::new(self, 9)
     }
     #[doc = "Bit 10 - FLEXCOMM5 RX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm5_rx(&mut self) -> Flexcomm5RxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm5RxW::new(self, 10)
     }
     #[doc = "Bit 11 - FLEXCOMM5 TX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm5_tx(&mut self) -> Flexcomm5TxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm5TxW::new(self, 11)
     }
     #[doc = "Bit 12 - FLEXCOMM6 RX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm6_rx(&mut self) -> Flexcomm6RxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm6RxW::new(self, 12)
     }
     #[doc = "Bit 13 - FLEXCOMM6 TX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm6_tx(&mut self) -> Flexcomm6TxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm6TxW::new(self, 13)
     }
     #[doc = "Bit 14 - FLEXCOMM7 RX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm7_rx(&mut self) -> Flexcomm7RxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm7RxW::new(self, 14)
     }
     #[doc = "Bit 15 - FLEXCOMM7 TX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm7_tx(&mut self) -> Flexcomm7TxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm7TxW::new(self, 15)
     }
     #[doc = "Bit 16 - DMIC0 channel 0 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0ch0(&mut self) -> Dmic0ch0W<Dmac1ReqEna0ClrSpec> {
         Dmic0ch0W::new(self, 16)
     }
     #[doc = "Bit 17 - DMIC0 channel 1 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0ch1(&mut self) -> Dmic0ch1W<Dmac1ReqEna0ClrSpec> {
         Dmic0ch1W::new(self, 17)
     }
     #[doc = "Bit 18 - DMIC0 channel 2 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0ch2(&mut self) -> Dmic0ch2W<Dmac1ReqEna0ClrSpec> {
         Dmic0ch2W::new(self, 18)
     }
     #[doc = "Bit 19 - DMIC0 channel 3 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0ch3(&mut self) -> Dmic0ch3W<Dmac1ReqEna0ClrSpec> {
         Dmic0ch3W::new(self, 19)
     }
     #[doc = "Bit 20 - DMIC0 channel 4 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0ch4(&mut self) -> Dmic0ch4W<Dmac1ReqEna0ClrSpec> {
         Dmic0ch4W::new(self, 20)
     }
     #[doc = "Bit 21 - DMIC0 channel 5 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0ch5(&mut self) -> Dmic0ch5W<Dmac1ReqEna0ClrSpec> {
         Dmic0ch5W::new(self, 21)
     }
     #[doc = "Bit 22 - DMIC0 channel 6 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0ch6(&mut self) -> Dmic0ch6W<Dmac1ReqEna0ClrSpec> {
         Dmic0ch6W::new(self, 22)
     }
     #[doc = "Bit 23 - DMIC0 channel 7 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0ch7(&mut self) -> Dmic0ch7W<Dmac1ReqEna0ClrSpec> {
         Dmic0ch7W::new(self, 23)
     }
     #[doc = "Bit 24 - I3C RX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn i3c0_rx(&mut self) -> I3c0RxW<Dmac1ReqEna0ClrSpec> {
         I3c0RxW::new(self, 24)
     }
     #[doc = "Bit 25 - I3C TX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn i3c0_tx(&mut self) -> I3c0TxW<Dmac1ReqEna0ClrSpec> {
         I3c0TxW::new(self, 25)
     }
     #[doc = "Bit 26 - FLEXCOMM14 RX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm14_rx(&mut self) -> Flexcomm14RxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm14RxW::new(self, 26)
     }
     #[doc = "Bit 27 - FLEXCOMM14 TX enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm14_tx(&mut self) -> Flexcomm14TxW<Dmac1ReqEna0ClrSpec> {
         Flexcomm14TxW::new(self, 27)
     }
     #[doc = "Bit 30 - Hash enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hashcrypt(&mut self) -> HashcryptW<Dmac1ReqEna0ClrSpec> {
         HashcryptW::new(self, 30)
     }
     #[doc = "Bit 31 - ESPI Channel 0 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn espi_ch0(&mut self) -> EspiCh0W<Dmac1ReqEna0ClrSpec> {
         EspiCh0W::new(self, 31)
     }

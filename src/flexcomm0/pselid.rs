@@ -373,13 +373,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - Peripheral Select. This field is writable by software."]
     #[inline(always)]
-    #[must_use]
     pub fn persel(&mut self) -> PerselW<PselidSpec> {
         PerselW::new(self, 0)
     }
     #[doc = "Bit 3 - Lock the peripheral select. This field is writable by software."]
     #[inline(always)]
-    #[must_use]
     pub fn lock(&mut self) -> LockW<PselidSpec> {
         LockW::new(self, 3)
     }

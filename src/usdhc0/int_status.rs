@@ -1174,127 +1174,106 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Command Complete"]
     #[inline(always)]
-    #[must_use]
     pub fn cc(&mut self) -> CcW<IntStatusSpec> {
         CcW::new(self, 0)
     }
     #[doc = "Bit 1 - Transfer Complete"]
     #[inline(always)]
-    #[must_use]
     pub fn tc(&mut self) -> TcW<IntStatusSpec> {
         TcW::new(self, 1)
     }
     #[doc = "Bit 2 - Block Gap Event"]
     #[inline(always)]
-    #[must_use]
     pub fn bge(&mut self) -> BgeW<IntStatusSpec> {
         BgeW::new(self, 2)
     }
     #[doc = "Bit 3 - DMA Interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn dint(&mut self) -> DintW<IntStatusSpec> {
         DintW::new(self, 3)
     }
     #[doc = "Bit 4 - Buffer Write Ready"]
     #[inline(always)]
-    #[must_use]
     pub fn bwr(&mut self) -> BwrW<IntStatusSpec> {
         BwrW::new(self, 4)
     }
     #[doc = "Bit 5 - Buffer Read Ready"]
     #[inline(always)]
-    #[must_use]
     pub fn brr(&mut self) -> BrrW<IntStatusSpec> {
         BrrW::new(self, 5)
     }
     #[doc = "Bit 6 - Card Insertion"]
     #[inline(always)]
-    #[must_use]
     pub fn cins(&mut self) -> CinsW<IntStatusSpec> {
         CinsW::new(self, 6)
     }
     #[doc = "Bit 7 - Card Removal"]
     #[inline(always)]
-    #[must_use]
     pub fn crm(&mut self) -> CrmW<IntStatusSpec> {
         CrmW::new(self, 7)
     }
     #[doc = "Bit 8 - Card Interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn cint(&mut self) -> CintW<IntStatusSpec> {
         CintW::new(self, 8)
     }
     #[doc = "Bit 12 - Re-Tuning Event: (only for SD3.0 SDR104 mode and EMMC HS200 mode)"]
     #[inline(always)]
-    #[must_use]
     pub fn rte(&mut self) -> RteW<IntStatusSpec> {
         RteW::new(self, 12)
     }
     #[doc = "Bit 14 - Tuning Pass:(only for SD3.0 SDR104 mode and EMMC HS200 mode)"]
     #[inline(always)]
-    #[must_use]
     pub fn tp(&mut self) -> TpW<IntStatusSpec> {
         TpW::new(self, 14)
     }
     #[doc = "Bit 16 - Command Timeout Error"]
     #[inline(always)]
-    #[must_use]
     pub fn ctoe(&mut self) -> CtoeW<IntStatusSpec> {
         CtoeW::new(self, 16)
     }
     #[doc = "Bit 17 - Command CRC Error"]
     #[inline(always)]
-    #[must_use]
     pub fn cce(&mut self) -> CceW<IntStatusSpec> {
         CceW::new(self, 17)
     }
     #[doc = "Bit 18 - Command End Bit Error"]
     #[inline(always)]
-    #[must_use]
     pub fn cebe(&mut self) -> CebeW<IntStatusSpec> {
         CebeW::new(self, 18)
     }
     #[doc = "Bit 19 - Command Index Error"]
     #[inline(always)]
-    #[must_use]
     pub fn cie(&mut self) -> CieW<IntStatusSpec> {
         CieW::new(self, 19)
     }
     #[doc = "Bit 20 - Data Timeout Error"]
     #[inline(always)]
-    #[must_use]
     pub fn dtoe(&mut self) -> DtoeW<IntStatusSpec> {
         DtoeW::new(self, 20)
     }
     #[doc = "Bit 21 - Data CRC Error"]
     #[inline(always)]
-    #[must_use]
     pub fn dce(&mut self) -> DceW<IntStatusSpec> {
         DceW::new(self, 21)
     }
     #[doc = "Bit 22 - Data End Bit Error"]
     #[inline(always)]
-    #[must_use]
     pub fn debe(&mut self) -> DebeW<IntStatusSpec> {
         DebeW::new(self, 22)
     }
     #[doc = "Bit 24 - Auto CMD12 Error"]
     #[inline(always)]
-    #[must_use]
     pub fn ac12e(&mut self) -> Ac12eW<IntStatusSpec> {
         Ac12eW::new(self, 24)
     }
     #[doc = "Bit 26 - Tuning Error: (only for SD3.0 SDR104 mode and EMMC HS200 mode)"]
     #[inline(always)]
-    #[must_use]
     pub fn tne(&mut self) -> TneW<IntStatusSpec> {
         TneW::new(self, 26)
     }
     #[doc = "Bit 28 - DMA Error"]
     #[inline(always)]
-    #[must_use]
     pub fn dmae(&mut self) -> DmaeW<IntStatusSpec> {
         DmaeW::new(self, 28)
     }

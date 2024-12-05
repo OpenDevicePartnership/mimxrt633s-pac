@@ -104,25 +104,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - Flash Read/Program Data Size (in Bytes) for IP command."]
     #[inline(always)]
-    #[must_use]
     pub fn idatsz(&mut self) -> IdatszW<Ipcr1Spec> {
         IdatszW::new(self, 0)
     }
     #[doc = "Bits 16:20 - Sequence Index in LUT for IP command."]
     #[inline(always)]
-    #[must_use]
     pub fn iseqid(&mut self) -> IseqidW<Ipcr1Spec> {
         IseqidW::new(self, 16)
     }
     #[doc = "Bits 24:26 - Sequence Number for IP command: ISEQNUM+1."]
     #[inline(always)]
-    #[must_use]
     pub fn iseqnum(&mut self) -> IseqnumW<Ipcr1Spec> {
         IseqnumW::new(self, 24)
     }
     #[doc = "Bit 31 - Parallel mode Enabled for IP command."]
     #[inline(always)]
-    #[must_use]
     pub fn iparen(&mut self) -> IparenW<Ipcr1Spec> {
         IparenW::new(self, 31)
     }

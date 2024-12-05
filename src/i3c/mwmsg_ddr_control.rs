@@ -13,13 +13,11 @@ impl core::fmt::Debug for crate::generic::Reg<MwmsgDdrControlSpec> {
 impl W {
     #[doc = "Bits 0:9 - Length of message"]
     #[inline(always)]
-    #[must_use]
     pub fn len(&mut self) -> LenW<MwmsgDdrControlSpec> {
         LenW::new(self, 0)
     }
     #[doc = "Bit 14 - End of message"]
     #[inline(always)]
-    #[must_use]
     pub fn end(&mut self) -> EndW<MwmsgDdrControlSpec> {
         EndW::new(self, 14)
     }

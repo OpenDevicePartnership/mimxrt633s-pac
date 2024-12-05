@@ -256,12 +256,12 @@ impl RegisterBlock {
     #[doc = "0xd0 - Master Write Message Data in SDR mode"]
     #[inline(always)]
     pub const fn mwmsg_sdr_data(&self) -> &MwmsgSdrData {
-        unsafe { &*(self as *const Self).cast::<u8>().add(208).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(208).cast() }
     }
     #[doc = "0xd0 - Master Write Message in SDR mode"]
     #[inline(always)]
     pub const fn mwmsg_sdr_control(&self) -> &MwmsgSdrControl {
-        unsafe { &*(self as *const Self).cast::<u8>().add(208).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(208).cast() }
     }
     #[doc = "0xd4 - Master Read Message in SDR mode"]
     #[inline(always)]
@@ -271,12 +271,12 @@ impl RegisterBlock {
     #[doc = "0xd8 - Master Write Message Data in DDR mode"]
     #[inline(always)]
     pub const fn mwmsg_ddr_data(&self) -> &MwmsgDdrData {
-        unsafe { &*(self as *const Self).cast::<u8>().add(216).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(216).cast() }
     }
     #[doc = "0xd8 - Master Write Message in DDR mode"]
     #[inline(always)]
     pub const fn mwmsg_ddr_control(&self) -> &MwmsgDdrControl {
-        unsafe { &*(self as *const Self).cast::<u8>().add(216).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(216).cast() }
     }
     #[doc = "0xdc - Master Read Message in DDR mode"]
     #[inline(always)]

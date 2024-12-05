@@ -433,55 +433,46 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 4:7 - Divisor"]
     #[inline(always)]
-    #[must_use]
     pub fn dvs(&mut self) -> DvsW<SysCtrlSpec> {
         DvsW::new(self, 4)
     }
     #[doc = "Bits 8:15 - SDCLK Frequency Select"]
     #[inline(always)]
-    #[must_use]
     pub fn sdclkfs(&mut self) -> SdclkfsW<SysCtrlSpec> {
         SdclkfsW::new(self, 8)
     }
     #[doc = "Bits 16:19 - Data Timeout Counter Value"]
     #[inline(always)]
-    #[must_use]
     pub fn dtocv(&mut self) -> DtocvW<SysCtrlSpec> {
         DtocvW::new(self, 16)
     }
     #[doc = "Bit 23 - IPP_RST_N"]
     #[inline(always)]
-    #[must_use]
     pub fn ipp_rst_n(&mut self) -> IppRstNW<SysCtrlSpec> {
         IppRstNW::new(self, 23)
     }
     #[doc = "Bit 24 - Software Reset For ALL"]
     #[inline(always)]
-    #[must_use]
     pub fn rsta(&mut self) -> RstaW<SysCtrlSpec> {
         RstaW::new(self, 24)
     }
     #[doc = "Bit 25 - Software Reset For CMD Line"]
     #[inline(always)]
-    #[must_use]
     pub fn rstc(&mut self) -> RstcW<SysCtrlSpec> {
         RstcW::new(self, 25)
     }
     #[doc = "Bit 26 - Software Reset For DATA Line"]
     #[inline(always)]
-    #[must_use]
     pub fn rstd(&mut self) -> RstdW<SysCtrlSpec> {
         RstdW::new(self, 26)
     }
     #[doc = "Bit 27 - Initialization Active"]
     #[inline(always)]
-    #[must_use]
     pub fn inita(&mut self) -> InitaW<SysCtrlSpec> {
         InitaW::new(self, 27)
     }
     #[doc = "Bit 28 - Reset Tuning"]
     #[inline(always)]
-    #[must_use]
     pub fn rstt(&mut self) -> RsttW<SysCtrlSpec> {
         RsttW::new(self, 28)
     }

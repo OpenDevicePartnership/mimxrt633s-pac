@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<Fifowr48hSpec> {
 impl W {
     #[doc = "Bits 0:23 - Transmit data to the FIFO. Whether this register is used and the number of bits used depends on configuration details."]
     #[inline(always)]
-    #[must_use]
     pub fn txdata(&mut self) -> TxdataW<Fifowr48hSpec> {
         TxdataW::new(self, 0)
     }

@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<FeedSpec> {
 impl W {
     #[doc = "Bits 0:7 - Feed value should be 0xAA followed by 0x55."]
     #[inline(always)]
-    #[must_use]
     pub fn feed(&mut self) -> FeedW<FeedSpec> {
         FeedW::new(self, 0)
     }

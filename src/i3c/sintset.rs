@@ -124,67 +124,56 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 8 - Start interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn start(&mut self) -> StartW<SintsetSpec> {
         StartW::new(self, 8)
     }
     #[doc = "Bit 9 - Match interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn matched(&mut self) -> MatchedW<SintsetSpec> {
         MatchedW::new(self, 9)
     }
     #[doc = "Bit 10 - Stop interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn stop(&mut self) -> StopW<SintsetSpec> {
         StopW::new(self, 10)
     }
     #[doc = "Bit 11 - Receive interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn rxpend(&mut self) -> RxpendW<SintsetSpec> {
         RxpendW::new(self, 11)
     }
     #[doc = "Bit 12 - Transmit interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn txsend(&mut self) -> TxsendW<SintsetSpec> {
         TxsendW::new(self, 12)
     }
     #[doc = "Bit 13 - Dynamic address change interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dachg(&mut self) -> DachgW<SintsetSpec> {
         DachgW::new(self, 13)
     }
     #[doc = "Bit 14 - Common Command Code (CCC) (that was not handled by I3C module) interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ccc(&mut self) -> CccW<SintsetSpec> {
         CccW::new(self, 14)
     }
     #[doc = "Bit 15 - Error/warning interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn errwarn(&mut self) -> ErrwarnW<SintsetSpec> {
         ErrwarnW::new(self, 15)
     }
     #[doc = "Bit 16 - Double Data Rate (DDR) interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ddrmatched(&mut self) -> DdrmatchedW<SintsetSpec> {
         DdrmatchedW::new(self, 16)
     }
     #[doc = "Bit 17 - Common Command Code (CCC) (that was handled by I3C module) interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn chandled(&mut self) -> ChandledW<SintsetSpec> {
         ChandledW::new(self, 17)
     }
     #[doc = "Bit 18 - Event interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn event(&mut self) -> EventW<SintsetSpec> {
         EventW::new(self, 18)
     }

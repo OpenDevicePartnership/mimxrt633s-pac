@@ -13,13 +13,11 @@ impl core::fmt::Debug for crate::generic::Reg<SwdataheSpec> {
 impl W {
     #[doc = "Bits 0:7 - The 1st byte to send to the master"]
     #[inline(always)]
-    #[must_use]
     pub fn data0(&mut self) -> Data0W<SwdataheSpec> {
         Data0W::new(self, 0)
     }
     #[doc = "Bits 8:15 - The 2nd byte to send to the master"]
     #[inline(always)]
-    #[must_use]
     pub fn data1(&mut self) -> Data1W<SwdataheSpec> {
         Data1W::new(self, 8)
     }

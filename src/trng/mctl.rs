@@ -282,43 +282,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Sample Mode"]
     #[inline(always)]
-    #[must_use]
     pub fn samp_mode(&mut self) -> SampModeW<MctlSpec> {
         SampModeW::new(self, 0)
     }
     #[doc = "Bits 2:3 - Oscillator Divide"]
     #[inline(always)]
-    #[must_use]
     pub fn osc_div(&mut self) -> OscDivW<MctlSpec> {
         OscDivW::new(self, 2)
     }
     #[doc = "Bit 5 - TRNG Access Mode"]
     #[inline(always)]
-    #[must_use]
     pub fn trng_acc(&mut self) -> TrngAccW<MctlSpec> {
         TrngAccW::new(self, 5)
     }
     #[doc = "Bit 6 - Reset Defaults"]
     #[inline(always)]
-    #[must_use]
     pub fn rst_def(&mut self) -> RstDefW<MctlSpec> {
         RstDefW::new(self, 6)
     }
     #[doc = "Bit 7 - Force System Clock"]
     #[inline(always)]
-    #[must_use]
     pub fn for_sclk(&mut self) -> ForSclkW<MctlSpec> {
         ForSclkW::new(self, 7)
     }
     #[doc = "Bit 12 - Read: Error status"]
     #[inline(always)]
-    #[must_use]
     pub fn err(&mut self) -> ErrW<MctlSpec> {
         ErrW::new(self, 12)
     }
     #[doc = "Bit 16 - Programming Mode Select"]
     #[inline(always)]
-    #[must_use]
     pub fn prgm(&mut self) -> PrgmW<MctlSpec> {
         PrgmW::new(self, 16)
     }

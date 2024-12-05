@@ -510,7 +510,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:5 - DSP Input(n) Selection. 34:1 Selection for each. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_int_sel(&mut self) -> DspIntSelW<DspIntSelSpec> {
         DspIntSelW::new(self, 0)
     }

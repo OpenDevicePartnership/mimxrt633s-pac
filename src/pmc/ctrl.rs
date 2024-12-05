@@ -614,61 +614,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Apply updated PMC PDRUNCFG bits (SRAM power gates, RBB, FBB, LVD, and HVD control bits) and/or RUNCTRL setting"]
     #[inline(always)]
-    #[must_use]
     pub fn applycfg(&mut self) -> ApplycfgW<CtrlSpec> {
         ApplycfgW::new(self, 0)
     }
     #[doc = "Bit 4 - Enable analog buffer for references or ATX2"]
     #[inline(always)]
-    #[must_use]
     pub fn bufen(&mut self) -> BufenW<CtrlSpec> {
         BufenW::new(self, 4)
     }
     #[doc = "Bit 20 - vddcore Low-Voltage Detector Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn lvdcoreie(&mut self) -> LvdcoreieW<CtrlSpec> {
         LvdcoreieW::new(self, 20)
     }
     #[doc = "Bit 21 - vddcore Low-Voltage Detector Reset Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn lvdcorere(&mut self) -> LvdcorereW<CtrlSpec> {
         LvdcorereW::new(self, 21)
     }
     #[doc = "Bit 22 - vddcore High-Voltage Detector Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn hvdcoreie(&mut self) -> HvdcoreieW<CtrlSpec> {
         HvdcoreieW::new(self, 22)
     }
     #[doc = "Bit 23 - vddcore High-Voltage Detector Reset Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn hvdcorere(&mut self) -> HvdcorereW<CtrlSpec> {
         HvdcorereW::new(self, 23)
     }
     #[doc = "Bit 24 - vdd1v8 High-Voltage Detector Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn hvd1v8ie(&mut self) -> Hvd1v8ieW<CtrlSpec> {
         Hvd1v8ieW::new(self, 24)
     }
     #[doc = "Bit 25 - vdd1v8 High-Voltage Detector Reset Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn hvd1v8re(&mut self) -> Hvd1v8reW<CtrlSpec> {
         Hvd1v8reW::new(self, 25)
     }
     #[doc = "Bit 28 - PMC automatic wakeup enable and interrupt enable"]
     #[inline(always)]
-    #[must_use]
     pub fn autowken(&mut self) -> AutowkenW<CtrlSpec> {
         AutowkenW::new(self, 28)
     }
     #[doc = "Bit 29 - PMIC interrupt pin enable"]
     #[inline(always)]
-    #[must_use]
     pub fn intrpaden(&mut self) -> IntrpadenW<CtrlSpec> {
         IntrpadenW::new(self, 29)
     }

@@ -929,67 +929,56 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - Shared SCK Select. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn sharedscksel(&mut self) -> SharedsckselW<SharedctrlsetSpec> {
         SharedsckselW::new(self, 0)
     }
     #[doc = "Bits 4:6 - Shared WS Select. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn sharedwssel(&mut self) -> SharedwsselW<SharedctrlsetSpec> {
         SharedwsselW::new(self, 4)
     }
     #[doc = "Bits 8:10 - Shared DATA Select. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn shareddatasel(&mut self) -> ShareddataselW<SharedctrlsetSpec> {
         ShareddataselW::new(self, 8)
     }
     #[doc = "Bit 16 - FLEXCOMM0 DATAOUT OUTPUT ENABLE"]
     #[inline(always)]
-    #[must_use]
     pub fn fc0dataouten(&mut self) -> Fc0dataoutenW<SharedctrlsetSpec> {
         Fc0dataoutenW::new(self, 16)
     }
     #[doc = "Bit 17 - FLEXCOMM1 DATAOUT OUTPUT ENABLE"]
     #[inline(always)]
-    #[must_use]
     pub fn fc1dataouten(&mut self) -> Fc1dataoutenW<SharedctrlsetSpec> {
         Fc1dataoutenW::new(self, 17)
     }
     #[doc = "Bit 18 - FLEXCOMM2 DATAOUT OUTPUT ENABLE"]
     #[inline(always)]
-    #[must_use]
     pub fn f20dataouten(&mut self) -> F20dataoutenW<SharedctrlsetSpec> {
         F20dataoutenW::new(self, 18)
     }
     #[doc = "Bit 19 - FLEXCOMM3 DATAOUT OUTPUT ENABLE"]
     #[inline(always)]
-    #[must_use]
     pub fn fc3dataouten(&mut self) -> Fc3dataoutenW<SharedctrlsetSpec> {
         Fc3dataoutenW::new(self, 19)
     }
     #[doc = "Bit 20 - FLEXCOMM4 DATAOUT OUTPUT ENABLE"]
     #[inline(always)]
-    #[must_use]
     pub fn fc4dataouten(&mut self) -> Fc4dataoutenW<SharedctrlsetSpec> {
         Fc4dataoutenW::new(self, 20)
     }
     #[doc = "Bit 21 - FLEXCOMM5 DATAOUT OUTPUT ENABLE"]
     #[inline(always)]
-    #[must_use]
     pub fn fc5dataouten(&mut self) -> Fc5dataoutenW<SharedctrlsetSpec> {
         Fc5dataoutenW::new(self, 21)
     }
     #[doc = "Bit 22 - FLEXCOMM6 DATAOUT OUTPUT ENABLE"]
     #[inline(always)]
-    #[must_use]
     pub fn fc6dataouten(&mut self) -> Fc6dataoutenW<SharedctrlsetSpec> {
         Fc6dataoutenW::new(self, 22)
     }
     #[doc = "Bit 23 - FLEXCOMM7 DATAOUT OUTPUT ENABLE"]
     #[inline(always)]
-    #[must_use]
     pub fn fc7dataouten(&mut self) -> Fc7dataoutenW<SharedctrlsetSpec> {
         Fc7dataoutenW::new(self, 23)
     }

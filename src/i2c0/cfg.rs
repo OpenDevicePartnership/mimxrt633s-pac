@@ -374,37 +374,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Master Enable. When disabled, configurations settings for the Master function are not changed, but the Master function is internally reset."]
     #[inline(always)]
-    #[must_use]
     pub fn msten(&mut self) -> MstenW<CfgSpec> {
         MstenW::new(self, 0)
     }
     #[doc = "Bit 1 - Slave Enable. When disabled, configurations settings for the Slave function are not changed, but the Slave function is internally reset."]
     #[inline(always)]
-    #[must_use]
     pub fn slven(&mut self) -> SlvenW<CfgSpec> {
         SlvenW::new(self, 1)
     }
     #[doc = "Bit 2 - Monitor Enable. When disabled, configurations settings for the Monitor function are not changed, but the Monitor function is internally reset."]
     #[inline(always)]
-    #[must_use]
     pub fn monen(&mut self) -> MonenW<CfgSpec> {
         MonenW::new(self, 2)
     }
     #[doc = "Bit 3 - I2C bus Time-out Enable. When disabled, the time-out function is internally reset."]
     #[inline(always)]
-    #[must_use]
     pub fn timeouten(&mut self) -> TimeoutenW<CfgSpec> {
         TimeoutenW::new(self, 3)
     }
     #[doc = "Bit 4 - Monitor function Clock Stretching."]
     #[inline(always)]
-    #[must_use]
     pub fn monclkstr(&mut self) -> MonclkstrW<CfgSpec> {
         MonclkstrW::new(self, 4)
     }
     #[doc = "Bit 5 - High-speed mode Capable enable. Since High Speed mode alters the way I2C pins drive and filter, as well as the timing for certain I2C signalling, enabling High-speed mode applies to all functions: Master, Slave, and Monitor."]
     #[inline(always)]
-    #[must_use]
     pub fn hscapable(&mut self) -> HscapableW<CfgSpec> {
         HscapableW::new(self, 5)
     }

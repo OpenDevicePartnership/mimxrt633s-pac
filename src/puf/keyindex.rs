@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Key index for Set Key operations"]
     #[inline(always)]
-    #[must_use]
     pub fn keyidx(&mut self) -> KeyidxW<KeyindexSpec> {
         KeyidxW::new(self, 0)
     }

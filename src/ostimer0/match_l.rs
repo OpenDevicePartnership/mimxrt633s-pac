@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - The value written to the MATCH (L/H) register pair is compared against the central EVTIMER. When a match occurs, an interrupt request is generated if enabled. A separate pair of MATCH registers are implemented for each CPU. Each CPU reads its own local value at the same pair of addresses."]
     #[inline(always)]
-    #[must_use]
     pub fn match_value(&mut self) -> MatchValueW<MatchLSpec> {
         MatchValueW::new(self, 0)
     }

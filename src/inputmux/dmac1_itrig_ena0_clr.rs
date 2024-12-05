@@ -1003,193 +1003,161 @@ impl core::fmt::Debug for crate::generic::Reg<Dmac1ItrigEna0ClrSpec> {
 impl W {
     #[doc = "Bit 0 - DMAC1 input trigger inmux 0 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux0(&mut self) -> Dmac1ItrigInmux0W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux0W::new(self, 0)
     }
     #[doc = "Bit 1 - DMAC1 input trigger inmux 1 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux1(&mut self) -> Dmac1ItrigInmux1W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux1W::new(self, 1)
     }
     #[doc = "Bit 2 - DMAC1 input trigger inmux 2 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux2(&mut self) -> Dmac1ItrigInmux2W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux2W::new(self, 2)
     }
     #[doc = "Bit 3 - DMAC1 input trigger inmux 3 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux3(&mut self) -> Dmac1ItrigInmux3W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux3W::new(self, 3)
     }
     #[doc = "Bit 4 - DMAC1 input trigger inmux 4 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux4(&mut self) -> Dmac1ItrigInmux4W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux4W::new(self, 4)
     }
     #[doc = "Bit 5 - DMAC1 input trigger inmux 5 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux5(&mut self) -> Dmac1ItrigInmux5W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux5W::new(self, 5)
     }
     #[doc = "Bit 6 - DMAC1 input trigger inmux 6 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux6(&mut self) -> Dmac1ItrigInmux6W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux6W::new(self, 6)
     }
     #[doc = "Bit 7 - DMAC1 input trigger inmux 7 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux7(&mut self) -> Dmac1ItrigInmux7W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux7W::new(self, 7)
     }
     #[doc = "Bit 8 - DMAC1 input trigger inmux 8 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux8(&mut self) -> Dmac1ItrigInmux8W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux8W::new(self, 8)
     }
     #[doc = "Bit 9 - DMAC1 input trigger inmux 9 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux9(&mut self) -> Dmac1ItrigInmux9W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux9W::new(self, 9)
     }
     #[doc = "Bit 10 - DMAC1 input trigger inmux 10 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux10(&mut self) -> Dmac1ItrigInmux10W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux10W::new(self, 10)
     }
     #[doc = "Bit 11 - DMAC1 input trigger inmux 11 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux11(&mut self) -> Dmac1ItrigInmux11W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux11W::new(self, 11)
     }
     #[doc = "Bit 12 - DMAC1 input trigger inmux 12 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux12(&mut self) -> Dmac1ItrigInmux12W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux12W::new(self, 12)
     }
     #[doc = "Bit 13 - DMAC1 input trigger inmux 13 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux13(&mut self) -> Dmac1ItrigInmux13W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux13W::new(self, 13)
     }
     #[doc = "Bit 14 - DMAC1 input trigger inmux 14 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux14(&mut self) -> Dmac1ItrigInmux14W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux14W::new(self, 14)
     }
     #[doc = "Bit 15 - DMAC1 input trigger inmux 15 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux15(&mut self) -> Dmac1ItrigInmux15W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux15W::new(self, 15)
     }
     #[doc = "Bit 16 - DMAC1 input trigger inmux 16 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux16(&mut self) -> Dmac1ItrigInmux16W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux16W::new(self, 16)
     }
     #[doc = "Bit 17 - DMAC1 input trigger inmux 17 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux17(&mut self) -> Dmac1ItrigInmux17W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux17W::new(self, 17)
     }
     #[doc = "Bit 18 - DMAC1 input trigger inmux 18 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux18(&mut self) -> Dmac1ItrigInmux18W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux18W::new(self, 18)
     }
     #[doc = "Bit 19 - DMAC1 input trigger inmux 19 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux19(&mut self) -> Dmac1ItrigInmux19W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux19W::new(self, 19)
     }
     #[doc = "Bit 20 - DMAC1 input trigger inmux 20 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux20(&mut self) -> Dmac1ItrigInmux20W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux20W::new(self, 20)
     }
     #[doc = "Bit 21 - DMAC1 input trigger inmux 21 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux21(&mut self) -> Dmac1ItrigInmux21W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux21W::new(self, 21)
     }
     #[doc = "Bit 22 - DMAC1 input trigger inmux 22 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux22(&mut self) -> Dmac1ItrigInmux22W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux22W::new(self, 22)
     }
     #[doc = "Bit 23 - DMAC1 input trigger inmux 23 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux23(&mut self) -> Dmac1ItrigInmux23W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux23W::new(self, 23)
     }
     #[doc = "Bit 24 - DMAC1 input trigger inmux 24 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux24(&mut self) -> Dmac1ItrigInmux24W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux24W::new(self, 24)
     }
     #[doc = "Bit 25 - DMAC1 input trigger inmux 25 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux25(&mut self) -> Dmac1ItrigInmux25W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux25W::new(self, 25)
     }
     #[doc = "Bit 26 - DMAC1 input trigger inmux 25 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux26(&mut self) -> Dmac1ItrigInmux26W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux26W::new(self, 26)
     }
     #[doc = "Bit 27 - DMAC1 input trigger inmux 25 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux27(&mut self) -> Dmac1ItrigInmux27W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux27W::new(self, 27)
     }
     #[doc = "Bit 28 - DMAC1 input trigger inmux 25 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux28(&mut self) -> Dmac1ItrigInmux28W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux28W::new(self, 28)
     }
     #[doc = "Bit 29 - DMAC1 input trigger inmux 25 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux29(&mut self) -> Dmac1ItrigInmux29W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux29W::new(self, 29)
     }
     #[doc = "Bit 30 - DMAC1 input trigger inmux 25 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux30(&mut self) -> Dmac1ItrigInmux30W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux30W::new(self, 30)
     }
     #[doc = "Bit 31 - DMAC1 input trigger inmux 25 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_itrig_inmux31(&mut self) -> Dmac1ItrigInmux31W<Dmac1ItrigEna0ClrSpec> {
         Dmac1ItrigInmux31W::new(self, 31)
     }

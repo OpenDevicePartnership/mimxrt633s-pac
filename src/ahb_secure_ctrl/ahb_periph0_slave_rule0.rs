@@ -94,49 +94,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - 0x40100000--0x40103FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio_rule(&mut self) -> HsgpioRuleW<AhbPeriph0SlaveRule0Spec> {
         HsgpioRuleW::new(self, 0)
     }
     #[doc = "Bits 4:5 - 0x40104000--0x40104FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn dma0_rule(&mut self) -> Dma0RuleW<AhbPeriph0SlaveRule0Spec> {
         Dma0RuleW::new(self, 4)
     }
     #[doc = "Bits 8:9 - 0x40105000--0x40105FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn dma1_rule(&mut self) -> Dma1RuleW<AhbPeriph0SlaveRule0Spec> {
         Dma1RuleW::new(self, 8)
     }
     #[doc = "Bits 12:13 - 0x40106000--0x40106FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm0_rule(&mut self) -> Flexcomm0RuleW<AhbPeriph0SlaveRule0Spec> {
         Flexcomm0RuleW::new(self, 12)
     }
     #[doc = "Bits 16:17 - 0x40107000--0x40107FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm1_rule(&mut self) -> Flexcomm1RuleW<AhbPeriph0SlaveRule0Spec> {
         Flexcomm1RuleW::new(self, 16)
     }
     #[doc = "Bits 20:21 - 0x40108000--0x40108FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm2_rule(&mut self) -> Flexcomm2RuleW<AhbPeriph0SlaveRule0Spec> {
         Flexcomm2RuleW::new(self, 20)
     }
     #[doc = "Bits 24:25 - 0x40109000--0x40109FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm3_rule(&mut self) -> Flexcomm3RuleW<AhbPeriph0SlaveRule0Spec> {
         Flexcomm3RuleW::new(self, 24)
     }
     #[doc = "Bits 28:29 - 0x4010F000--0x4010FFFF"]
     #[inline(always)]
-    #[must_use]
     pub fn debug_mailbox_rule(&mut self) -> DebugMailboxRuleW<AhbPeriph0SlaveRule0Spec> {
         DebugMailboxRuleW::new(self, 28)
     }

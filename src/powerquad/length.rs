@@ -36,7 +36,6 @@ impl W {
 , cols_a = inst_length\\[12:8\\]
 , cols_b = inst_length\\[20:16\\]"]
     #[inline(always)]
-    #[must_use]
     pub fn inst_length(&mut self) -> InstLengthW<LengthSpec> {
         InstLengthW::new(self, 0)
     }

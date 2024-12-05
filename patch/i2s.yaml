@@ -1,0 +1,12 @@
+I2S0:
+  SECCHANNEL*:
+    _modify:
+      PCFG1:
+        addressOffset: 0x00
+      PCFG2:
+        addressOffset: 0x04
+      PSTAT:
+        addressOffset: 0x08
+  _modify:
+    SECCHANNEL*:
+      addressOffset: 0xc20

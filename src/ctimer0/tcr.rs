@@ -137,13 +137,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Counter enable."]
     #[inline(always)]
-    #[must_use]
     pub fn cen(&mut self) -> CenW<TcrSpec> {
         CenW::new(self, 0)
     }
     #[doc = "Bit 1 - Counter reset."]
     #[inline(always)]
-    #[must_use]
     pub fn crst(&mut self) -> CrstW<TcrSpec> {
         CrstW::new(self, 1)
     }

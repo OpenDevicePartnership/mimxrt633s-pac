@@ -1114,121 +1114,101 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - State UNKNOWN 0."]
     #[inline(always)]
-    #[must_use]
     pub fn su0(&mut self) -> Su0W<CppwrSpec> {
         Su0W::new(self, 0)
     }
     #[doc = "Bit 1 - State UNKNOWN Secure only 0."]
     #[inline(always)]
-    #[must_use]
     pub fn sus0(&mut self) -> Sus0W<CppwrSpec> {
         Sus0W::new(self, 1)
     }
     #[doc = "Bit 2 - State UNKNOWN 1."]
     #[inline(always)]
-    #[must_use]
     pub fn su1(&mut self) -> Su1W<CppwrSpec> {
         Su1W::new(self, 2)
     }
     #[doc = "Bit 3 - State UNKNOWN Secure only 1."]
     #[inline(always)]
-    #[must_use]
     pub fn sus1(&mut self) -> Sus1W<CppwrSpec> {
         Sus1W::new(self, 3)
     }
     #[doc = "Bit 4 - State UNKNOWN 2."]
     #[inline(always)]
-    #[must_use]
     pub fn su2(&mut self) -> Su2W<CppwrSpec> {
         Su2W::new(self, 4)
     }
     #[doc = "Bit 5 - State UNKNOWN Secure only 2."]
     #[inline(always)]
-    #[must_use]
     pub fn sus2(&mut self) -> Sus2W<CppwrSpec> {
         Sus2W::new(self, 5)
     }
     #[doc = "Bit 6 - State UNKNOWN 3."]
     #[inline(always)]
-    #[must_use]
     pub fn su3(&mut self) -> Su3W<CppwrSpec> {
         Su3W::new(self, 6)
     }
     #[doc = "Bit 7 - State UNKNOWN Secure only 3."]
     #[inline(always)]
-    #[must_use]
     pub fn sus3(&mut self) -> Sus3W<CppwrSpec> {
         Sus3W::new(self, 7)
     }
     #[doc = "Bit 8 - State UNKNOWN 4."]
     #[inline(always)]
-    #[must_use]
     pub fn su4(&mut self) -> Su4W<CppwrSpec> {
         Su4W::new(self, 8)
     }
     #[doc = "Bit 9 - State UNKNOWN Secure only 4."]
     #[inline(always)]
-    #[must_use]
     pub fn sus4(&mut self) -> Sus4W<CppwrSpec> {
         Sus4W::new(self, 9)
     }
     #[doc = "Bit 10 - State UNKNOWN 5."]
     #[inline(always)]
-    #[must_use]
     pub fn su5(&mut self) -> Su5W<CppwrSpec> {
         Su5W::new(self, 10)
     }
     #[doc = "Bit 11 - State UNKNOWN Secure only 5."]
     #[inline(always)]
-    #[must_use]
     pub fn sus5(&mut self) -> Sus5W<CppwrSpec> {
         Sus5W::new(self, 11)
     }
     #[doc = "Bit 12 - State UNKNOWN 6."]
     #[inline(always)]
-    #[must_use]
     pub fn su6(&mut self) -> Su6W<CppwrSpec> {
         Su6W::new(self, 12)
     }
     #[doc = "Bit 13 - State UNKNOWN Secure only 6."]
     #[inline(always)]
-    #[must_use]
     pub fn sus6(&mut self) -> Sus6W<CppwrSpec> {
         Sus6W::new(self, 13)
     }
     #[doc = "Bit 14 - State UNKNOWN 7."]
     #[inline(always)]
-    #[must_use]
     pub fn su7(&mut self) -> Su7W<CppwrSpec> {
         Su7W::new(self, 14)
     }
     #[doc = "Bit 15 - State UNKNOWN Secure only 7."]
     #[inline(always)]
-    #[must_use]
     pub fn sus7(&mut self) -> Sus7W<CppwrSpec> {
         Sus7W::new(self, 15)
     }
     #[doc = "Bit 20 - State UNKNOWN 10."]
     #[inline(always)]
-    #[must_use]
     pub fn su10(&mut self) -> Su10W<CppwrSpec> {
         Su10W::new(self, 20)
     }
     #[doc = "Bit 21 - State UNKNOWN Secure only 10."]
     #[inline(always)]
-    #[must_use]
     pub fn sus10(&mut self) -> Sus10W<CppwrSpec> {
         Sus10W::new(self, 21)
     }
     #[doc = "Bit 22 - State UNKNOWN 11."]
     #[inline(always)]
-    #[must_use]
     pub fn su11(&mut self) -> Su11W<CppwrSpec> {
         Su11W::new(self, 22)
     }
     #[doc = "Bit 23 - State UNKNOWN Secure only 11."]
     #[inline(always)]
-    #[must_use]
     pub fn sus11(&mut self) -> Sus11W<CppwrSpec> {
         Sus11W::new(self, 23)
     }

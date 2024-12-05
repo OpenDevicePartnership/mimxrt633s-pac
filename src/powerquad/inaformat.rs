@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Input A Internal format (00: q15; 01:q31; 10:float)"]
     #[inline(always)]
-    #[must_use]
     pub fn ina_formatint(&mut self) -> InaFormatintW<InaformatSpec> {
         InaFormatintW::new(self, 0)
     }
     #[doc = "Bits 4:5 - Input A External format (00: q15; 01:q31; 10:float)"]
     #[inline(always)]
-    #[must_use]
     pub fn ina_formatext(&mut self) -> InaFormatextW<InaformatSpec> {
         InaFormatextW::new(self, 4)
     }
     #[doc = "Bits 8:15 - Input A Scaler value (for scaled 'q31' formats)"]
     #[inline(always)]
-    #[must_use]
     pub fn ina_scaler(&mut self) -> InaScalerW<InaformatSpec> {
         InaScalerW::new(self, 8)
     }

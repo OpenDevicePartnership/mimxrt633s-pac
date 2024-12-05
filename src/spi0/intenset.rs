@@ -194,19 +194,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 4 - Slave select assert interrupt enable. Determines whether an interrupt occurs when the Slave Select is asserted."]
     #[inline(always)]
-    #[must_use]
     pub fn ssaen(&mut self) -> SsaenW<IntensetSpec> {
         SsaenW::new(self, 4)
     }
     #[doc = "Bit 5 - Slave select deassert interrupt enable. Determines whether an interrupt occurs when the Slave Select is deasserted."]
     #[inline(always)]
-    #[must_use]
     pub fn ssden(&mut self) -> SsdenW<IntensetSpec> {
         SsdenW::new(self, 5)
     }
     #[doc = "Bit 8 - Master idle interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn mstidleen(&mut self) -> MstidleenW<IntensetSpec> {
         MstidleenW::new(self, 8)
     }

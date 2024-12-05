@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:29 - This field contains the numerator of the AUDIOPLL0 fractional loop divider. NOTES: 1. The value of numerator must always be configured to be less than the value of the denominator. 2. The AUDIOPLL0NUM register can only be changed when the AUDIOPLL0 is disabled."]
     #[inline(always)]
-    #[must_use]
     pub fn num(&mut self) -> NumW<Audiopll0numSpec> {
         NumW::new(self, 0)
     }

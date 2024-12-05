@@ -54,25 +54,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - 0x4013 8000--0x4013 8FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn rng_rule(&mut self) -> RngRuleW<AipsBridge1MemRule1Spec> {
         RngRuleW::new(self, 0)
     }
     #[doc = "Bits 4:5 - 0x4013 9000--0x4013 9FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn acmp0_rule(&mut self) -> Acmp0RuleW<AipsBridge1MemRule1Spec> {
         Acmp0RuleW::new(self, 4)
     }
     #[doc = "Bits 8:9 - 0x4013 A000--0x4013 AFFF"]
     #[inline(always)]
-    #[must_use]
     pub fn adc0_rule(&mut self) -> Adc0RuleW<AipsBridge1MemRule1Spec> {
         Adc0RuleW::new(self, 8)
     }
     #[doc = "Bits 12:13 - 0x4013 B000--0x4013 BFFF"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_hs_phy_rule(&mut self) -> UsbHsPhyRuleW<AipsBridge1MemRule1Spec> {
         UsbHsPhyRuleW::new(self, 12)
     }

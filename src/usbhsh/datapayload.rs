@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 16:31 - Base address to be used by the hardware to find the start of the data payload section."]
     #[inline(always)]
-    #[must_use]
     pub fn dat_base(&mut self) -> DatBaseW<DatapayloadSpec> {
         DatBaseW::new(self, 16)
     }

@@ -54,25 +54,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - co-processor scaling of input"]
     #[inline(always)]
-    #[must_use]
     pub fn cppre_in(&mut self) -> CppreInW<CppreSpec> {
         CppreInW::new(self, 0)
     }
     #[doc = "Bits 8:15 - co-processor fixed point output"]
     #[inline(always)]
-    #[must_use]
     pub fn cppre_out(&mut self) -> CppreOutW<CppreSpec> {
         CppreOutW::new(self, 8)
     }
     #[doc = "Bit 16 - 1 : forces sub-32 bit saturation"]
     #[inline(always)]
-    #[must_use]
     pub fn cppre_sat(&mut self) -> CppreSatW<CppreSpec> {
         CppreSatW::new(self, 16)
     }
     #[doc = "Bit 17 - 0 = 8bits, 1 = 16bits"]
     #[inline(always)]
-    #[must_use]
     pub fn cppre_sat8(&mut self) -> CppreSat8W<CppreSpec> {
         CppreSat8W::new(self, 17)
     }

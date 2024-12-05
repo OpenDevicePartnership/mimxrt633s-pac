@@ -32,7 +32,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Set to the IRQ to push across to the Host."]
     #[inline(always)]
-    #[must_use]
     pub fn irq(&mut self) -> IrqW<IrqpushSpec> {
         IrqW::new(self, 0)
     }

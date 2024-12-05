@@ -68,43 +68,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - User defined status bits. These are salted into the status register as specified in section 4.1 and 4.6."]
     #[inline(always)]
-    #[must_use]
     pub fn ustat(&mut self) -> UstatW<P0iruleStatSpec> {
         UstatW::new(self, 0)
     }
     #[doc = "Bit 8 - Interrupt if an error is detected (classes of error defined in section 2.14)"]
     #[inline(always)]
-    #[must_use]
     pub fn interr(&mut self) -> InterrW<P0iruleStatSpec> {
         InterrW::new(self, 8)
     }
     #[doc = "Bit 9 - Interrupt if Read or 1st Read or Bus master Started."]
     #[inline(always)]
-    #[must_use]
     pub fn intrd(&mut self) -> IntrdW<P0iruleStatSpec> {
         IntrdW::new(self, 9)
     }
     #[doc = "Bit 10 - Interrupt if Write or 1st Write or Bus master Finished."]
     #[inline(always)]
-    #[must_use]
     pub fn intwr(&mut self) -> IntwrW<P0iruleStatSpec> {
         IntwrW::new(self, 10)
     }
     #[doc = "Bits 11:14 - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
     #[inline(always)]
-    #[must_use]
     pub fn intspc(&mut self) -> IntspcW<P0iruleStatSpec> {
         IntspcW::new(self, 11)
     }
     #[doc = "Bits 16:19 - Status set/clear"]
     #[inline(always)]
-    #[must_use]
     pub fn sstcl(&mut self) -> SstclW<P0iruleStatSpec> {
         SstclW::new(self, 16)
     }
     #[doc = "Bit 20 - Resets the RdStatus and WrStatus in PStatus register"]
     #[inline(always)]
-    #[must_use]
     pub fn srst(&mut self) -> SrstW<P0iruleStatSpec> {
         SrstW::new(self, 20)
     }

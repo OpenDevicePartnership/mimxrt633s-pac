@@ -8,6 +8,8 @@ pub struct RegisterBlock {
 }
 impl RegisterBlock {
     #[doc = "0x00..0x10 - Semphores2 Gate n"]
+    #[doc = ""]
+    #[doc = "<div class=\"warning\">`n` is the index of register in the array. `n == 0` corresponds to `GATE3` register.</div>"]
     #[inline(always)]
     pub const fn gate(&self, n: usize) -> &Gate {
         &self.gate[n]
@@ -101,12 +103,12 @@ impl RegisterBlock {
     #[doc = "0x42 - Reset Gate Write"]
     #[inline(always)]
     pub const fn rstgt_w(&self) -> &RstgtW {
-        unsafe { &*(self as *const Self).cast::<u8>().add(66).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(66).cast() }
     }
     #[doc = "0x42 - Reset Gate Read"]
     #[inline(always)]
     pub const fn rstgt_r(&self) -> &RstgtR {
-        unsafe { &*(self as *const Self).cast::<u8>().add(66).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(66).cast() }
     }
 }
 #[doc = "GATE (rw) register accessor: Semphores2 Gate n\n\nYou can [`read`](crate::Reg::read) this register and get [`gate::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`gate::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gate`]

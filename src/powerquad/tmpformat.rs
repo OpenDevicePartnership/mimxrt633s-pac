@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Temp Internal format (00: q15; 01:q31; 10:float)"]
     #[inline(always)]
-    #[must_use]
     pub fn tmp_formatint(&mut self) -> TmpFormatintW<TmpformatSpec> {
         TmpFormatintW::new(self, 0)
     }
     #[doc = "Bits 4:5 - Temp External format (00: q15; 01:q31; 10:float)"]
     #[inline(always)]
-    #[must_use]
     pub fn tmp_formatext(&mut self) -> TmpFormatextW<TmpformatSpec> {
         TmpFormatextW::new(self, 4)
     }
     #[doc = "Bits 8:15 - Temp Scaler value (for scaled 'q31' formats)"]
     #[inline(always)]
-    #[must_use]
     pub fn tmp_scaler(&mut self) -> TmpScalerW<TmpformatSpec> {
         TmpScalerW::new(self, 8)
     }

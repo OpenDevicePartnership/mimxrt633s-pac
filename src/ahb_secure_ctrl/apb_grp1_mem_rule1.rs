@@ -94,49 +94,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - 0x4002 8000--0x4002 8FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit0_rule(&mut self) -> Ct32bit0RuleW<ApbGrp1MemRule1Spec> {
         Ct32bit0RuleW::new(self, 0)
     }
     #[doc = "Bits 4:5 - 0x4002 9000--0x4002 9FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit1_rule(&mut self) -> Ct32bit1RuleW<ApbGrp1MemRule1Spec> {
         Ct32bit1RuleW::new(self, 4)
     }
     #[doc = "Bits 8:9 - 0x4002 A000--0x4002 AFFF"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit2_rule(&mut self) -> Ct32bit2RuleW<ApbGrp1MemRule1Spec> {
         Ct32bit2RuleW::new(self, 8)
     }
     #[doc = "Bits 12:13 - 0x4002 B000--0x4002 BFFF"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit3_rule(&mut self) -> Ct32bit3RuleW<ApbGrp1MemRule1Spec> {
         Ct32bit3RuleW::new(self, 12)
     }
     #[doc = "Bits 16:17 - 0x4002 C000--0x4002 CFFF"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit4_rule(&mut self) -> Ct32bit4RuleW<ApbGrp1MemRule1Spec> {
         Ct32bit4RuleW::new(self, 16)
     }
     #[doc = "Bits 20:21 - 0x4002 D000--0x4002 DFFF"]
     #[inline(always)]
-    #[must_use]
     pub fn mrt_rule(&mut self) -> MrtRuleW<ApbGrp1MemRule1Spec> {
         MrtRuleW::new(self, 20)
     }
     #[doc = "Bits 24:25 - 0x4002 E000--0x4002 EFFF"]
     #[inline(always)]
-    #[must_use]
     pub fn wwdt1_rule(&mut self) -> Wwdt1RuleW<ApbGrp1MemRule1Spec> {
         Wwdt1RuleW::new(self, 24)
     }
     #[doc = "Bits 28:29 - 0x4002 F000--0x4002 FFFF"]
     #[inline(always)]
-    #[must_use]
     pub fn freqme_rule(&mut self) -> FreqmeRuleW<ApbGrp1MemRule1Spec> {
         FreqmeRuleW::new(self, 28)
     }

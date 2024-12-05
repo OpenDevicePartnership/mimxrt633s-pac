@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:5 - Gain shift for decimator output (can be positive or negative number)"]
     #[inline(always)]
-    #[must_use]
     pub fn gain(&mut self) -> GainW<GainshiftSpec> {
         GainW::new(self, 0)
     }

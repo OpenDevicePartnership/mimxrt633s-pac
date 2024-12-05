@@ -64,31 +64,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - 0x40150000--0x40150FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn pq_copro_rule(&mut self) -> PqCoproRuleW<AhbPeriph3SlaveRule0Spec> {
         PqCoproRuleW::new(self, 0)
     }
     #[doc = "Bits 4:5 - 0x40151000--0x40151FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn casper_copro_rule(&mut self) -> CasperCoproRuleW<AhbPeriph3SlaveRule0Spec> {
         CasperCoproRuleW::new(self, 4)
     }
     #[doc = "Bits 8:9 - 0x40152000--0x40152FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn casper_ram_rule(&mut self) -> CasperRamRuleW<AhbPeriph3SlaveRule0Spec> {
         CasperRamRuleW::new(self, 8)
     }
     #[doc = "Bits 12:13 - 0x40154000--0x40157FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn secure_gpio_rule(&mut self) -> SecureGpioRuleW<AhbPeriph3SlaveRule0Spec> {
         SecureGpioRuleW::new(self, 12)
     }
     #[doc = "Bits 16:17 - 0x40158000--0x40158FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn hash_rule(&mut self) -> HashRuleW<AhbPeriph3SlaveRule0Spec> {
         HashRuleW::new(self, 16)
     }

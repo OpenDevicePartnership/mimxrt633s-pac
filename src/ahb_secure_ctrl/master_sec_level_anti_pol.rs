@@ -643,43 +643,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 4:5 - POWERQUAD master secure level control anti-pole value (i.e It must be written with the inverted value of the corresponding field in master_sec_reg)."]
     #[inline(always)]
-    #[must_use]
     pub fn powerquad_sec(&mut self) -> PowerquadSecW<MasterSecLevelAntiPolSpec> {
         PowerquadSecW::new(self, 4)
     }
     #[doc = "Bits 6:7 - DSP master secure level control anti-pole value (i.e It must be written with the inverted value of the corresponding field in master_sec_reg)."]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_sec(&mut self) -> DspSecW<MasterSecLevelAntiPolSpec> {
         DspSecW::new(self, 6)
     }
     #[doc = "Bits 8:9 - DMA0 master secure level control anti-pole value (i.e It must be written with the inverted value of the corresponding field in master_sec_reg)."]
     #[inline(always)]
-    #[must_use]
     pub fn dma0_sec(&mut self) -> Dma0SecW<MasterSecLevelAntiPolSpec> {
         Dma0SecW::new(self, 8)
     }
     #[doc = "Bits 10:11 - DMA1 master secure level control anti-pole value (i.e It must be written with the inverted value of the corresponding field in master_sec_reg)."]
     #[inline(always)]
-    #[must_use]
     pub fn dma1_sec(&mut self) -> Dma1SecW<MasterSecLevelAntiPolSpec> {
         Dma1SecW::new(self, 10)
     }
     #[doc = "Bits 12:13 - SDIO0 master secure level control anti-pole value (i.e It must be written with the inverted value of the corresponding field in master_sec_reg)."]
     #[inline(always)]
-    #[must_use]
     pub fn sdio0_sec(&mut self) -> Sdio0SecW<MasterSecLevelAntiPolSpec> {
         Sdio0SecW::new(self, 12)
     }
     #[doc = "Bits 14:15 - SDIO1 master secure level control anti-pole value (i.e It must be written with the inverted value of the corresponding field in master_sec_reg)."]
     #[inline(always)]
-    #[must_use]
     pub fn sdio1_sec(&mut self) -> Sdio1SecW<MasterSecLevelAntiPolSpec> {
         Sdio1SecW::new(self, 14)
     }
     #[doc = "Bits 30:31 - MASTER_SEC_LEVEL_ANTI_POL register write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn master_sec_level_anti_pole_lock(
         &mut self,
     ) -> MasterSecLevelAntiPoleLockW<MasterSecLevelAntiPolSpec> {

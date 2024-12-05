@@ -74,37 +74,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - 1 : Enable event trigger on Floating point overflow"]
     #[inline(always)]
-    #[must_use]
     pub fn event_oflow(&mut self) -> EventOflowW<EventenSpec> {
         EventOflowW::new(self, 0)
     }
     #[doc = "Bit 1 - 1 : Enable event trigger on Floating point NaN"]
     #[inline(always)]
-    #[must_use]
     pub fn event_nan(&mut self) -> EventNanW<EventenSpec> {
         EventNanW::new(self, 1)
     }
     #[doc = "Bit 2 - 1: Enable event trigger on Fixed point Overflow"]
     #[inline(always)]
-    #[must_use]
     pub fn event_fixed(&mut self) -> EventFixedW<EventenSpec> {
         EventFixedW::new(self, 2)
     }
     #[doc = "Bit 3 - 1 : Enable event trigger on Subnormal truncation"]
     #[inline(always)]
-    #[must_use]
     pub fn event_uflow(&mut self) -> EventUflowW<EventenSpec> {
         EventUflowW::new(self, 3)
     }
     #[doc = "Bit 4 - 1: Enable event trigger on AHBM Buss Error"]
     #[inline(always)]
-    #[must_use]
     pub fn event_berr(&mut self) -> EventBerrW<EventenSpec> {
         EventBerrW::new(self, 4)
     }
     #[doc = "Bit 7 - 1: Enable event trigger on instruction completion"]
     #[inline(always)]
-    #[must_use]
     pub fn event_comp(&mut self) -> EventCompW<EventenSpec> {
         EventCompW::new(self, 7)
     }

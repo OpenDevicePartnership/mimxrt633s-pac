@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Timer counter value."]
     #[inline(always)]
-    #[must_use]
     pub fn tcval(&mut self) -> TcvalW<TcSpec> {
         TcvalW::new(self, 0)
     }

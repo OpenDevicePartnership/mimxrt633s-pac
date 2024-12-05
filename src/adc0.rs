@@ -87,12 +87,14 @@ impl RegisterBlock {
         self.tctrl.iter()
     }
     #[doc = "0x100..0x13c - ADC Command Low Buffer Register"]
+    #[doc = ""]
+    #[doc = "<div class=\"warning\">`n` is the index of register in the array. `n == 0` corresponds to `CMDL1` register.</div>"]
     #[inline(always)]
     pub const fn cmdl(&self, n: usize) -> &Cmdl {
         #[allow(clippy::no_effect)]
         [(); 15][n];
         unsafe {
-            &*(self as *const Self)
+            &*core::ptr::from_ref(self)
                 .cast::<u8>()
                 .add(256)
                 .add(8 * n)
@@ -104,7 +106,7 @@ impl RegisterBlock {
     #[inline(always)]
     pub fn cmdl_iter(&self) -> impl Iterator<Item = &Cmdl> {
         (0..15).map(move |n| unsafe {
-            &*(self as *const Self)
+            &*core::ptr::from_ref(self)
                 .cast::<u8>()
                 .add(256)
                 .add(8 * n)
@@ -187,12 +189,14 @@ impl RegisterBlock {
         self.cmdl(14)
     }
     #[doc = "0x104..0x140 - ADC Command High Buffer Register"]
+    #[doc = ""]
+    #[doc = "<div class=\"warning\">`n` is the index of register in the array. `n == 0` corresponds to `CMDH1` register.</div>"]
     #[inline(always)]
     pub const fn cmdh(&self, n: usize) -> &Cmdh {
         #[allow(clippy::no_effect)]
         [(); 15][n];
         unsafe {
-            &*(self as *const Self)
+            &*core::ptr::from_ref(self)
                 .cast::<u8>()
                 .add(260)
                 .add(8 * n)
@@ -204,7 +208,7 @@ impl RegisterBlock {
     #[inline(always)]
     pub fn cmdh_iter(&self) -> impl Iterator<Item = &Cmdh> {
         (0..15).map(move |n| unsafe {
-            &*(self as *const Self)
+            &*core::ptr::from_ref(self)
                 .cast::<u8>()
                 .add(260)
                 .add(8 * n)
@@ -287,6 +291,8 @@ impl RegisterBlock {
         self.cmdh(14)
     }
     #[doc = "0x200..0x210 - Compare Value Register"]
+    #[doc = ""]
+    #[doc = "<div class=\"warning\">`n` is the index of register in the array. `n == 0` corresponds to `CV1` register.</div>"]
     #[inline(always)]
     pub const fn cv(&self, n: usize) -> &Cv {
         &self.cv[n]

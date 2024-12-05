@@ -208,103 +208,86 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:6 - USB device address."]
     #[inline(always)]
-    #[must_use]
     pub fn dev_addr(&mut self) -> DevAddrW<DevcmdstatSpec> {
         DevAddrW::new(self, 0)
     }
     #[doc = "Bit 7 - USB device enable."]
     #[inline(always)]
-    #[must_use]
     pub fn dev_en(&mut self) -> DevEnW<DevcmdstatSpec> {
         DevEnW::new(self, 7)
     }
     #[doc = "Bit 8 - SETUP token received."]
     #[inline(always)]
-    #[must_use]
     pub fn setup(&mut self) -> SetupW<DevcmdstatSpec> {
         SetupW::new(self, 8)
     }
     #[doc = "Bit 9 - Forces the NEEDCLK output to always be on:."]
     #[inline(always)]
-    #[must_use]
     pub fn force_needclk(&mut self) -> ForceNeedclkW<DevcmdstatSpec> {
         ForceNeedclkW::new(self, 9)
     }
     #[doc = "Bit 10 - If this bit is set to 1, the VBUS voltage indicators from the PHY are overruled."]
     #[inline(always)]
-    #[must_use]
     pub fn force_vbus(&mut self) -> ForceVbusW<DevcmdstatSpec> {
         ForceVbusW::new(self, 10)
     }
     #[doc = "Bit 11 - LPM Supported:."]
     #[inline(always)]
-    #[must_use]
     pub fn lpm_sup(&mut self) -> LpmSupW<DevcmdstatSpec> {
         LpmSupW::new(self, 11)
     }
     #[doc = "Bit 12 - Interrupt on NAK for interrupt and bulk OUT EP:."]
     #[inline(always)]
-    #[must_use]
     pub fn intonnak_ao(&mut self) -> IntonnakAoW<DevcmdstatSpec> {
         IntonnakAoW::new(self, 12)
     }
     #[doc = "Bit 13 - Interrupt on NAK for interrupt and bulk IN EP:."]
     #[inline(always)]
-    #[must_use]
     pub fn intonnak_ai(&mut self) -> IntonnakAiW<DevcmdstatSpec> {
         IntonnakAiW::new(self, 13)
     }
     #[doc = "Bit 14 - Interrupt on NAK for control OUT EP:."]
     #[inline(always)]
-    #[must_use]
     pub fn intonnak_co(&mut self) -> IntonnakCoW<DevcmdstatSpec> {
         IntonnakCoW::new(self, 14)
     }
     #[doc = "Bit 15 - Interrupt on NAK for control IN EP:."]
     #[inline(always)]
-    #[must_use]
     pub fn intonnak_ci(&mut self) -> IntonnakCiW<DevcmdstatSpec> {
         IntonnakCiW::new(self, 15)
     }
     #[doc = "Bit 16 - Device status - connect."]
     #[inline(always)]
-    #[must_use]
     pub fn dcon(&mut self) -> DconW<DevcmdstatSpec> {
         DconW::new(self, 16)
     }
     #[doc = "Bit 17 - Device status - suspend."]
     #[inline(always)]
-    #[must_use]
     pub fn dsus(&mut self) -> DsusW<DevcmdstatSpec> {
         DsusW::new(self, 17)
     }
     #[doc = "Bit 19 - Device status - LPM Suspend."]
     #[inline(always)]
-    #[must_use]
     pub fn lpm_sus(&mut self) -> LpmSusW<DevcmdstatSpec> {
         LpmSusW::new(self, 19)
     }
     #[doc = "Bit 24 - Device status - connect change."]
     #[inline(always)]
-    #[must_use]
     pub fn dcon_c(&mut self) -> DconCW<DevcmdstatSpec> {
         DconCW::new(self, 24)
     }
     #[doc = "Bit 25 - Device status - suspend change."]
     #[inline(always)]
-    #[must_use]
     pub fn dsus_c(&mut self) -> DsusCW<DevcmdstatSpec> {
         DsusCW::new(self, 25)
     }
     #[doc = "Bit 26 - Device status - reset change."]
     #[inline(always)]
-    #[must_use]
     pub fn dres_c(&mut self) -> DresCW<DevcmdstatSpec> {
         DresCW::new(self, 26)
     }
     #[doc = "Bits 29:31 - This field is written by firmware to put the PHY into a test mode as defined by the USB2.0 specification."]
     #[inline(always)]
-    #[must_use]
     pub fn phy_test_mode(&mut self) -> PhyTestModeW<DevcmdstatSpec> {
         PhyTestModeW::new(self, 29)
     }

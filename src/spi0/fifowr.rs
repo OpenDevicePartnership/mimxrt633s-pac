@@ -269,61 +269,51 @@ impl core::fmt::Debug for crate::generic::Reg<FifowrSpec> {
 impl W {
     #[doc = "Bits 0:15 - Transmit data to the FIFO."]
     #[inline(always)]
-    #[must_use]
     pub fn txdata(&mut self) -> TxdataW<FifowrSpec> {
         TxdataW::new(self, 0)
     }
     #[doc = "Bit 16 - Transmit slave select. This field asserts SSEL0 in master mode. The output on the pin is active LOW by default."]
     #[inline(always)]
-    #[must_use]
     pub fn txssel0_n(&mut self) -> Txssel0NW<FifowrSpec> {
         Txssel0NW::new(self, 16)
     }
     #[doc = "Bit 17 - Transmit slave select. This field asserts SSEL1 in master mode. The output on the pin is active LOW by default."]
     #[inline(always)]
-    #[must_use]
     pub fn txssel1_n(&mut self) -> Txssel1NW<FifowrSpec> {
         Txssel1NW::new(self, 17)
     }
     #[doc = "Bit 18 - Transmit slave select. This field asserts SSEL2 in master mode. The output on the pin is active LOW by default."]
     #[inline(always)]
-    #[must_use]
     pub fn txssel2_n(&mut self) -> Txssel2NW<FifowrSpec> {
         Txssel2NW::new(self, 18)
     }
     #[doc = "Bit 19 - Transmit slave select. This field asserts SSEL3 in master mode. The output on the pin is active LOW by default."]
     #[inline(always)]
-    #[must_use]
     pub fn txssel3_n(&mut self) -> Txssel3NW<FifowrSpec> {
         Txssel3NW::new(self, 19)
     }
     #[doc = "Bit 20 - End of transfer. The asserted SSEL will be deasserted at the end of a transfer and remain so far at least the time specified by the Transfer_delay value in the DLY register."]
     #[inline(always)]
-    #[must_use]
     pub fn eot(&mut self) -> EotW<FifowrSpec> {
         EotW::new(self, 20)
     }
     #[doc = "Bit 21 - End of frame. Between frames, a delay may be inserted, as defined by the Frame_delay value in the DLY register. The end of a frame may not be particularly meaningful if the Frame_delay value = 0. This control can be used as part of the support for frame lengths greater than 16 bits."]
     #[inline(always)]
-    #[must_use]
     pub fn eof(&mut self) -> EofW<FifowrSpec> {
         EofW::new(self, 21)
     }
     #[doc = "Bit 22 - Receive Ignore. This allows data to be transmitted using the SPI without the need to read unneeded data from the receiver. Setting this bit simplifies the transmit process and can be used with the DMA."]
     #[inline(always)]
-    #[must_use]
     pub fn rxignore(&mut self) -> RxignoreW<FifowrSpec> {
         RxignoreW::new(self, 22)
     }
     #[doc = "Bit 23 - Transmit Ignore"]
     #[inline(always)]
-    #[must_use]
     pub fn txignore(&mut self) -> TxignoreW<FifowrSpec> {
         TxignoreW::new(self, 23)
     }
     #[doc = "Bits 24:27 - Data Length. Specifies the data length from 4 to 16 bits. Note that transfer lengths greater than 16 bits are supported by implementing multiple sequential transmits. 0x0-2 = Reserved. 0x3 = Data transfer is 4 bits in length. 0x4 = Data transfer is 5 bits in length. 0xF = Data transfer is 16 bits in length."]
     #[inline(always)]
-    #[must_use]
     pub fn len(&mut self) -> LenW<FifowrSpec> {
         LenW::new(self, 24)
     }

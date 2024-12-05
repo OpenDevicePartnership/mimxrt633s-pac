@@ -1294,97 +1294,81 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Set/clear operation on output 0. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr0(&mut self) -> Setclr0W<OutputdirctrlSpec> {
         Setclr0W::new(self, 0)
     }
     #[doc = "Bits 2:3 - Set/clear operation on output 1. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr1(&mut self) -> Setclr1W<OutputdirctrlSpec> {
         Setclr1W::new(self, 2)
     }
     #[doc = "Bits 4:5 - Set/clear operation on output 2. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr2(&mut self) -> Setclr2W<OutputdirctrlSpec> {
         Setclr2W::new(self, 4)
     }
     #[doc = "Bits 6:7 - Set/clear operation on output 3. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr3(&mut self) -> Setclr3W<OutputdirctrlSpec> {
         Setclr3W::new(self, 6)
     }
     #[doc = "Bits 8:9 - Set/clear operation on output 4. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr4(&mut self) -> Setclr4W<OutputdirctrlSpec> {
         Setclr4W::new(self, 8)
     }
     #[doc = "Bits 10:11 - Set/clear operation on output 5. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr5(&mut self) -> Setclr5W<OutputdirctrlSpec> {
         Setclr5W::new(self, 10)
     }
     #[doc = "Bits 12:13 - Set/clear operation on output 6. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr6(&mut self) -> Setclr6W<OutputdirctrlSpec> {
         Setclr6W::new(self, 12)
     }
     #[doc = "Bits 14:15 - Set/clear operation on output 7. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr7(&mut self) -> Setclr7W<OutputdirctrlSpec> {
         Setclr7W::new(self, 14)
     }
     #[doc = "Bits 16:17 - Set/clear operation on output 8. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr8(&mut self) -> Setclr8W<OutputdirctrlSpec> {
         Setclr8W::new(self, 16)
     }
     #[doc = "Bits 18:19 - Set/clear operation on output 9. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr9(&mut self) -> Setclr9W<OutputdirctrlSpec> {
         Setclr9W::new(self, 18)
     }
     #[doc = "Bits 20:21 - Set/clear operation on output 10. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr10(&mut self) -> Setclr10W<OutputdirctrlSpec> {
         Setclr10W::new(self, 20)
     }
     #[doc = "Bits 22:23 - Set/clear operation on output 11. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr11(&mut self) -> Setclr11W<OutputdirctrlSpec> {
         Setclr11W::new(self, 22)
     }
     #[doc = "Bits 24:25 - Set/clear operation on output 12. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr12(&mut self) -> Setclr12W<OutputdirctrlSpec> {
         Setclr12W::new(self, 24)
     }
     #[doc = "Bits 26:27 - Set/clear operation on output 13. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr13(&mut self) -> Setclr13W<OutputdirctrlSpec> {
         Setclr13W::new(self, 26)
     }
     #[doc = "Bits 28:29 - Set/clear operation on output 14. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr14(&mut self) -> Setclr14W<OutputdirctrlSpec> {
         Setclr14W::new(self, 28)
     }
     #[doc = "Bits 30:31 - Set/clear operation on output 15. Value 0x3 is reserved. Do not program this value."]
     #[inline(always)]
-    #[must_use]
     pub fn setclr15(&mut self) -> Setclr15W<OutputdirctrlSpec> {
         Setclr15W::new(self, 30)
     }

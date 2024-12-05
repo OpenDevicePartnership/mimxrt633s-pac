@@ -812,37 +812,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Compare Function Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn cmpen(&mut self) -> CmpenW<CmdhSpec> {
         CmpenW::new(self, 0)
     }
     #[doc = "Bit 7 - Loop with Increment"]
     #[inline(always)]
-    #[must_use]
     pub fn lwi(&mut self) -> LwiW<CmdhSpec> {
         LwiW::new(self, 7)
     }
     #[doc = "Bits 8:10 - Sample Time Select"]
     #[inline(always)]
-    #[must_use]
     pub fn sts(&mut self) -> StsW<CmdhSpec> {
         StsW::new(self, 8)
     }
     #[doc = "Bits 12:14 - Hardware Average Select"]
     #[inline(always)]
-    #[must_use]
     pub fn avgs(&mut self) -> AvgsW<CmdhSpec> {
         AvgsW::new(self, 12)
     }
     #[doc = "Bits 16:19 - Loop Count Select"]
     #[inline(always)]
-    #[must_use]
     pub fn loop_(&mut self) -> LoopW<CmdhSpec> {
         LoopW::new(self, 16)
     }
     #[doc = "Bits 24:27 - Next Command Select"]
     #[inline(always)]
-    #[must_use]
     pub fn next(&mut self) -> NextW<CmdhSpec> {
         NextW::new(self, 24)
     }

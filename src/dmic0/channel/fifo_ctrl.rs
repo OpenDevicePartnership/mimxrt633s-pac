@@ -264,31 +264,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - FIFO enable."]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> EnableW<FifoCtrlSpec> {
         EnableW::new(self, 0)
     }
     #[doc = "Bit 1 - FIFO reset."]
     #[inline(always)]
-    #[must_use]
     pub fn resetn(&mut self) -> ResetnW<FifoCtrlSpec> {
         ResetnW::new(self, 1)
     }
     #[doc = "Bit 2 - Interrupt enable."]
     #[inline(always)]
-    #[must_use]
     pub fn inten(&mut self) -> IntenW<FifoCtrlSpec> {
         IntenW::new(self, 2)
     }
     #[doc = "Bit 3 - DMA enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dmaen(&mut self) -> DmaenW<FifoCtrlSpec> {
         DmaenW::new(self, 3)
     }
     #[doc = "Bits 16:20 - Trigger level for interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn triglvl(&mut self) -> TriglvlW<FifoCtrlSpec> {
         TriglvlW::new(self, 16)
     }

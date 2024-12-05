@@ -64,31 +64,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - overflow"]
     #[inline(always)]
-    #[must_use]
     pub fn overflow(&mut self) -> OverflowW<ErrstatSpec> {
         OverflowW::new(self, 0)
     }
     #[doc = "Bit 1 - nan"]
     #[inline(always)]
-    #[must_use]
     pub fn nan(&mut self) -> NanW<ErrstatSpec> {
         NanW::new(self, 1)
     }
     #[doc = "Bit 2 - fixed_pt_overflow"]
     #[inline(always)]
-    #[must_use]
     pub fn fixedoverflow(&mut self) -> FixedoverflowW<ErrstatSpec> {
         FixedoverflowW::new(self, 2)
     }
     #[doc = "Bit 3 - underflow"]
     #[inline(always)]
-    #[must_use]
     pub fn underflow(&mut self) -> UnderflowW<ErrstatSpec> {
         UnderflowW::new(self, 3)
     }
     #[doc = "Bit 4 - bus_error"]
     #[inline(always)]
-    #[must_use]
     pub fn buserror(&mut self) -> BuserrorW<ErrstatSpec> {
         BuserrorW::new(self, 4)
     }

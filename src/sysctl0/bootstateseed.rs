@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - A 256-bit random number set by boot ROM on each restart"]
     #[inline(always)]
-    #[must_use]
     pub fn bootstateseed(&mut self) -> BootstateseedW<BootstateseedSpec> {
         BootstateseedW::new(self, 0)
     }

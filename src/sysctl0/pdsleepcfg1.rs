@@ -1094,109 +1094,91 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Array power"]
     #[inline(always)]
-    #[must_use]
     pub fn pq_sram_apd(&mut self) -> PqSramApdW<Pdsleepcfg1Spec> {
         PqSramApdW::new(self, 0)
     }
     #[doc = "Bit 1 - Peiph power"]
     #[inline(always)]
-    #[must_use]
     pub fn pq_sram_ppd(&mut self) -> PqSramPpdW<Pdsleepcfg1Spec> {
         PqSramPpdW::new(self, 1)
     }
     #[doc = "Bit 2 - Array power"]
     #[inline(always)]
-    #[must_use]
     pub fn flexspi_sram_apd(&mut self) -> FlexspiSramApdW<Pdsleepcfg1Spec> {
         FlexspiSramApdW::new(self, 2)
     }
     #[doc = "Bit 3 - Peiph power"]
     #[inline(always)]
-    #[must_use]
     pub fn flexspi_sram_ppd(&mut self) -> FlexspiSramPpdW<Pdsleepcfg1Spec> {
         FlexspiSramPpdW::new(self, 3)
     }
     #[doc = "Bit 4 - Array power"]
     #[inline(always)]
-    #[must_use]
     pub fn usbhs_sram_apd(&mut self) -> UsbhsSramApdW<Pdsleepcfg1Spec> {
         UsbhsSramApdW::new(self, 4)
     }
     #[doc = "Bit 5 - Peiph power"]
     #[inline(always)]
-    #[must_use]
     pub fn usbhs_sram_ppd(&mut self) -> UsbhsSramPpdW<Pdsleepcfg1Spec> {
         UsbhsSramPpdW::new(self, 5)
     }
     #[doc = "Bit 6 - Array power"]
     #[inline(always)]
-    #[must_use]
     pub fn usdhc0_sram_apd(&mut self) -> Usdhc0SramApdW<Pdsleepcfg1Spec> {
         Usdhc0SramApdW::new(self, 6)
     }
     #[doc = "Bit 7 - Peiph power"]
     #[inline(always)]
-    #[must_use]
     pub fn usdhc0_sram_ppd(&mut self) -> Usdhc0SramPpdW<Pdsleepcfg1Spec> {
         Usdhc0SramPpdW::new(self, 7)
     }
     #[doc = "Bit 8 - Array power"]
     #[inline(always)]
-    #[must_use]
     pub fn usdhc1_sram_apd(&mut self) -> Usdhc1SramApdW<Pdsleepcfg1Spec> {
         Usdhc1SramApdW::new(self, 8)
     }
     #[doc = "Bit 9 - Peiph power"]
     #[inline(always)]
-    #[must_use]
     pub fn usdhc1_sram_ppd(&mut self) -> Usdhc1SramPpdW<Pdsleepcfg1Spec> {
         Usdhc1SramPpdW::new(self, 9)
     }
     #[doc = "Bit 10 - Array power"]
     #[inline(always)]
-    #[must_use]
     pub fn casper_sram_apd(&mut self) -> CasperSramApdW<Pdsleepcfg1Spec> {
         CasperSramApdW::new(self, 10)
     }
     #[doc = "Bit 11 - Peiph power"]
     #[inline(always)]
-    #[must_use]
     pub fn casper_sram_ppd(&mut self) -> CasperSramPpdW<Pdsleepcfg1Spec> {
         CasperSramPpdW::new(self, 11)
     }
     #[doc = "Bit 24 - Array power"]
     #[inline(always)]
-    #[must_use]
     pub fn dspcache_regf_apd(&mut self) -> DspcacheRegfApdW<Pdsleepcfg1Spec> {
         DspcacheRegfApdW::new(self, 24)
     }
     #[doc = "Bit 25 - Peiph power"]
     #[inline(always)]
-    #[must_use]
     pub fn dspcache_regf_ppd(&mut self) -> DspcacheRegfPpdW<Pdsleepcfg1Spec> {
         DspcacheRegfPpdW::new(self, 25)
     }
     #[doc = "Bit 26 - Array power"]
     #[inline(always)]
-    #[must_use]
     pub fn dsptcm_regf_apd(&mut self) -> DsptcmRegfApdW<Pdsleepcfg1Spec> {
         DsptcmRegfApdW::new(self, 26)
     }
     #[doc = "Bit 27 - Peiph power"]
     #[inline(always)]
-    #[must_use]
     pub fn dsptcm_regf_ppd(&mut self) -> DsptcmRegfPpdW<Pdsleepcfg1Spec> {
         DsptcmRegfPpdW::new(self, 27)
     }
     #[doc = "Bit 28 - array power and periph power"]
     #[inline(always)]
-    #[must_use]
     pub fn rom_pd(&mut self) -> RomPdW<Pdsleepcfg1Spec> {
         RomPdW::new(self, 28)
     }
     #[doc = "Bit 31 - Needed when vddcore can be smaller than 0"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_sleep(&mut self) -> SramSleepW<Pdsleepcfg1Spec> {
         SramSleepW::new(self, 31)
     }

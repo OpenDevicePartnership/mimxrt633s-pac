@@ -124,67 +124,56 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 8 - START interrupt enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn start(&mut self) -> StartW<SintclrSpec> {
         StartW::new(self, 8)
     }
     #[doc = "Bit 9 - MATCHED interrupt enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn matched(&mut self) -> MatchedW<SintclrSpec> {
         MatchedW::new(self, 9)
     }
     #[doc = "Bit 10 - STOP interrupt enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn stop(&mut self) -> StopW<SintclrSpec> {
         StopW::new(self, 10)
     }
     #[doc = "Bit 11 - RXPEND interrupt enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn rxpend(&mut self) -> RxpendW<SintclrSpec> {
         RxpendW::new(self, 11)
     }
     #[doc = "Bit 12 - TXSEND interrupt enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn txsend(&mut self) -> TxsendW<SintclrSpec> {
         TxsendW::new(self, 12)
     }
     #[doc = "Bit 13 - DACHG interrupt enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dachg(&mut self) -> DachgW<SintclrSpec> {
         DachgW::new(self, 13)
     }
     #[doc = "Bit 14 - CCC interrupt enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ccc(&mut self) -> CccW<SintclrSpec> {
         CccW::new(self, 14)
     }
     #[doc = "Bit 15 - ERRWARN interrupt enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn errwarn(&mut self) -> ErrwarnW<SintclrSpec> {
         ErrwarnW::new(self, 15)
     }
     #[doc = "Bit 16 - DDRMATCHED interrupt enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn ddrmatched(&mut self) -> DdrmatchedW<SintclrSpec> {
         DdrmatchedW::new(self, 16)
     }
     #[doc = "Bit 17 - CHANDLED interrupt enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn chandled(&mut self) -> ChandledW<SintclrSpec> {
         ChandledW::new(self, 17)
     }
     #[doc = "Bit 18 - EVENT interrupt enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn event(&mut self) -> EventW<SintclrSpec> {
         EventW::new(self, 18)
     }

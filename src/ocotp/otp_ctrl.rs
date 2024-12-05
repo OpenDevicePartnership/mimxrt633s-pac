@@ -64,31 +64,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:8 - OTP word address for read/programming"]
     #[inline(always)]
-    #[must_use]
     pub fn addr(&mut self) -> AddrW<OtpCtrlSpec> {
         AddrW::new(self, 0)
     }
     #[doc = "Bit 11 - Set to force re-loading the shadow registers (HW/SW capability and LOCK). This operation will automatically set OTP_STATUS.BUSY. Once the shadow registers have been re-loaded, OTP_STATUS.BUSY and RELOAD_SHADOWS are automatically cleared by the controller"]
     #[inline(always)]
-    #[must_use]
     pub fn reload_shadows(&mut self) -> ReloadShadowsW<OtpCtrlSpec> {
         ReloadShadowsW::new(self, 11)
     }
     #[doc = "Bit 12 - Set to start CRC calculation. This operation will automatically set OTP_STATUS.BUSY. Once CRC is calculation done, OTP_STATUS.BUSY and CRC_TEST are automatically cleared by the controller"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_test(&mut self) -> CrcTestW<OtpCtrlSpec> {
         CrcTestW::new(self, 12)
     }
     #[doc = "Bit 15 - Set to write-lock the fuse word when it's being programming. When programming with ECC mode, it recommends to set this bit."]
     #[inline(always)]
-    #[must_use]
     pub fn wordlock(&mut self) -> WordlockW<OtpCtrlSpec> {
         WordlockW::new(self, 15)
     }
     #[doc = "Bits 16:31 - Write 0x3E77 to enable OTP write accesses. NOTE: The write operation must be unlocked for each word by writing 0x3E77 to WR_UNLOCK field. Then writing to OTP_WRITE_DATA register will automatically start the programming procedure."]
     #[inline(always)]
-    #[must_use]
     pub fn wr_unlock(&mut self) -> WrUnlockW<OtpCtrlSpec> {
         WrUnlockW::new(self, 16)
     }

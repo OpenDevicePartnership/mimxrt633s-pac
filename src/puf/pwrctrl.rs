@@ -134,13 +134,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - RAM Power On"]
     #[inline(always)]
-    #[must_use]
     pub fn ram_on(&mut self) -> RamOnW<PwrctrlSpec> {
         RamOnW::new(self, 0)
     }
     #[doc = "Bit 2 - PUF Clock control."]
     #[inline(always)]
-    #[must_use]
     pub fn ck_dis(&mut self) -> CkDisW<PwrctrlSpec> {
         CkDisW::new(self, 2)
     }

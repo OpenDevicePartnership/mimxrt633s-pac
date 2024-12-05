@@ -81,7 +81,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Interrupt Enable read and set for DMA channel 0."]
     #[inline(always)]
-    #[must_use]
     pub fn inten(&mut self) -> IntenW<Intenset0Spec> {
         IntenW::new(self, 0)
     }

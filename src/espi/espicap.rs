@@ -94,15 +94,15 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Maxspd {
-    #[doc = "0: &lt;=20MHz"]
+    #[doc = "0: <=20MHz"]
     SmallThan20m = 0,
-    #[doc = "1: &lt;=25MHz (may be 24Mhz)"]
+    #[doc = "1: <=25MHz (may be 24Mhz)"]
     SmallThan25m = 1,
-    #[doc = "2: &lt;=33MHz (may be 30MHz)"]
+    #[doc = "2: <=33MHz (may be 30MHz)"]
     SmallThan33m = 2,
-    #[doc = "3: &lt;=50MHz (may be 48MHz)"]
+    #[doc = "3: <=50MHz (may be 48MHz)"]
     SmallThan50m = 3,
-    #[doc = "4: &lt;= 66MHz (may be 60MHz)"]
+    #[doc = "4: <= 66MHz (may be 60MHz)"]
     SmallThan66m = 4,
 }
 impl From<Maxspd> for u8 {
@@ -130,27 +130,27 @@ impl MaxspdR {
             _ => None,
         }
     }
-    #[doc = "&lt;=20MHz"]
+    #[doc = "<=20MHz"]
     #[inline(always)]
     pub fn is_small_than_20m(&self) -> bool {
         *self == Maxspd::SmallThan20m
     }
-    #[doc = "&lt;=25MHz (may be 24Mhz)"]
+    #[doc = "<=25MHz (may be 24Mhz)"]
     #[inline(always)]
     pub fn is_small_than_25m(&self) -> bool {
         *self == Maxspd::SmallThan25m
     }
-    #[doc = "&lt;=33MHz (may be 30MHz)"]
+    #[doc = "<=33MHz (may be 30MHz)"]
     #[inline(always)]
     pub fn is_small_than_33m(&self) -> bool {
         *self == Maxspd::SmallThan33m
     }
-    #[doc = "&lt;=50MHz (may be 48MHz)"]
+    #[doc = "<=50MHz (may be 48MHz)"]
     #[inline(always)]
     pub fn is_small_than_50m(&self) -> bool {
         *self == Maxspd::SmallThan50m
     }
-    #[doc = "&lt;= 66MHz (may be 60MHz)"]
+    #[doc = "<= 66MHz (may be 60MHz)"]
     #[inline(always)]
     pub fn is_small_than_66m(&self) -> bool {
         *self == Maxspd::SmallThan66m
@@ -163,27 +163,27 @@ where
     REG: crate::Writable + crate::RegisterSpec,
     REG::Ux: From<u8>,
 {
-    #[doc = "&lt;=20MHz"]
+    #[doc = "<=20MHz"]
     #[inline(always)]
     pub fn small_than_20m(self) -> &'a mut crate::W<REG> {
         self.variant(Maxspd::SmallThan20m)
     }
-    #[doc = "&lt;=25MHz (may be 24Mhz)"]
+    #[doc = "<=25MHz (may be 24Mhz)"]
     #[inline(always)]
     pub fn small_than_25m(self) -> &'a mut crate::W<REG> {
         self.variant(Maxspd::SmallThan25m)
     }
-    #[doc = "&lt;=33MHz (may be 30MHz)"]
+    #[doc = "<=33MHz (may be 30MHz)"]
     #[inline(always)]
     pub fn small_than_33m(self) -> &'a mut crate::W<REG> {
         self.variant(Maxspd::SmallThan33m)
     }
-    #[doc = "&lt;=50MHz (may be 48MHz)"]
+    #[doc = "<=50MHz (may be 48MHz)"]
     #[inline(always)]
     pub fn small_than_50m(self) -> &'a mut crate::W<REG> {
         self.variant(Maxspd::SmallThan50m)
     }
-    #[doc = "&lt;= 66MHz (may be 60MHz)"]
+    #[doc = "<= 66MHz (may be 60MHz)"]
     #[inline(always)]
     pub fn small_than_66m(self) -> &'a mut crate::W<REG> {
         self.variant(Maxspd::SmallThan66m)
@@ -439,49 +439,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - SPI mode allowed (host still has to select):"]
     #[inline(always)]
-    #[must_use]
     pub fn spicap(&mut self) -> SpicapW<EspicapSpec> {
         SpicapW::new(self, 0)
     }
     #[doc = "Bits 4:6 - Maximum SPI Clock speed to allow (host still chooses):"]
     #[inline(always)]
-    #[must_use]
     pub fn maxspd(&mut self) -> MaxspdW<EspicapSpec> {
         MaxspdW::new(self, 4)
     }
     #[doc = "Bit 7 - Allow Alert to be a pin if the Host wants"]
     #[inline(always)]
-    #[must_use]
     pub fn alpin(&mut self) -> AlpinW<EspicapSpec> {
         AlpinW::new(self, 7)
     }
     #[doc = "Bit 8 - If 1, allow OOB"]
     #[inline(always)]
-    #[must_use]
     pub fn oobok(&mut self) -> OobokW<EspicapSpec> {
         OobokW::new(self, 8)
     }
     #[doc = "Bit 9 - If 1, allow 128 byte payload for memory and OOB access, else limit to 64"]
     #[inline(always)]
-    #[must_use]
     pub fn memmx(&mut self) -> MemmxW<EspicapSpec> {
         MemmxW::new(self, 9)
     }
     #[doc = "Bits 10:11 - Selects max Flash payload size to allow:"]
     #[inline(always)]
-    #[must_use]
     pub fn flashmx(&mut self) -> FlashmxW<EspicapSpec> {
         FlashmxW::new(self, 10)
     }
     #[doc = "Bit 12 - If 1, then Slave Attached Flash is possible with this firmware"]
     #[inline(always)]
-    #[must_use]
     pub fn saf(&mut self) -> SafW<EspicapSpec> {
         SafW::new(self, 12)
     }
     #[doc = "Bits 13:14 - Min Erase sector size allowed if SAF used"]
     #[inline(always)]
-    #[must_use]
     pub fn safera(&mut self) -> SaferaW<EspicapSpec> {
         SaferaW::new(self, 13)
     }

@@ -434,43 +434,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Cache enable"]
     #[inline(always)]
-    #[must_use]
     pub fn encache(&mut self) -> EncacheW<CcrSpec> {
         EncacheW::new(self, 0)
     }
     #[doc = "Bit 1 - Enable Write Buffer"]
     #[inline(always)]
-    #[must_use]
     pub fn enwrbuf(&mut self) -> EnwrbufW<CcrSpec> {
         EnwrbufW::new(self, 1)
     }
     #[doc = "Bit 24 - Invalidate Way 0"]
     #[inline(always)]
-    #[must_use]
     pub fn invw0(&mut self) -> Invw0W<CcrSpec> {
         Invw0W::new(self, 24)
     }
     #[doc = "Bit 25 - Push Way 0"]
     #[inline(always)]
-    #[must_use]
     pub fn pushw0(&mut self) -> Pushw0W<CcrSpec> {
         Pushw0W::new(self, 25)
     }
     #[doc = "Bit 26 - Invalidate Way 1"]
     #[inline(always)]
-    #[must_use]
     pub fn invw1(&mut self) -> Invw1W<CcrSpec> {
         Invw1W::new(self, 26)
     }
     #[doc = "Bit 27 - Push Way 1"]
     #[inline(always)]
-    #[must_use]
     pub fn pushw1(&mut self) -> Pushw1W<CcrSpec> {
         Pushw1W::new(self, 27)
     }
     #[doc = "Bit 31 - Initiate Cache Command"]
     #[inline(always)]
-    #[must_use]
     pub fn go(&mut self) -> GoW<CcrSpec> {
         GoW::new(self, 31)
     }

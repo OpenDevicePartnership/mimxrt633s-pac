@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - Auto wake up delay timer. Added delay after sequencer delay value: delay time = value/16MHz"]
     #[inline(always)]
-    #[must_use]
     pub fn autowktime(&mut self) -> AutowktimeW<AutowkupSpec> {
         AutowktimeW::new(self, 0)
     }

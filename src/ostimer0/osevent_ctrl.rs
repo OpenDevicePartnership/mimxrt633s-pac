@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - This bit is set when a match occurs between the central 64-bit EVTIMER and the value programmed in the Match-register pair for the associated CPU This bit is cleared by writing a '1'. Writes to clear this bit are asynchronous. This should be done before a new match value is written into the MATCH_L/H registers"]
     #[inline(always)]
-    #[must_use]
     pub fn ostimer_intrflag(&mut self) -> OstimerIntrflagW<OseventCtrlSpec> {
         OstimerIntrflagW::new(self, 0)
     }
     #[doc = "Bit 1 - When this bit is '1' an interrupt/wakeup request to the Domainn processor will be asserted when the OSTIMER_INTR flag is set. When this bit is '0', interrupt/wakeup requests due to the OSTIMER_INTR flag are blocked.A separate OSEVENT_CTRL register is implemented for each CPU. Each CPU reads its own local value at the same address."]
     #[inline(always)]
-    #[must_use]
     pub fn ostimer_intena(&mut self) -> OstimerIntenaW<OseventCtrlSpec> {
         OstimerIntenaW::new(self, 1)
     }
     #[doc = "Bit 2 - This bit will be low when it is safe to write to reload the Match Registers. In typical applications it should not be necessary to test this bit."]
     #[inline(always)]
-    #[must_use]
     pub fn match_wr_rdy(&mut self) -> MatchWrRdyW<OseventCtrlSpec> {
         MatchWrRdyW::new(self, 2)
     }

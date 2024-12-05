@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:11 - If software writes a one to one of these bits, the corresponding USB interrupt status bit is set."]
     #[inline(always)]
-    #[must_use]
     pub fn ep_set_int(&mut self) -> EpSetIntW<IntsetstatSpec> {
         EpSetIntW::new(self, 0)
     }
     #[doc = "Bit 30 - If software writes a one to one of these bits, the corresponding USB interrupt status bit is set."]
     #[inline(always)]
-    #[must_use]
     pub fn frame_set_int(&mut self) -> FrameSetIntW<IntsetstatSpec> {
         FrameSetIntW::new(self, 30)
     }
     #[doc = "Bit 31 - If software writes a one to one of these bits, the corresponding USB interrupt status bit is set."]
     #[inline(always)]
-    #[must_use]
     pub fn dev_set_int(&mut self) -> DevSetIntW<IntsetstatSpec> {
         DevSetIntW::new(self, 31)
     }

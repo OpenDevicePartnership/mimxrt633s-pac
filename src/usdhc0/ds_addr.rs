@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - DS_ADDR"]
     #[inline(always)]
-    #[must_use]
     pub fn ds_addr(&mut self) -> DsAddrW<DsAddrSpec> {
         DsAddrW::new(self, 0)
     }

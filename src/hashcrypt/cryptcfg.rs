@@ -540,73 +540,61 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - If 1, OUTDATA0 will be read Most significant word 1st for AES. Else it will be read in normal little endian - Least significant word 1st. Note: only if allowed by configuration."]
     #[inline(always)]
-    #[must_use]
     pub fn msw1st_out(&mut self) -> Msw1stOutW<CryptcfgSpec> {
         Msw1stOutW::new(self, 0)
     }
     #[doc = "Bit 1 - If 1, will Swap the key input (bytes in each word)."]
     #[inline(always)]
-    #[must_use]
     pub fn swapkey(&mut self) -> SwapkeyW<CryptcfgSpec> {
         SwapkeyW::new(self, 1)
     }
     #[doc = "Bit 2 - If 1, will SWAP the data and IV inputs (bytes in each word)."]
     #[inline(always)]
-    #[must_use]
     pub fn swapdat(&mut self) -> SwapdatW<CryptcfgSpec> {
         SwapdatW::new(self, 2)
     }
     #[doc = "Bit 3 - If 1, load of key, IV, and data is MSW 1st for AES. Else, the words are little endian. Note: only if allowed by configuration."]
     #[inline(always)]
-    #[must_use]
     pub fn msw1st(&mut self) -> Msw1stW<CryptcfgSpec> {
         Msw1stW::new(self, 3)
     }
     #[doc = "Bits 4:5 - AES Cipher mode to use if plain AES"]
     #[inline(always)]
-    #[must_use]
     pub fn aesmode(&mut self) -> AesmodeW<CryptcfgSpec> {
         AesmodeW::new(self, 4)
     }
     #[doc = "Bit 6 - AES ECB direction. Only encryption used if CTR mode or manual modes such as CFB"]
     #[inline(always)]
-    #[must_use]
     pub fn aesdecrypt(&mut self) -> AesdecryptW<CryptcfgSpec> {
         AesdecryptW::new(self, 6)
     }
     #[doc = "Bit 7 - Selects the Hidden Secret key vs. User key, if provided. If security levels are used, only the highest level is permitted to select this."]
     #[inline(always)]
-    #[must_use]
     pub fn aessecret(&mut self) -> AessecretW<CryptcfgSpec> {
         AessecretW::new(self, 7)
     }
     #[doc = "Bits 8:9 - Sets the AES key size"]
     #[inline(always)]
-    #[must_use]
     pub fn aeskeysz(&mut self) -> AeskeyszW<CryptcfgSpec> {
         AeskeyszW::new(self, 8)
     }
     #[doc = "Bits 10:12 - Halfword position of 16b counter in IV if AESMODE is CTR (position is fixed for Salsa and ChaCha). Only supports 16b counter, so application must control any additional bytes if using more. The 16-bit counter is read from the IV and incremented by 1 each time. Any other use CTR should use ECB directly and do its own XOR and so on."]
     #[inline(always)]
-    #[must_use]
     pub fn aesctrpos(&mut self) -> AesctrposW<CryptcfgSpec> {
         AesctrposW::new(self, 10)
     }
     #[doc = "Bit 16 - Is 1 if last stream block. If not 1, then the engine will compute the next \"hash\"."]
     #[inline(always)]
-    #[must_use]
     pub fn streamlast(&mut self) -> StreamlastW<CryptcfgSpec> {
         StreamlastW::new(self, 16)
     }
     #[doc = "Bits 20:21 - This sets the ICB size between 32 and 128 bits, using the following rules. Note that the counter is assumed to occupy the low order bits of the IV."]
     #[inline(always)]
-    #[must_use]
     pub fn icbsz(&mut self) -> IcbszW<CryptcfgSpec> {
         IcbszW::new(self, 20)
     }
     #[doc = "Bits 22:23 - The size of the ICB-AES stream that can be pushed before needing to compute a new IV/ctr (counter start). This optimizes the performance of the stream of blocks after the 1st."]
     #[inline(always)]
-    #[must_use]
     pub fn icbstrm(&mut self) -> IcbstrmW<CryptcfgSpec> {
         IcbstrmW::new(self, 22)
     }

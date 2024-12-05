@@ -291,19 +291,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Clock divider value by -1 encoding. It's used to generate the clock to OTP memory (otp_clk) with apb_clk. The maximum otp_clk frequency is 120Mhz. 0: Divide by 1"]
     #[inline(always)]
-    #[must_use]
     pub fn div(&mut self) -> DivW<OtpClkDivSpec> {
         DivW::new(self, 0)
     }
     #[doc = "Bit 29 - Resets the divider counter. Can be used to make sure a new divider value is used right away rather than completing the previous count."]
     #[inline(always)]
-    #[must_use]
     pub fn reset(&mut self) -> ResetW<OtpClkDivSpec> {
         ResetW::new(self, 29)
     }
     #[doc = "Bit 30 - Halts the divider counter. The intent is to allow the divider's clock source to be changed without the risk of a glitch at the output."]
     #[inline(always)]
-    #[must_use]
     pub fn halt(&mut self) -> HaltW<OtpClkDivSpec> {
         HaltW::new(self, 30)
     }

@@ -194,19 +194,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Indicates if should interrupt when waiting for data input."]
     #[inline(always)]
-    #[must_use]
     pub fn waiting(&mut self) -> WaitingW<IntensetSpec> {
         WaitingW::new(self, 0)
     }
     #[doc = "Bit 1 - Indicates if should interrupt when Digest (or Outdata) is ready (completed a hash/crypto or completed a full sequence)."]
     #[inline(always)]
-    #[must_use]
     pub fn digest(&mut self) -> DigestW<IntensetSpec> {
         DigestW::new(self, 1)
     }
     #[doc = "Bit 2 - Indicates if should interrupt on an ERROR (as defined in Status)"]
     #[inline(always)]
-    #[must_use]
     pub fn error(&mut self) -> ErrorW<IntensetSpec> {
         ErrorW::new(self, 2)
     }

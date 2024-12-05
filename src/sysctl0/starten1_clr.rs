@@ -809,151 +809,126 @@ impl core::fmt::Debug for crate::generic::Reg<Starten1ClrSpec> {
 impl W {
     #[doc = "Bit 0 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn rtc_lite0_alarm_or_wakeup(&mut self) -> RtcLite0AlarmOrWakeupW<Starten1ClrSpec> {
         RtcLite0AlarmOrWakeupW::new(self, 0)
     }
     #[doc = "Bit 2 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn mu(&mut self) -> MuW<Starten1ClrSpec> {
         MuW::new(self, 2)
     }
     #[doc = "Bit 3 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_int0_irq4(&mut self) -> GpioInt0Irq4W<Starten1ClrSpec> {
         GpioInt0Irq4W::new(self, 3)
     }
     #[doc = "Bit 4 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_int0_irq5(&mut self) -> GpioInt0Irq5W<Starten1ClrSpec> {
         GpioInt0Irq5W::new(self, 4)
     }
     #[doc = "Bit 5 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_int0_irq6(&mut self) -> GpioInt0Irq6W<Starten1ClrSpec> {
         GpioInt0Irq6W::new(self, 5)
     }
     #[doc = "Bit 6 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_int0_irq7(&mut self) -> GpioInt0Irq7W<Starten1ClrSpec> {
         GpioInt0Irq7W::new(self, 6)
     }
     #[doc = "Bit 7 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit2(&mut self) -> Ct32bit2W<Starten1ClrSpec> {
         Ct32bit2W::new(self, 7)
     }
     #[doc = "Bit 8 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn ct32bit4(&mut self) -> Ct32bit4W<Starten1ClrSpec> {
         Ct32bit4W::new(self, 8)
     }
     #[doc = "Bit 9 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn os_event_timer_wu(&mut self) -> OsEventTimerWuW<Starten1ClrSpec> {
         OsEventTimerWuW::new(self, 9)
     }
     #[doc = "Bit 10 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn flexspi(&mut self) -> FlexspiW<Starten1ClrSpec> {
         FlexspiW::new(self, 10)
     }
     #[doc = "Bit 11 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm6(&mut self) -> Flexcomm6W<Starten1ClrSpec> {
         Flexcomm6W::new(self, 11)
     }
     #[doc = "Bit 12 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm7(&mut self) -> Flexcomm7W<Starten1ClrSpec> {
         Flexcomm7W::new(self, 12)
     }
     #[doc = "Bit 13 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio0(&mut self) -> Sdio0W<Starten1ClrSpec> {
         Sdio0W::new(self, 13)
     }
     #[doc = "Bit 14 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio1(&mut self) -> Sdio1W<Starten1ClrSpec> {
         Sdio1W::new(self, 14)
     }
     #[doc = "Bit 15 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn shsgpio_int0(&mut self) -> ShsgpioInt0W<Starten1ClrSpec> {
         ShsgpioInt0W::new(self, 15)
     }
     #[doc = "Bit 16 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn shsgpio_int1(&mut self) -> ShsgpioInt1W<Starten1ClrSpec> {
         ShsgpioInt1W::new(self, 16)
     }
     #[doc = "Bit 17 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn i3c0(&mut self) -> I3c0W<Starten1ClrSpec> {
         I3c0W::new(self, 17)
     }
     #[doc = "Bit 18 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_irq(&mut self) -> UsbIrqW<Starten1ClrSpec> {
         UsbIrqW::new(self, 18)
     }
     #[doc = "Bit 19 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_needclk(&mut self) -> UsbNeedclkW<Starten1ClrSpec> {
         UsbNeedclkW::new(self, 19)
     }
     #[doc = "Bit 22 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1(&mut self) -> Dmac1W<Starten1ClrSpec> {
         Dmac1W::new(self, 22)
     }
     #[doc = "Bit 23 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn puf(&mut self) -> PufW<Starten1ClrSpec> {
         PufW::new(self, 23)
     }
     #[doc = "Bit 24 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn powerquad(&mut self) -> PowerquadW<Starten1ClrSpec> {
         PowerquadW::new(self, 24)
     }
     #[doc = "Bit 25 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn casper(&mut self) -> CasperW<Starten1ClrSpec> {
         CasperW::new(self, 25)
     }
     #[doc = "Bit 26 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn pmic(&mut self) -> PmicW<Starten1ClrSpec> {
         PmicW::new(self, 26)
     }
     #[doc = "Bit 27 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sha(&mut self) -> ShaW<Starten1ClrSpec> {
         ShaW::new(self, 27)
     }

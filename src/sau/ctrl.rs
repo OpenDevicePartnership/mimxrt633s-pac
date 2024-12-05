@@ -134,13 +134,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Enable. Enables the SAU. This bit is RAZ/WI when the Security Extension is implemented without an SAU region."]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> EnableW<CtrlSpec> {
         EnableW::new(self, 0)
     }
     #[doc = "Bit 1 - All Non-secure."]
     #[inline(always)]
-    #[must_use]
     pub fn allns(&mut self) -> AllnsW<CtrlSpec> {
         AllnsW::new(self, 1)
     }

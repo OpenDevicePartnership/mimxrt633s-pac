@@ -293,19 +293,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Policy Select for Region 0"]
     #[inline(always)]
-    #[must_use]
     pub fn reg0_policy(&mut self) -> Reg0PolicyW<PolselSpec> {
         Reg0PolicyW::new(self, 0)
     }
     #[doc = "Bits 2:3 - Policy Select for Region 0"]
     #[inline(always)]
-    #[must_use]
     pub fn reg1_policy(&mut self) -> Reg1PolicyW<PolselSpec> {
         Reg1PolicyW::new(self, 2)
     }
     #[doc = "Bits 4:5 - Policy Select for Region 0"]
     #[inline(always)]
-    #[must_use]
     pub fn reg02_policy(&mut self) -> Reg02PolicyW<PolselSpec> {
         Reg02PolicyW::new(self, 4)
     }

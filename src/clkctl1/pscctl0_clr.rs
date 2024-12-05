@@ -393,73 +393,61 @@ impl core::fmt::Debug for crate::generic::Reg<Pscctl0ClrSpec> {
 impl W {
     #[doc = "Bit 8 - flexcomm 0 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn fc0_clk_clr(&mut self) -> Fc0ClkClrW<Pscctl0ClrSpec> {
         Fc0ClkClrW::new(self, 8)
     }
     #[doc = "Bit 9 - flexcomm 1 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn fc1_clk_clr(&mut self) -> Fc1ClkClrW<Pscctl0ClrSpec> {
         Fc1ClkClrW::new(self, 9)
     }
     #[doc = "Bit 10 - flexcomm 2 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn fc2_clk_clr(&mut self) -> Fc2ClkClrW<Pscctl0ClrSpec> {
         Fc2ClkClrW::new(self, 10)
     }
     #[doc = "Bit 11 - flexcomm 3 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn fc3_clk_clr(&mut self) -> Fc3ClkClrW<Pscctl0ClrSpec> {
         Fc3ClkClrW::new(self, 11)
     }
     #[doc = "Bit 12 - flexcomm 4 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn fc4_clk_clr(&mut self) -> Fc4ClkClrW<Pscctl0ClrSpec> {
         Fc4ClkClrW::new(self, 12)
     }
     #[doc = "Bit 13 - flexcomm 5 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn fc5_clk_clr(&mut self) -> Fc5ClkClrW<Pscctl0ClrSpec> {
         Fc5ClkClrW::new(self, 13)
     }
     #[doc = "Bit 14 - flexcomm 6 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn fc6_clk_clr(&mut self) -> Fc6ClkClrW<Pscctl0ClrSpec> {
         Fc6ClkClrW::new(self, 14)
     }
     #[doc = "Bit 15 - flexcomm 7 clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn fc7_clk_clr(&mut self) -> Fc7ClkClrW<Pscctl0ClrSpec> {
         Fc7ClkClrW::new(self, 15)
     }
     #[doc = "Bit 22 - flexcomm 14 spi clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn fc14_spi_clk_clr(&mut self) -> Fc14SpiClkClrW<Pscctl0ClrSpec> {
         Fc14SpiClkClrW::new(self, 22)
     }
     #[doc = "Bit 23 - flexcomm 15 i2c clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn fc15_i2c_clk_clr(&mut self) -> Fc15I2cClkClrW<Pscctl0ClrSpec> {
         Fc15I2cClkClrW::new(self, 23)
     }
     #[doc = "Bit 24 - DMIC0 clock set"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic0_clk_clr(&mut self) -> Dmic0ClkClrW<Pscctl0ClrSpec> {
         Dmic0ClkClrW::new(self, 24)
     }
     #[doc = "Bit 27 - OS event timer clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn osevent_timer_clk_clr(&mut self) -> OseventTimerClkClrW<Pscctl0ClrSpec> {
         OseventTimerClkClrW::new(self, 27)
     }

@@ -334,25 +334,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - SCK IN Select. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn sckinsel(&mut self) -> SckinselW<FcctrlselSpec> {
         SckinselW::new(self, 0)
     }
     #[doc = "Bits 8:9 - WS IN Select. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn wsinsel(&mut self) -> WsinselW<FcctrlselSpec> {
         WsinselW::new(self, 8)
     }
     #[doc = "Bits 16:17 - DATA IN Select. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn datainsel(&mut self) -> DatainselW<FcctrlselSpec> {
         DatainselW::new(self, 16)
     }
     #[doc = "Bits 24:25 - DATA OUT Select. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn dataoutsel(&mut self) -> DataoutselW<FcctrlselSpec> {
         DataoutselW::new(self, 24)
     }

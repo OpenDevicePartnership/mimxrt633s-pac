@@ -94,49 +94,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Security access rules for AHB peripheral slaves area 0x40120000--0x40120FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_rule(&mut self) -> CrcRuleW<AhbPeriph1SlaveRule0Spec> {
         CrcRuleW::new(self, 0)
     }
     #[doc = "Bits 4:5 - 0x40121000--0x40121FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn dmic_rule(&mut self) -> DmicRuleW<AhbPeriph1SlaveRule0Spec> {
         DmicRuleW::new(self, 4)
     }
     #[doc = "Bits 8:9 - 0x40122000--0x40122FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm4_rule(&mut self) -> Flexcomm4RuleW<AhbPeriph1SlaveRule0Spec> {
         Flexcomm4RuleW::new(self, 8)
     }
     #[doc = "Bits 12:13 - 0x40123000--0x40123FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm5_rule(&mut self) -> Flexcomm5RuleW<AhbPeriph1SlaveRule0Spec> {
         Flexcomm5RuleW::new(self, 12)
     }
     #[doc = "Bits 16:17 - 0x40124000--0x40124FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm6_rule(&mut self) -> Flexcomm6RuleW<AhbPeriph1SlaveRule0Spec> {
         Flexcomm6RuleW::new(self, 16)
     }
     #[doc = "Bits 20:21 - 0x40125000--0x40125FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm7_rule(&mut self) -> Flexcomm7RuleW<AhbPeriph1SlaveRule0Spec> {
         Flexcomm7RuleW::new(self, 20)
     }
     #[doc = "Bits 24:25 - 0x40126000--0x40126FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm14_rule(&mut self) -> Flexcomm14RuleW<AhbPeriph1SlaveRule0Spec> {
         Flexcomm14RuleW::new(self, 24)
     }
     #[doc = "Bits 28:29 - 0x40127000--0x40127FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn flexcomm15_rule(&mut self) -> Flexcomm15RuleW<AhbPeriph1SlaveRule0Spec> {
         Flexcomm15RuleW::new(self, 28)
     }

@@ -11,11 +11,11 @@ pub type OffW<'a, REG> = crate::FieldWriter<'a, REG, 13, u16>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Base {
-    #[doc = "0: Is offset from 0 in host memory or IO space."]
-    OffsetFromZero = 0,
-    #[doc = "1: Uses Base1 offset in host memory (see MAPBASE reg)"]
+    #[doc = "0: Is offset from 0 in host memory or I/O space"]
+    OffsetFrom0 = 0,
+    #[doc = "1: Uses BASE1 offset in host memory (see MAPBASE reg)"]
     Base1 = 1,
-    #[doc = "2: Uses Base2 offset in host memory (see MAPBASE reg)"]
+    #[doc = "2: Uses BASE2 offset in host memory (see MAPBASE reg)"]
     Base2 = 2,
 }
 impl From<Base> for u8 {
@@ -35,23 +35,23 @@ impl BaseR {
     #[inline(always)]
     pub const fn variant(&self) -> Option<Base> {
         match self.bits {
-            0 => Some(Base::OffsetFromZero),
+            0 => Some(Base::OffsetFrom0),
             1 => Some(Base::Base1),
             2 => Some(Base::Base2),
             _ => None,
         }
     }
-    #[doc = "Is offset from 0 in host memory or IO space."]
+    #[doc = "Is offset from 0 in host memory or I/O space"]
     #[inline(always)]
-    pub fn is_offset_from_zero(&self) -> bool {
-        *self == Base::OffsetFromZero
+    pub fn is_offset_from_0(&self) -> bool {
+        *self == Base::OffsetFrom0
     }
-    #[doc = "Uses Base1 offset in host memory (see MAPBASE reg)"]
+    #[doc = "Uses BASE1 offset in host memory (see MAPBASE reg)"]
     #[inline(always)]
     pub fn is_base1(&self) -> bool {
         *self == Base::Base1
     }
-    #[doc = "Uses Base2 offset in host memory (see MAPBASE reg)"]
+    #[doc = "Uses BASE2 offset in host memory (see MAPBASE reg)"]
     #[inline(always)]
     pub fn is_base2(&self) -> bool {
         *self == Base::Base2
@@ -64,17 +64,17 @@ where
     REG: crate::Writable + crate::RegisterSpec,
     REG::Ux: From<u8>,
 {
-    #[doc = "Is offset from 0 in host memory or IO space."]
+    #[doc = "Is offset from 0 in host memory or I/O space"]
     #[inline(always)]
-    pub fn offset_from_zero(self) -> &'a mut crate::W<REG> {
-        self.variant(Base::OffsetFromZero)
+    pub fn offset_from_0(self) -> &'a mut crate::W<REG> {
+        self.variant(Base::OffsetFrom0)
     }
-    #[doc = "Uses Base1 offset in host memory (see MAPBASE reg)"]
+    #[doc = "Uses BASE1 offset in host memory (see MAPBASE reg)"]
     #[inline(always)]
     pub fn base1(self) -> &'a mut crate::W<REG> {
         self.variant(Base::Base1)
     }
-    #[doc = "Uses Base2 offset in host memory (see MAPBASE reg)"]
+    #[doc = "Uses BASE2 offset in host memory (see MAPBASE reg)"]
     #[inline(always)]
     pub fn base2(self) -> &'a mut crate::W<REG> {
         self.variant(Base::Base2)
@@ -104,13 +104,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 3:15 - The offset in Host space for the status block. It must be double-word aligned."]
     #[inline(always)]
-    #[must_use]
     pub fn off(&mut self) -> OffW<StataddrSpec> {
         OffW::new(self, 3)
     }
     #[doc = "Bits 16:17 - The meaning is dependent on type of port:"]
     #[inline(always)]
-    #[must_use]
     pub fn base(&mut self) -> BaseW<StataddrSpec> {
         BaseW::new(self, 16)
     }

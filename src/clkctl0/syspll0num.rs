@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:29 - This field contains the numerator of the SYSPLL0 fractional loop divider."]
     #[inline(always)]
-    #[must_use]
     pub fn num(&mut self) -> NumW<Syspll0numSpec> {
         NumW::new(self, 0)
     }

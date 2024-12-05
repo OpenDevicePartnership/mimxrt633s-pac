@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<SienfSpec> {
 impl W {
     #[doc = "Bits 0:7 - Ones written to this address set bits in the IENF, thus enabling interrupts. Bit n sets bit n in the IENF register. 0 = No operation. 1 = Select HIGH-active interrupt or enable falling edge interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn setenaf(&mut self) -> SetenafW<SienfSpec> {
         SetenafW::new(self, 0)
     }

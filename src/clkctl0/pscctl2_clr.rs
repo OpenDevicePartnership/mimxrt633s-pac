@@ -73,13 +73,11 @@ impl core::fmt::Debug for crate::generic::Reg<Pscctl2ClrSpec> {
 impl W {
     #[doc = "Bit 0 - utick clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn utick0_clk(&mut self) -> Utick0ClkW<Pscctl2ClrSpec> {
         Utick0ClkW::new(self, 0)
     }
     #[doc = "Bit 1 - wdt clock clear"]
     #[inline(always)]
-    #[must_use]
     pub fn wwdt0_clk(&mut self) -> Wwdt0ClkW<Pscctl2ClrSpec> {
         Wwdt0ClkW::new(self, 1)
     }

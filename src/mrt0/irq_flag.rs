@@ -104,25 +104,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Monitors the interrupt flag of TIMER0."]
     #[inline(always)]
-    #[must_use]
     pub fn gflag0(&mut self) -> Gflag0W<IrqFlagSpec> {
         Gflag0W::new(self, 0)
     }
     #[doc = "Bit 1 - Monitors the interrupt flag of TIMER1. See description of channel 0."]
     #[inline(always)]
-    #[must_use]
     pub fn gflag1(&mut self) -> Gflag1W<IrqFlagSpec> {
         Gflag1W::new(self, 1)
     }
     #[doc = "Bit 2 - Monitors the interrupt flag of TIMER2. See description of channel 0."]
     #[inline(always)]
-    #[must_use]
     pub fn gflag2(&mut self) -> Gflag2W<IrqFlagSpec> {
         Gflag2W::new(self, 2)
     }
     #[doc = "Bit 3 - Monitors the interrupt flag of TIMER3. See description of channel 0."]
     #[inline(always)]
-    #[must_use]
     pub fn gflag3(&mut self) -> Gflag3W<IrqFlagSpec> {
         Gflag3W::new(self, 3)
     }

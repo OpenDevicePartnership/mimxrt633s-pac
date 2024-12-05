@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:10 - Frame Length, minus 1 encoded, defines the number of clocks and data bits in the frames that this channel pair participates in."]
     #[inline(always)]
-    #[must_use]
     pub fn framelen(&mut self) -> FramelenW<Cfg2Spec> {
         FramelenW::new(self, 0)
     }
     #[doc = "Bits 16:26 - Data Position."]
     #[inline(always)]
-    #[must_use]
     pub fn position(&mut self) -> PositionW<Cfg2Spec> {
         PositionW::new(self, 16)
     }

@@ -54,25 +54,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Writing one clears the corresponding bits in the FIFOINTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn txerr(&mut self) -> TxerrW<FifointenclrSpec> {
         TxerrW::new(self, 0)
     }
     #[doc = "Bit 1 - Writing one clears the corresponding bits in the FIFOINTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn rxerr(&mut self) -> RxerrW<FifointenclrSpec> {
         RxerrW::new(self, 1)
     }
     #[doc = "Bit 2 - Writing one clears the corresponding bits in the FIFOINTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn txlvl(&mut self) -> TxlvlW<FifointenclrSpec> {
         TxlvlW::new(self, 2)
     }
     #[doc = "Bit 3 - Writing one clears the corresponding bits in the FIFOINTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn rxlvl(&mut self) -> RxlvlW<FifointenclrSpec> {
         RxlvlW::new(self, 3)
     }

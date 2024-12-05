@@ -124,67 +124,56 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Overrun error"]
     #[inline(always)]
-    #[must_use]
     pub fn orun(&mut self) -> OrunW<SerrwarnSpec> {
         OrunW::new(self, 0)
     }
     #[doc = "Bit 1 - Underrun error"]
     #[inline(always)]
-    #[must_use]
     pub fn urun(&mut self) -> UrunW<SerrwarnSpec> {
         UrunW::new(self, 1)
     }
     #[doc = "Bit 2 - Underrun and Not Acknowledged (NACKed) error"]
     #[inline(always)]
-    #[must_use]
     pub fn urunnack(&mut self) -> UrunnackW<SerrwarnSpec> {
         UrunnackW::new(self, 2)
     }
     #[doc = "Bit 3 - Terminated error"]
     #[inline(always)]
-    #[must_use]
     pub fn term(&mut self) -> TermW<SerrwarnSpec> {
         TermW::new(self, 3)
     }
     #[doc = "Bit 4 - Invalid start error"]
     #[inline(always)]
-    #[must_use]
     pub fn invstart(&mut self) -> InvstartW<SerrwarnSpec> {
         InvstartW::new(self, 4)
     }
     #[doc = "Bit 8 - SDR parity error"]
     #[inline(always)]
-    #[must_use]
     pub fn spar(&mut self) -> SparW<SerrwarnSpec> {
         SparW::new(self, 8)
     }
     #[doc = "Bit 9 - HDR parity error"]
     #[inline(always)]
-    #[must_use]
     pub fn hpar(&mut self) -> HparW<SerrwarnSpec> {
         HparW::new(self, 9)
     }
     #[doc = "Bit 10 - HDR-DDR CRC error"]
     #[inline(always)]
-    #[must_use]
     pub fn hcrc(&mut self) -> HcrcW<SerrwarnSpec> {
         HcrcW::new(self, 10)
     }
     #[doc = "Bit 11 - S0 or S1 error"]
     #[inline(always)]
-    #[must_use]
     pub fn s0s1(&mut self) -> S0s1W<SerrwarnSpec> {
         S0s1W::new(self, 11)
     }
     #[doc = "Bit 16 - Over-read error"]
     #[inline(always)]
-    #[must_use]
     pub fn oread(&mut self) -> OreadW<SerrwarnSpec> {
         OreadW::new(self, 16)
     }
     #[doc = "Bit 17 - Over-write error"]
     #[inline(always)]
-    #[must_use]
     pub fn owrite(&mut self) -> OwriteW<SerrwarnSpec> {
         OwriteW::new(self, 17)
     }

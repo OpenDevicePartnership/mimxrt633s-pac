@@ -254,25 +254,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Determines whether an interrupt occurs when a transmit error occurs, based on the TXERR flag in the FIFOSTAT register."]
     #[inline(always)]
-    #[must_use]
     pub fn txerr(&mut self) -> TxerrW<FifointensetSpec> {
         TxerrW::new(self, 0)
     }
     #[doc = "Bit 1 - Determines whether an interrupt occurs when a receive error occurs, based on the RXERR flag in the FIFOSTAT register."]
     #[inline(always)]
-    #[must_use]
     pub fn rxerr(&mut self) -> RxerrW<FifointensetSpec> {
         RxerrW::new(self, 1)
     }
     #[doc = "Bit 2 - Determines whether an interrupt occurs when a the transmit FIFO reaches the level specified by the TXLVL field in the FIFOTRIG register."]
     #[inline(always)]
-    #[must_use]
     pub fn txlvl(&mut self) -> TxlvlW<FifointensetSpec> {
         TxlvlW::new(self, 2)
     }
     #[doc = "Bit 3 - Determines whether an interrupt occurs when a the receive FIFO reaches the level specified by the TXLVL field in the FIFOTRIG register."]
     #[inline(always)]
-    #[must_use]
     pub fn rxlvl(&mut self) -> RxlvlW<FifointensetSpec> {
         RxlvlW::new(self, 3)
     }

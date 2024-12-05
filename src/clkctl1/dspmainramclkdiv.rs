@@ -107,7 +107,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - DSP MAINRAM Clock Ratio Control:"]
     #[inline(always)]
-    #[must_use]
     pub fn dspmramclkdiv(&mut self) -> DspmramclkdivW<DspmainramclkdivSpec> {
         DspmramclkdivW::new(self, 0)
     }

@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Co-efficient choice for CIC droop compensation droop filter"]
     #[inline(always)]
-    #[must_use]
     pub fn comp(&mut self) -> CompW<Preac4fscoefSpec> {
         CompW::new(self, 0)
     }

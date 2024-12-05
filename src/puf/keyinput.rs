@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<KeyinputSpec> {
 impl W {
     #[doc = "Bits 0:31 - Key Input Data"]
     #[inline(always)]
-    #[must_use]
     pub fn keyin(&mut self) -> KeyinW<KeyinputSpec> {
         KeyinW::new(self, 0)
     }

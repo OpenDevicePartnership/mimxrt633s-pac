@@ -304,13 +304,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - Master SCL Low time. Specifies the minimum low time that will be asserted by this master on SCL. Other devices on the bus (masters or slaves) could lengthen this time. This corresponds to the parameter t LOW in the I2C bus specification. I2C bus specification parameters tBUF and tSU;STA have the same values and are also controlled by MSTSCLLOW."]
     #[inline(always)]
-    #[must_use]
     pub fn mstscllow(&mut self) -> MstscllowW<MsttimeSpec> {
         MstscllowW::new(self, 0)
     }
     #[doc = "Bits 4:6 - Master SCL High time. Specifies the minimum high time that will be asserted by this master on SCL. Other masters in a multi-master system could shorten this time. This corresponds to the parameter tHIGH in the I2C bus specification. I2C bus specification parameters tSU;STO and tHD;STA have the same values and are also controlled by MSTSCLHIGH."]
     #[inline(always)]
-    #[must_use]
     pub fn mstsclhigh(&mut self) -> MstsclhighW<MsttimeSpec> {
         MstsclhighW::new(self, 4)
     }

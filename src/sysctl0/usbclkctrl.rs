@@ -314,31 +314,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - USB0 Device need clock signal control"]
     #[inline(always)]
-    #[must_use]
     pub fn ap_dev_clk(&mut self) -> ApDevClkW<UsbclkctrlSpec> {
         ApDevClkW::new(self, 0)
     }
     #[doc = "Bit 1 - USB0 Device need clock polarity for triggering the USB1 wake-up interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn pol_dev_clk(&mut self) -> PolDevClkW<UsbclkctrlSpec> {
         PolDevClkW::new(self, 1)
     }
     #[doc = "Bit 2 - USB0 Host need clock signal control"]
     #[inline(always)]
-    #[must_use]
     pub fn ap_host_clk(&mut self) -> ApHostClkW<UsbclkctrlSpec> {
         ApHostClkW::new(self, 2)
     }
     #[doc = "Bit 3 - USB0 HOST need clock polarity for triggering the USB1 wake-up interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn pol_host_clk(&mut self) -> PolHostClkW<UsbclkctrlSpec> {
         PolHostClkW::new(self, 3)
     }
     #[doc = "Bit 4 - External user wake-up signal for device mode; asserting this signal (active low) will result in exiting the low power mode; input to asynchronous control logic"]
     #[inline(always)]
-    #[must_use]
     pub fn hs_dev_wakeup_n(&mut self) -> HsDevWakeupNW<UsbclkctrlSpec> {
         HsDevWakeupNW::new(self, 4)
     }

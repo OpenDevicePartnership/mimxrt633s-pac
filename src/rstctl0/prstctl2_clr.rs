@@ -73,13 +73,11 @@ impl core::fmt::Debug for crate::generic::Reg<Prstctl2ClrSpec> {
 impl W {
     #[doc = "Bit 0 - utick reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn utick0(&mut self) -> Utick0W<Prstctl2ClrSpec> {
         Utick0W::new(self, 0)
     }
     #[doc = "Bit 1 - wdt reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn wwdt0(&mut self) -> Wwdt0W<Prstctl2ClrSpec> {
         Wwdt0W::new(self, 1)
     }

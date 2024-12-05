@@ -84,43 +84,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Ready"]
     #[inline(always)]
-    #[must_use]
     pub fn ready(&mut self) -> ReadyW<IntstatSpec> {
         ReadyW::new(self, 0)
     }
     #[doc = "Bit 1 - Success"]
     #[inline(always)]
-    #[must_use]
     pub fn success(&mut self) -> SuccessW<IntstatSpec> {
         SuccessW::new(self, 1)
     }
     #[doc = "Bit 2 - Error"]
     #[inline(always)]
-    #[must_use]
     pub fn error(&mut self) -> ErrorW<IntstatSpec> {
         ErrorW::new(self, 2)
     }
     #[doc = "Bit 4 - Key In Request"]
     #[inline(always)]
-    #[must_use]
     pub fn keyinreq(&mut self) -> KeyinreqW<IntstatSpec> {
         KeyinreqW::new(self, 4)
     }
     #[doc = "Bit 5 - Key Out Available"]
     #[inline(always)]
-    #[must_use]
     pub fn keyoutavail(&mut self) -> KeyoutavailW<IntstatSpec> {
         KeyoutavailW::new(self, 5)
     }
     #[doc = "Bit 6 - Code In Request"]
     #[inline(always)]
-    #[must_use]
     pub fn codeinreq(&mut self) -> CodeinreqW<IntstatSpec> {
         CodeinreqW::new(self, 6)
     }
     #[doc = "Bit 7 - Code Out Available"]
     #[inline(always)]
-    #[must_use]
     pub fn codeoutavail(&mut self) -> CodeoutavailW<IntstatSpec> {
         CodeoutavailW::new(self, 7)
     }

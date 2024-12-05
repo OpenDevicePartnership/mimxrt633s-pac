@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:5 - Number of memories to turn on/off at a time."]
     #[inline(always)]
-    #[must_use]
     pub fn memseqnum(&mut self) -> MemseqnumW<MemseqctrlSpec> {
         MemseqnumW::new(self, 0)
     }

@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<Intenclr1Spec> {
 impl W {
     #[doc = "Bits 0:31 - Writing ones to this register clears corresponding bits in the DMAIntEnSet1."]
     #[inline(always)]
-    #[must_use]
     pub fn clr(&mut self) -> ClrW<Intenclr1Spec> {
         ClrW::new(self, 0)
     }

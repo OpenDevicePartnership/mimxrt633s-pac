@@ -317,31 +317,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - ADC trigger priority control"]
     #[inline(always)]
-    #[must_use]
     pub fn tprictrl(&mut self) -> TprictrlW<CfgSpec> {
         TprictrlW::new(self, 0)
     }
     #[doc = "Bits 4:5 - Power Configuration Select"]
     #[inline(always)]
-    #[must_use]
     pub fn pwrsel(&mut self) -> PwrselW<CfgSpec> {
         PwrselW::new(self, 4)
     }
     #[doc = "Bits 6:7 - Voltage Reference Selection"]
     #[inline(always)]
-    #[must_use]
     pub fn refsel(&mut self) -> RefselW<CfgSpec> {
         RefselW::new(self, 6)
     }
     #[doc = "Bits 16:23 - Power Up Delay"]
     #[inline(always)]
-    #[must_use]
     pub fn pudly(&mut self) -> PudlyW<CfgSpec> {
         PudlyW::new(self, 16)
     }
     #[doc = "Bit 28 - ADC Analog Pre-Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn pwren(&mut self) -> PwrenW<CfgSpec> {
         PwrenW::new(self, 28)
     }

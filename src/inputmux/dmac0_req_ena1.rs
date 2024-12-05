@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - ESPI Channel 1 enable"]
     #[inline(always)]
-    #[must_use]
     pub fn espi_ch1(&mut self) -> EspiCh1W<Dmac0ReqEna1Spec> {
         EspiCh1W::new(self, 0)
     }

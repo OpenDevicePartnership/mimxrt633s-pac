@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Address base to start copying from, word aligned (so bits 1:0 must be 0). This field will advance as it processes the words. If it fails with a bus error, the register will contain the failing word. N:Address in Flash or RAM space; RAM only as mapped in this part. May also be able to address SPIFI."]
     #[inline(always)]
-    #[must_use]
     pub fn base(&mut self) -> BaseW<MemaddrSpec> {
         BaseW::new(self, 0)
     }

@@ -78,7 +78,7 @@ impl ChrgDetectedR {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DmState {
-    #[doc = "0: USB_DM pin voltage is &lt; 0.8V"]
+    #[doc = "0: USB_DM pin voltage is < 0.8V"]
     DmState0 = 0,
     #[doc = "1: USB_DM pin voltage is > 2.0V"]
     DmState1 = 1,
@@ -100,7 +100,7 @@ impl DmStateR {
             true => DmState::DmState1,
         }
     }
-    #[doc = "USB_DM pin voltage is &lt; 0.8V"]
+    #[doc = "USB_DM pin voltage is < 0.8V"]
     #[inline(always)]
     pub fn is_dm_state_0(&self) -> bool {
         *self == DmState::DmState0
@@ -115,7 +115,7 @@ impl DmStateR {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DpState {
-    #[doc = "0: USB_DP pin voltage is &lt; 0.8V"]
+    #[doc = "0: USB_DP pin voltage is < 0.8V"]
     DpState0 = 0,
     #[doc = "1: USB_DP pin voltage is > 2.0V"]
     DpState1 = 1,
@@ -137,7 +137,7 @@ impl DpStateR {
             true => DpState::DpState1,
         }
     }
-    #[doc = "USB_DP pin voltage is &lt; 0.8V"]
+    #[doc = "USB_DP pin voltage is < 0.8V"]
     #[inline(always)]
     pub fn is_dp_state_0(&self) -> bool {
         *self == DpState::DpState0

@@ -54,12 +54,12 @@ impl RegisterBlock {
     #[doc = "0x0c - Poker Square Calculation Result Register"]
     #[inline(always)]
     pub const fn pkrsq(&self) -> &Pkrsq {
-        unsafe { &*(self as *const Self).cast::<u8>().add(12).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(12).cast() }
     }
     #[doc = "0x0c - Poker Maximum Limit Register"]
     #[inline(always)]
     pub const fn pkrmax(&self) -> &Pkrmax {
-        unsafe { &*(self as *const Self).cast::<u8>().add(12).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(12).cast() }
     }
     #[doc = "0x10 - Seed Control Register"]
     #[inline(always)]
@@ -69,12 +69,12 @@ impl RegisterBlock {
     #[doc = "0x14 - Total Samples Register"]
     #[inline(always)]
     pub const fn totsam(&self) -> &Totsam {
-        unsafe { &*(self as *const Self).cast::<u8>().add(20).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(20).cast() }
     }
     #[doc = "0x14 - Sparse Bit Limit Register"]
     #[inline(always)]
     pub const fn sblim(&self) -> &Sblim {
-        unsafe { &*(self as *const Self).cast::<u8>().add(20).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(20).cast() }
     }
     #[doc = "0x18 - Frequency Count Minimum Limit Register"]
     #[inline(always)]
@@ -84,82 +84,82 @@ impl RegisterBlock {
     #[doc = "0x1c - Frequency Count Maximum Limit Register"]
     #[inline(always)]
     pub const fn frqmax(&self) -> &Frqmax {
-        unsafe { &*(self as *const Self).cast::<u8>().add(28).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(28).cast() }
     }
     #[doc = "0x1c - Frequency Count Register"]
     #[inline(always)]
     pub const fn frqcnt(&self) -> &Frqcnt {
-        unsafe { &*(self as *const Self).cast::<u8>().add(28).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(28).cast() }
     }
     #[doc = "0x20 - Statistical Check Monobit Limit Register"]
     #[inline(always)]
     pub const fn scml(&self) -> &Scml {
-        unsafe { &*(self as *const Self).cast::<u8>().add(32).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(32).cast() }
     }
     #[doc = "0x20 - Statistical Check Monobit Count Register"]
     #[inline(always)]
     pub const fn scmc(&self) -> &Scmc {
-        unsafe { &*(self as *const Self).cast::<u8>().add(32).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(32).cast() }
     }
     #[doc = "0x24 - Statistical Check Run Length 1 Limit Register"]
     #[inline(always)]
     pub const fn scr1l(&self) -> &Scr1l {
-        unsafe { &*(self as *const Self).cast::<u8>().add(36).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(36).cast() }
     }
     #[doc = "0x24 - Statistical Check Run Length 1 Count Register"]
     #[inline(always)]
     pub const fn scr1c(&self) -> &Scr1c {
-        unsafe { &*(self as *const Self).cast::<u8>().add(36).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(36).cast() }
     }
     #[doc = "0x28 - Statistical Check Run Length 2 Limit Register"]
     #[inline(always)]
     pub const fn scr2l(&self) -> &Scr2l {
-        unsafe { &*(self as *const Self).cast::<u8>().add(40).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(40).cast() }
     }
     #[doc = "0x28 - Statistical Check Run Length 2 Count Register"]
     #[inline(always)]
     pub const fn scr2c(&self) -> &Scr2c {
-        unsafe { &*(self as *const Self).cast::<u8>().add(40).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(40).cast() }
     }
     #[doc = "0x2c - Statistical Check Run Length 3 Limit Register"]
     #[inline(always)]
     pub const fn scr3l(&self) -> &Scr3l {
-        unsafe { &*(self as *const Self).cast::<u8>().add(44).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(44).cast() }
     }
     #[doc = "0x2c - Statistical Check Run Length 3 Count Register"]
     #[inline(always)]
     pub const fn scr3c(&self) -> &Scr3c {
-        unsafe { &*(self as *const Self).cast::<u8>().add(44).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(44).cast() }
     }
     #[doc = "0x30 - Statistical Check Run Length 4 Limit Register"]
     #[inline(always)]
     pub const fn scr4l(&self) -> &Scr4l {
-        unsafe { &*(self as *const Self).cast::<u8>().add(48).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(48).cast() }
     }
     #[doc = "0x30 - Statistical Check Run Length 4 Count Register"]
     #[inline(always)]
     pub const fn scr4c(&self) -> &Scr4c {
-        unsafe { &*(self as *const Self).cast::<u8>().add(48).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(48).cast() }
     }
     #[doc = "0x34 - Statistical Check Run Length 5 Limit Register"]
     #[inline(always)]
     pub const fn scr5l(&self) -> &Scr5l {
-        unsafe { &*(self as *const Self).cast::<u8>().add(52).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(52).cast() }
     }
     #[doc = "0x34 - Statistical Check Run Length 5 Count Register"]
     #[inline(always)]
     pub const fn scr5c(&self) -> &Scr5c {
-        unsafe { &*(self as *const Self).cast::<u8>().add(52).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(52).cast() }
     }
     #[doc = "0x38 - Statistical Check Run Length 6+ Limit Register"]
     #[inline(always)]
     pub const fn scr6pl(&self) -> &Scr6pl {
-        unsafe { &*(self as *const Self).cast::<u8>().add(56).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(56).cast() }
     }
     #[doc = "0x38 - Statistical Check Run Length 6+ Count Register"]
     #[inline(always)]
     pub const fn scr6pc(&self) -> &Scr6pc {
-        unsafe { &*(self as *const Self).cast::<u8>().add(56).cast() }
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(56).cast() }
     }
     #[doc = "0x3c - Status Register"]
     #[inline(always)]

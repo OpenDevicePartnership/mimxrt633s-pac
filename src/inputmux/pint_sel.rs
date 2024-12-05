@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Port Input (PIOx.y) 64 to 8 Mux Select. . . Pin number select for pin interrupt or pattern match engine input. (For PIOx_y: INTPIN = (x * 32) + y. PIO0_0 to PIO1_31 correspond to numbers 0 to 63."]
     #[inline(always)]
-    #[must_use]
     pub fn pint_sel(&mut self) -> PintSelW<PintSelSpec> {
         PintSelW::new(self, 0)
     }

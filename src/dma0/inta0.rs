@@ -79,7 +79,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Interrupt A status for DMA channel 0."]
     #[inline(always)]
-    #[must_use]
     pub fn ia(&mut self) -> IaW<Inta0Spec> {
         IaW::new(self, 0)
     }

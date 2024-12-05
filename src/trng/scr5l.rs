@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:10 - Run Length 5 Maximum Limit"]
     #[inline(always)]
-    #[must_use]
     pub fn run5_max(&mut self) -> Run5MaxW<Scr5lSpec> {
         Run5MaxW::new(self, 0)
     }
     #[doc = "Bits 16:26 - Run Length 5 Range"]
     #[inline(always)]
-    #[must_use]
     pub fn run5_rng(&mut self) -> Run5RngW<Scr5lSpec> {
         Run5RngW::new(self, 16)
     }

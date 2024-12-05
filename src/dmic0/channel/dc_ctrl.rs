@@ -237,25 +237,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - DC block filter"]
     #[inline(always)]
-    #[must_use]
     pub fn dcpole(&mut self) -> DcpoleW<DcCtrlSpec> {
         DcpoleW::new(self, 0)
     }
     #[doc = "Bits 4:7 - Fine gain adjustment in the form of a number of bits to downshift."]
     #[inline(always)]
-    #[must_use]
     pub fn dcgain(&mut self) -> DcgainW<DcCtrlSpec> {
         DcgainW::new(self, 4)
     }
     #[doc = "Bit 8 - Selects 16-bit saturation."]
     #[inline(always)]
-    #[must_use]
     pub fn saturateat16bit(&mut self) -> Saturateat16bitW<DcCtrlSpec> {
         Saturateat16bitW::new(self, 8)
     }
     #[doc = "Bit 9 - Sign extend."]
     #[inline(always)]
-    #[must_use]
     pub fn signextend(&mut self) -> SignextendW<DcCtrlSpec> {
         SignextendW::new(self, 9)
     }

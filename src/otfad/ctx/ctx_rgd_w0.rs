@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 10:31 - Start Address"]
     #[inline(always)]
-    #[must_use]
     pub fn srtaddr(&mut self) -> SrtaddrW<CtxRgdW0Spec> {
         SrtaddrW::new(self, 10)
     }

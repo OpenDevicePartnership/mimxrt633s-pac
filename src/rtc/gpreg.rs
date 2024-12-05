@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Data retained during Deep power-down mode or loss of main power as long as VBAT is supplied."]
     #[inline(always)]
-    #[must_use]
     pub fn gpdata(&mut self) -> GpdataW<GpregSpec> {
         GpdataW::new(self, 0)
     }

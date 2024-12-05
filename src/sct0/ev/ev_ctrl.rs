@@ -500,61 +500,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Selects the Match register associated with this event (if any). A match can occur only when the counter selected by the HEVENT bit is running."]
     #[inline(always)]
-    #[must_use]
     pub fn matchsel(&mut self) -> MatchselW<EvCtrlSpec> {
         MatchselW::new(self, 0)
     }
     #[doc = "Bit 4 - Select L/H counter. Do not set this bit if UNIFY = 1."]
     #[inline(always)]
-    #[must_use]
     pub fn hevent(&mut self) -> HeventW<EvCtrlSpec> {
         HeventW::new(self, 4)
     }
     #[doc = "Bit 5 - Input/output select"]
     #[inline(always)]
-    #[must_use]
     pub fn outsel(&mut self) -> OutselW<EvCtrlSpec> {
         OutselW::new(self, 5)
     }
     #[doc = "Bits 6:9 - Selects the input or output signal number associated with this event (if any). Do not select an input in this register if CKMODE is 1x. In this case the clock input is an implicit ingredient of every event."]
     #[inline(always)]
-    #[must_use]
     pub fn iosel(&mut self) -> IoselW<EvCtrlSpec> {
         IoselW::new(self, 6)
     }
     #[doc = "Bits 10:11 - Selects the I/O condition for event n. (The detection of edges on outputs lag the conditions that switch the outputs by one SCT clock). In order to guarantee proper edge/state detection, an input must have a minimum pulse width of at least one SCT clock period ."]
     #[inline(always)]
-    #[must_use]
     pub fn iocond(&mut self) -> IocondW<EvCtrlSpec> {
         IocondW::new(self, 10)
     }
     #[doc = "Bits 12:13 - Selects how the specified match and I/O condition are used and combined."]
     #[inline(always)]
-    #[must_use]
     pub fn combmode(&mut self) -> CombmodeW<EvCtrlSpec> {
         CombmodeW::new(self, 12)
     }
     #[doc = "Bit 14 - This bit controls how the STATEV value modifies the state selected by HEVENT when this event is the highest-numbered event occurring for that state."]
     #[inline(always)]
-    #[must_use]
     pub fn stateld(&mut self) -> StateldW<EvCtrlSpec> {
         StateldW::new(self, 14)
     }
     #[doc = "Bits 15:19 - This value is loaded into or added to the state selected by HEVENT, depending on STATELD, when this event is the highest-numbered event occurring for that state. If STATELD and STATEV are both zero, there is no change to the STATE value."]
     #[inline(always)]
-    #[must_use]
     pub fn statev(&mut self) -> StatevW<EvCtrlSpec> {
         StatevW::new(self, 15)
     }
     #[doc = "Bit 20 - If this bit is one and the COMBMODE field specifies a match component to the triggering of this event, then a match is considered to be active whenever the counter value is GREATER THAN OR EQUAL TO the value specified in the match register when counting up, LESS THEN OR EQUAL TO the match value when counting down. If this bit is zero, a match is only be active during the cycle when the counter is equal to the match value."]
     #[inline(always)]
-    #[must_use]
     pub fn matchmem(&mut self) -> MatchmemW<EvCtrlSpec> {
         MatchmemW::new(self, 20)
     }
     #[doc = "Bits 21:22 - Direction qualifier for event generation. This field only applies when the counters are operating in BIDIR mode. If BIDIR = 0, the SCT ignores this field. Value 0x3 is reserved."]
     #[inline(always)]
-    #[must_use]
     pub fn direction(&mut self) -> DirectionW<EvCtrlSpec> {
         DirectionW::new(self, 21)
     }

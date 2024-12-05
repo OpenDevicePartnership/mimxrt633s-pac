@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<KeymaskSpec> {
 impl W {
     #[doc = "Bits 0:31 - Key a Mask"]
     #[inline(always)]
-    #[must_use]
     pub fn keymask(&mut self) -> KeymaskW<KeymaskSpec> {
         KeymaskW::new(self, 0)
     }

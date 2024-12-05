@@ -184,103 +184,86 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Force Event Auto Command 12 Not Executed"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtac12ne(&mut self) -> Fevtac12neW<ForceEventSpec> {
         Fevtac12neW::new(self, 0)
     }
     #[doc = "Bit 1 - Force Event Auto Command 12 Time Out Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtac12toe(&mut self) -> Fevtac12toeW<ForceEventSpec> {
         Fevtac12toeW::new(self, 1)
     }
     #[doc = "Bit 2 - Force Event Auto Command 12 CRC Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtac12ce(&mut self) -> Fevtac12ceW<ForceEventSpec> {
         Fevtac12ceW::new(self, 2)
     }
     #[doc = "Bit 3 - Force Event Auto Command 12 End Bit Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtac12ebe(&mut self) -> Fevtac12ebeW<ForceEventSpec> {
         Fevtac12ebeW::new(self, 3)
     }
     #[doc = "Bit 4 - Force Event Auto Command 12 Index Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtac12ie(&mut self) -> Fevtac12ieW<ForceEventSpec> {
         Fevtac12ieW::new(self, 4)
     }
     #[doc = "Bit 7 - Force Event Command Not Executed By Auto Command 12 Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtcnibac12e(&mut self) -> Fevtcnibac12eW<ForceEventSpec> {
         Fevtcnibac12eW::new(self, 7)
     }
     #[doc = "Bit 16 - Force Event Command Time Out Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtctoe(&mut self) -> FevtctoeW<ForceEventSpec> {
         FevtctoeW::new(self, 16)
     }
     #[doc = "Bit 17 - Force Event Command CRC Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtcce(&mut self) -> FevtcceW<ForceEventSpec> {
         FevtcceW::new(self, 17)
     }
     #[doc = "Bit 18 - Force Event Command End Bit Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtcebe(&mut self) -> FevtcebeW<ForceEventSpec> {
         FevtcebeW::new(self, 18)
     }
     #[doc = "Bit 19 - Force Event Command Index Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtcie(&mut self) -> FevtcieW<ForceEventSpec> {
         FevtcieW::new(self, 19)
     }
     #[doc = "Bit 20 - Force Event Data Time Out Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtdtoe(&mut self) -> FevtdtoeW<ForceEventSpec> {
         FevtdtoeW::new(self, 20)
     }
     #[doc = "Bit 21 - Force Event Data CRC Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtdce(&mut self) -> FevtdceW<ForceEventSpec> {
         FevtdceW::new(self, 21)
     }
     #[doc = "Bit 22 - Force Event Data End Bit Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtdebe(&mut self) -> FevtdebeW<ForceEventSpec> {
         FevtdebeW::new(self, 22)
     }
     #[doc = "Bit 24 - Force Event Auto Command 12 Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtac12e(&mut self) -> Fevtac12eW<ForceEventSpec> {
         Fevtac12eW::new(self, 24)
     }
     #[doc = "Bit 26 - Force Tuning Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevttne(&mut self) -> FevttneW<ForceEventSpec> {
         FevttneW::new(self, 26)
     }
     #[doc = "Bit 28 - Force Event DMA Error"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtdmae(&mut self) -> FevtdmaeW<ForceEventSpec> {
         FevtdmaeW::new(self, 28)
     }
     #[doc = "Bit 31 - Force Event Card Interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn fevtcint(&mut self) -> FevtcintW<ForceEventSpec> {
         FevtcintW::new(self, 31)
     }

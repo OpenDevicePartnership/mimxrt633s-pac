@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Lock LUT"]
     #[inline(always)]
-    #[must_use]
     pub fn lock(&mut self) -> LockW<LutcrSpec> {
         LockW::new(self, 0)
     }
     #[doc = "Bit 1 - Unlock LUT"]
     #[inline(always)]
-    #[must_use]
     pub fn unlock(&mut self) -> UnlockW<LutcrSpec> {
         UnlockW::new(self, 1)
     }

@@ -254,25 +254,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - ADC Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn adcen(&mut self) -> AdcenW<CtrlSpec> {
         AdcenW::new(self, 0)
     }
     #[doc = "Bit 1 - Software Reset"]
     #[inline(always)]
-    #[must_use]
     pub fn rst(&mut self) -> RstW<CtrlSpec> {
         RstW::new(self, 1)
     }
     #[doc = "Bit 2 - Doze Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn dozen(&mut self) -> DozenW<CtrlSpec> {
         DozenW::new(self, 2)
     }
     #[doc = "Bit 8 - Reset FIFO"]
     #[inline(always)]
-    #[must_use]
     pub fn rstfifo(&mut self) -> RstfifoW<CtrlSpec> {
         RstfifoW::new(self, 8)
     }

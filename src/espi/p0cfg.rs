@@ -235,37 +235,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - The Type field selects how the port interacts with the Host over the eSPI or LPC bus"]
     #[inline(always)]
-    #[must_use]
     pub fn type_(&mut self) -> TypeW<P0cfgSpec> {
         TypeW::new(self, 0)
     }
     #[doc = "Bits 5:6 - Meaning depends on Type, but generally picks the direction of the port (Host writes, Host reads, or both)"]
     #[inline(always)]
-    #[must_use]
     pub fn direction(&mut self) -> DirectionW<P0cfgSpec> {
         DirectionW::new(self, 5)
     }
     #[doc = "Bit 7 - Mailbox: Map interrupt on Read 1st and Write 1st to every read/write (special will still control 0th and last location)"]
     #[inline(always)]
-    #[must_use]
     pub fn mbint_all(&mut self) -> MbintAllW<P0cfgSpec> {
         MbintAllW::new(self, 7)
     }
     #[doc = "Bit 8 - Stall on any Read of Index/Data and Mailbox (only)"]
     #[inline(always)]
-    #[must_use]
     pub fn stall_rd(&mut self) -> StallRdW<P0cfgSpec> {
         StallRdW::new(self, 8)
     }
     #[doc = "Bit 9 - Stall on any Write of Index/Data and Mailbox"]
     #[inline(always)]
-    #[must_use]
     pub fn stall_wr(&mut self) -> StallWrW<P0cfgSpec> {
         StallWrW::new(self, 9)
     }
     #[doc = "Bit 10 - If 1, the Host will get an error when trying to perform a read or write that is blocked by the Direction field"]
     #[inline(always)]
-    #[must_use]
     pub fn error_ign(&mut self) -> ErrorIgnW<P0cfgSpec> {
         ErrorIgnW::new(self, 10)
     }

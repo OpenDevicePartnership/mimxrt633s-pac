@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Mask to apply as side channel countermeasure. 0: No mask to be used. N: Mask to XOR onto values"]
     #[inline(always)]
-    #[must_use]
     pub fn mask(&mut self) -> MaskW<RemaskSpec> {
         MaskW::new(self, 0)
     }

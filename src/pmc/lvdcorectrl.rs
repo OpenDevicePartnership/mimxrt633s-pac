@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Vddcore LVD falling trip voltage"]
     #[inline(always)]
-    #[must_use]
     pub fn lvdcorelvl(&mut self) -> LvdcorelvlW<LvdcorectrlSpec> {
         LvdcorelvlW::new(self, 0)
     }

@@ -134,13 +134,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - FIFO Watermark Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn fwmie(&mut self) -> FwmieW<IeSpec> {
         FwmieW::new(self, 0)
     }
     #[doc = "Bit 1 - Result FIFO Overflow Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn fofie(&mut self) -> FofieW<IeSpec> {
         FofieW::new(self, 1)
     }

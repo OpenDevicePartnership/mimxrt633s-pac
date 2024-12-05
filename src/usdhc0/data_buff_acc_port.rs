@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Data Content"]
     #[inline(always)]
-    #[must_use]
     pub fn datcont(&mut self) -> DatcontW<DataBuffAccPortSpec> {
         DatcontW::new(self, 0)
     }

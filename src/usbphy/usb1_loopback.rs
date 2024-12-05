@@ -124,67 +124,56 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - This bit enables the USB loopback test."]
     #[inline(always)]
-    #[must_use]
     pub fn utmi_teststart(&mut self) -> UtmiTeststartW<Usb1LoopbackSpec> {
         UtmiTeststartW::new(self, 0)
     }
     #[doc = "Bit 1 - Mode control for USB loopback test"]
     #[inline(always)]
-    #[must_use]
     pub fn utmi_dig_tst0(&mut self) -> UtmiDigTst0W<Usb1LoopbackSpec> {
         UtmiDigTst0W::new(self, 1)
     }
     #[doc = "Bit 2 - Mode control for USB loopback test"]
     #[inline(always)]
-    #[must_use]
     pub fn utmi_dig_tst1(&mut self) -> UtmiDigTst1W<Usb1LoopbackSpec> {
         UtmiDigTst1W::new(self, 2)
     }
     #[doc = "Bit 3 - Select HS or FS mode for USB loopback testing"]
     #[inline(always)]
-    #[must_use]
     pub fn tsti_tx_hs_mode(&mut self) -> TstiTxHsModeW<Usb1LoopbackSpec> {
         TstiTxHsModeW::new(self, 3)
     }
     #[doc = "Bit 4 - Set to value 1'b1 to choose LS for USB loopback testing, set to value 1'b0 to choose HS or FS mode which is defined by TSTI1_TX_HS"]
     #[inline(always)]
-    #[must_use]
     pub fn tsti_tx_ls_mode(&mut self) -> TstiTxLsModeW<Usb1LoopbackSpec> {
         TstiTxLsModeW::new(self, 4)
     }
     #[doc = "Bit 5 - Enable TX for USB loopback test."]
     #[inline(always)]
-    #[must_use]
     pub fn tsti_tx_en(&mut self) -> TstiTxEnW<Usb1LoopbackSpec> {
         TstiTxEnW::new(self, 5)
     }
     #[doc = "Bit 6 - Sets TX Hi-Z for USB loopback test."]
     #[inline(always)]
-    #[must_use]
     pub fn tsti_tx_hiz(&mut self) -> TstiTxHizW<Usb1LoopbackSpec> {
         TstiTxHizW::new(self, 6)
     }
     #[doc = "Bit 7 - This read-only bit is a status bit for USB loopback test results"]
     #[inline(always)]
-    #[must_use]
     pub fn utmo_dig_tst0(&mut self) -> UtmoDigTst0W<Usb1LoopbackSpec> {
         UtmoDigTst0W::new(self, 7)
     }
     #[doc = "Bit 8 - This read-only bit is a status bit for USB loopback test"]
     #[inline(always)]
-    #[must_use]
     pub fn utmo_dig_tst1(&mut self) -> UtmoDigTst1W<Usb1LoopbackSpec> {
         UtmoDigTst1W::new(self, 8)
     }
     #[doc = "Bit 15 - Setting this bit field to value 1'b1 will enable the loopback test to dynamically change the packet speed"]
     #[inline(always)]
-    #[must_use]
     pub fn tsti_hsfs_mode_en(&mut self) -> TstiHsfsModeEnW<Usb1LoopbackSpec> {
         TstiHsfsModeEnW::new(self, 15)
     }
     #[doc = "Bits 16:23 - Selects the packet data byte used for USB loopback testing in Pulse mode"]
     #[inline(always)]
-    #[must_use]
     pub fn tstpkt(&mut self) -> TstpktW<Usb1LoopbackSpec> {
         TstpktW::new(self, 16)
     }

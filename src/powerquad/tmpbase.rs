@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Base address register for the temporary region"]
     #[inline(always)]
-    #[must_use]
     pub fn tmpbase(&mut self) -> TmpbaseW<TmpbaseSpec> {
         TmpbaseW::new(self, 0)
     }

@@ -64,31 +64,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - 0x4002 0000--0x4002 0FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn rstctl1_rule(&mut self) -> Rstctl1RuleW<ApbGrp1MemRule0Spec> {
         Rstctl1RuleW::new(self, 0)
     }
     #[doc = "Bits 4:5 - 0x4002 1000--0x4002 1FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn clkctl1_rule(&mut self) -> Clkctl1RuleW<ApbGrp1MemRule0Spec> {
         Clkctl1RuleW::new(self, 4)
     }
     #[doc = "Bits 8:9 - 0x4002 2000--0x4002 2FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn sysctl1_rule(&mut self) -> Sysctl1RuleW<ApbGrp1MemRule0Spec> {
         Sysctl1RuleW::new(self, 8)
     }
     #[doc = "Bits 20:21 - 0x4002 5000--0x4002 5FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_intr_ctrl_rule(&mut self) -> GpioIntrCtrlRuleW<ApbGrp1MemRule0Spec> {
         GpioIntrCtrlRuleW::new(self, 20)
     }
     #[doc = "Bits 24:25 - 0x4002 6000--0x4002 6FFF"]
     #[inline(always)]
-    #[must_use]
     pub fn periph_input_mux_rule(&mut self) -> PeriphInputMuxRuleW<ApbGrp1MemRule0Spec> {
         PeriphInputMuxRuleW::new(self, 24)
     }

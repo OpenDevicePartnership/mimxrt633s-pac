@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - AUDIOPLL0 Lock Time Divide by 2: Programmed lock time is in uS (micro-seconds) and is programmed as half the actual lock time value."]
     #[inline(always)]
-    #[must_use]
     pub fn locktimediv2(&mut self) -> Locktimediv2W<Audiopll0locktimediv2Spec> {
         Locktimediv2W::new(self, 0)
     }

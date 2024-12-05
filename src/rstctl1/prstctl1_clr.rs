@@ -457,85 +457,71 @@ impl core::fmt::Debug for crate::generic::Reg<Prstctl1ClrSpec> {
 impl W {
     #[doc = "Bit 0 - HSGPIO0 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio0_rst_clr(&mut self) -> Hsgpio0RstClrW<Prstctl1ClrSpec> {
         Hsgpio0RstClrW::new(self, 0)
     }
     #[doc = "Bit 1 - HSGPIO1 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio1_rst_clr(&mut self) -> Hsgpio1RstClrW<Prstctl1ClrSpec> {
         Hsgpio1RstClrW::new(self, 1)
     }
     #[doc = "Bit 2 - HSGPIO2 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio2_rst_clr(&mut self) -> Hsgpio2RstClrW<Prstctl1ClrSpec> {
         Hsgpio2RstClrW::new(self, 2)
     }
     #[doc = "Bit 3 - HSGPIO3 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio3_rst_clr(&mut self) -> Hsgpio3RstClrW<Prstctl1ClrSpec> {
         Hsgpio3RstClrW::new(self, 3)
     }
     #[doc = "Bit 4 - HSGPIO4 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio4_rst_clr(&mut self) -> Hsgpio4RstClrW<Prstctl1ClrSpec> {
         Hsgpio4RstClrW::new(self, 4)
     }
     #[doc = "Bit 5 - HSGPIO5 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio5_rst_clr(&mut self) -> Hsgpio5RstClrW<Prstctl1ClrSpec> {
         Hsgpio5RstClrW::new(self, 5)
     }
     #[doc = "Bit 6 - HSGPIO6 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio6_rst_clr(&mut self) -> Hsgpio6RstClrW<Prstctl1ClrSpec> {
         Hsgpio6RstClrW::new(self, 6)
     }
     #[doc = "Bit 7 - HSGPIO7 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn hsgpio7_rst_clr(&mut self) -> Hsgpio7RstClrW<Prstctl1ClrSpec> {
         Hsgpio7RstClrW::new(self, 7)
     }
     #[doc = "Bit 16 - CRC reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn crc_rst_clr(&mut self) -> CrcRstClrW<Prstctl1ClrSpec> {
         CrcRstClrW::new(self, 16)
     }
     #[doc = "Bit 23 - DMAC0 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac0_rst_clr(&mut self) -> Dmac0RstClrW<Prstctl1ClrSpec> {
         Dmac0RstClrW::new(self, 23)
     }
     #[doc = "Bit 24 - DMAC1 reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn dmac1_rst_clr(&mut self) -> Dmac1RstClrW<Prstctl1ClrSpec> {
         Dmac1RstClrW::new(self, 24)
     }
     #[doc = "Bit 28 - MU reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn mu_rst_clr(&mut self) -> MuRstClrW<Prstctl1ClrSpec> {
         MuRstClrW::new(self, 28)
     }
     #[doc = "Bit 29 - SEMA reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn sema_rst_clr(&mut self) -> SemaRstClrW<Prstctl1ClrSpec> {
         SemaRstClrW::new(self, 29)
     }
     #[doc = "Bit 31 - FREQME reset clear"]
     #[inline(always)]
-    #[must_use]
     pub fn freqme_rst_clr(&mut self) -> FreqmeRstClrW<Prstctl1ClrSpec> {
         FreqmeRstClrW::new(self, 31)
     }

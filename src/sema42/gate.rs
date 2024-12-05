@@ -94,7 +94,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - ate Finite State Machine. The hardware gate is maintained in a 16-state implementation"]
     #[inline(always)]
-    #[must_use]
     pub fn gtfsm(&mut self) -> GtfsmW<GateSpec> {
         GtfsmW::new(self, 0)
     }

@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 4:8 - This indicates the current PTD that is used by the hardware when it is processing the ATL list."]
     #[inline(always)]
-    #[must_use]
     pub fn atl_cur(&mut self) -> AtlCurW<AtlptdSpec> {
         AtlCurW::new(self, 4)
     }
     #[doc = "Bits 9:31 - Base address to be used by the hardware to find the start of the ATL list."]
     #[inline(always)]
-    #[must_use]
     pub fn atl_base(&mut self) -> AtlBaseW<AtlptdSpec> {
         AtlBaseW::new(self, 9)
     }

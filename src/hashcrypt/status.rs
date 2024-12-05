@@ -254,7 +254,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 2 - If 1, an error occurred. For normal uses, this is due to an attempted overrun: INDATA was written when it was not appropriate. For Master cases, this is an AHB bus error; the COUNT field will indicate which block it was on."]
     #[inline(always)]
-    #[must_use]
     pub fn error(&mut self) -> ErrorW<StatusSpec> {
         ErrorW::new(self, 2)
     }

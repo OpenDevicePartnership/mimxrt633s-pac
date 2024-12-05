@@ -650,61 +650,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Configuration Valid flag. This bit indicates whether the current channel descriptor is valid and can potentially be acted upon, if all other activation criteria are fulfilled."]
     #[inline(always)]
-    #[must_use]
     pub fn cfgvalid(&mut self) -> CfgvalidW<XfercfgSpec> {
         CfgvalidW::new(self, 0)
     }
     #[doc = "Bit 1 - Indicates whether the channel's control structure will be reloaded when the current descriptor is exhausted. Reloading allows ping-pong and linked transfers."]
     #[inline(always)]
-    #[must_use]
     pub fn reload(&mut self) -> ReloadW<XfercfgSpec> {
         ReloadW::new(self, 1)
     }
     #[doc = "Bit 2 - Software Trigger."]
     #[inline(always)]
-    #[must_use]
     pub fn swtrig(&mut self) -> SwtrigW<XfercfgSpec> {
         SwtrigW::new(self, 2)
     }
     #[doc = "Bit 3 - Clear Trigger."]
     #[inline(always)]
-    #[must_use]
     pub fn clrtrig(&mut self) -> ClrtrigW<XfercfgSpec> {
         ClrtrigW::new(self, 3)
     }
     #[doc = "Bit 4 - Set Interrupt flag A for this channel. There is no hardware distinction between interrupt A and B. They can be used by software to assist with more complex descriptor usage. By convention, interrupt A may be used when only one interrupt flag is needed."]
     #[inline(always)]
-    #[must_use]
     pub fn setinta(&mut self) -> SetintaW<XfercfgSpec> {
         SetintaW::new(self, 4)
     }
     #[doc = "Bit 5 - Set Interrupt flag B for this channel. There is no hardware distinction between interrupt A and B. They can be used by software to assist with more complex descriptor usage. By convention, interrupt A may be used when only one interrupt flag is needed."]
     #[inline(always)]
-    #[must_use]
     pub fn setintb(&mut self) -> SetintbW<XfercfgSpec> {
         SetintbW::new(self, 5)
     }
     #[doc = "Bits 8:9 - Transfer width used for this DMA channel."]
     #[inline(always)]
-    #[must_use]
     pub fn width(&mut self) -> WidthW<XfercfgSpec> {
         WidthW::new(self, 8)
     }
     #[doc = "Bits 12:13 - Determines whether the source address is incremented for each DMA transfer."]
     #[inline(always)]
-    #[must_use]
     pub fn srcinc(&mut self) -> SrcincW<XfercfgSpec> {
         SrcincW::new(self, 12)
     }
     #[doc = "Bits 14:15 - Determines whether the destination address is incremented for each DMA transfer."]
     #[inline(always)]
-    #[must_use]
     pub fn dstinc(&mut self) -> DstincW<XfercfgSpec> {
         DstincW::new(self, 14)
     }
     #[doc = "Bits 16:25 - Total number of transfers to be performed, minus 1 encoded. The number of bytes transferred is: (XFERCOUNT + 1) x data width (as defined by the WIDTH field). The DMA controller uses this bit field during transfer to count down. Hence, it cannot be used by software to read back the size of the transfer, for instance, in an interrupt handler. 0x0 = a total of 1 transfer will be performed. 0x1 = a total of 2 transfers will be performed. 0x3FF = a total of 1,024 transfers will be performed."]
     #[inline(always)]
-    #[must_use]
     pub fn xfercount(&mut self) -> XfercountW<XfercfgSpec> {
         XfercountW::new(self, 16)
     }

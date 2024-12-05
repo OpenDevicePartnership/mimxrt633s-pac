@@ -41,7 +41,6 @@ impl core::fmt::Debug for crate::generic::Reg<Dmac1ReqEna1SetSpec> {
 impl W {
     #[doc = "Bit 0 - ESPI Channel 1 enable set"]
     #[inline(always)]
-    #[must_use]
     pub fn espi_ch1(&mut self) -> EspiCh1W<Dmac1ReqEna1SetSpec> {
         EspiCh1W::new(self, 0)
     }

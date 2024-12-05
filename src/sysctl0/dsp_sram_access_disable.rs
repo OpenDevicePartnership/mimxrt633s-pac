@@ -1814,181 +1814,151 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram00_if(&mut self) -> Sram00IfW<DspSramAccessDisableSpec> {
         Sram00IfW::new(self, 0)
     }
     #[doc = "Bit 1 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram01_if(&mut self) -> Sram01IfW<DspSramAccessDisableSpec> {
         Sram01IfW::new(self, 1)
     }
     #[doc = "Bit 2 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram02_if(&mut self) -> Sram02IfW<DspSramAccessDisableSpec> {
         Sram02IfW::new(self, 2)
     }
     #[doc = "Bit 3 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram03_if(&mut self) -> Sram03IfW<DspSramAccessDisableSpec> {
         Sram03IfW::new(self, 3)
     }
     #[doc = "Bit 4 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram04_if(&mut self) -> Sram04IfW<DspSramAccessDisableSpec> {
         Sram04IfW::new(self, 4)
     }
     #[doc = "Bit 5 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram05_if(&mut self) -> Sram05IfW<DspSramAccessDisableSpec> {
         Sram05IfW::new(self, 5)
     }
     #[doc = "Bit 6 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram06_if(&mut self) -> Sram06IfW<DspSramAccessDisableSpec> {
         Sram06IfW::new(self, 6)
     }
     #[doc = "Bit 7 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram07_if(&mut self) -> Sram07IfW<DspSramAccessDisableSpec> {
         Sram07IfW::new(self, 7)
     }
     #[doc = "Bit 8 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram08_if(&mut self) -> Sram08IfW<DspSramAccessDisableSpec> {
         Sram08IfW::new(self, 8)
     }
     #[doc = "Bit 9 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram09_if(&mut self) -> Sram09IfW<DspSramAccessDisableSpec> {
         Sram09IfW::new(self, 9)
     }
     #[doc = "Bit 10 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram10_if(&mut self) -> Sram10IfW<DspSramAccessDisableSpec> {
         Sram10IfW::new(self, 10)
     }
     #[doc = "Bit 11 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram11_if(&mut self) -> Sram11IfW<DspSramAccessDisableSpec> {
         Sram11IfW::new(self, 11)
     }
     #[doc = "Bit 12 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram12_if(&mut self) -> Sram12IfW<DspSramAccessDisableSpec> {
         Sram12IfW::new(self, 12)
     }
     #[doc = "Bit 13 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram13_if(&mut self) -> Sram13IfW<DspSramAccessDisableSpec> {
         Sram13IfW::new(self, 13)
     }
     #[doc = "Bit 14 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram14_if(&mut self) -> Sram14IfW<DspSramAccessDisableSpec> {
         Sram14IfW::new(self, 14)
     }
     #[doc = "Bit 15 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram15_if(&mut self) -> Sram15IfW<DspSramAccessDisableSpec> {
         Sram15IfW::new(self, 15)
     }
     #[doc = "Bit 16 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram16_if(&mut self) -> Sram16IfW<DspSramAccessDisableSpec> {
         Sram16IfW::new(self, 16)
     }
     #[doc = "Bit 17 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram17_if(&mut self) -> Sram17IfW<DspSramAccessDisableSpec> {
         Sram17IfW::new(self, 17)
     }
     #[doc = "Bit 18 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram18_if(&mut self) -> Sram18IfW<DspSramAccessDisableSpec> {
         Sram18IfW::new(self, 18)
     }
     #[doc = "Bit 19 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram19_if(&mut self) -> Sram19IfW<DspSramAccessDisableSpec> {
         Sram19IfW::new(self, 19)
     }
     #[doc = "Bit 20 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram20_if(&mut self) -> Sram20IfW<DspSramAccessDisableSpec> {
         Sram20IfW::new(self, 20)
     }
     #[doc = "Bit 21 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram21_if(&mut self) -> Sram21IfW<DspSramAccessDisableSpec> {
         Sram21IfW::new(self, 21)
     }
     #[doc = "Bit 22 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram22_if(&mut self) -> Sram22IfW<DspSramAccessDisableSpec> {
         Sram22IfW::new(self, 22)
     }
     #[doc = "Bit 23 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram23_if(&mut self) -> Sram23IfW<DspSramAccessDisableSpec> {
         Sram23IfW::new(self, 23)
     }
     #[doc = "Bit 24 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram24_if(&mut self) -> Sram24IfW<DspSramAccessDisableSpec> {
         Sram24IfW::new(self, 24)
     }
     #[doc = "Bit 25 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram25_if(&mut self) -> Sram25IfW<DspSramAccessDisableSpec> {
         Sram25IfW::new(self, 25)
     }
     #[doc = "Bit 26 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram26_if(&mut self) -> Sram26IfW<DspSramAccessDisableSpec> {
         Sram26IfW::new(self, 26)
     }
     #[doc = "Bit 27 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram27_if(&mut self) -> Sram27IfW<DspSramAccessDisableSpec> {
         Sram27IfW::new(self, 27)
     }
     #[doc = "Bit 28 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram28_if(&mut self) -> Sram28IfW<DspSramAccessDisableSpec> {
         Sram28IfW::new(self, 28)
     }
     #[doc = "Bit 29 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn sram29_if(&mut self) -> Sram29IfW<DspSramAccessDisableSpec> {
         Sram29IfW::new(self, 29)
     }

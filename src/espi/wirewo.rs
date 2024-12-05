@@ -32,7 +32,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:17 - LPC: IRQ states to use"]
     #[inline(always)]
-    #[must_use]
     pub fn wires(&mut self) -> WiresW<WirewoSpec> {
         WiresW::new(self, 0)
     }

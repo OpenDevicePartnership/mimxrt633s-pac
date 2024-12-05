@@ -32,7 +32,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 18:31 - Programmable portion of the data buffer start address."]
     #[inline(always)]
-    #[must_use]
     pub fn da_buf(&mut self) -> DaBufW<DatabufstartSpec> {
         DaBufW::new(self, 18)
     }

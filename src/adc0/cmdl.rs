@@ -391,25 +391,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - Input channel select"]
     #[inline(always)]
-    #[must_use]
     pub fn adch(&mut self) -> AdchW<CmdlSpec> {
         AdchW::new(self, 0)
     }
     #[doc = "Bit 5 - A-side vs. B-side Select"]
     #[inline(always)]
-    #[must_use]
     pub fn absel(&mut self) -> AbselW<CmdlSpec> {
         AbselW::new(self, 5)
     }
     #[doc = "Bit 6 - Differential Mode Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn diff(&mut self) -> DiffW<CmdlSpec> {
         DiffW::new(self, 6)
     }
     #[doc = "Bit 13 - Channel Scale"]
     #[inline(always)]
-    #[must_use]
     pub fn cscale(&mut self) -> CscaleW<CmdlSpec> {
         CscaleW::new(self, 13)
     }

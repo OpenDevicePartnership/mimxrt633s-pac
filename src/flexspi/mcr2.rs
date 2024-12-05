@@ -218,32 +218,27 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 11 - This bit determines whether AHB RX Buffer and AHB TX Buffer will be cleaned automatically when FlexSPI returns STOP mode ACK. Software should set this bit if AHB RX Buffer or AHB TX Buffer will be powered off in STOP mode. Otherwise AHB read access after exiting STOP mode may hit AHB RX Buffer or AHB TX Buffer but their data entries are invalid."]
     #[inline(always)]
-    #[must_use]
     pub fn clrahbbufopt(&mut self) -> ClrahbbufoptW<Mcr2Spec> {
         ClrahbbufoptW::new(self, 11)
     }
     #[doc = "Bit 14 - The sampling clock phase selection will be reset to phase 0 when this bit is written with 0x1. This bit will be auto-cleared immediately."]
     #[inline(always)]
-    #[must_use]
     pub fn clrlearnphase(&mut self) -> ClrlearnphaseW<Mcr2Spec> {
         ClrlearnphaseW::new(self, 14)
     }
     #[doc = "Bit 15 - All external devices are same devices (both in types and size) for A1/A2/B1/B2."]
     #[inline(always)]
-    #[must_use]
     pub fn samedeviceen(&mut self) -> SamedeviceenW<Mcr2Spec> {
         SamedeviceenW::new(self, 15)
     }
     #[doc = "Bit 19 - B_SCLK pad can be used as A_SCLK differential clock output (inverted clock to A_SCLK). In this case, port B flash access is not available. After changing the value of this field, MCR0\\[SWRESET\\]
 should be set."]
     #[inline(always)]
-    #[must_use]
     pub fn sckbdiffopt(&mut self) -> SckbdiffoptW<Mcr2Spec> {
         SckbdiffoptW::new(self, 19)
     }
     #[doc = "Bits 24:31 - Wait cycle (in AHB clock cycle) for idle state before suspended command sequence resumed."]
     #[inline(always)]
-    #[must_use]
     pub fn resumewait(&mut self) -> ResumewaitW<Mcr2Spec> {
         ResumewaitW::new(self, 24)
     }

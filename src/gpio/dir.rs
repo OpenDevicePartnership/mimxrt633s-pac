@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Selects pin direction for pin PIOm_n (bit 0 = PIOn_0, bit 1 = PIOn_1, etc.). Supported pins depends on the specific device and package. 0 = input. 1 = output."]
     #[inline(always)]
-    #[must_use]
     pub fn dirp(&mut self) -> DirpW<DirSpec> {
         DirpW::new(self, 0)
     }

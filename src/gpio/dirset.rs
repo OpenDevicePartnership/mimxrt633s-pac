@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<DirsetSpec> {
 impl W {
     #[doc = "Bits 0:31 - Set direction bits (bit 0 = PIOn_0, bit 1 = PIOn_1, etc.). Supported pins depends on the specific device and package. 0 = No operation. 1 = Set direction bit."]
     #[inline(always)]
-    #[must_use]
     pub fn dirsetp(&mut self) -> DirsetpW<DirsetSpec> {
         DirsetpW::new(self, 0)
     }

@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Dynamic address valid"]
     #[inline(always)]
-    #[must_use]
     pub fn davalid(&mut self) -> DavalidW<MdynaddrSpec> {
         DavalidW::new(self, 0)
     }
     #[doc = "Bits 1:7 - Dynamic address"]
     #[inline(always)]
-    #[must_use]
     pub fn daddr(&mut self) -> DaddrW<MdynaddrSpec> {
         DaddrW::new(self, 1)
     }

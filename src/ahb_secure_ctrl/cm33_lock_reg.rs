@@ -416,37 +416,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - m33 LOCKNSVTOR write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn lock_ns_vtor(&mut self) -> LockNsVtorW<Cm33LockRegSpec> {
         LockNsVtorW::new(self, 0)
     }
     #[doc = "Bits 2:3 - m33 LOCKNSMPU write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn lock_ns_mpu(&mut self) -> LockNsMpuW<Cm33LockRegSpec> {
         LockNsMpuW::new(self, 2)
     }
     #[doc = "Bits 4:5 - m33 LOCKSVTOR write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn lock_s_vtor(&mut self) -> LockSVtorW<Cm33LockRegSpec> {
         LockSVtorW::new(self, 4)
     }
     #[doc = "Bits 6:7 - m33 LOCKSMPU write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn lock_s_mpu(&mut self) -> LockSMpuW<Cm33LockRegSpec> {
         LockSMpuW::new(self, 6)
     }
     #[doc = "Bits 8:9 - m33 LOCKSAU write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn lock_sau(&mut self) -> LockSauW<Cm33LockRegSpec> {
         LockSauW::new(self, 8)
     }
     #[doc = "Bits 30:31 - CM33_LOCK_REG_LOCK write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn cm33_lock_reg_lock(&mut self) -> Cm33LockRegLockW<Cm33LockRegSpec> {
         Cm33LockRegLockW::new(self, 30)
     }

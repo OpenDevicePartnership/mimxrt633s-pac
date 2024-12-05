@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Read or set output bits (bit 0 = PIOn_0, bit 1 = PIOn_1, etc.). Supported pins depends on the specific device and package. 0 = Read: output bit: write: no operation. 1 = Read: output bit; write: set output bit."]
     #[inline(always)]
-    #[must_use]
     pub fn setp(&mut self) -> SetpW<SetSpec> {
         SetpW::new(self, 0)
     }

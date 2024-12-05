@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - HMAC of boot state used for attestation"]
     #[inline(always)]
-    #[must_use]
     pub fn bootstatehmac(&mut self) -> BootstatehmacW<BootstatehmacSpec> {
         BootstatehmacW::new(self, 0)
     }

@@ -314,31 +314,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 2 - SDIO0 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio0_clk(&mut self) -> Sdio0ClkW<Pscctl1Spec> {
         Sdio0ClkW::new(self, 2)
     }
     #[doc = "Bit 3 - SDIO1 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio1_clk(&mut self) -> Sdio1ClkW<Pscctl1Spec> {
         Sdio1ClkW::new(self, 3)
     }
     #[doc = "Bit 15 - Analog comparator clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn acmp0_clk(&mut self) -> Acmp0ClkW<Pscctl1Spec> {
         Acmp0ClkW::new(self, 15)
     }
     #[doc = "Bit 16 - ADC clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn adc0_clk(&mut self) -> Adc0ClkW<Pscctl1Spec> {
         Adc0ClkW::new(self, 16)
     }
     #[doc = "Bit 24 - SHSGPIO0 clock control"]
     #[inline(always)]
-    #[must_use]
     pub fn shsgpio0_clk(&mut self) -> Shsgpio0ClkW<Pscctl1Spec> {
         Shsgpio0ClkW::new(self, 24)
     }

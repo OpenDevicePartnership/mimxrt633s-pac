@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Time Before Check of D- Line"]
     #[inline(always)]
-    #[must_use]
     pub fn check_dm(&mut self) -> CheckDmW<Timer2Bc11Spec> {
         CheckDmW::new(self, 0)
     }
     #[doc = "Bits 16:25 - Time Period Before Enabling D+ Pullup"]
     #[inline(always)]
-    #[must_use]
     pub fn tvdpsrc_con(&mut self) -> TvdpsrcConW<Timer2Bc11Spec> {
         TvdpsrcConW::new(self, 16)
     }

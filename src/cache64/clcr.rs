@@ -447,61 +447,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Initiate Cache Line Command"]
     #[inline(always)]
-    #[must_use]
     pub fn lgo(&mut self) -> LgoW<ClcrSpec> {
         LgoW::new(self, 0)
     }
     #[doc = "Bits 2:13 - Cache address"]
     #[inline(always)]
-    #[must_use]
     pub fn cacheaddr(&mut self) -> CacheaddrW<ClcrSpec> {
         CacheaddrW::new(self, 2)
     }
     #[doc = "Bit 14 - Way select"]
     #[inline(always)]
-    #[must_use]
     pub fn wsel(&mut self) -> WselW<ClcrSpec> {
         WselW::new(self, 14)
     }
     #[doc = "Bit 16 - Tag/Data Select"]
     #[inline(always)]
-    #[must_use]
     pub fn tdsel(&mut self) -> TdselW<ClcrSpec> {
         TdselW::new(self, 16)
     }
     #[doc = "Bit 20 - Line Command Initial Valid Bit"]
     #[inline(always)]
-    #[must_use]
     pub fn lcivb(&mut self) -> LcivbW<ClcrSpec> {
         LcivbW::new(self, 20)
     }
     #[doc = "Bit 21 - Line Command Initial Modified Bit"]
     #[inline(always)]
-    #[must_use]
     pub fn lcimb(&mut self) -> LcimbW<ClcrSpec> {
         LcimbW::new(self, 21)
     }
     #[doc = "Bit 22 - Line Command Way"]
     #[inline(always)]
-    #[must_use]
     pub fn lcway(&mut self) -> LcwayW<ClcrSpec> {
         LcwayW::new(self, 22)
     }
     #[doc = "Bits 24:25 - Line Command"]
     #[inline(always)]
-    #[must_use]
     pub fn lcmd(&mut self) -> LcmdW<ClcrSpec> {
         LcmdW::new(self, 24)
     }
     #[doc = "Bit 26 - Line Address Select"]
     #[inline(always)]
-    #[must_use]
     pub fn ladsel(&mut self) -> LadselW<ClcrSpec> {
         LadselW::new(self, 26)
     }
     #[doc = "Bit 27 - Line access type"]
     #[inline(always)]
-    #[must_use]
     pub fn lacc(&mut self) -> LaccW<ClcrSpec> {
         LaccW::new(self, 27)
     }

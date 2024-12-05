@@ -84,13 +84,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Unit of Measurement Encoding for Clock Speed"]
     #[inline(always)]
-    #[must_use]
     pub fn clock_unit(&mut self) -> ClockUnitW<ClockSpec> {
         ClockUnitW::new(self, 0)
     }
     #[doc = "Bits 2:11 - Numerical Value of Clock Speed in Binary"]
     #[inline(always)]
-    #[must_use]
     pub fn clock_speed(&mut self) -> ClockSpeedW<ClockSpec> {
         ClockSpeedW::new(self, 2)
     }

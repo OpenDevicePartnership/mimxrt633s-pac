@@ -314,31 +314,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Slave Continue."]
     #[inline(always)]
-    #[must_use]
     pub fn slvcontinue(&mut self) -> SlvcontinueW<SlvctlSpec> {
         SlvcontinueW::new(self, 0)
     }
     #[doc = "Bit 1 - Slave NACK."]
     #[inline(always)]
-    #[must_use]
     pub fn slvnack(&mut self) -> SlvnackW<SlvctlSpec> {
         SlvnackW::new(self, 1)
     }
     #[doc = "Bit 3 - Slave DMA enable."]
     #[inline(always)]
-    #[must_use]
     pub fn slvdma(&mut self) -> SlvdmaW<SlvctlSpec> {
         SlvdmaW::new(self, 3)
     }
     #[doc = "Bit 8 - Automatic Acknowledge.When this bit is set, it will cause an I2C header which matches SLVADR0 and the direction set by AUTOMATCHREAD to be ACKed immediately; this is used with DMA to allow processing of the data without intervention. If this bit is clear and a header matches SLVADR0, the behavior is controlled by AUTONACK in the SLVADR0 register: allowing NACK or interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn autoack(&mut self) -> AutoackW<SlvctlSpec> {
         AutoackW::new(self, 8)
     }
     #[doc = "Bit 9 - When AUTOACK is set, this bit controls whether it matches a read or write request on the next header with an address matching SLVADR0. Since DMA needs to be configured to match the transfer direction, the direction needs to be specified. This bit allows a direction to be chosen for the next operation."]
     #[inline(always)]
-    #[must_use]
     pub fn automatchread(&mut self) -> AutomatchreadW<SlvctlSpec> {
         AutomatchreadW::new(self, 9)
     }

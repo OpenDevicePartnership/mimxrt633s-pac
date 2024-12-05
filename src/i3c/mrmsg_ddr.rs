@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - Data"]
     #[inline(always)]
-    #[must_use]
     pub fn data(&mut self) -> DataW<MrmsgDdrSpec> {
         DataW::new(self, 0)
     }
     #[doc = "Bits 16:25 - Current length"]
     #[inline(always)]
-    #[must_use]
     pub fn clen(&mut self) -> ClenW<MrmsgDdrSpec> {
         ClenW::new(self, 16)
     }

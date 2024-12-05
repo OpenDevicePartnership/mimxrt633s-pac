@@ -284,163 +284,136 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 5 - 0: INTR5 is invisible to DSP, 1: INTR5 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr5_sec_mask(&mut self) -> DspIntr5SecMaskW<SecDspIntMaskSpec> {
         DspIntr5SecMaskW::new(self, 5)
     }
     #[doc = "Bit 6 - 0: INTR6 is invisible to DSP, 1: INTR6 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr6_sec_mask(&mut self) -> DspIntr6SecMaskW<SecDspIntMaskSpec> {
         DspIntr6SecMaskW::new(self, 6)
     }
     #[doc = "Bit 7 - 0: INTR7 is invisible to DSP, 1: INTR7 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr7_sec_mask(&mut self) -> DspIntr7SecMaskW<SecDspIntMaskSpec> {
         DspIntr7SecMaskW::new(self, 7)
     }
     #[doc = "Bit 8 - 0: INTR8 is invisible to DSP, 1: INTR8 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr8_sec_mask(&mut self) -> DspIntr8SecMaskW<SecDspIntMaskSpec> {
         DspIntr8SecMaskW::new(self, 8)
     }
     #[doc = "Bit 9 - 0: INTR9 is invisible to DSP, 1: INTR9 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr9_sec_mask(&mut self) -> DspIntr9SecMaskW<SecDspIntMaskSpec> {
         DspIntr9SecMaskW::new(self, 9)
     }
     #[doc = "Bit 10 - 0: INTR10 is invisible to DSP, 1: INTR10 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr10_sec_mask(&mut self) -> DspIntr10SecMaskW<SecDspIntMaskSpec> {
         DspIntr10SecMaskW::new(self, 10)
     }
     #[doc = "Bit 11 - 0: INTR11 is invisible to DSP, 1: INTR11 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr11_sec_mask(&mut self) -> DspIntr11SecMaskW<SecDspIntMaskSpec> {
         DspIntr11SecMaskW::new(self, 11)
     }
     #[doc = "Bit 12 - 0: INTR12 is invisible to DSP, 1: INTR12 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr12_sec_mask(&mut self) -> DspIntr12SecMaskW<SecDspIntMaskSpec> {
         DspIntr12SecMaskW::new(self, 12)
     }
     #[doc = "Bit 13 - 0: INTR13 is invisible to DSP, 1: INTR13 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr13_sec_mask(&mut self) -> DspIntr13SecMaskW<SecDspIntMaskSpec> {
         DspIntr13SecMaskW::new(self, 13)
     }
     #[doc = "Bit 14 - 0: INTR14 is invisible to DSP, 1: INTR14 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr14_sec_mask(&mut self) -> DspIntr14SecMaskW<SecDspIntMaskSpec> {
         DspIntr14SecMaskW::new(self, 14)
     }
     #[doc = "Bit 15 - 0: INTR15 is invisible to DSP, 1: INTR15 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr15_sec_mask(&mut self) -> DspIntr15SecMaskW<SecDspIntMaskSpec> {
         DspIntr15SecMaskW::new(self, 15)
     }
     #[doc = "Bit 16 - 0: INTR16 is invisible to DSP, 1: INTR16 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr16_sec_mask(&mut self) -> DspIntr16SecMaskW<SecDspIntMaskSpec> {
         DspIntr16SecMaskW::new(self, 16)
     }
     #[doc = "Bit 17 - 0: INTR17 is invisible to DSP, 1: INTR17 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr17_sec_mask(&mut self) -> DspIntr17SecMaskW<SecDspIntMaskSpec> {
         DspIntr17SecMaskW::new(self, 17)
     }
     #[doc = "Bit 18 - 0: INTR18 is invisible to DSP, 1: INTR18 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr18_sec_mask(&mut self) -> DspIntr18SecMaskW<SecDspIntMaskSpec> {
         DspIntr18SecMaskW::new(self, 18)
     }
     #[doc = "Bit 19 - 0: INTR19 is invisible to DSP, 1: INTR19 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr19_sec_mask(&mut self) -> DspIntr19SecMaskW<SecDspIntMaskSpec> {
         DspIntr19SecMaskW::new(self, 19)
     }
     #[doc = "Bit 20 - 0: INTR20 is invisible to DSP, 1: INTR20 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr20_sec_mask(&mut self) -> DspIntr20SecMaskW<SecDspIntMaskSpec> {
         DspIntr20SecMaskW::new(self, 20)
     }
     #[doc = "Bit 21 - 0: INTR21 is invisible to DSP, 1: INTR21 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr21_sec_mask(&mut self) -> DspIntr21SecMaskW<SecDspIntMaskSpec> {
         DspIntr21SecMaskW::new(self, 21)
     }
     #[doc = "Bit 22 - 0: INTR22 is invisible to DSP, 1: INTR22 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr22_sec_mask(&mut self) -> DspIntr22SecMaskW<SecDspIntMaskSpec> {
         DspIntr22SecMaskW::new(self, 22)
     }
     #[doc = "Bit 23 - 0: INTR23 is invisible to DSP, 1: INTR23 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr23_sec_mask(&mut self) -> DspIntr23SecMaskW<SecDspIntMaskSpec> {
         DspIntr23SecMaskW::new(self, 23)
     }
     #[doc = "Bit 24 - 0: INTR24 is invisible to DSP, 1: INTR24 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr24_sec_mask(&mut self) -> DspIntr24SecMaskW<SecDspIntMaskSpec> {
         DspIntr24SecMaskW::new(self, 24)
     }
     #[doc = "Bit 25 - 0: INTR25 is invisible to DSP, 1: INTR25 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr25_sec_mask(&mut self) -> DspIntr25SecMaskW<SecDspIntMaskSpec> {
         DspIntr25SecMaskW::new(self, 25)
     }
     #[doc = "Bit 26 - 0: INTR26 is invisible to DSP, 1: INTR26 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr26_sec_mask(&mut self) -> DspIntr26SecMaskW<SecDspIntMaskSpec> {
         DspIntr26SecMaskW::new(self, 26)
     }
     #[doc = "Bit 27 - 0: INTR27 is invisible to DSP, 1: INTR27 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr27_sec_mask(&mut self) -> DspIntr27SecMaskW<SecDspIntMaskSpec> {
         DspIntr27SecMaskW::new(self, 27)
     }
     #[doc = "Bit 28 - 0: INTR28 is invisible to DSP, 1: INTR28 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr28_sec_mask(&mut self) -> DspIntr28SecMaskW<SecDspIntMaskSpec> {
         DspIntr28SecMaskW::new(self, 28)
     }
     #[doc = "Bit 29 - 0: INTR29 is invisible to DSP, 1: INTR29 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr29_sec_mask(&mut self) -> DspIntr29SecMaskW<SecDspIntMaskSpec> {
         DspIntr29SecMaskW::new(self, 29)
     }
     #[doc = "Bit 30 - 0: INTR30 is invisible to DSP, 1: INTR30 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr30_sec_mask(&mut self) -> DspIntr30SecMaskW<SecDspIntMaskSpec> {
         DspIntr30SecMaskW::new(self, 30)
     }
     #[doc = "Bit 31 - 0: INTR31 is invisible to DSP, 1: INTR31 is visible to DSP"]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_intr31_sec_mask(&mut self) -> DspIntr31SecMaskW<SecDspIntMaskSpec> {
         DspIntr31SecMaskW::new(self, 31)
     }

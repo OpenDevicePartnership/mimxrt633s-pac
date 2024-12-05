@@ -617,55 +617,46 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - SEC_GPIO_MASK0 register write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn sec_gpio_mask0_lock(&mut self) -> SecGpioMask0LockW<SecMaskLockSpec> {
         SecGpioMask0LockW::new(self, 0)
     }
     #[doc = "Bits 2:3 - SEC_GPIO_MASK1 register write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn sec_gpio_mask1_lock(&mut self) -> SecGpioMask1LockW<SecMaskLockSpec> {
         SecGpioMask1LockW::new(self, 2)
     }
     #[doc = "Bits 4:5 - SEC_GPIO_MASK2 register write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn sec_gpio_mask2_lock(&mut self) -> SecGpioMask2LockW<SecMaskLockSpec> {
         SecGpioMask2LockW::new(self, 4)
     }
     #[doc = "Bits 6:7 - SEC_GPIO_MASK3 register write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn sec_gpio_mask3_lock(&mut self) -> SecGpioMask3LockW<SecMaskLockSpec> {
         SecGpioMask3LockW::new(self, 6)
     }
     #[doc = "Bits 8:9 - SEC_GPIO_MASK4 register write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn sec_gpio_mask4_lock(&mut self) -> SecGpioMask4LockW<SecMaskLockSpec> {
         SecGpioMask4LockW::new(self, 8)
     }
     #[doc = "Bits 10:11 - SEC_GPIO_MASK5 register write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn sec_gpio_mask5_lock(&mut self) -> SecGpioMask5LockW<SecMaskLockSpec> {
         SecGpioMask5LockW::new(self, 10)
     }
     #[doc = "Bits 12:13 - SEC_GPIO_MASK6 register write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn sec_gpio_mask6_lock(&mut self) -> SecGpioMask6LockW<SecMaskLockSpec> {
         SecGpioMask6LockW::new(self, 12)
     }
     #[doc = "Bits 14:15 - SEC_GPIO_MASK7 register write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn sec_gpio_mask7_lock(&mut self) -> SecGpioMask7LockW<SecMaskLockSpec> {
         SecGpioMask7LockW::new(self, 14)
     }
     #[doc = "Bits 16:17 - SEC_DSP_INT_MASK register write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn sec_dsp_int_lock(&mut self) -> SecDspIntLockW<SecMaskLockSpec> {
         SecDspIntLockW::new(self, 16)
     }

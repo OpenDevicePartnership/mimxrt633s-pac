@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<ClrSpec> {
 impl W {
     #[doc = "Bits 0:31 - Clear output bits (bit 0 = PIOn_0, bit 1 = PIOn_1, etc.). Supported pins depends on the specific device and package. 0 = No operation. 1 = Clear output bit."]
     #[inline(always)]
-    #[must_use]
     pub fn clrp(&mut self) -> ClrpW<ClrSpec> {
         ClrpW::new(self, 0)
     }

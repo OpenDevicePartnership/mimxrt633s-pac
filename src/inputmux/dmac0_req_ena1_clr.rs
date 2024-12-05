@@ -41,7 +41,6 @@ impl core::fmt::Debug for crate::generic::Reg<Dmac0ReqEna1ClrSpec> {
 impl W {
     #[doc = "Bit 0 - ESPI Channel 1 enable clear"]
     #[inline(always)]
-    #[must_use]
     pub fn espi_ch1(&mut self) -> EspiCh1W<Dmac0ReqEna1ClrSpec> {
         EspiCh1W::new(self, 0)
     }

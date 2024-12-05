@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:30 - Tick interval value. The delay will be equal to DELAYVAL + 1 periods of the timer clock. The minimum usable value is 1, for a delay of 2 timer clocks. A value of 0 stops the timer."]
     #[inline(always)]
-    #[must_use]
     pub fn delayval(&mut self) -> DelayvalW<CtrlSpec> {
         DelayvalW::new(self, 0)
     }
     #[doc = "Bit 31 - Repeat delay. 0 = One-time delay. 1 = Delay repeats continuously."]
     #[inline(always)]
-    #[must_use]
     pub fn repeat(&mut self) -> RepeatW<CtrlSpec> {
         RepeatW::new(self, 31)
     }

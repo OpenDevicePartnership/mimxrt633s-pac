@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn scratch(&mut self) -> ScratchW<FlexspiBootromScratch0Spec> {
         ScratchW::new(self, 0)
     }

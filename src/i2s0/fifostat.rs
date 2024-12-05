@@ -90,13 +90,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - TX FIFO error. Will be set if a transmit FIFO error occurs. This could be an overflow caused by pushing data into a full FIFO, or by an underflow if the FIFO is empty when data is needed. Cleared by writing a 1 to this bit."]
     #[inline(always)]
-    #[must_use]
     pub fn txerr(&mut self) -> TxerrW<FifostatSpec> {
         TxerrW::new(self, 0)
     }
     #[doc = "Bit 1 - RX FIFO error. Will be set if a receive FIFO overflow occurs, caused by software or DMA not emptying the FIFO fast enough. Cleared by writing a 1 to this bit."]
     #[inline(always)]
-    #[must_use]
     pub fn rxerr(&mut self) -> RxerrW<FifostatSpec> {
         RxerrW::new(self, 1)
     }

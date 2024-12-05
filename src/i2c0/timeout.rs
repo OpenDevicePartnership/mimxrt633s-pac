@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Time-out time value, bottom four bits. These are hard-wired to 0xF. This gives a minimum time-out of 16 I2C function clocks and also a time-out resolution of 16 I2C function clocks."]
     #[inline(always)]
-    #[must_use]
     pub fn tomin(&mut self) -> TominW<TimeoutSpec> {
         TominW::new(self, 0)
     }
     #[doc = "Bits 4:15 - Time-out time value. Specifies the time-out interval value in increments of 16 I 2C function clocks, as defined by the CLKDIV register. To change this value while I2C is in operation, disable all time-outs, write a new value to TIMEOUT, then re-enable time-outs. 0x000 = A time-out will occur after 16 counts of the I2C function clock. 0x001 = A time-out will occur after 32 counts of the I2C function clock. 0xFFF = A time-out will occur after 65,536 counts of the I2C function clock."]
     #[inline(always)]
-    #[must_use]
     pub fn to(&mut self) -> ToW<TimeoutSpec> {
         ToW::new(self, 4)
     }

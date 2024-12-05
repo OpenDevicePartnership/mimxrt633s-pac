@@ -94,7 +94,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:2 - USB HS Functional Clock Source Selection. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn sel(&mut self) -> SelW<UsbhsfclkselSpec> {
         SelW::new(self, 0)
     }

@@ -522,61 +522,51 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Enable the transmit FIFO."]
     #[inline(always)]
-    #[must_use]
     pub fn enabletx(&mut self) -> EnabletxW<FifocfgSpec> {
         EnabletxW::new(self, 0)
     }
     #[doc = "Bit 1 - Enable the receive FIFO."]
     #[inline(always)]
-    #[must_use]
     pub fn enablerx(&mut self) -> EnablerxW<FifocfgSpec> {
         EnablerxW::new(self, 1)
     }
     #[doc = "Bit 2 - Transmit I2S empty 0. Determines the value sent by the I2S in transmit mode if the TX FIFO becomes empty. This value is sent repeatedly until the I2S is paused, the error is cleared, new data is provided, and the I2S is un-paused."]
     #[inline(always)]
-    #[must_use]
     pub fn txi2se0(&mut self) -> Txi2se0W<FifocfgSpec> {
         Txi2se0W::new(self, 2)
     }
     #[doc = "Bit 3 - Packing format for 48-bit data. This relates to how data is entered into or taken from the FIFO by software or DMA."]
     #[inline(always)]
-    #[must_use]
     pub fn pack48(&mut self) -> Pack48W<FifocfgSpec> {
         Pack48W::new(self, 3)
     }
     #[doc = "Bit 12 - DMA configuration for transmit."]
     #[inline(always)]
-    #[must_use]
     pub fn dmatx(&mut self) -> DmatxW<FifocfgSpec> {
         DmatxW::new(self, 12)
     }
     #[doc = "Bit 13 - DMA configuration for receive."]
     #[inline(always)]
-    #[must_use]
     pub fn dmarx(&mut self) -> DmarxW<FifocfgSpec> {
         DmarxW::new(self, 13)
     }
     #[doc = "Bit 14 - Wake-up for transmit FIFO level. This allows the device to be woken from reduced power modes (up to power-down, as long as the peripheral function works in that power mode) without enabling the TXLVL interrupt. Only DMA wakes up, processes data, and goes back to sleep. The CPU will remain stopped until woken by another cause, such as DMA completion. See Hardware Wake-up control register."]
     #[inline(always)]
-    #[must_use]
     pub fn waketx(&mut self) -> WaketxW<FifocfgSpec> {
         WaketxW::new(self, 14)
     }
     #[doc = "Bit 15 - Wake-up for receive FIFO level. This allows the device to be woken from reduced power modes (up to power-down, as long as the peripheral function works in that power mode) without enabling the TXLVL interrupt. Only DMA wakes up, processes data, and goes back to sleep. The CPU will remain stopped until woken by another cause, such as DMA completion. See Hardware Wake-up control register."]
     #[inline(always)]
-    #[must_use]
     pub fn wakerx(&mut self) -> WakerxW<FifocfgSpec> {
         WakerxW::new(self, 15)
     }
     #[doc = "Bit 16 - Empty command for the transmit FIFO. When a 1 is written to this bit, the TX FIFO is emptied."]
     #[inline(always)]
-    #[must_use]
     pub fn emptytx(&mut self) -> EmptytxW<FifocfgSpec> {
         EmptytxW::new(self, 16)
     }
     #[doc = "Bit 17 - Empty command for the receive FIFO. When a 1 is written to this bit, the RX FIFO is emptied."]
     #[inline(always)]
-    #[must_use]
     pub fn emptyrx(&mut self) -> EmptyrxW<FifocfgSpec> {
         EmptyrxW::new(self, 17)
     }

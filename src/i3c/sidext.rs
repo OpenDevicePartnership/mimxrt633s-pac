@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 8:15 - Device Characteristic Register"]
     #[inline(always)]
-    #[must_use]
     pub fn dcr(&mut self) -> DcrW<SidextSpec> {
         DcrW::new(self, 8)
     }
     #[doc = "Bits 16:23 - Bus Characteristics Register"]
     #[inline(always)]
-    #[must_use]
     pub fn bcr(&mut self) -> BcrW<SidextSpec> {
         BcrW::new(self, 16)
     }

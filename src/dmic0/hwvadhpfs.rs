@@ -94,7 +94,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - This field chooses the High Pass filter in first part of HWVAD"]
     #[inline(always)]
-    #[must_use]
     pub fn hpfs(&mut self) -> HpfsW<HwvadhpfsSpec> {
         HpfsW::new(self, 0)
     }

@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Written to clear an interrupt set with INTENSET."]
     #[inline(always)]
-    #[must_use]
     pub fn done(&mut self) -> DoneW<IntenclrSpec> {
         DoneW::new(self, 0)
     }

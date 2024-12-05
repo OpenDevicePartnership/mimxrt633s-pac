@@ -313,25 +313,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - AUDIOPLL0 BYPASS Mode"]
     #[inline(always)]
-    #[must_use]
     pub fn bypass(&mut self) -> BypassW<Audiopll0ctl0Spec> {
         BypassW::new(self, 0)
     }
     #[doc = "Bit 1 - AUDIOPLL0 Reset:"]
     #[inline(always)]
-    #[must_use]
     pub fn reset(&mut self) -> ResetW<Audiopll0ctl0Spec> {
         ResetW::new(self, 1)
     }
     #[doc = "Bit 13 - Hold Ring Off Control"]
     #[inline(always)]
-    #[must_use]
     pub fn holdringoff_ena(&mut self) -> HoldringoffEnaW<Audiopll0ctl0Spec> {
         HoldringoffEnaW::new(self, 13)
     }
     #[doc = "Bits 16:23 - Multiplication Factor for FAUDIOPLL0_OUTPUT:"]
     #[inline(always)]
-    #[must_use]
     pub fn mult(&mut self) -> MultW<Audiopll0ctl0Spec> {
         MultW::new(self, 16)
     }

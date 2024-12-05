@@ -146,7 +146,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:4 - Frequency Measure Channel n Selection 7:1 Mux Select. . ."]
     #[inline(always)]
-    #[must_use]
     pub fn fmeasure_sel(&mut self) -> FmeasureSelW<FmeasureChSelSpec> {
         FmeasureSelW::new(self, 0)
     }

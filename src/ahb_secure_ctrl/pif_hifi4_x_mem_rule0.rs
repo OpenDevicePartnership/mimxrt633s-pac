@@ -54,25 +54,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - secure control rule0. it can be set when check_reg's write_lock is '0'"]
     #[inline(always)]
-    #[must_use]
     pub fn rule0(&mut self) -> Rule0W<PifHifi4XMemRule0Spec> {
         Rule0W::new(self, 0)
     }
     #[doc = "Bits 4:5 - secure control rule1. it can be set when check_reg's write_lock is '0'"]
     #[inline(always)]
-    #[must_use]
     pub fn rule1(&mut self) -> Rule1W<PifHifi4XMemRule0Spec> {
         Rule1W::new(self, 4)
     }
     #[doc = "Bits 16:17 - secure control rule4. it can be set when check_reg's write_lock is '0'"]
     #[inline(always)]
-    #[must_use]
     pub fn rule4(&mut self) -> Rule4W<PifHifi4XMemRule0Spec> {
         Rule4W::new(self, 16)
     }
     #[doc = "Bits 20:21 - secure control rule5. it can be set when check_reg's write_lock is '0'"]
     #[inline(always)]
-    #[must_use]
     pub fn rule5(&mut self) -> Rule5W<PifHifi4XMemRule0Spec> {
         Rule5W::new(self, 20)
     }

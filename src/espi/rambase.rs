@@ -32,7 +32,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 12:31 - Is location in System memory space where RAM is located that is used by this peripheral's bus master"]
     #[inline(always)]
-    #[must_use]
     pub fn ram(&mut self) -> RamW<RambaseSpec> {
         RamW::new(self, 12)
     }

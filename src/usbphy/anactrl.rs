@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 10 - Setting this field to 1'b1 will enable the 15kohm pulldown resistors on both USB_DP and USB_DM pins"]
     #[inline(always)]
-    #[must_use]
     pub fn dev_pulldown(&mut self) -> DevPulldownW<AnactrlSpec> {
         DevPulldownW::new(self, 10)
     }

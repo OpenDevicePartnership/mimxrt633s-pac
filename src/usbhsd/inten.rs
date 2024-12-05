@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:11 - If this bit is set and the corresponding USB interrupt status bit is set, a HW interrupt is generated on the interrupt line."]
     #[inline(always)]
-    #[must_use]
     pub fn ep_int_en(&mut self) -> EpIntEnW<IntenSpec> {
         EpIntEnW::new(self, 0)
     }
     #[doc = "Bit 30 - If this bit is set and the corresponding USB interrupt status bit is set, a HW interrupt is generated on the interrupt line."]
     #[inline(always)]
-    #[must_use]
     pub fn frame_int_en(&mut self) -> FrameIntEnW<IntenSpec> {
         FrameIntEnW::new(self, 30)
     }
     #[doc = "Bit 31 - If this bit is set and the corresponding USB interrupt status bit is set, a HW interrupt is generated on the interrupt line."]
     #[inline(always)]
-    #[must_use]
     pub fn dev_int_en(&mut self) -> DevIntEnW<IntenSpec> {
         DevIntEnW::new(self, 31)
     }

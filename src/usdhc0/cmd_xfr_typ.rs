@@ -390,37 +390,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 16:17 - Response Type Select"]
     #[inline(always)]
-    #[must_use]
     pub fn rsptyp(&mut self) -> RsptypW<CmdXfrTypSpec> {
         RsptypW::new(self, 16)
     }
     #[doc = "Bit 19 - Command CRC Check Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn cccen(&mut self) -> CccenW<CmdXfrTypSpec> {
         CccenW::new(self, 19)
     }
     #[doc = "Bit 20 - Command Index Check Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn cicen(&mut self) -> CicenW<CmdXfrTypSpec> {
         CicenW::new(self, 20)
     }
     #[doc = "Bit 21 - Data Present Select"]
     #[inline(always)]
-    #[must_use]
     pub fn dpsel(&mut self) -> DpselW<CmdXfrTypSpec> {
         DpselW::new(self, 21)
     }
     #[doc = "Bits 22:23 - Command Type"]
     #[inline(always)]
-    #[must_use]
     pub fn cmdtyp(&mut self) -> CmdtypW<CmdXfrTypSpec> {
         CmdtypW::new(self, 22)
     }
     #[doc = "Bits 24:29 - Command Index"]
     #[inline(always)]
-    #[must_use]
     pub fn cmdinx(&mut self) -> CmdinxW<CmdXfrTypSpec> {
         CmdinxW::new(self, 24)
     }

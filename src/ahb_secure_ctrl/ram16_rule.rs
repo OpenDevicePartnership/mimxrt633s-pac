@@ -758,49 +758,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Rule 0"]
     #[inline(always)]
-    #[must_use]
     pub fn rule0(&mut self) -> Rule0W<Ram16RuleSpec> {
         Rule0W::new(self, 0)
     }
     #[doc = "Bits 4:5 - Rule 1"]
     #[inline(always)]
-    #[must_use]
     pub fn rule1(&mut self) -> Rule1W<Ram16RuleSpec> {
         Rule1W::new(self, 4)
     }
     #[doc = "Bits 8:9 - Rule 2"]
     #[inline(always)]
-    #[must_use]
     pub fn rule2(&mut self) -> Rule2W<Ram16RuleSpec> {
         Rule2W::new(self, 8)
     }
     #[doc = "Bits 12:13 - Rule 3"]
     #[inline(always)]
-    #[must_use]
     pub fn rule3(&mut self) -> Rule3W<Ram16RuleSpec> {
         Rule3W::new(self, 12)
     }
     #[doc = "Bits 16:17 - Rule 4"]
     #[inline(always)]
-    #[must_use]
     pub fn rule4(&mut self) -> Rule4W<Ram16RuleSpec> {
         Rule4W::new(self, 16)
     }
     #[doc = "Bits 20:21 - Rule 5"]
     #[inline(always)]
-    #[must_use]
     pub fn rule5(&mut self) -> Rule5W<Ram16RuleSpec> {
         Rule5W::new(self, 20)
     }
     #[doc = "Bits 24:25 - Rule 6"]
     #[inline(always)]
-    #[must_use]
     pub fn rule6(&mut self) -> Rule6W<Ram16RuleSpec> {
         Rule6W::new(self, 24)
     }
     #[doc = "Bits 28:29 - Rule 7"]
     #[inline(always)]
-    #[must_use]
     pub fn rule7(&mut self) -> Rule7W<Ram16RuleSpec> {
         Rule7W::new(self, 28)
     }

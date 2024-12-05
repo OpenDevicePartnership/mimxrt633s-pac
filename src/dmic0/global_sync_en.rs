@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - Choose which channels to sync to global sync (7:0) corresponds to the 8 channels"]
     #[inline(always)]
-    #[must_use]
     pub fn ch_sync_en(&mut self) -> ChSyncEnW<GlobalSyncEnSpec> {
         ChSyncEnW::new(self, 0)
     }

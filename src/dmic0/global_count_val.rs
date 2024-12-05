@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - 32bit value, global sync counter will trigger a pulse whenever count reaches GCOUNTVAL"]
     #[inline(always)]
-    #[must_use]
     pub fn ccountval(&mut self) -> CcountvalW<GlobalCountValSpec> {
         CcountvalW::new(self, 0)
     }

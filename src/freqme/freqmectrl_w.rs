@@ -157,25 +157,21 @@ impl core::fmt::Debug for crate::generic::Reg<FreqmectrlWSpec> {
 impl W {
     #[doc = "Bits 0:4 - Reference Clock Scaling Factor"]
     #[inline(always)]
-    #[must_use]
     pub fn ref_scale(&mut self) -> RefScaleW<FreqmectrlWSpec> {
         RefScaleW::new(self, 0)
     }
     #[doc = "Bit 8 - Pulse Width Measurement mode select"]
     #[inline(always)]
-    #[must_use]
     pub fn pulse_mode(&mut self) -> PulseModeW<FreqmectrlWSpec> {
         PulseModeW::new(self, 8)
     }
     #[doc = "Bit 9 - Pulse Polarity"]
     #[inline(always)]
-    #[must_use]
     pub fn pulse_pol(&mut self) -> PulsePolW<FreqmectrlWSpec> {
         PulsePolW::new(self, 9)
     }
     #[doc = "Bit 31 - Measure in Progress"]
     #[inline(always)]
-    #[must_use]
     pub fn measure_in_progress(&mut self) -> MeasureInProgressW<FreqmectrlWSpec> {
         MeasureInProgressW::new(self, 31)
     }

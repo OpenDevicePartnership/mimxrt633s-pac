@@ -22,7 +22,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:23 - Watchdog time-out value."]
     #[inline(always)]
-    #[must_use]
     pub fn count(&mut self) -> CountW<TcSpec> {
         CountW::new(self, 0)
     }

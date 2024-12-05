@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - no description available"]
     #[inline(always)]
-    #[must_use]
     pub fn read(&mut self) -> ReadW<OtpReadCtrlSpec> {
         ReadW::new(self, 0)
     }

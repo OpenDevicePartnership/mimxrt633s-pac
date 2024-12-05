@@ -1048,109 +1048,91 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 1:2 - Data Transfer Width"]
     #[inline(always)]
-    #[must_use]
     pub fn dtw(&mut self) -> DtwW<ProtCtrlSpec> {
         DtwW::new(self, 1)
     }
     #[doc = "Bit 3 - DATA3 as Card Detection Pin"]
     #[inline(always)]
-    #[must_use]
     pub fn d3cd(&mut self) -> D3cdW<ProtCtrlSpec> {
         D3cdW::new(self, 3)
     }
     #[doc = "Bits 4:5 - Endian Mode"]
     #[inline(always)]
-    #[must_use]
     pub fn emode(&mut self) -> EmodeW<ProtCtrlSpec> {
         EmodeW::new(self, 4)
     }
     #[doc = "Bit 6 - Card Detect Test Level"]
     #[inline(always)]
-    #[must_use]
     pub fn cdtl(&mut self) -> CdtlW<ProtCtrlSpec> {
         CdtlW::new(self, 6)
     }
     #[doc = "Bit 7 - Card Detect Signal Selection"]
     #[inline(always)]
-    #[must_use]
     pub fn cdss(&mut self) -> CdssW<ProtCtrlSpec> {
         CdssW::new(self, 7)
     }
     #[doc = "Bits 8:9 - DMA Select"]
     #[inline(always)]
-    #[must_use]
     pub fn dmasel(&mut self) -> DmaselW<ProtCtrlSpec> {
         DmaselW::new(self, 8)
     }
     #[doc = "Bit 16 - Stop At Block Gap Request"]
     #[inline(always)]
-    #[must_use]
     pub fn sabgreq(&mut self) -> SabgreqW<ProtCtrlSpec> {
         SabgreqW::new(self, 16)
     }
     #[doc = "Bit 17 - Continue Request"]
     #[inline(always)]
-    #[must_use]
     pub fn creq(&mut self) -> CreqW<ProtCtrlSpec> {
         CreqW::new(self, 17)
     }
     #[doc = "Bit 18 - Read Wait Control"]
     #[inline(always)]
-    #[must_use]
     pub fn rwctl(&mut self) -> RwctlW<ProtCtrlSpec> {
         RwctlW::new(self, 18)
     }
     #[doc = "Bit 19 - Interrupt At Block Gap"]
     #[inline(always)]
-    #[must_use]
     pub fn iabg(&mut self) -> IabgW<ProtCtrlSpec> {
         IabgW::new(self, 19)
     }
     #[doc = "Bit 20 - RD_DONE_NO_8CLK"]
     #[inline(always)]
-    #[must_use]
     pub fn rd_done_no_8clk(&mut self) -> RdDoneNo8clkW<ProtCtrlSpec> {
         RdDoneNo8clkW::new(self, 20)
     }
     #[doc = "Bits 21:23 - Read wait point"]
     #[inline(always)]
-    #[must_use]
     pub fn rd_wait_point(&mut self) -> RdWaitPointW<ProtCtrlSpec> {
         RdWaitPointW::new(self, 21)
     }
     #[doc = "Bit 24 - Wakeup Event Enable On Card Interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn wecint(&mut self) -> WecintW<ProtCtrlSpec> {
         WecintW::new(self, 24)
     }
     #[doc = "Bit 25 - Wakeup Event Enable On SD Card Insertion"]
     #[inline(always)]
-    #[must_use]
     pub fn wecins(&mut self) -> WecinsW<ProtCtrlSpec> {
         WecinsW::new(self, 25)
     }
     #[doc = "Bit 26 - Wakeup Event Enable On SD Card Removal"]
     #[inline(always)]
-    #[must_use]
     pub fn wecrm(&mut self) -> WecrmW<ProtCtrlSpec> {
         WecrmW::new(self, 26)
     }
     #[doc = "Bits 27:29 - BURST length enable for INCR, INCR4 / INCR8 / INCR16, INCR4-WRAP / INCR8-WRAP / INCR16-WRAP"]
     #[inline(always)]
-    #[must_use]
     pub fn burst_len_en(&mut self) -> BurstLenEnW<ProtCtrlSpec> {
         BurstLenEnW::new(self, 27)
     }
     #[doc = "Bit 30 - NON_EXACT_BLK_RD"]
     #[inline(always)]
-    #[must_use]
     pub fn non_exact_blk_rd(&mut self) -> NonExactBlkRdW<ProtCtrlSpec> {
         NonExactBlkRdW::new(self, 30)
     }
     #[doc = "Bit 31 - RD_NO8CLK_EN"]
     #[inline(always)]
-    #[must_use]
     pub fn rd_no8clk_en(&mut self) -> RdNo8clkEnW<ProtCtrlSpec> {
         RdNo8clkEnW::new(self, 31)
     }

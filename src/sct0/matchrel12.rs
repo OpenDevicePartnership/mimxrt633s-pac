@@ -34,13 +34,11 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:15 - When UNIFY = 0, specifies the 16-bit value to be loaded into the MATCHn_L register. When UNIFY = 1, specifies the lower 16 bits of the 32-bit value to be loaded into the MATCHn register."]
     #[inline(always)]
-    #[must_use]
     pub fn reloadn_l(&mut self) -> ReloadnLW<Matchrel12Spec> {
         ReloadnLW::new(self, 0)
     }
     #[doc = "Bits 16:31 - When UNIFY = 0, specifies the 16-bit to be loaded into the MATCHn_H register. When UNIFY = 1, specifies the upper 16 bits of the 32-bit value to be loaded into the MATCHn register."]
     #[inline(always)]
-    #[must_use]
     pub fn reloadn_h(&mut self) -> ReloadnHW<Matchrel12Spec> {
         ReloadnHW::new(self, 16)
     }

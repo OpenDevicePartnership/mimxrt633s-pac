@@ -74,7 +74,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Selects one of the M33 interrupt sources"]
     #[inline(always)]
-    #[must_use]
     pub fn mclkpindir(&mut self) -> MclkpindirW<MclkpindirSpec> {
         MclkpindirW::new(self, 0)
     }

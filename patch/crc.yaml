@@ -1,0 +1,7 @@
+CRC_ENGINE:
+  MODE:
+    CRC_POLY:
+      _name: CRC_POLYNOMIAL
+      CRC_CCITT: [0, CRC-CCITT polynomial]
+      CRC16: [1, CRC16 polynomial]
+      CRC32: [2, CRC32 polynomial]

@@ -314,31 +314,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 2 - SDIO0 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio0(&mut self) -> Sdio0W<Prstctl1Spec> {
         Sdio0W::new(self, 2)
     }
     #[doc = "Bit 3 - SDIO1 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn sdio1(&mut self) -> Sdio1W<Prstctl1Spec> {
         Sdio1W::new(self, 3)
     }
     #[doc = "Bit 15 - Analog comparator reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn acmp0(&mut self) -> Acmp0W<Prstctl1Spec> {
         Acmp0W::new(self, 15)
     }
     #[doc = "Bit 16 - ADC reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn adc0(&mut self) -> Adc0W<Prstctl1Spec> {
         Adc0W::new(self, 16)
     }
     #[doc = "Bit 24 - SHSGPIO0 reset control"]
     #[inline(always)]
-    #[must_use]
     pub fn shsgpio0(&mut self) -> Shsgpio0W<Prstctl1Spec> {
         Shsgpio0W::new(self, 24)
     }

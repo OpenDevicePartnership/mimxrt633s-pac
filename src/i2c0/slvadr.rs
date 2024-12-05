@@ -144,19 +144,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Slave Address n Disable."]
     #[inline(always)]
-    #[must_use]
     pub fn sadisable(&mut self) -> SadisableW<SlvadrSpec> {
         SadisableW::new(self, 0)
     }
     #[doc = "Bits 1:7 - Slave Address. Seven bit slave address that is compared to received addresses if enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn slvadr(&mut self) -> SlvadrW<SlvadrSpec> {
         SlvadrW::new(self, 1)
     }
     #[doc = "Bit 15 - Automatic NACK operation. Used in conjunction with AUTOACK and AUTOMATCHREAD, allows software to ignore I2C traffic while handling previous I2C data or other operations."]
     #[inline(always)]
-    #[must_use]
     pub fn autonack(&mut self) -> AutonackW<SlvadrSpec> {
         AutonackW::new(self, 15)
     }

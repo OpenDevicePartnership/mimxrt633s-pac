@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:3 - Debug Write Lock the following registers: DBG_FEATURES DBG_FEATURES_DP CS_PROTTEST CS_PROTCPU0 CS_PROTCPU1 DBG_AUTH_SCRATCH 1010: Write Enabled (Unlocked) Any other value other than 1010, Write Disabled (Locked)"]
     #[inline(always)]
-    #[must_use]
     pub fn dbg_locken(&mut self) -> DbgLockenW<DbgLockenSpec> {
         DbgLockenW::new(self, 0)
     }

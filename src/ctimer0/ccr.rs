@@ -134,73 +134,61 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Rising edge of capture channel 0: a sequence of 0 then 1 causes CR0 to be loaded with the contents of TC. 0 = disabled. 1 = enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn cap0re(&mut self) -> Cap0reW<CcrSpec> {
         Cap0reW::new(self, 0)
     }
     #[doc = "Bit 1 - Falling edge of capture channel 0: a sequence of 1 then 0 causes CR0 to be loaded with the contents of TC. 0 = disabled. 1 = enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn cap0fe(&mut self) -> Cap0feW<CcrSpec> {
         Cap0feW::new(self, 1)
     }
     #[doc = "Bit 2 - Generate interrupt on channel 0 capture event: a CR0 load generates an interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn cap0i(&mut self) -> Cap0iW<CcrSpec> {
         Cap0iW::new(self, 2)
     }
     #[doc = "Bit 3 - Rising edge of capture channel 1: a sequence of 0 then 1 causes CR1 to be loaded with the contents of TC. 0 = disabled. 1 = enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn cap1re(&mut self) -> Cap1reW<CcrSpec> {
         Cap1reW::new(self, 3)
     }
     #[doc = "Bit 4 - Falling edge of capture channel 1: a sequence of 1 then 0 causes CR1 to be loaded with the contents of TC. 0 = disabled. 1 = enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn cap1fe(&mut self) -> Cap1feW<CcrSpec> {
         Cap1feW::new(self, 4)
     }
     #[doc = "Bit 5 - Generate interrupt on channel 1 capture event: a CR1 load generates an interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn cap1i(&mut self) -> Cap1iW<CcrSpec> {
         Cap1iW::new(self, 5)
     }
     #[doc = "Bit 6 - Rising edge of capture channel 2: a sequence of 0 then 1 causes CR2 to be loaded with the contents of TC. 0 = disabled. 1 = enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn cap2re(&mut self) -> Cap2reW<CcrSpec> {
         Cap2reW::new(self, 6)
     }
     #[doc = "Bit 7 - Falling edge of capture channel 2: a sequence of 1 then 0 causes CR2 to be loaded with the contents of TC. 0 = disabled. 1 = enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn cap2fe(&mut self) -> Cap2feW<CcrSpec> {
         Cap2feW::new(self, 7)
     }
     #[doc = "Bit 8 - Generate interrupt on channel 2 capture event: a CR2 load generates an interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn cap2i(&mut self) -> Cap2iW<CcrSpec> {
         Cap2iW::new(self, 8)
     }
     #[doc = "Bit 9 - Rising edge of capture channel 3: a sequence of 0 then 1 causes CR3 to be loaded with the contents of TC. 0 = disabled. 1 = enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn cap3re(&mut self) -> Cap3reW<CcrSpec> {
         Cap3reW::new(self, 9)
     }
     #[doc = "Bit 10 - Falling edge of capture channel 3: a sequence of 1 then 0 causes CR3 to be loaded with the contents of TC. 0 = disabled. 1 = enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn cap3fe(&mut self) -> Cap3feW<CcrSpec> {
         Cap3feW::new(self, 10)
     }
     #[doc = "Bit 11 - Generate interrupt on channel 3 capture event: a CR3 load generates an interrupt."]
     #[inline(always)]
-    #[must_use]
     pub fn cap3i(&mut self) -> Cap3iW<CcrSpec> {
         Cap3iW::new(self, 11)
     }

@@ -72,7 +72,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - FIFO Watermark DMA Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn fwmde(&mut self) -> FwmdeW<DeSpec> {
         FwmdeW::new(self, 0)
     }

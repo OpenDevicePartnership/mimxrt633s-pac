@@ -374,37 +374,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 1 - Break Enable."]
     #[inline(always)]
-    #[must_use]
     pub fn txbrken(&mut self) -> TxbrkenW<CtlSpec> {
         TxbrkenW::new(self, 1)
     }
     #[doc = "Bit 2 - Enable address detect mode."]
     #[inline(always)]
-    #[must_use]
     pub fn addrdet(&mut self) -> AddrdetW<CtlSpec> {
         AddrdetW::new(self, 2)
     }
     #[doc = "Bit 6 - Transmit Disable."]
     #[inline(always)]
-    #[must_use]
     pub fn txdis(&mut self) -> TxdisW<CtlSpec> {
         TxdisW::new(self, 6)
     }
     #[doc = "Bit 8 - Continuous Clock generation. By default, SCLK is only output while data is being transmitted in synchronous mode."]
     #[inline(always)]
-    #[must_use]
     pub fn cc(&mut self) -> CcW<CtlSpec> {
         CcW::new(self, 8)
     }
     #[doc = "Bit 9 - Clear Continuous Clock."]
     #[inline(always)]
-    #[must_use]
     pub fn clrcconrx(&mut self) -> ClrcconrxW<CtlSpec> {
         ClrcconrxW::new(self, 9)
     }
     #[doc = "Bit 16 - Autobaud enable."]
     #[inline(always)]
-    #[must_use]
     pub fn autobaud(&mut self) -> AutobaudW<CtlSpec> {
         AutobaudW::new(self, 16)
     }

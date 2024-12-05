@@ -27,55 +27,46 @@ impl core::fmt::Debug for crate::generic::Reg<IntenclrSpec> {
 impl W {
     #[doc = "Bit 3 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn txidleclr(&mut self) -> TxidleclrW<IntenclrSpec> {
         TxidleclrW::new(self, 3)
     }
     #[doc = "Bit 5 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn deltactsclr(&mut self) -> DeltactsclrW<IntenclrSpec> {
         DeltactsclrW::new(self, 5)
     }
     #[doc = "Bit 6 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn txdisclr(&mut self) -> TxdisclrW<IntenclrSpec> {
         TxdisclrW::new(self, 6)
     }
     #[doc = "Bit 11 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn deltarxbrkclr(&mut self) -> DeltarxbrkclrW<IntenclrSpec> {
         DeltarxbrkclrW::new(self, 11)
     }
     #[doc = "Bit 12 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn startclr(&mut self) -> StartclrW<IntenclrSpec> {
         StartclrW::new(self, 12)
     }
     #[doc = "Bit 13 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn framerrclr(&mut self) -> FramerrclrW<IntenclrSpec> {
         FramerrclrW::new(self, 13)
     }
     #[doc = "Bit 14 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn parityerrclr(&mut self) -> ParityerrclrW<IntenclrSpec> {
         ParityerrclrW::new(self, 14)
     }
     #[doc = "Bit 15 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn rxnoiseclr(&mut self) -> RxnoiseclrW<IntenclrSpec> {
         RxnoiseclrW::new(self, 15)
     }
     #[doc = "Bit 16 - Writing 1 clears the corresponding bit in the INTENSET register."]
     #[inline(always)]
-    #[must_use]
     pub fn aberrclr(&mut self) -> AberrclrW<IntenclrSpec> {
         AberrclrW::new(self, 16)
     }

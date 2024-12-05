@@ -639,43 +639,36 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 4:5 - POWERQUAD master secure level control."]
     #[inline(always)]
-    #[must_use]
     pub fn powerquad_sec(&mut self) -> PowerquadSecW<MasterSecLevelSpec> {
         PowerquadSecW::new(self, 4)
     }
     #[doc = "Bits 6:7 - DSP master secure level control."]
     #[inline(always)]
-    #[must_use]
     pub fn dsp_sec(&mut self) -> DspSecW<MasterSecLevelSpec> {
         DspSecW::new(self, 6)
     }
     #[doc = "Bits 8:9 - DMA0 master secure level control."]
     #[inline(always)]
-    #[must_use]
     pub fn dma0_sec(&mut self) -> Dma0SecW<MasterSecLevelSpec> {
         Dma0SecW::new(self, 8)
     }
     #[doc = "Bits 10:11 - DMA1 master secure level control."]
     #[inline(always)]
-    #[must_use]
     pub fn dma1_sec(&mut self) -> Dma1SecW<MasterSecLevelSpec> {
         Dma1SecW::new(self, 10)
     }
     #[doc = "Bits 12:13 - SDIO0 master secure level control."]
     #[inline(always)]
-    #[must_use]
     pub fn sdio0_sec(&mut self) -> Sdio0SecW<MasterSecLevelSpec> {
         Sdio0SecW::new(self, 12)
     }
     #[doc = "Bits 14:15 - SDIO1 master secure level control."]
     #[inline(always)]
-    #[must_use]
     pub fn sdio1_sec(&mut self) -> Sdio1SecW<MasterSecLevelSpec> {
         Sdio1SecW::new(self, 14)
     }
     #[doc = "Bits 30:31 - MASTER_SEC_LEVEL register write-lock."]
     #[inline(always)]
-    #[must_use]
     pub fn master_sec_level_lock(&mut self) -> MasterSecLevelLockW<MasterSecLevelSpec> {
         MasterSecLevelLockW::new(self, 30)
     }

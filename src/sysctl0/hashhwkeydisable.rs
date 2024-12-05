@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - This register control the access to AES keys delivered through secret HW bus from PUF and OTP to AES engine"]
     #[inline(always)]
-    #[must_use]
     pub fn hashhwkeydisable(&mut self) -> HashhwkeydisableW<HashhwkeydisableSpec> {
         HashhwkeydisableW::new(self, 0)
     }

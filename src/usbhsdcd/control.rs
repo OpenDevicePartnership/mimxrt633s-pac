@@ -357,31 +357,26 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Interrupt Acknowledge"]
     #[inline(always)]
-    #[must_use]
     pub fn iack(&mut self) -> IackW<ControlSpec> {
         IackW::new(self, 0)
     }
     #[doc = "Bit 16 - Interrupt Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ie(&mut self) -> IeW<ControlSpec> {
         IeW::new(self, 16)
     }
     #[doc = "Bit 17 - BC12"]
     #[inline(always)]
-    #[must_use]
     pub fn bc12(&mut self) -> Bc12W<ControlSpec> {
         Bc12W::new(self, 17)
     }
     #[doc = "Bit 24 - Start Change Detection Sequence"]
     #[inline(always)]
-    #[must_use]
     pub fn start(&mut self) -> StartW<ControlSpec> {
         StartW::new(self, 24)
     }
     #[doc = "Bit 25 - Software Reset"]
     #[inline(always)]
-    #[must_use]
     pub fn sr(&mut self) -> SrW<ControlSpec> {
         SrW::new(self, 25)
     }

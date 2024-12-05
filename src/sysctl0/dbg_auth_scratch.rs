@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:31 - Debug authorization scratch register for S/W."]
     #[inline(always)]
-    #[must_use]
     pub fn dbg_auth_scratch(&mut self) -> DbgAuthScratchW<DbgAuthScratchSpec> {
         DbgAuthScratchW::new(self, 0)
     }

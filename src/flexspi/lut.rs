@@ -74,37 +74,31 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - OPERAND0"]
     #[inline(always)]
-    #[must_use]
     pub fn operand0(&mut self) -> Operand0W<LutSpec> {
         Operand0W::new(self, 0)
     }
     #[doc = "Bits 8:9 - NUM_PADS0"]
     #[inline(always)]
-    #[must_use]
     pub fn num_pads0(&mut self) -> NumPads0W<LutSpec> {
         NumPads0W::new(self, 8)
     }
     #[doc = "Bits 10:15 - OPCODE"]
     #[inline(always)]
-    #[must_use]
     pub fn opcode0(&mut self) -> Opcode0W<LutSpec> {
         Opcode0W::new(self, 10)
     }
     #[doc = "Bits 16:23 - OPERAND1"]
     #[inline(always)]
-    #[must_use]
     pub fn operand1(&mut self) -> Operand1W<LutSpec> {
         Operand1W::new(self, 16)
     }
     #[doc = "Bits 24:25 - NUM_PADS1"]
     #[inline(always)]
-    #[must_use]
     pub fn num_pads1(&mut self) -> NumPads1W<LutSpec> {
         NumPads1W::new(self, 24)
     }
     #[doc = "Bits 26:31 - OPCODE1"]
     #[inline(always)]
-    #[must_use]
     pub fn opcode1(&mut self) -> Opcode1W<LutSpec> {
         Opcode1W::new(self, 26)
     }

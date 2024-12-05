@@ -94,49 +94,41 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:1 - Index 8"]
     #[inline(always)]
-    #[must_use]
     pub fn idx8(&mut self) -> Idx8W<IdxblkHDpSpec> {
         Idx8W::new(self, 0)
     }
     #[doc = "Bits 2:3 - Index 9"]
     #[inline(always)]
-    #[must_use]
     pub fn idx9(&mut self) -> Idx9W<IdxblkHDpSpec> {
         Idx9W::new(self, 2)
     }
     #[doc = "Bits 4:5 - Index 10"]
     #[inline(always)]
-    #[must_use]
     pub fn idx10(&mut self) -> Idx10W<IdxblkHDpSpec> {
         Idx10W::new(self, 4)
     }
     #[doc = "Bits 6:7 - Index 11"]
     #[inline(always)]
-    #[must_use]
     pub fn idx11(&mut self) -> Idx11W<IdxblkHDpSpec> {
         Idx11W::new(self, 6)
     }
     #[doc = "Bits 8:9 - Index 12"]
     #[inline(always)]
-    #[must_use]
     pub fn idx12(&mut self) -> Idx12W<IdxblkHDpSpec> {
         Idx12W::new(self, 8)
     }
     #[doc = "Bits 10:11 - Index 13"]
     #[inline(always)]
-    #[must_use]
     pub fn idx13(&mut self) -> Idx13W<IdxblkHDpSpec> {
         Idx13W::new(self, 10)
     }
     #[doc = "Bits 12:13 - Index 14"]
     #[inline(always)]
-    #[must_use]
     pub fn idx14(&mut self) -> Idx14W<IdxblkHDpSpec> {
         Idx14W::new(self, 12)
     }
     #[doc = "Bits 14:15 - Index 15"]
     #[inline(always)]
-    #[must_use]
     pub fn idx15(&mut self) -> Idx15W<IdxblkHDpSpec> {
         Idx15W::new(self, 14)
     }

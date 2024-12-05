@@ -44,19 +44,16 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Status of Interrupt (write 1 to clear)"]
     #[inline(always)]
-    #[must_use]
     pub fn int(&mut self) -> IntW<FifoStatusSpec> {
         IntW::new(self, 0)
     }
     #[doc = "Bit 1 - Overrun Detected (write 1 to clear)"]
     #[inline(always)]
-    #[must_use]
     pub fn overrun(&mut self) -> OverrunW<FifoStatusSpec> {
         OverrunW::new(self, 1)
     }
     #[doc = "Bit 2 - Underrun Detected (write 1 to clear)"]
     #[inline(always)]
-    #[must_use]
     pub fn underrun(&mut self) -> UnderrunW<FifoStatusSpec> {
         UnderrunW::new(self, 2)
     }
