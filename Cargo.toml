@@ -9,7 +9,7 @@ repository = "https://github.com/pop-project/mimxrt632s-pac"
 readme = "README.md"
 keywords = [ "rt6", "mimxrt", "mimxrt6", "no_std", "embedded" ]
 categories = [ "embedded", "no-std" ]
-rust-version = "1.71"
+rust-version = "1.76"
 exclude = [ "svd/*", ]
 
 [dependencies]
