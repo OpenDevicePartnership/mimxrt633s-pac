@@ -76,10 +76,60 @@ where
         self.variant(Enable::Lpc)
     }
 }
-#[doc = "Field `PENA` reader - Port enable bits."]
-pub type PenaR = crate::FieldReader;
-#[doc = "Field `PENA` writer - Port enable bits."]
-pub type PenaW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Enable for port %s\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Pena {
+    #[doc = "0: Disabled"]
+    Disabled = 0,
+    #[doc = "1: Enabled"]
+    Enabled = 1,
+}
+impl From<Pena> for bool {
+    #[inline(always)]
+    fn from(variant: Pena) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `PENA(0-4)` reader - Enable for port %s"]
+pub type PenaR = crate::BitReader<Pena>;
+impl PenaR {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Pena {
+        match self.bits {
+            false => Pena::Disabled,
+            true => Pena::Enabled,
+        }
+    }
+    #[doc = "Disabled"]
+    #[inline(always)]
+    pub fn is_disabled(&self) -> bool {
+        *self == Pena::Disabled
+    }
+    #[doc = "Enabled"]
+    #[inline(always)]
+    pub fn is_enabled(&self) -> bool {
+        *self == Pena::Enabled
+    }
+}
+#[doc = "Field `PENA(0-4)` writer - Enable for port %s"]
+pub type PenaW<'a, REG> = crate::BitWriter<'a, REG, Pena>;
+impl<'a, REG> PenaW<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+{
+    #[doc = "Disabled"]
+    #[inline(always)]
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pena::Disabled)
+    }
+    #[doc = "Enabled"]
+    #[inline(always)]
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pena::Enabled)
+    }
+}
 #[doc = "Field `P80ENA` reader - Port 80 enable."]
 pub type P80enaR = crate::BitReader;
 #[doc = "Field `P80ENA` writer - Port 80 enable."]
@@ -98,10 +148,45 @@ impl R {
     pub fn enable(&self) -> EnableR {
         EnableR::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 8:12 - Port enable bits."]
+    #[doc = "Enable for port (0-4)"]
+    #[doc = ""]
+    #[doc = "<div class=\"warning\">`n` is number of field in register. `n == 0` corresponds to `PENA0` field.</div>"]
     #[inline(always)]
-    pub fn pena(&self) -> PenaR {
-        PenaR::new(((self.bits >> 8) & 0x1f) as u8)
+    pub fn pena(&self, n: u8) -> PenaR {
+        #[allow(clippy::no_effect)]
+        [(); 5][n as usize];
+        PenaR::new(((self.bits >> (n + 8)) & 1) != 0)
+    }
+    #[doc = "Iterator for array of:"]
+    #[doc = "Enable for port (0-4)"]
+    #[inline(always)]
+    pub fn pena_iter(&self) -> impl Iterator<Item = PenaR> + '_ {
+        (0..5).map(move |n| PenaR::new(((self.bits >> (n + 8)) & 1) != 0))
+    }
+    #[doc = "Bit 8 - Enable for port 0"]
+    #[inline(always)]
+    pub fn pena0(&self) -> PenaR {
+        PenaR::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 9 - Enable for port 1"]
+    #[inline(always)]
+    pub fn pena1(&self) -> PenaR {
+        PenaR::new(((self.bits >> 9) & 1) != 0)
+    }
+    #[doc = "Bit 10 - Enable for port 2"]
+    #[inline(always)]
+    pub fn pena2(&self) -> PenaR {
+        PenaR::new(((self.bits >> 10) & 1) != 0)
+    }
+    #[doc = "Bit 11 - Enable for port 3"]
+    #[inline(always)]
+    pub fn pena3(&self) -> PenaR {
+        PenaR::new(((self.bits >> 11) & 1) != 0)
+    }
+    #[doc = "Bit 12 - Enable for port 4"]
+    #[inline(always)]
+    pub fn pena4(&self) -> PenaR {
+        PenaR::new(((self.bits >> 12) & 1) != 0)
     }
     #[doc = "Bit 16 - Port 80 enable."]
     #[inline(always)]
@@ -124,10 +209,14 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MCTRL")
             .field("enable", &self.enable())
-            .field("pena", &self.pena())
             .field("p80ena", &self.p80ena())
             .field("sblkena", &self.sblkena())
             .field("use60mhz", &self.use60mhz())
+            .field("pena0", &self.pena0())
+            .field("pena1", &self.pena1())
+            .field("pena2", &self.pena2())
+            .field("pena3", &self.pena3())
+            .field("pena4", &self.pena4())
             .finish()
     }
 }
@@ -137,10 +226,39 @@ impl W {
     pub fn enable(&mut self) -> EnableW<MctrlSpec> {
         EnableW::new(self, 0)
     }
-    #[doc = "Bits 8:12 - Port enable bits."]
+    #[doc = "Enable for port (0-4)"]
+    #[doc = ""]
+    #[doc = "<div class=\"warning\">`n` is number of field in register. `n == 0` corresponds to `PENA0` field.</div>"]
     #[inline(always)]
-    pub fn pena(&mut self) -> PenaW<MctrlSpec> {
+    pub fn pena(&mut self, n: u8) -> PenaW<MctrlSpec> {
+        #[allow(clippy::no_effect)]
+        [(); 5][n as usize];
+        PenaW::new(self, n + 8)
+    }
+    #[doc = "Bit 8 - Enable for port 0"]
+    #[inline(always)]
+    pub fn pena0(&mut self) -> PenaW<MctrlSpec> {
         PenaW::new(self, 8)
+    }
+    #[doc = "Bit 9 - Enable for port 1"]
+    #[inline(always)]
+    pub fn pena1(&mut self) -> PenaW<MctrlSpec> {
+        PenaW::new(self, 9)
+    }
+    #[doc = "Bit 10 - Enable for port 2"]
+    #[inline(always)]
+    pub fn pena2(&mut self) -> PenaW<MctrlSpec> {
+        PenaW::new(self, 10)
+    }
+    #[doc = "Bit 11 - Enable for port 3"]
+    #[inline(always)]
+    pub fn pena3(&mut self) -> PenaW<MctrlSpec> {
+        PenaW::new(self, 11)
+    }
+    #[doc = "Bit 12 - Enable for port 4"]
+    #[inline(always)]
+    pub fn pena4(&mut self) -> PenaW<MctrlSpec> {
+        PenaW::new(self, 12)
     }
     #[doc = "Bit 16 - Port 80 enable."]
     #[inline(always)]

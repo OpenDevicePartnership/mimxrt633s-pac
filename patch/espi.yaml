@@ -42,3 +42,47 @@ ESPI:
       P[01234]RAMUse:
         description: Port RAM base and size (for Mailbox and Bus Master)
         name: RAMUSE
+
+  # Add per-port enable bit in MCTRL
+  MCTRL:
+    _delete:
+      - PENA
+
+    _add:
+      PENA0:
+        bitOffset: 8
+        bitWidth: 1
+        description: Enable for port 0
+        access: read-write
+
+      PENA1:
+        bitOffset: 9
+        bitWidth: 1
+        description: Enable for port 1
+        access: read-write
+
+      PENA2:
+        bitOffset: 10
+        bitWidth: 1
+        description: Enable for port 2
+        access: read-write
+
+      PENA3:
+        bitOffset: 11
+        bitWidth: 1
+        description: Enable for port 3
+        access: read-write
+
+      PENA4:
+        bitOffset: 12
+        bitWidth: 1
+        description: Enable for port 4
+        access: read-write
+
+    PENA*:
+      _name: PENA
+      DISABLED: [0, Disabled]
+      ENABLED: [1, Enabled]
+
+    _array:
+      PENA*: {}
