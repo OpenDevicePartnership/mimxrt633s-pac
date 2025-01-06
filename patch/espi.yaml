@@ -24,10 +24,16 @@ ESPI:
       P[01234]STAT:
         description: Port Status
         name: STAT
+        _split:
+          INTSPC:
+            name: INTSPC%s
       
       P[01234]IRuleStat:
         description: Port set interrupt rules and user status
         name: IRULESTAT
+        _split:
+          INTSPC:
+            name: INTSPC%s
 
       P[01234]ADDR:
         description: Port Address offset to host

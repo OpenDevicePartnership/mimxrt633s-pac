@@ -18,10 +18,22 @@ pub type IntrdW<'a, REG> = crate::BitWriter<'a, REG>;
 pub type IntwrR = crate::BitReader;
 #[doc = "Field `INTWR` writer - Interrupt if Write or 1st Write or Bus master Finished."]
 pub type IntwrW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `INTSPC` reader - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
-pub type IntspcR = crate::FieldReader;
-#[doc = "Field `INTSPC` writer - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
-pub type IntspcW<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `INTSPC0` reader - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+pub type Intspc0R = crate::BitReader;
+#[doc = "Field `INTSPC0` writer - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+pub type Intspc0W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTSPC1` reader - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+pub type Intspc1R = crate::BitReader;
+#[doc = "Field `INTSPC1` writer - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+pub type Intspc1W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTSPC2` reader - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+pub type Intspc2R = crate::BitReader;
+#[doc = "Field `INTSPC2` writer - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+pub type Intspc2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `INTSPC3` reader - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+pub type Intspc3R = crate::BitReader;
+#[doc = "Field `INTSPC3` writer - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+pub type Intspc3W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `SSTCL` writer - Status set/clear"]
 pub type SstclW<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `SRST` writer - Resets the RdStatus and WrStatus in PStatus register"]
@@ -47,10 +59,25 @@ impl R {
     pub fn intwr(&self) -> IntwrR {
         IntwrR::new(((self.bits >> 10) & 1) != 0)
     }
-    #[doc = "Bits 11:14 - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+    #[doc = "Bit 11 - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
     #[inline(always)]
-    pub fn intspc(&self) -> IntspcR {
-        IntspcR::new(((self.bits >> 11) & 0x0f) as u8)
+    pub fn intspc0(&self) -> Intspc0R {
+        Intspc0R::new(((self.bits >> 11) & 1) != 0)
+    }
+    #[doc = "Bit 12 - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+    #[inline(always)]
+    pub fn intspc1(&self) -> Intspc1R {
+        Intspc1R::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bit 13 - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+    #[inline(always)]
+    pub fn intspc2(&self) -> Intspc2R {
+        Intspc2R::new(((self.bits >> 13) & 1) != 0)
+    }
+    #[doc = "Bit 14 - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+    #[inline(always)]
+    pub fn intspc3(&self) -> Intspc3R {
+        Intspc3R::new(((self.bits >> 14) & 1) != 0)
     }
 }
 #[cfg(feature = "debug")]
@@ -61,7 +88,10 @@ impl core::fmt::Debug for R {
             .field("interr", &self.interr())
             .field("intrd", &self.intrd())
             .field("intwr", &self.intwr())
-            .field("intspc", &self.intspc())
+            .field("intspc0", &self.intspc0())
+            .field("intspc1", &self.intspc1())
+            .field("intspc2", &self.intspc2())
+            .field("intspc3", &self.intspc3())
             .finish()
     }
 }
@@ -86,10 +116,25 @@ impl W {
     pub fn intwr(&mut self) -> IntwrW<IrulestatSpec> {
         IntwrW::new(self, 10)
     }
-    #[doc = "Bits 11:14 - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+    #[doc = "Bit 11 - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
     #[inline(always)]
-    pub fn intspc(&mut self) -> IntspcW<IrulestatSpec> {
-        IntspcW::new(self, 11)
+    pub fn intspc0(&mut self) -> Intspc0W<IrulestatSpec> {
+        Intspc0W::new(self, 11)
+    }
+    #[doc = "Bit 12 - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+    #[inline(always)]
+    pub fn intspc1(&mut self) -> Intspc1W<IrulestatSpec> {
+        Intspc1W::new(self, 12)
+    }
+    #[doc = "Bit 13 - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+    #[inline(always)]
+    pub fn intspc2(&mut self) -> Intspc2W<IrulestatSpec> {
+        Intspc2W::new(self, 13)
+    }
+    #[doc = "Bit 14 - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
+    #[inline(always)]
+    pub fn intspc3(&mut self) -> Intspc3W<IrulestatSpec> {
+        Intspc3W::new(self, 14)
     }
     #[doc = "Bits 16:19 - Status set/clear"]
     #[inline(always)]
