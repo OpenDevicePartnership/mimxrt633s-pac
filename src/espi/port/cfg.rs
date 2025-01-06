@@ -167,10 +167,93 @@ where
         self.variant(Type::MailboxOem)
     }
 }
+#[doc = "Meaning depends on Type, but generally picks the direction of the port (Host writes, Host reads, or both)\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+#[repr(u8)]
+pub enum Direction {
+    #[doc = "0: Bidirectional or Unenforced"]
+    BidirectionalUnenforced = 0,
+    #[doc = "1: Ignore Read or Write Only"]
+    IgnoreReadWriteOnly = 1,
+    #[doc = "2: Ignore Write or Read Only"]
+    IgnoreWriteReadOnly = 2,
+    #[doc = "3: Ignore Both"]
+    IgnoreBoth = 3,
+}
+impl From<Direction> for u8 {
+    #[inline(always)]
+    fn from(variant: Direction) -> Self {
+        variant as _
+    }
+}
+impl crate::FieldSpec for Direction {
+    type Ux = u8;
+}
+impl crate::IsEnum for Direction {}
 #[doc = "Field `Direction` reader - Meaning depends on Type, but generally picks the direction of the port (Host writes, Host reads, or both)"]
-pub type DirectionR = crate::FieldReader;
+pub type DirectionR = crate::FieldReader<Direction>;
+impl DirectionR {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Direction {
+        match self.bits {
+            0 => Direction::BidirectionalUnenforced,
+            1 => Direction::IgnoreReadWriteOnly,
+            2 => Direction::IgnoreWriteReadOnly,
+            3 => Direction::IgnoreBoth,
+            _ => unreachable!(),
+        }
+    }
+    #[doc = "Bidirectional or Unenforced"]
+    #[inline(always)]
+    pub fn is_bidirectional_unenforced(&self) -> bool {
+        *self == Direction::BidirectionalUnenforced
+    }
+    #[doc = "Ignore Read or Write Only"]
+    #[inline(always)]
+    pub fn is_ignore_read_write_only(&self) -> bool {
+        *self == Direction::IgnoreReadWriteOnly
+    }
+    #[doc = "Ignore Write or Read Only"]
+    #[inline(always)]
+    pub fn is_ignore_write_read_only(&self) -> bool {
+        *self == Direction::IgnoreWriteReadOnly
+    }
+    #[doc = "Ignore Both"]
+    #[inline(always)]
+    pub fn is_ignore_both(&self) -> bool {
+        *self == Direction::IgnoreBoth
+    }
+}
 #[doc = "Field `Direction` writer - Meaning depends on Type, but generally picks the direction of the port (Host writes, Host reads, or both)"]
-pub type DirectionW<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DirectionW<'a, REG> = crate::FieldWriter<'a, REG, 2, Direction, crate::Safe>;
+impl<'a, REG> DirectionW<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+    REG::Ux: From<u8>,
+{
+    #[doc = "Bidirectional or Unenforced"]
+    #[inline(always)]
+    pub fn bidirectional_unenforced(self) -> &'a mut crate::W<REG> {
+        self.variant(Direction::BidirectionalUnenforced)
+    }
+    #[doc = "Ignore Read or Write Only"]
+    #[inline(always)]
+    pub fn ignore_read_write_only(self) -> &'a mut crate::W<REG> {
+        self.variant(Direction::IgnoreReadWriteOnly)
+    }
+    #[doc = "Ignore Write or Read Only"]
+    #[inline(always)]
+    pub fn ignore_write_read_only(self) -> &'a mut crate::W<REG> {
+        self.variant(Direction::IgnoreWriteReadOnly)
+    }
+    #[doc = "Ignore Both"]
+    #[inline(always)]
+    pub fn ignore_both(self) -> &'a mut crate::W<REG> {
+        self.variant(Direction::IgnoreBoth)
+    }
+}
 #[doc = "Field `MBIntAll` reader - Mailbox: Map interrupt on Read 1st and Write 1st to every read/write (special will still control 0th and last location)"]
 pub type MbintAllR = crate::BitReader;
 #[doc = "Field `MBIntAll` writer - Mailbox: Map interrupt on Read 1st and Write 1st to every read/write (special will still control 0th and last location)"]
