@@ -14,6 +14,12 @@ ESPI:
       P[01234]CFG:
         description: Port Configuration and Control
         name: CFG
+        Direction:
+          _name: Direction
+          BIDIRECTIONAL_UNENFORCED: [0, "Bidirectional or Unenforced"]
+          IGNORE_READ_WRITE_ONLY: [1, "Ignore Read or Write Only"]
+          IGNORE_WRITE_READ_ONLY: [2, "Ignore Write or Read Only"]
+          IGNORE_BOTH: [3, "Ignore Both"]
 
       P[01234]STAT:
         description: Port Status
