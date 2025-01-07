@@ -7,19 +7,19 @@ pub type PortIntR = crate::FieldReader;
 #[doc = "Field `P80Int` reader - Port80 has had a request and is pending service."]
 pub type P80intR = crate::BitReader;
 #[doc = "Field `P80Int` writer - Port80 has had a request and is pending service."]
-pub type P80intW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type P80intW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `BusRst` reader - If 1, the entered or left reset. Sticky - must clear."]
 pub type BusRstR = crate::BitReader;
 #[doc = "Field `BusRst` writer - If 1, the entered or left reset. Sticky - must clear."]
-pub type BusRstW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type BusRstW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `IrqUpd` reader - If 1, the bus had an IRQ update completion (for eSPI, IRQPush done; for LPC, SERIRQ done)"]
 pub type IrqUpdR = crate::BitReader;
 #[doc = "Field `IrqUpd` writer - If 1, the bus had an IRQ update completion (for eSPI, IRQPush done; for LPC, SERIRQ done)"]
-pub type IrqUpdW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type IrqUpdW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `WireChg` reader - If 1, one or more input VWire has changed since last cleared for eSPI; for LPC, SERIRQ started"]
 pub type WireChgR = crate::BitReader;
 #[doc = "Field `WireChg` writer - If 1, one or more input VWire has changed since last cleared for eSPI; for LPC, SERIRQ started"]
-pub type WireChgW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type WireChgW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `Hstall` reader - If 1, the Host is stalled on a read from or write to a port that has the StallRd or StallWr bit set in the PnCFG register"]
 pub type HstallR = crate::BitReader;
 #[doc = "Field `Hstall` writer - If 1, the Host is stalled on a read from or write to a port that has the StallRd or StallWr bit set in the PnCFG register"]
@@ -27,11 +27,11 @@ pub type HstallW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CRCERR` reader - If 1, the CRC from the Master did not match the computed CRC"]
 pub type CrcerrR = crate::BitReader;
 #[doc = "Field `CRCERR` writer - If 1, the CRC from the Master did not match the computed CRC"]
-pub type CrcerrW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CrcerrW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `GPIO` reader - If 1, the GPIO in ESPIMISC has had an input change"]
 pub type GpioR = crate::BitReader;
 #[doc = "Field `GPIO` writer - If 1, the GPIO in ESPIMISC has had an input change"]
-pub type GpioW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type GpioW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `Busy` reader - If 1, the bus is busy."]
 pub type BusyR = crate::BitReader;
 #[doc = "Field `InRst` reader - If 1, the bus in reset."]
@@ -177,7 +177,7 @@ impl crate::Readable for MstatSpec {}
 impl crate::Writable for MstatSpec {
     type Safety = crate::Unsafe;
     const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0x6f00;
 }
 #[doc = "`reset()` method sets MSTAT to value 0"]
 impl crate::Resettable for MstatSpec {
