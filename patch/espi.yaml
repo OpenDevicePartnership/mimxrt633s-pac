@@ -98,3 +98,25 @@ ESPI:
 
     _array:
       PENA*: {}
+
+  # Mark W1C bits accordingly
+  MSTAT:
+    _modify:
+      P80Int:
+        modifiedWriteValues: oneToClear
+
+      BusRst:
+        modifiedWriteValues: oneToClear
+
+      IrqUpd:
+        modifiedWriteValues: oneToClear
+
+      WireChg:
+        modifiedWriteValues: oneToClear
+
+      CRCERR:
+        modifiedWriteValues: oneToClear
+
+      GPIO:
+        modifiedWriteValues: oneToClear
+
