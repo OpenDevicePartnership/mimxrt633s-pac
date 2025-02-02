@@ -12,3 +12,8 @@ ADC*:
   _array:
     CMDL*: {}
     CMDH*: {}
+  RESFIFO:
+    _modify:
+      D:
+        bitOffset: 3
+        bitWidth: 13
