@@ -54,6 +54,15 @@ ESPI:
       P[01234]RAMUse:
         description: Port RAM base and size (for Mailbox and Bus Master)
         name: RAMUSE
+        LEN:
+          LEN_4: [0, 4 bytes]
+          LEN_8: [1, 8 bytes]
+          LEN_16: [2, 16 bytes]
+          LEN_32: [3, 32 bytes]
+          LEN_64: [4, 64 bytes]
+          LEN_128: [5, 128 bytes]
+          LEN_256: [6, 256 bytes]
+          LEN_512: [7, 512 bytes]
 
   # Add per-port enable bit in MCTRL
   MCTRL:
@@ -119,4 +128,3 @@ ESPI:
 
       GPIO:
         modifiedWriteValues: oneToClear
-
