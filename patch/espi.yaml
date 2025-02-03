@@ -108,8 +108,8 @@ ESPI:
     _array:
       PENA*: {}
 
-  # Mark W1C bits accordingly
   MSTAT:
+    # Mark W1C bits accordingly
     _modify:
       P80Int:
         modifiedWriteValues: oneToClear
@@ -128,3 +128,26 @@ ESPI:
 
       GPIO:
         modifiedWriteValues: oneToClear
+
+    # Split PortInt bits
+    _split:
+      PortInt:
+        name: PORT_INT%s
+
+  INTENSET:
+    # Split PortInt bits
+    _split:
+      PortInt:
+        name: PORT_INT%s
+
+  INTENCLR:
+    # Split PortInt bits
+    _split:
+      PortInt:
+        name: PORT_INT%s
+
+  INTSTAT:
+    # Split PortInt bits
+    _split:
+      PortInt:
+        name: PORT_INT%s

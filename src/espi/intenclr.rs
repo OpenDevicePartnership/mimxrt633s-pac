@@ -2,10 +2,26 @@
 pub type R = crate::R<IntenclrSpec>;
 #[doc = "Register `INTENCLR` writer"]
 pub type W = crate::W<IntenclrSpec>;
-#[doc = "Field `PortInt` reader - If set to 1, clears corresponding port interrupt enable"]
-pub type PortIntR = crate::FieldReader;
-#[doc = "Field `PortInt` writer - If set to 1, clears corresponding port interrupt enable"]
-pub type PortIntW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `PORT_INT0` reader - If set to 1, clears corresponding port interrupt enable"]
+pub type PortInt0R = crate::BitReader;
+#[doc = "Field `PORT_INT0` writer - If set to 1, clears corresponding port interrupt enable"]
+pub type PortInt0W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `PORT_INT1` reader - If set to 1, clears corresponding port interrupt enable"]
+pub type PortInt1R = crate::BitReader;
+#[doc = "Field `PORT_INT1` writer - If set to 1, clears corresponding port interrupt enable"]
+pub type PortInt1W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `PORT_INT2` reader - If set to 1, clears corresponding port interrupt enable"]
+pub type PortInt2R = crate::BitReader;
+#[doc = "Field `PORT_INT2` writer - If set to 1, clears corresponding port interrupt enable"]
+pub type PortInt2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `PORT_INT3` reader - If set to 1, clears corresponding port interrupt enable"]
+pub type PortInt3R = crate::BitReader;
+#[doc = "Field `PORT_INT3` writer - If set to 1, clears corresponding port interrupt enable"]
+pub type PortInt3W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `PORT_INT4` reader - If set to 1, clears corresponding port interrupt enable"]
+pub type PortInt4R = crate::BitReader;
+#[doc = "Field `PORT_INT4` writer - If set to 1, clears corresponding port interrupt enable"]
+pub type PortInt4W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `P80Int` reader - If set to 1, clears Port80 interrupt enable."]
 pub type P80intR = crate::BitReader;
 #[doc = "Field `P80Int` writer - If set to 1, clears Port80 interrupt enable."]
@@ -35,10 +51,30 @@ pub type GpioR = crate::BitReader;
 #[doc = "Field `GPIO` writer - If set to 1, clears GPIO interrupt enable."]
 pub type GpioW<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
-    #[doc = "Bits 0:4 - If set to 1, clears corresponding port interrupt enable"]
+    #[doc = "Bit 0 - If set to 1, clears corresponding port interrupt enable"]
     #[inline(always)]
-    pub fn port_int(&self) -> PortIntR {
-        PortIntR::new((self.bits & 0x1f) as u8)
+    pub fn port_int0(&self) -> PortInt0R {
+        PortInt0R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1 - If set to 1, clears corresponding port interrupt enable"]
+    #[inline(always)]
+    pub fn port_int1(&self) -> PortInt1R {
+        PortInt1R::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 2 - If set to 1, clears corresponding port interrupt enable"]
+    #[inline(always)]
+    pub fn port_int2(&self) -> PortInt2R {
+        PortInt2R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3 - If set to 1, clears corresponding port interrupt enable"]
+    #[inline(always)]
+    pub fn port_int3(&self) -> PortInt3R {
+        PortInt3R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4 - If set to 1, clears corresponding port interrupt enable"]
+    #[inline(always)]
+    pub fn port_int4(&self) -> PortInt4R {
+        PortInt4R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 8 - If set to 1, clears Port80 interrupt enable."]
     #[inline(always)]
@@ -80,7 +116,6 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTENCLR")
-            .field("port_int", &self.port_int())
             .field("p80int", &self.p80int())
             .field("bus_rst", &self.bus_rst())
             .field("irq_upd", &self.irq_upd())
@@ -88,14 +123,39 @@ impl core::fmt::Debug for R {
             .field("hstall", &self.hstall())
             .field("crcerr", &self.crcerr())
             .field("gpio", &self.gpio())
+            .field("port_int0", &self.port_int0())
+            .field("port_int1", &self.port_int1())
+            .field("port_int2", &self.port_int2())
+            .field("port_int3", &self.port_int3())
+            .field("port_int4", &self.port_int4())
             .finish()
     }
 }
 impl W {
-    #[doc = "Bits 0:4 - If set to 1, clears corresponding port interrupt enable"]
+    #[doc = "Bit 0 - If set to 1, clears corresponding port interrupt enable"]
     #[inline(always)]
-    pub fn port_int(&mut self) -> PortIntW<IntenclrSpec> {
-        PortIntW::new(self, 0)
+    pub fn port_int0(&mut self) -> PortInt0W<IntenclrSpec> {
+        PortInt0W::new(self, 0)
+    }
+    #[doc = "Bit 1 - If set to 1, clears corresponding port interrupt enable"]
+    #[inline(always)]
+    pub fn port_int1(&mut self) -> PortInt1W<IntenclrSpec> {
+        PortInt1W::new(self, 1)
+    }
+    #[doc = "Bit 2 - If set to 1, clears corresponding port interrupt enable"]
+    #[inline(always)]
+    pub fn port_int2(&mut self) -> PortInt2W<IntenclrSpec> {
+        PortInt2W::new(self, 2)
+    }
+    #[doc = "Bit 3 - If set to 1, clears corresponding port interrupt enable"]
+    #[inline(always)]
+    pub fn port_int3(&mut self) -> PortInt3W<IntenclrSpec> {
+        PortInt3W::new(self, 3)
+    }
+    #[doc = "Bit 4 - If set to 1, clears corresponding port interrupt enable"]
+    #[inline(always)]
+    pub fn port_int4(&mut self) -> PortInt4W<IntenclrSpec> {
+        PortInt4W::new(self, 4)
     }
     #[doc = "Bit 8 - If set to 1, clears Port80 interrupt enable."]
     #[inline(always)]
