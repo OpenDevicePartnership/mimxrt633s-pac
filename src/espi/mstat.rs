@@ -2,8 +2,26 @@
 pub type R = crate::R<MstatSpec>;
 #[doc = "Register `MSTAT` writer"]
 pub type W = crate::W<MstatSpec>;
-#[doc = "Field `PortInt` reader - Corresponding port is pending interrupt service"]
-pub type PortIntR = crate::FieldReader;
+#[doc = "Field `PORT_INT0` reader - Corresponding port is pending interrupt service"]
+pub type PortInt0R = crate::BitReader;
+#[doc = "Field `PORT_INT0` writer - Corresponding port is pending interrupt service"]
+pub type PortInt0W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `PORT_INT1` reader - Corresponding port is pending interrupt service"]
+pub type PortInt1R = crate::BitReader;
+#[doc = "Field `PORT_INT1` writer - Corresponding port is pending interrupt service"]
+pub type PortInt1W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `PORT_INT2` reader - Corresponding port is pending interrupt service"]
+pub type PortInt2R = crate::BitReader;
+#[doc = "Field `PORT_INT2` writer - Corresponding port is pending interrupt service"]
+pub type PortInt2W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `PORT_INT3` reader - Corresponding port is pending interrupt service"]
+pub type PortInt3R = crate::BitReader;
+#[doc = "Field `PORT_INT3` writer - Corresponding port is pending interrupt service"]
+pub type PortInt3W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `PORT_INT4` reader - Corresponding port is pending interrupt service"]
+pub type PortInt4R = crate::BitReader;
+#[doc = "Field `PORT_INT4` writer - Corresponding port is pending interrupt service"]
+pub type PortInt4W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `P80Int` reader - Port80 has had a request and is pending service."]
 pub type P80intR = crate::BitReader;
 #[doc = "Field `P80Int` writer - Port80 has had a request and is pending service."]
@@ -43,10 +61,30 @@ pub type MastPendR = crate::BitReader;
 #[doc = "Field `AlertPend` reader - If 1, the Alert request pin is pending (whether separate pin or MISO)"]
 pub type AlertPendR = crate::BitReader;
 impl R {
-    #[doc = "Bits 0:4 - Corresponding port is pending interrupt service"]
+    #[doc = "Bit 0 - Corresponding port is pending interrupt service"]
     #[inline(always)]
-    pub fn port_int(&self) -> PortIntR {
-        PortIntR::new((self.bits & 0x1f) as u8)
+    pub fn port_int0(&self) -> PortInt0R {
+        PortInt0R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1 - Corresponding port is pending interrupt service"]
+    #[inline(always)]
+    pub fn port_int1(&self) -> PortInt1R {
+        PortInt1R::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 2 - Corresponding port is pending interrupt service"]
+    #[inline(always)]
+    pub fn port_int2(&self) -> PortInt2R {
+        PortInt2R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3 - Corresponding port is pending interrupt service"]
+    #[inline(always)]
+    pub fn port_int3(&self) -> PortInt3R {
+        PortInt3R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4 - Corresponding port is pending interrupt service"]
+    #[inline(always)]
+    pub fn port_int4(&self) -> PortInt4R {
+        PortInt4R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 8 - Port80 has had a request and is pending service."]
     #[inline(always)]
@@ -113,7 +151,6 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MSTAT")
-            .field("port_int", &self.port_int())
             .field("p80int", &self.p80int())
             .field("bus_rst", &self.bus_rst())
             .field("irq_upd", &self.irq_upd())
@@ -126,10 +163,40 @@ impl core::fmt::Debug for R {
             .field("comp_pend", &self.comp_pend())
             .field("mast_pend", &self.mast_pend())
             .field("alert_pend", &self.alert_pend())
+            .field("port_int0", &self.port_int0())
+            .field("port_int1", &self.port_int1())
+            .field("port_int2", &self.port_int2())
+            .field("port_int3", &self.port_int3())
+            .field("port_int4", &self.port_int4())
             .finish()
     }
 }
 impl W {
+    #[doc = "Bit 0 - Corresponding port is pending interrupt service"]
+    #[inline(always)]
+    pub fn port_int0(&mut self) -> PortInt0W<MstatSpec> {
+        PortInt0W::new(self, 0)
+    }
+    #[doc = "Bit 1 - Corresponding port is pending interrupt service"]
+    #[inline(always)]
+    pub fn port_int1(&mut self) -> PortInt1W<MstatSpec> {
+        PortInt1W::new(self, 1)
+    }
+    #[doc = "Bit 2 - Corresponding port is pending interrupt service"]
+    #[inline(always)]
+    pub fn port_int2(&mut self) -> PortInt2W<MstatSpec> {
+        PortInt2W::new(self, 2)
+    }
+    #[doc = "Bit 3 - Corresponding port is pending interrupt service"]
+    #[inline(always)]
+    pub fn port_int3(&mut self) -> PortInt3W<MstatSpec> {
+        PortInt3W::new(self, 3)
+    }
+    #[doc = "Bit 4 - Corresponding port is pending interrupt service"]
+    #[inline(always)]
+    pub fn port_int4(&mut self) -> PortInt4W<MstatSpec> {
+        PortInt4W::new(self, 4)
+    }
     #[doc = "Bit 8 - Port80 has had a request and is pending service."]
     #[inline(always)]
     pub fn p80int(&mut self) -> P80intW<MstatSpec> {
