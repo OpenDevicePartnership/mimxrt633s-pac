@@ -9,6 +9,7 @@ _include:
   - "espi.yaml"
   - "i2s.yaml"
   - "inputmux.yaml"
+  - "toplevel.yaml"
   - "usart.yaml"
 
 
