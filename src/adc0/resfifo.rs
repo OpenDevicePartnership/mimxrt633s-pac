@@ -385,10 +385,10 @@ impl ValidR {
     }
 }
 impl R {
-    #[doc = "Bits 0:15 - Data result"]
+    #[doc = "Bits 3:15 - Data result"]
     #[inline(always)]
     pub fn d(&self) -> DR {
-        DR::new((self.bits & 0xffff) as u16)
+        DR::new(((self.bits >> 3) & 0x1fff) as u16)
     }
     #[doc = "Bits 16:19 - Trigger Source"]
     #[inline(always)]
