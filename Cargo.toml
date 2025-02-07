@@ -1,6 +1,6 @@
 [package]
 name = "mimxrt633s-pac"
-version = "0.2.1"
+version = "0.2.2"
 authors = [ "Felipe Balbi <febalbi@microsoft.com>" ]
 edition = "2021"
 license = "MIT"
