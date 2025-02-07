@@ -24,10 +24,40 @@ ESPI:
       P[01234]STAT:
         description: Port Status
         name: STAT
-        _split:
-          INTSPC:
-            name: INTSPC%s
-      
+        _delete:
+          - INTSPC
+
+        _add:
+          INTSPC0:
+            bitOffset: 11
+            bitWidth: 1
+            modifiedWriteValues: oneToClear
+
+          INTSPC1:
+            bitOffset: 12
+            bitWidth: 1
+            modifiedWriteValues: oneToClear
+
+          INTSPC2:
+            bitOffset: 13
+            bitWidth: 1
+            modifiedWriteValues: oneToClear
+
+          INTSPC3:
+            bitOffset: 14
+            bitWidth: 1
+            modifiedWriteValues: oneToClear
+
+        _modify:
+          INTERR:
+            modifiedWriteValues: oneToClear
+
+          INTRD:
+            modifiedWriteValues: oneToClear
+
+          INTWR:
+            modifiedWriteValues: oneToClear
+
       P[01234]IRuleStat:
         description: Port set interrupt rules and user status
         name: IRULESTAT
