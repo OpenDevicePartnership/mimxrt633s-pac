@@ -41,7 +41,7 @@ pub type WireChgW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `Hstall` reader - If 1, the Host is stalled on a read from or write to a port that has the StallRd or StallWr bit set in the PnCFG register"]
 pub type HstallR = crate::BitReader;
 #[doc = "Field `Hstall` writer - If 1, the Host is stalled on a read from or write to a port that has the StallRd or StallWr bit set in the PnCFG register"]
-pub type HstallW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type HstallW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `CRCERR` reader - If 1, the CRC from the Master did not match the computed CRC"]
 pub type CrcerrR = crate::BitReader;
 #[doc = "Field `CRCERR` writer - If 1, the CRC from the Master did not match the computed CRC"]
@@ -244,7 +244,7 @@ impl crate::Readable for MstatSpec {}
 impl crate::Writable for MstatSpec {
     type Safety = crate::Unsafe;
     const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0x6f00;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0x7f00;
 }
 #[doc = "`reset()` method sets MSTAT to value 0"]
 impl crate::Resettable for MstatSpec {

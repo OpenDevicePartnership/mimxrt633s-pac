@@ -159,6 +159,9 @@ ESPI:
       GPIO:
         modifiedWriteValues: oneToClear
 
+      Hstall:
+        modifiedWriteValues: oneToClear
+
     # Split PortInt bits
     _split:
       PortInt:
