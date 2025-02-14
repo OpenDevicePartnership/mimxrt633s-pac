@@ -16,6 +16,8 @@ CRC_ENGINE:
       description: CRC data register, 16-bit access
       addressOffset: 8
       size: 16
+      resetValue: 0
+      resetMask: 0
       access: write-only
       alternateGroup: SUM_WR_DATA
 
@@ -23,5 +25,7 @@ CRC_ENGINE:
       description: CRC data register, 8-bit access
       addressOffset: 8
       size: 8
+      resetValue: 0
+      resetMask: 0
       access: write-only
       alternateGroup: SUM_WR_DATA
