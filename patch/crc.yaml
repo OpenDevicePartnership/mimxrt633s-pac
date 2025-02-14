@@ -5,3 +5,27 @@ CRC_ENGINE:
       CRC_CCITT: [0, CRC-CCITT polynomial]
       CRC16: [1, CRC16 polynomial]
       CRC32: [2, CRC32 polynomial]
+
+  _modify:
+    WR_DATA:
+      name: WR_DATA32
+      description: CRC data register, 32-bit access
+
+  _add:
+    WR_DATA16:
+      description: CRC data register, 16-bit access
+      addressOffset: 8
+      size: 16
+      resetValue: 0
+      resetMask: 0
+      access: write-only
+      alternateGroup: SUM_WR_DATA
+
+    WR_DATA8:
+      description: CRC data register, 8-bit access
+      addressOffset: 8
+      size: 8
+      resetValue: 0
+      resetMask: 0
+      access: write-only
+      alternateGroup: SUM_WR_DATA

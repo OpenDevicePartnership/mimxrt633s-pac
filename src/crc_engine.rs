@@ -17,9 +17,19 @@ impl RegisterBlock {
     pub const fn seed(&self) -> &Seed {
         &self.seed
     }
-    #[doc = "0x08 - CRC data register"]
+    #[doc = "0x08 - CRC data register, 8-bit access"]
     #[inline(always)]
-    pub const fn wr_data(&self) -> &WrData {
+    pub const fn wr_data8(&self) -> &WrData8 {
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(8).cast() }
+    }
+    #[doc = "0x08 - CRC data register, 16-bit access"]
+    #[inline(always)]
+    pub const fn wr_data16(&self) -> &WrData16 {
+        unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(8).cast() }
+    }
+    #[doc = "0x08 - CRC data register, 32-bit access"]
+    #[inline(always)]
+    pub const fn wr_data32(&self) -> &WrData32 {
         unsafe { &*core::ptr::from_ref(self).cast::<u8>().add(8).cast() }
     }
     #[doc = "0x08 - CRC checksum register"]
@@ -46,9 +56,21 @@ module"]
 pub type Sum = crate::Reg<sum::SumSpec>;
 #[doc = "CRC checksum register"]
 pub mod sum;
-#[doc = "WR_DATA (w) register accessor: CRC data register\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`wr_data::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@wr_data`]
+#[doc = "WR_DATA32 (w) register accessor: CRC data register, 32-bit access\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`wr_data32::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@wr_data32`]
 module"]
-#[doc(alias = "WR_DATA")]
-pub type WrData = crate::Reg<wr_data::WrDataSpec>;
-#[doc = "CRC data register"]
-pub mod wr_data;
+#[doc(alias = "WR_DATA32")]
+pub type WrData32 = crate::Reg<wr_data32::WrData32Spec>;
+#[doc = "CRC data register, 32-bit access"]
+pub mod wr_data32;
+#[doc = "WR_DATA16 (w) register accessor: CRC data register, 16-bit access\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`wr_data16::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@wr_data16`]
+module"]
+#[doc(alias = "WR_DATA16")]
+pub type WrData16 = crate::Reg<wr_data16::WrData16Spec>;
+#[doc = "CRC data register, 16-bit access"]
+pub mod wr_data16;
+#[doc = "WR_DATA8 (w) register accessor: CRC data register, 8-bit access\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`wr_data8::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@wr_data8`]
+module"]
+#[doc(alias = "WR_DATA8")]
+pub type WrData8 = crate::Reg<wr_data8::WrData8Spec>;
+#[doc = "CRC data register, 8-bit access"]
+pub mod wr_data8;
