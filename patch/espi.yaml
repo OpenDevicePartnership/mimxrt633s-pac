@@ -184,3 +184,118 @@ ESPI:
     _split:
       PortInt:
         name: PORT_INT%s
+
+  WIREWO:
+    _delete:
+      - WIRES
+    _add:
+      OOB_RST_ACK:
+        description: Must be asserted in response to OOB_RST.
+        bitOffset: 0
+        bitWidth: 1
+      WAKEN_SCIN:
+        description: Wake up when no S0, SCI if it is.
+        bitOffset: 1
+        bitWidth: 1
+      PMEN:
+        description: Replacement for Pin.
+        bitOffset: 2
+        bitWidth: 1
+      SCIN:
+        description: Replacement for Pin.
+        bitOffset: 3
+        bitWidth: 1
+      SMIN:
+        description: Replacement for Pin / IRQ.
+        bitOffset: 4
+        bitWidth: 1
+      RCINN:
+        description: Replacement for KBDRST Pin.
+        bitOffset: 5
+        bitWidth: 1
+      HOST_RST_ACK:
+        description: Set in response to HOST_RST_WARN.
+        bitOffset: 6
+        bitWidth: 1
+      SUSACKN:
+        description: Set in response to SUS_WARNN.
+        bitOffset: 7
+        bitWidth: 1
+      E2P:
+        description: EC to PCH byte for agreed use.
+        bitOffset: 8
+        bitWidth: 8
+      BOOT_DONE:
+        description: Boot load is done, app must write 1.
+        bitOffset: 16
+        bitWidth: 1
+      BOOT_ERRN:
+        description: Boot load ended in success if 1. App must write.
+        bitOffset: 17
+        bitWidth: 1
+      DSW_PWROK_RST:
+        description: App write 1 to this when Host goes int G3 vs Deep-Sx. It can be cleared at any time after that. The purpose it to reset some VWires.
+        bitOffset: 18
+        bitWidth: 1
+
+  WIRERO:
+    _delete:
+      - WIRES
+    _add:
+      SLP_S3N:
+        description: Sleep state.
+        bitOffset: 0
+        bitWidth: 1
+      SLP_S4N:
+        description: Sleep state.
+        bitOffset: 1
+        bitWidth: 1
+      SLP_S5N:
+        description: Sleep state.
+        bitOffset: 2
+        bitWidth: 1
+      SUS_STAT:
+        description: Warning entry to sleep state soon.
+        bitOffset: 3
+        bitWidth: 1
+      PLTRSTN:
+        description: Reset request, affects VWires which must be cleared.
+        bitOffset: 4
+        bitWidth: 1
+      OOB_RST_WARN:
+        description: Notification of OOB being reset. Must be acked using OOB_RST_ACK VWire. Active High.
+        bitOffset: 5
+        bitWidth: 1
+      HOST_RST_WARN:
+        description: Warning that Host is about to reset. Must be acked using HOST_RST_ACK. Active High.
+        bitOffset: 6
+        bitWidth: 1
+      SUS_WARNN:
+        description: Suspend about to happen, going into Deep-Sx (Power well loss). Must be acked using SUSACK VWire.
+        bitOffset: 7
+        bitWidth: 1
+      SUS_PWRDN_ACKN:
+        description: Host indicates that suspend power well can be shut down safely.
+        bitOffset: 8
+        bitWidth: 1
+      SLP_AN:
+        description: Used when in Sx sleep but ME is on. ASW devices need to be powered. Also called SLP_MN
+        bitOffset: 9
+        bitWidth: 1
+      SLP_LANN:
+        description: Wired LAN can be powered down.
+        bitOffset: 10
+        bitWidth: 1
+      SLP_WLANN:
+        description: Wireless LAN can be powered down.
+        bitOffset: 11
+        bitWidth: 1
+      P2E:
+        description: PCH to EC byte for agreed use.
+        bitOffset: 12
+        bitWidth: 8
+      HOST_C10N:
+        description: Asserted when Host has entered deep power down state C10 or deeper. It is a sleep sub-state of S0.
+        bitOffset: 20
+        bitWidth: 1
+
