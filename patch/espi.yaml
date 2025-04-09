@@ -61,6 +61,11 @@ ESPI:
       P[01234]IRuleStat:
         description: Port set interrupt rules and user status
         name: IRULESTAT
+        SSTCL:
+          MCUSTART: [1, Started by MCU]
+          MCUDONE: [2, Completed by MCU, triggers a host read]
+          EMPTY: [3, Mailbox is Empty]
+        
         _split:
           INTSPC:
             name: INTSPC%s
