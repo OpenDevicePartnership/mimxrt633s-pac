@@ -34,8 +34,51 @@ pub type Intspc2W<'a, REG> = crate::BitWriter<'a, REG>;
 pub type Intspc3R = crate::BitReader;
 #[doc = "Field `INTSPC3` writer - Interrupt if: Bit Endpoint Idx/Data Mbox BusMaster/Flash SPC0 CMD Idx Change Write 0 Completed SPC1 - - Read 0 - SPC2 - - Write Last - SPC3 - - Read Last -"]
 pub type Intspc3W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Status set/clear\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+#[repr(u8)]
+pub enum Sstcl {
+    #[doc = "1: Started by MCU"]
+    Mcustart = 1,
+    #[doc = "2: Completed by MCU"]
+    Mcudone = 2,
+    #[doc = "3: Mailbox is Empty"]
+    Empty = 3,
+}
+impl From<Sstcl> for u8 {
+    #[inline(always)]
+    fn from(variant: Sstcl) -> Self {
+        variant as _
+    }
+}
+impl crate::FieldSpec for Sstcl {
+    type Ux = u8;
+}
+impl crate::IsEnum for Sstcl {}
 #[doc = "Field `SSTCL` writer - Status set/clear"]
-pub type SstclW<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+pub type SstclW<'a, REG> = crate::FieldWriter<'a, REG, 4, Sstcl>;
+impl<'a, REG> SstclW<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+    REG::Ux: From<u8>,
+{
+    #[doc = "Started by MCU"]
+    #[inline(always)]
+    pub fn mcustart(self) -> &'a mut crate::W<REG> {
+        self.variant(Sstcl::Mcustart)
+    }
+    #[doc = "Completed by MCU"]
+    #[inline(always)]
+    pub fn mcudone(self) -> &'a mut crate::W<REG> {
+        self.variant(Sstcl::Mcudone)
+    }
+    #[doc = "Mailbox is Empty"]
+    #[inline(always)]
+    pub fn empty(self) -> &'a mut crate::W<REG> {
+        self.variant(Sstcl::Empty)
+    }
+}
 #[doc = "Field `SRST` writer - Resets the RdStatus and WrStatus in PStatus register"]
 pub type SrstW<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
