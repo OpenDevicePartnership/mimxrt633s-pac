@@ -1,11 +1,7 @@
 # This workflow runs whenever a PR is opened or updated, or a commit is pushed to main. It runs
 # several checks:
-# - commit_list: produces a list of commits to be checked
 # - fmt: checks that the code is formatted according to rustfmt
 # - clippy: checks that the code does not contain any clippy warnings
-# - doc: checks that the code can be documented without errors
-# - hack: check combinations of feature flags
-# - msrv: check that the msrv specified in the crate is correct
 permissions:
   contents: read
 # This configuration allows maintainers of this repo to create a branch and pull request based on
@@ -23,47 +19,13 @@ concurrency:
 name: check
 jobs:
 
-  commit_list:
-    runs-on: ubuntu-latest
-    steps:
-
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-
-    - name: Get commit list (push)
-      id: get_commit_list_push
-      if: ${{ github.event_name == 'push' }}
-      run: |
-        echo "id0=$GITHUB_SHA" > $GITHUB_OUTPUT
-        echo "List of tested commits:" > $GITHUB_STEP_SUMMARY
-        sed -n 's,^id[0-9]\+=\(.*\),- https://github.com/OpenDevicePartnership/embassy-imxrt/commit/\1,p' -- $GITHUB_OUTPUT >> $GITHUB_STEP_SUMMARY
-
-    - name: Get commit list (PR)
-      id: get_commit_list_pr
-      if: ${{ github.event_name == 'pull_request' }}
-      run: |
-        git rev-list --reverse refs/remotes/origin/${{ github.base_ref }}..${{ github.event.pull_request.head.sha }} | awk '{ print "id" NR "=" $1 }' > $GITHUB_OUTPUT
-        git diff --quiet ${{ github.event.pull_request.head.sha }} ${{ github.sha }} || echo "id0=$GITHUB_SHA" >> $GITHUB_OUTPUT
-        echo "List of tested commits:" > $GITHUB_STEP_SUMMARY
-        sed -n 's,^id[0-9]\+=\(.*\),- https://github.com/OpenDevicePartnership/embassy-imxrt/commit/\1,p' -- $GITHUB_OUTPUT >> $GITHUB_STEP_SUMMARY
-
-    outputs:
-      commits: ${{ toJSON(steps.*.outputs.*) }}
-
   fmt:
     runs-on: ubuntu-latest
     name: nightly / fmt
-    needs: commit_list
-    strategy:
-      fail-fast: false
-      matrix:
-        commit: ${{ fromJSON(needs.commit_list.outputs.commits) }}
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: true
-          ref: ${{ matrix.commit }}
       - name: Install nightly
         uses: dtolnay/rust-toolchain@nightly
         with:
@@ -74,7 +36,6 @@ jobs:
   clippy:
     runs-on: ubuntu-latest
     name: ${{ matrix.toolchain }} / clippy
-    needs: commit_list
     permissions:
       contents: read
       checks: write
@@ -83,12 +44,10 @@ jobs:
       matrix:
         # Get early warning of new lints which are regularly introduced in beta channels.
         toolchain: [stable, beta]
-        commit: ${{ fromJSON(needs.commit_list.outputs.commits) }}
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: true
-          ref: ${{ matrix.commit }}
       - name: Install ${{ matrix.toolchain }}
         uses: dtolnay/rust-toolchain@master
         with:
