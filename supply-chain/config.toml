@@ -12,3 +12,6 @@ url = "https://raw.githubusercontent.com/google/rust-crate-audits/main/audits.to
 
 [imports.mozilla]
 url = "https://raw.githubusercontent.com/mozilla/supply-chain/main/audits.toml"
+
+[policy.mimxrt633s-pac]
+audit-as-crates-io = false
